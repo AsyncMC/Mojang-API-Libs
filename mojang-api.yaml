@@ -54,6 +54,9 @@ paths:
         required: true
         description: The player UUID without hyphens
         example: 38ba542eb5924231a54cca0f2eac2b54
+        schema:
+          type: string
+          format: stripped-uuid
     get:
       summary: Gets the full player's name history
       tags:
@@ -143,6 +146,9 @@ paths:
         required: true
         description: The player UUID without hyphens
         example: 38ba542eb5924231a54cca0f2eac2b54
+        schema:
+          type: string
+          format: stripped-uuid
     post:
       summary: Changes the player skin by URL
       description: This will set the skin for the selected profile, but Mojang's servers will fetch the skin from a URL. This will also work for legacy accounts.
