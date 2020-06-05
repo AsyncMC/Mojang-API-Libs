@@ -1,0 +1,238 @@
+openapi: 3.0.1
+info:
+  title: Mojang API
+  version: '2020-06-05'
+servers:
+  - url: https://api.mojang.com
+paths:
+  /users/profiles/minecraft/{username}:
+    parameters:
+      - name: username
+        in: path
+        required: true
+        description: The username in a given time, or in present if "at" is not sent
+        example: LordofMC_Playerz
+        schema:
+          type: string
+          format: username
+      - name: at
+        in: query
+        description: Find the username in a given time, when 0 selects the original name however, it only works if the name was changed at least once, or if the account is legacy. The time is an UNIX timestamp (without milliseconds)
+        example: 1448533942
+        schema:
+          type: integer
+          format: int64
+    get:
+      summary: Find the UUID by name
+      description: Find the current player name, UUID, demo status and migration flag by the current player name or at a given time.
+      responses:
+        200:
+          description: The user was found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CurrentPlayerIDs'
+        204:
+          description: User not found
+        400:
+          description: If the timestamp is invalid
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /user/profiles/{stripped_uuid}/names:
+    parameters:
+      - name: stripped_uuid
+        in: path
+        required: true
+        description: The player UUID without hyphens
+        example: 38ba542eb5924231a54cca0f2eac2b54
+    get:
+      summary: Gets the full player's name history
+      responses:
+        200:
+          description: A list of name changes, the first entry usually don't have a change time
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/NameChange'
+                example: '[
+                            {
+                              "name": "firelordwill"
+                            },
+                            {
+                              "name": "LordofMC_Playerz",
+                              "changedToAt": 1448677333000
+                            },
+                            {
+                              "name": "Alonlord",
+                              "changedToAt": 1460944203000
+                            },
+                            {
+                              "name": "Alonelord",
+                              "changedToAt": 1477533727000
+                            },
+                            {
+                              "name": "Alonelordz",
+                              "changedToAt": 1585545654000
+                            },
+                            {
+                              "name": "Alonelord",
+                              "changedToAt": 1588184987000
+                            }
+                          ]'
+        204:
+          description: Username not found at the given time
+  /profiles/minecraft:
+    post:
+      summary: Find the current UUID of multiple players at once
+      description: Find the current players name, UUID, demo status and migration flag by the current players name. The "at" parameter is not supported. Players not found are not returned. If no players are found, an empty array is returned.
+      requestBody:
+        required: true
+        description: Array with the player names
+        content:
+          application/json:
+            example: '[
+              "joserobjr",
+              "nonExistingPlayer",
+              "maksimkurb"
+            ]'
+            schema:
+              type: array
+              items:
+                type: string
+                format: username
+      responses:
+        200:
+          description: An array containing all players found
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CurrentPlayerIDs'
+              example: '[
+                          {
+                            "id": "185e217600954ff8a2016f2aed9a032a",
+                            "name": "joserobjr"
+                          },
+                          {
+                              "id": "0d252b7218b648bfb86c2ae476954d32",
+                              "name": "maksimkurb",
+                              "legacy": true,
+                              "demo": true
+                          }
+                        ]'
+  /user/profile/{stripped_uuid}/skin:
+    parameters:
+      - name: stripped_uuid
+        in: path
+        required: true
+        description: The player UUID without hyphens
+        example: 38ba542eb5924231a54cca0f2eac2b54
+    post:
+      summary: Changes the player skin by URL
+      description: This will set the skin for the selected profile, but Mojang's servers will fetch the skin from a URL. This will also work for legacy accounts.
+      security:
+        - mojangAccessToken: []
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              description: Request Mojang to download a skin from an URL and apply to the player
+              required:
+                - url
+              properties:
+                model:
+                  type: string
+                  enum: ["",slim]
+                  description: Model is an empty string for the default model (like Steve) and "slim" for the slim model (like Alex)
+                url:
+                  type: string
+                  format: url
+                  example: http://assets.mojang.com/SkinTemplates/steve.png
+                  description: The URL which Mojang servers will download and apply the skin
+      responses:
+        200:
+          description: The skin has been changed. The response has no body
+        400:
+          description: Upon error the server will send back a JSON with the error. (Success is a blank payload)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    put:
+      summary: Changes the player skin by upload
+      description: This uploads a skin to Mojang's servers. It also sets the users skin. This works on legacy counts as well.
+      security:
+        - mojangAccessToken: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              
+      responses:
+        200:
+          description: The skin has been changed. The response has no body
+        400:
+          description: Upon error the server will send back a JSON with the error. (Success is a blank payload)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+
+components:
+  securitySchemes:
+    mojangAccessToken:
+      type: http
+      scheme: bearer
+  schemas:
+    CurrentPlayerIDs:
+      type: object
+      properties:
+        id:
+          type: string
+          format: stripped-uuid
+          description: The player UUID without hyphens
+          example: 38ba542eb5924231a54cca0f2eac2b54
+        name:
+          type: string
+          format: username
+          description: The current name being used by this player
+        legacy:
+          type: boolean
+          description: If account has not been converted
+        demo:
+          type: boolean
+          description: If the player has not puchased the game
+      required:
+        - name
+        - id
+    NameChange:
+      type: object
+      description: A registered name change.
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          description: The new player name
+          format: username
+        changedToAt:
+          type: integer
+          format: int64
+          description: Time which the name was changed in UNIX Timestamp without milliseconds. Usually absent for the first entry.
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        errorMessage:
+          type: string
+
