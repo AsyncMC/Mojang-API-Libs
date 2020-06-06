@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **File** |  | [optional] 
+**id** | **String** |  | [optional] 
 **properties** | [**[GameProfileProperty]**](GameProfileProperty.md) |  | [optional] 
 
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.sessions.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,15 +27,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client;
+namespace com.github.asyncmc.mojang.sessions.php.server;
 
-use OpenAPI\Client\Model\ModelInterface;
+use com.github.asyncmc.mojang.sessions.php.server\com.github.asyncmc.mojang.sessions.php.model\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.sessions.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -305,7 +305,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\OpenAPI\Client\Model\\' . $data->{$discriminator};
+                $subclass = '\com.github.asyncmc.mojang.sessions.php.server\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

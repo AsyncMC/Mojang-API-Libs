@@ -16,11 +16,13 @@
 
 
 typedef struct reduced_user_data_t {
+        char *id; //no enum string
         list_t *properties; //nonprimitive container
 
 } reduced_user_data_t;
 
 reduced_user_data_t *reduced_user_data_create(
+        char *id,
         list_t *properties
 );
 

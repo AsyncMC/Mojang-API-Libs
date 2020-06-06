@@ -13,9 +13,13 @@
 
 #include "ApiStatus.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace status {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 ApiStatus::ApiStatus()
@@ -63,6 +67,10 @@ void ApiStatus::fromMultiPart(std::shared_ptr<MultipartFormData> multipart, cons
 
 }
 
+}
+}
+}
+}
 }
 }
 }

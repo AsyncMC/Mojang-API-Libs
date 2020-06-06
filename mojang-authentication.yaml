@@ -209,7 +209,6 @@ components:
       properties:
         id:
           type: string
-          format: binary
         properties:
           type: array
           items:
@@ -274,7 +273,6 @@ components:
           type: string
         userId:
           type: string
-          format: binary
         createdAt:
           type: integer
           format: int64

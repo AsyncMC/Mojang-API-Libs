@@ -108,10 +108,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [ChangeSkinRequest](docs/ChangeSkinRequest.md)
  - [CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
  - [Error](docs/Error.md)
- - [Inline_object](docs/Inline_object.md)
- - [Inline_object_1](docs/Inline_object_1.md)
  - [NameChange](docs/NameChange.md)
  - [OrderStatistic](docs/OrderStatistic.md)
  - [OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
@@ -121,6 +120,7 @@ Class | Method | HTTP request | Description
  - [SecurityChallenge](docs/SecurityChallenge.md)
  - [SecurityQuestion](docs/SecurityQuestion.md)
  - [SkinModel](docs/SkinModel.md)
+ - [UploadSkinRequest](docs/UploadSkinRequest.md)
 
 
 ## Documentation For Authorization

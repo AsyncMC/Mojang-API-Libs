@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SecurityAnswer
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.model.SecurityAnswer
 ## Properties
 
 Name | Type | Description | Notes

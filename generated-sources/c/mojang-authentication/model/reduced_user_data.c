@@ -10,6 +10,7 @@
 
 
 reduced_user_data_t *reduced_user_data_create(
+    char *id,
     list_t *properties
     ) {
 	reduced_user_data_t *reduced_user_data = malloc(sizeof(reduced_user_data_t));
@@ -22,6 +23,7 @@ reduced_user_data_t *reduced_user_data_create(
 
 void reduced_user_data_free(reduced_user_data_t *reduced_user_data) {
     listEntry_t *listEntry;
+    free(reduced_user_data->id);
 		list_ForEach(listEntry, reduced_user_data->properties) {
 		game_profile_property_free(listEntry->data);
 	}
@@ -33,6 +35,9 @@ void reduced_user_data_free(reduced_user_data_t *reduced_user_data) {
 cJSON *reduced_user_data_convertToJSON(reduced_user_data_t *reduced_user_data) {
 	cJSON *item = cJSON_CreateObject();
 	// reduced_user_data->id
+    if(cJSON_AddStringToObject(item, "id", reduced_user_data->id) == NULL) {
+    goto fail; //String
+    }
 
 	// reduced_user_data->properties
     cJSON *properties = cJSON_AddArrayToObject(item, "properties");
@@ -68,6 +73,10 @@ reduced_user_data_t *reduced_user_data_parseFromJSON(char *jsonString){
     }
 
     // reduced_user_data->id
+    cJSON *id = cJSON_GetObjectItemCaseSensitive(reduced_user_dataJSON, "id");
+    if(!cJSON_IsString(id) || (id->valuestring == NULL)){
+    goto end; //String
+    }
 
     // reduced_user_data->properties
     cJSON *properties;
@@ -92,6 +101,7 @@ reduced_user_data_t *reduced_user_data_parseFromJSON(char *jsonString){
 
 
     reduced_user_data = reduced_user_data_create (
+        strdup(id->valuestring),
         propertiesList
         );
  cJSON_Delete(reduced_user_dataJSON);

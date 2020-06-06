@@ -24,15 +24,15 @@ Articus\PathHandler\Router\FastRouteAnnotation:
     adapter:
       name: blackhole
   handlers:
-    - App\Handler\Authenticate
-    - App\Handler\Invalidate
-    - App\Handler\Refresh
-    - App\Handler\Signout
-    - App\Handler\Validate
+    - com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Authenticate
+    - com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Invalidate
+    - com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Refresh
+    - com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Signout
+    - com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Validate
 
 Zend\ServiceManager\AbstractFactory\ConfigAbstractFactory:
-  App\Handler\Authenticate: []
-  App\Handler\Invalidate: []
-  App\Handler\Refresh: []
-  App\Handler\Signout: []
-  App\Handler\Validate: []
+  com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Authenticate: []
+  com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Invalidate: []
+  com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Refresh: []
+  com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Signout: []
+  com.github.asyncmc.mojang.authentication.php.ze.ph.server\com.github.asyncmc.mojang.authentication.php.ze.ph.api\Validate: []

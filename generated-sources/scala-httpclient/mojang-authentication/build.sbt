@@ -1,6 +1,6 @@
 version := "1.0.0"
-name := "openapi-scala-client"
-organization := "org.openapitools"
+name := "mojang-authentication-scala-httpclient"
+organization := "com.github.asyncmc"
 scalaVersion := "2.11.12"
 
 libraryDependencies ++= Seq(

@@ -11,9 +11,13 @@
 
 #include "Object.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 Object::Object()
@@ -75,6 +79,10 @@ void Object::setValue(const utility::string_t& key, const web::json::value& valu
     m_object[key] = value;
 }
 
+}
+}
+}
+}
 }
 }
 }

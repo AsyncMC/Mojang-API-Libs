@@ -55,7 +55,7 @@ static void setUpUnixSignals(std::vector<int> quitSignals) {
 }
 #endif
 
-using namespace org::openapitools::server::api;
+using namespace com::github::asyncmc::mojang::status::cpp::pistache::server::api;
 
 int main() {
 #ifdef __linux__

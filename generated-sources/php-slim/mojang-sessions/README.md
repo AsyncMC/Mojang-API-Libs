@@ -57,13 +57,13 @@ Class | Method | HTTP request | Description
 
 ## Models
 
-* OpenAPIServer\Model\PlayerProfile
-* OpenAPIServer\Model\PlayerProfileProperty
-* OpenAPIServer\Model\PlayerProfileTexturePropertyValue
-* OpenAPIServer\Model\PlayerSkinMetadata
-* OpenAPIServer\Model\PlayerSkinURL
-* OpenAPIServer\Model\PlayerTexture
-* OpenAPIServer\Model\PlayerTextureURL
-* OpenAPIServer\Model\SessionApiError
+* com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerProfile
+* com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerProfileProperty
+* com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerProfileTexturePropertyValue
+* com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerSkinMetadata
+* com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerSkinURL
+* com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerTexture
+* com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerTextureURL
+* com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\SessionApiError
 
 

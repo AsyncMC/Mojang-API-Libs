@@ -32,14 +32,19 @@
 #include "OrderStatisticsRequest.h"
 #include "OrderStatisticsResponse.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::pistache::server::model;
 
-class MiscellaneousApiImpl : public org::openapitools::server::api::MiscellaneousApi {
+class MiscellaneousApiImpl : public com::github::asyncmc::mojang::api::cpp::pistache::server::api::MiscellaneousApi {
 public:
     MiscellaneousApiImpl(std::shared_ptr<Pistache::Rest::Router>);
     ~MiscellaneousApiImpl() {}
@@ -48,6 +53,11 @@ public:
 
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

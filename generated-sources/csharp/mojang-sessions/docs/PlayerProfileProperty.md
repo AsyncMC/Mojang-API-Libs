@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PlayerProfileProperty
+# Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.model.PlayerProfileProperty
 ## Properties
 
 Name | Type | Description | Notes

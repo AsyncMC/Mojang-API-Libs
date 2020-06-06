@@ -13,9 +13,13 @@
 
 #include "GameProfile.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 GameProfile::GameProfile()
@@ -26,6 +30,7 @@ GameProfile::GameProfile()
     m_IdIsSet = false;
     m_Name = utility::conversions::to_string_t("");
     m_NameIsSet = false;
+    m_UserId = utility::conversions::to_string_t("");
     m_UserIdIsSet = false;
     m_CreatedAt = 0L;
     m_CreatedAtIsSet = false;
@@ -129,9 +134,7 @@ void GameProfile::fromJson(const web::json::value& val)
         const web::json::value& fieldValue = val.at(utility::conversions::to_string_t("userId"));
         if(!fieldValue.is_null())
         {
-            HttpContent newItem(utility::conversions::to_string_t(""));
-            newItem->fromJson(fieldValue);
-            setUserId( newItem );
+            setUserId(ModelBase::stringFromJson(fieldValue));
         }
     }
     if(val.has_field(utility::conversions::to_string_t("createdAt")))
@@ -206,10 +209,7 @@ void GameProfile::toMultipart(std::shared_ptr<MultipartFormData> multipart, cons
     }
     if(m_UserIdIsSet)
     {
-        if (m_UserId.get())
-        {
-            m_UserId->toMultipart(multipart, utility::conversions::to_string_t("userId."));
-        }
+        multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t("userId"), m_UserId));
     }
     if(m_CreatedAtIsSet)
     {
@@ -259,12 +259,7 @@ void GameProfile::fromMultiPart(std::shared_ptr<MultipartFormData> multipart, co
     }
     if(multipart->hasContent(utility::conversions::to_string_t("userId")))
     {
-        if(multipart->hasContent(utility::conversions::to_string_t("userId")))
-        {
-            HttpContent newItem(utility::conversions::to_string_t(""));
-            newItem->fromMultiPart(multipart, utility::conversions::to_string_t("userId."));
-            setUserId( newItem );
-        }
+        setUserId(ModelBase::stringFromHttpContent(multipart->getContent(utility::conversions::to_string_t("userId"))));
     }
     if(multipart->hasContent(utility::conversions::to_string_t("createdAt")))
     {
@@ -355,12 +350,12 @@ void GameProfile::unsetName()
     m_NameIsSet = false;
 }
 
-HttpContent GameProfile::getUserId() const
+utility::string_t GameProfile::getUserId() const
 {
     return m_UserId;
 }
 
-void GameProfile::setUserId(const HttpContent& value)
+void GameProfile::setUserId(const utility::string_t& value)
 {
     m_UserId = value;
     m_UserIdIsSet = true;
@@ -502,6 +497,10 @@ void GameProfile::unsetLegacy()
     m_LegacyIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

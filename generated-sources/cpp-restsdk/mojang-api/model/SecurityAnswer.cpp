@@ -13,9 +13,13 @@
 
 #include "SecurityAnswer.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 SecurityAnswer::SecurityAnswer()
@@ -67,6 +71,10 @@ void SecurityAnswer::fromMultiPart(std::shared_ptr<MultipartFormData> multipart,
     setId(ModelBase::int32_tFromHttpContent(multipart->getContent(utility::conversions::to_string_t("id"))));
 }
 
+}
+}
+}
+}
 }
 }
 }

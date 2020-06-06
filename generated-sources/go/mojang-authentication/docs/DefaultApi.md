@@ -1,4 +1,4 @@
-# \DefaultApi
+# com.github.asyncmc.mojang.authentication.go.server\DefaultApi
 
 All URIs are relative to *https://authserver.mojang.com*
 

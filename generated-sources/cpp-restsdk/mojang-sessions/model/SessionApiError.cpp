@@ -13,9 +13,13 @@
 
 #include "SessionApiError.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 SessionApiError::SessionApiError()
@@ -149,6 +153,10 @@ void SessionApiError::unsetPath()
     m_PathIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

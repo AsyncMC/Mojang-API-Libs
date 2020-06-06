@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.ApiStatus
+# Org.OpenAPITools.com.github.asyncmc.mojang.status.csharp.refactor.model.ApiStatus
 ## Properties
 
 Name | Type | Description | Notes

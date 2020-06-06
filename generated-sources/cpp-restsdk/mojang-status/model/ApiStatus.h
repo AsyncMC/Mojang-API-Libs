@@ -15,16 +15,20 @@
  * The status of a Mojang services. Possible values are green (no issues), yellow (some issues), red (service unavailable).
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_ApiStatus_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_ApiStatus_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_STATUS_CPP_RESTSDK_MODEL_ApiStatus_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_STATUS_CPP_RESTSDK_MODEL_ApiStatus_H_
 
 
 #include "../ModelBase.h"
 
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace status {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 /// <summary>
@@ -59,5 +63,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_ApiStatus_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_STATUS_CPP_RESTSDK_MODEL_ApiStatus_H_ */

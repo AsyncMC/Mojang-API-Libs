@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Tests\Api
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Tests\Api
  * @author   openapi-generator contributors
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -26,19 +26,19 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace OpenAPI\Server\Tests\Api;
+namespace com.github.asyncmc.mojang.api.php.symfony.server\Tests\Api;
 
-use OpenAPI\Server\Configuration;
-use OpenAPI\Server\ApiClient;
-use OpenAPI\Server\ApiException;
-use OpenAPI\Server\ObjectSerializer;
+use com.github.asyncmc.mojang.api.php.symfony.server\Configuration;
+use com.github.asyncmc.mojang.api.php.symfony.server\ApiClient;
+use com.github.asyncmc.mojang.api.php.symfony.server\ApiException;
+use com.github.asyncmc.mojang.api.php.symfony.server\ObjectSerializer;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 /**
  * SecurityQuestionAnswerApiInterfaceTest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Tests\Api
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Tests\Api
  * @author   openapi-generator contributors
  * @link     https://github.com/openapitools/openapi-generator
  */

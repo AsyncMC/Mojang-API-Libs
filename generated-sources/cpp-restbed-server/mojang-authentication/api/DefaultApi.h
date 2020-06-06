@@ -33,12 +33,17 @@
 #include "RefreshResponse.h"
 #include "UsernamePassword.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::authentication::cpp::restbed::server::model;
 
 class  DefaultApi: public restbed::Service
 {
@@ -121,6 +126,11 @@ public:
 };
 
 
+}
+}
+}
+}
+}
 }
 }
 }

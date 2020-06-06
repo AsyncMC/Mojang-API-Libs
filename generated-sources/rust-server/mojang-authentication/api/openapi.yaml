@@ -146,7 +146,7 @@ components:
           name: name
           id: id
         user:
-          id: ""
+          id: id
           properties:
           - name: name
             value: value
@@ -220,7 +220,7 @@ components:
           paid: true
           id: id
           migrated: true
-          userId: ""
+          userId: userId
           suspended: true
         - createdAt: 0
           legacyProfile: true
@@ -230,7 +230,7 @@ components:
           paid: true
           id: id
           migrated: true
-          userId: ""
+          userId: userId
           suspended: true
         selectedProfile:
           createdAt: 0
@@ -241,7 +241,7 @@ components:
           paid: true
           id: id
           migrated: true
-          userId: ""
+          userId: userId
           suspended: true
         user:
           registerIp: registerIp
@@ -271,7 +271,7 @@ components:
       type: object
     ReducedUserData:
       example:
-        id: ""
+        id: id
         properties:
         - name: name
           value: value
@@ -279,7 +279,6 @@ components:
           value: value
       properties:
         id:
-          format: binary
           type: string
         properties:
           items:
@@ -364,7 +363,7 @@ components:
         paid: true
         id: id
         migrated: true
-        userId: ""
+        userId: userId
         suspended: true
       properties:
         agent:
@@ -374,7 +373,6 @@ components:
         name:
           type: string
         userId:
-          format: binary
           type: string
         createdAt:
           description: Unix timestamp in milliseconds

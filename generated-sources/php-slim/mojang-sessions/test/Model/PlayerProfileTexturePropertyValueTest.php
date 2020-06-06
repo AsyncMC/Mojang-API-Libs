@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the model.
  */
-namespace OpenAPIServer\Model;
+namespace com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model;
 
-use OpenAPIServer\Model\PlayerProfileTexturePropertyValue;
+use com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerProfileTexturePropertyValue;
 
 /**
  * PlayerProfileTexturePropertyValueTest Class Doc Comment
  *
  * @category Class
  * @description This is obtained by decoding the \&quot;textures\&quot; property
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\PlayerProfileTexturePropertyValue
+ * @coversDefaultClass \com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerProfileTexturePropertyValue
  */
 class PlayerProfileTexturePropertyValueTest extends \PHPUnit_Framework_TestCase
 {

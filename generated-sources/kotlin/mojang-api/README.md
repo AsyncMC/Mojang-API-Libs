@@ -50,19 +50,19 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [org.openapitools.client.models.CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
- - [org.openapitools.client.models.Error](docs/Error.md)
- - [org.openapitools.client.models.InlineObject](docs/InlineObject.md)
- - [org.openapitools.client.models.InlineObject1](docs/InlineObject1.md)
- - [org.openapitools.client.models.NameChange](docs/NameChange.md)
- - [org.openapitools.client.models.OrderStatistic](docs/OrderStatistic.md)
- - [org.openapitools.client.models.OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
- - [org.openapitools.client.models.OrderStatisticsResponse](docs/OrderStatisticsResponse.md)
- - [org.openapitools.client.models.SecurityAnswer](docs/SecurityAnswer.md)
- - [org.openapitools.client.models.SecurityAnswerId](docs/SecurityAnswerId.md)
- - [org.openapitools.client.models.SecurityChallenge](docs/SecurityChallenge.md)
- - [org.openapitools.client.models.SecurityQuestion](docs/SecurityQuestion.md)
- - [org.openapitools.client.models.SkinModel](docs/SkinModel.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.ChangeSkinRequest](docs/ChangeSkinRequest.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.Error](docs/Error.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.NameChange](docs/NameChange.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.OrderStatistic](docs/OrderStatistic.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.OrderStatisticsResponse](docs/OrderStatisticsResponse.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.SecurityAnswer](docs/SecurityAnswer.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.SecurityAnswerId](docs/SecurityAnswerId.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.SecurityChallenge](docs/SecurityChallenge.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.SecurityQuestion](docs/SecurityQuestion.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.SkinModel](docs/SkinModel.md)
+ - [com.github.asyncmc.mojang.api.kotlin.model.UploadSkinRequest](docs/UploadSkinRequest.md)
 
 
 <a name="documentation-for-authorization"></a>

@@ -13,9 +13,13 @@
 
 #include "PlayerSkinURL.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 PlayerSkinURL::PlayerSkinURL()
@@ -67,6 +71,10 @@ void PlayerSkinURL::fromMultiPart(std::shared_ptr<MultipartFormData> multipart, 
     setUrl(ModelBase::stringFromHttpContent(multipart->getContent(utility::conversions::to_string_t("url"))));
 }
 
+}
+}
+}
+}
 }
 }
 }

@@ -20,7 +20,7 @@ Method | HTTP request | Description
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.android.api.DefaultApi;
 
 DefaultApi apiInstance = new DefaultApi();
 AuthenticationRequest authenticationRequest = new AuthenticationRequest(); // AuthenticationRequest | 
@@ -61,7 +61,7 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.android.api.DefaultApi;
 
 DefaultApi apiInstance = new DefaultApi();
 AccessKeys accessKeys = new AccessKeys(); // AccessKeys | 
@@ -101,7 +101,7 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.android.api.DefaultApi;
 
 DefaultApi apiInstance = new DefaultApi();
 RefreshRequest refreshRequest = new RefreshRequest(); // RefreshRequest | 
@@ -142,7 +142,7 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.android.api.DefaultApi;
 
 DefaultApi apiInstance = new DefaultApi();
 UsernamePassword usernamePassword = new UsernamePassword(); // UsernamePassword | 
@@ -182,7 +182,7 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.android.api.DefaultApi;
 
 DefaultApi apiInstance = new DefaultApi();
 AccessKeys accessKeys = new AccessKeys(); // AccessKeys | 

@@ -1,22 +1,22 @@
-controllerPackage: org.openapitools.controllers
-modelPackage:  org.openapitools.model
+controllerPackage: com.github.asyncmc.mojang.api.java.inflector.server
+modelPackage:  com.github.asyncmc.mojang.api.java.inflector.model
 swaggerUrl: ./src/main/swagger/swagger.yaml
 modelMappings:
   # to enable explicit mappings, use this syntax:
   DefinitionFromSwaggerSpecification: fully.qualified.path.to.Model
-  CurrentPlayerIDs : org.openapitools.model.CurrentPlayerIDs
-Error : org.openapitools.model.Error
-InlineObject : org.openapitools.model.InlineObject
-InlineObject1 : org.openapitools.model.InlineObject1
-NameChange : org.openapitools.model.NameChange
-OrderStatistic : org.openapitools.model.OrderStatistic
-OrderStatisticsRequest : org.openapitools.model.OrderStatisticsRequest
-OrderStatisticsResponse : org.openapitools.model.OrderStatisticsResponse
-SecurityAnswer : org.openapitools.model.SecurityAnswer
-SecurityAnswerId : org.openapitools.model.SecurityAnswerId
-SecurityChallenge : org.openapitools.model.SecurityChallenge
-SecurityQuestion : org.openapitools.model.SecurityQuestion
-SkinModel : org.openapitools.model.SkinModel
+  ChangeSkinRequest : com.github.asyncmc.mojang.api.java.inflector.model.ChangeSkinRequest
+CurrentPlayerIDs : com.github.asyncmc.mojang.api.java.inflector.model.CurrentPlayerIDs
+Error : com.github.asyncmc.mojang.api.java.inflector.model.Error
+NameChange : com.github.asyncmc.mojang.api.java.inflector.model.NameChange
+OrderStatistic : com.github.asyncmc.mojang.api.java.inflector.model.OrderStatistic
+OrderStatisticsRequest : com.github.asyncmc.mojang.api.java.inflector.model.OrderStatisticsRequest
+OrderStatisticsResponse : com.github.asyncmc.mojang.api.java.inflector.model.OrderStatisticsResponse
+SecurityAnswer : com.github.asyncmc.mojang.api.java.inflector.model.SecurityAnswer
+SecurityAnswerId : com.github.asyncmc.mojang.api.java.inflector.model.SecurityAnswerId
+SecurityChallenge : com.github.asyncmc.mojang.api.java.inflector.model.SecurityChallenge
+SecurityQuestion : com.github.asyncmc.mojang.api.java.inflector.model.SecurityQuestion
+SkinModel : com.github.asyncmc.mojang.api.java.inflector.model.SkinModel
+UploadSkinRequest : com.github.asyncmc.mojang.api.java.inflector.model.UploadSkinRequest
 
 entityProcessors:
   - json

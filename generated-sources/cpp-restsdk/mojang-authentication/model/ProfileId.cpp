@@ -13,9 +13,13 @@
 
 #include "ProfileId.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 ProfileId::ProfileId()
@@ -95,6 +99,10 @@ void ProfileId::setName(const utility::string_t& value)
     
 }
 
+}
+}
+}
+}
 }
 }
 }

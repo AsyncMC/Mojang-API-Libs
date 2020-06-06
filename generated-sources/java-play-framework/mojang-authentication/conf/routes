@@ -2,15 +2,15 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /api                        controllers.ApiDocController.api
+GET     /api                        com.github.asyncmc.mojang.authentication.java.play.framework.api.ApiDocController.api
 
 
 #Functions for Default API
-POST     /authenticate                     controllers.DefaultApiController.authenticate()
-POST     /invalidate                     controllers.DefaultApiController.invalidate()
-POST     /refresh                     controllers.DefaultApiController.refresh()
-POST     /signout                     controllers.DefaultApiController.siginout()
-POST     /validate                     controllers.DefaultApiController.validate()
+POST     /authenticate                     com.github.asyncmc.mojang.authentication.java.play.framework.api.DefaultApiController.authenticate()
+POST     /invalidate                     com.github.asyncmc.mojang.authentication.java.play.framework.api.DefaultApiController.invalidate()
+POST     /refresh                     com.github.asyncmc.mojang.authentication.java.play.framework.api.DefaultApiController.refresh()
+POST     /signout                     com.github.asyncmc.mojang.authentication.java.play.framework.api.DefaultApiController.siginout()
+POST     /validate                     com.github.asyncmc.mojang.authentication.java.play.framework.api.DefaultApiController.validate()
 
 # Map static resources from the /public folder to the /assets URL path
 GET /assets/*file           controllers.Assets.at(file)

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-namespace OpenAPI\Server\Service;
+namespace com.github.asyncmc.mojang.status.php.symfony.server\Service;
 
 use JMS\Serializer\DeserializationContext;
 use JMS\Serializer\Exception\RuntimeException;

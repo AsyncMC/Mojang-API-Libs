@@ -13,13 +13,18 @@
 #include "SecurityQuestionAnswerApi.h"
 #include "Helpers.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
 using namespace org::openapitools::server::helpers;
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::pistache::server::model;
 
 SecurityQuestionAnswerApi::SecurityQuestionAnswerApi(std::shared_ptr<Pistache::Rest::Router> rtr) { 
     router = rtr;
@@ -83,6 +88,11 @@ void SecurityQuestionAnswerApi::security_question_answer_api_default_handler(con
     response.send(Pistache::Http::Code::Not_Found, "The requested method does not exist");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

@@ -1,4 +1,4 @@
-# openapi-android-client
+# mojang-sessions-android
 
 ## Requirements
 
@@ -26,8 +26,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
-    <artifactId>openapi-android-client</artifactId>
+    <groupId>com.github.asyncmc</groupId>
+    <artifactId>mojang-sessions-android</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
 </dependency>
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "org.openapitools:openapi-android-client:1.0.0"
+compile "com.github.asyncmc:mojang-sessions-android:1.0.0"
 ```
 
 ### Others
@@ -49,7 +49,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/openapi-android-client-1.0.0.jar
+* target/mojang-sessions-android-1.0.0.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -58,7 +58,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import org.openapitools.client.api.BansApi;
+import com.github.asyncmc.mojang.sessions.android.api.BansApi;
 
 public class BansApiExample {
 

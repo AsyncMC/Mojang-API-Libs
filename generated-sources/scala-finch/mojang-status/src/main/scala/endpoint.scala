@@ -9,7 +9,7 @@ import io.circe.{Encoder, Json}
 import io.finch.circe._
 import io.circe.generic.semiauto._
 
-import org.openapitools.apis._
+import com.github.asyncmc.mojang.status.scala.finch.api._
 
 /**
  * Provides the paths and endpoints for all the API's public service methods.

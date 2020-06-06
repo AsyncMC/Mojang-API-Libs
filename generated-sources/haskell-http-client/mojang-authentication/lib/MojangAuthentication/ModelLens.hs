@@ -124,7 +124,7 @@ gameProfileNameL f GameProfile{..} = (\gameProfileName -> GameProfile { gameProf
 {-# INLINE gameProfileNameL #-}
 
 -- | 'gameProfileUserId' Lens
-gameProfileUserIdL :: Lens_' GameProfile (Maybe FilePath)
+gameProfileUserIdL :: Lens_' GameProfile (Maybe Text)
 gameProfileUserIdL f GameProfile{..} = (\gameProfileUserId -> GameProfile { gameProfileUserId, ..} ) <$> f gameProfileUserId
 {-# INLINE gameProfileUserIdL #-}
 
@@ -177,7 +177,7 @@ gameProfilePropertyValueL f GameProfileProperty{..} = (\gameProfilePropertyValue
 -- * PrivateUserData
 
 -- | 'privateUserDataId' Lens
-privateUserDataIdL :: Lens_' PrivateUserData (Maybe FilePath)
+privateUserDataIdL :: Lens_' PrivateUserData (Maybe Text)
 privateUserDataIdL f PrivateUserData{..} = (\privateUserDataId -> PrivateUserData { privateUserDataId, ..} ) <$> f privateUserDataId
 {-# INLINE privateUserDataIdL #-}
 
@@ -205,7 +205,7 @@ profileIdNameL f ProfileId{..} = (\profileIdName -> ProfileId { profileIdName, .
 -- * ReducedUserData
 
 -- | 'reducedUserDataId' Lens
-reducedUserDataIdL :: Lens_' ReducedUserData (Maybe FilePath)
+reducedUserDataIdL :: Lens_' ReducedUserData (Maybe Text)
 reducedUserDataIdL f ReducedUserData{..} = (\reducedUserDataId -> ReducedUserData { reducedUserDataId, ..} ) <$> f reducedUserDataId
 {-# INLINE reducedUserDataIdL #-}
 

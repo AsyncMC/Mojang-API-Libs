@@ -13,9 +13,13 @@
 
 #include "OrderStatisticsRequest.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 OrderStatisticsRequest::OrderStatisticsRequest()
@@ -125,6 +129,10 @@ void OrderStatisticsRequest::setMetricKeys(const std::vector<std::shared_ptr<Ord
     
 }
 
+}
+}
+}
+}
 }
 }
 }

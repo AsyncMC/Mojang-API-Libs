@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.api.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace OpenAPI\Client;
+namespace com.github.asyncmc.mojang.api.php.server;
 
-use \OpenAPI\Client\Configuration;
-use \OpenAPI\Client\ApiException;
-use \OpenAPI\Client\ObjectSerializer;
+use \com.github.asyncmc.mojang.api.php.server\Configuration;
+use \com.github.asyncmc.mojang.api.php.server\ApiException;
+use \com.github.asyncmc.mojang.api.php.server\ObjectSerializer;
 
 /**
  * NameHistoryApiTest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.api.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -13,9 +13,13 @@
 
 #include "PlayerProfileProperty.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 PlayerProfileProperty::PlayerProfileProperty()
@@ -136,6 +140,10 @@ void PlayerProfileProperty::unsetSignature()
     m_SignatureIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

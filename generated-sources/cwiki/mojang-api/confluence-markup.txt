@@ -592,6 +592,10 @@ Error
 
 h2. Models
 
+        h3. ChangeSkinRequest
+        ||Field Name||Required||Type||Description||
+         |model | |SkinModel | |
+ |url | |String |The URL which Mojang servers will download and apply the skin |
         h3. CurrentPlayerIDs
         ||Field Name||Required||Type||Description||
          |id | |String |The player UUID without hyphens |
@@ -602,14 +606,6 @@ h2. Models
         ||Field Name||Required||Type||Description||
          |error | |String | |
  |errorMessage | |String | |
-        h3. Inline_object
-        ||Field Name||Required||Type||Description||
-         |model | |SkinModel | |
- |file | |File |The skin image in PNG format |
-        h3. Inline_object_1
-        ||Field Name||Required||Type||Description||
-         |model | |SkinModel | |
- |url | |String |The URL which Mojang servers will download and apply the skin |
         h3. NameChange
         ||Field Name||Required||Type||Description||
          |name | |String |The new player name |
@@ -640,4 +636,7 @@ h2. Models
  |question | |String |The question itself |
         h3. SkinModel
         ||Field Name||Required||Type||Description||
-        
+                h3. UploadSkinRequest
+        ||Field Name||Required||Type||Description||
+         |model | |SkinModel | |
+ |file | |File |The skin image in PNG format |

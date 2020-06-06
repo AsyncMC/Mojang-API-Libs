@@ -1,4 +1,4 @@
-# OpenAPI\Client\SecurityQuestionAnswerApi
+# com.github.asyncmc.mojang.api.php.server\SecurityQuestionAnswerApi
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -20,11 +20,11 @@ Check if security questions are needed
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: PlayerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = com.github.asyncmc.mojang.api.php.server\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
-$apiInstance = new OpenAPI\Client\Api\SecurityQuestionAnswerApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\SecurityQuestionAnswerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listPendingSecurityQuestions**
-> \OpenAPI\Client\Model\SecurityChallenge[] listPendingSecurityQuestions()
+> \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SecurityChallenge[] listPendingSecurityQuestions()
 
 Get list of questions
 
@@ -68,11 +68,11 @@ Get list of questions
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: PlayerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = com.github.asyncmc.mojang.api.php.server\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
-$apiInstance = new OpenAPI\Client\Api\SecurityQuestionAnswerApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\SecurityQuestionAnswerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -93,7 +93,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SecurityChallenge[]**](../Model/SecurityChallenge.md)
+[**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SecurityChallenge[]**](../Model/SecurityChallenge.md)
 
 ### Authorization
 
@@ -117,17 +117,17 @@ Send back the answers
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: PlayerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = com.github.asyncmc.mojang.api.php.server\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
-$apiInstance = new OpenAPI\Client\Api\SecurityQuestionAnswerApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\SecurityQuestionAnswerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$security_answer = array(new \OpenAPI\Client\Model\array()); // \OpenAPI\Client\Model\SecurityAnswer[] | An array with all the answers
+$security_answer = array(new \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\array()); // \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SecurityAnswer[] | An array with all the answers
 
 try {
     $apiInstance->sendSecurityQuestionAnswers($security_answer);
@@ -141,7 +141,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **security_answer** | [**\OpenAPI\Client\Model\SecurityAnswer[]**](../Model/array.md)| An array with all the answers |
+ **security_answer** | [**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SecurityAnswer[]**](../Model/array.md)| An array with all the answers |
 
 ### Return type
 

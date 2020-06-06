@@ -138,9 +138,6 @@ GameProfile::fromJson(char* jsonStr)
 			jsonToValue(&userId, node, "std::string", "");
 		} else {
 			
-			std::string* obj = static_cast<std::string*> (&userId);
-			obj->fromJson(json_to_string(node, false));
-			
 		}
 	}
 	const gchar *createdAtKey = "createdAt";
@@ -253,11 +250,6 @@ GameProfile::toJson()
 		node = converttoJson(&obj, "std::string", "");
 	}
 	else {
-		
-		std::string obj = static_cast<std::string> (getUserId());
-		GError *mygerror;
-		mygerror = NULL;
-		node = json_from_string(obj.toJson(), &mygerror);
 		
 	}
 	const gchar *userIdKey = "userId";

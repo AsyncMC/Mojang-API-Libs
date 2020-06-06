@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SkinModel
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.model.SkinModel
 ## Properties
 
 Name | Type | Description | Notes

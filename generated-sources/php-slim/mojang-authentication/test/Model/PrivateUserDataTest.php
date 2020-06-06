@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the model.
  */
-namespace OpenAPIServer\Model;
+namespace com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model;
 
-use OpenAPIServer\Model\PrivateUserData;
+use com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\PrivateUserData;
 
 /**
  * PrivateUserDataTest Class Doc Comment
  *
  * @category Class
  * @description PrivateUserData
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\PrivateUserData
+ * @coversDefaultClass \com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\PrivateUserData
  */
 class PrivateUserDataTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,4 +1,4 @@
-# OpenAPI\Client\MiscellaneousApi
+# com.github.asyncmc.mojang.api.php.server\MiscellaneousApi
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getOrdersStatistics**
-> \OpenAPI\Client\Model\OrderStatisticsResponse getOrdersStatistics($order_statistics_request)
+> \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\OrderStatisticsResponse getOrdersStatistics($order_statistics_request)
 
 Get statistics on the sales of Minecraft.
 
@@ -18,17 +18,17 @@ Get statistics on the sales of Minecraft.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: MojangStatisticsToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = com.github.asyncmc.mojang.api.php.server\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
-$apiInstance = new OpenAPI\Client\Api\MiscellaneousApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\MiscellaneousApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$order_statistics_request = new \OpenAPI\Client\Model\OrderStatisticsRequest(); // \OpenAPI\Client\Model\OrderStatisticsRequest | The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/
+$order_statistics_request = new \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\OrderStatisticsRequest(); // \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\OrderStatisticsRequest | The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/
 
 try {
     $result = $apiInstance->getOrdersStatistics($order_statistics_request);
@@ -43,11 +43,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **order_statistics_request** | [**\OpenAPI\Client\Model\OrderStatisticsRequest**](../Model/OrderStatisticsRequest.md)| The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/ |
+ **order_statistics_request** | [**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\OrderStatisticsRequest**](../Model/OrderStatisticsRequest.md)| The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/ |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OrderStatisticsResponse**](../Model/OrderStatisticsResponse.md)
+[**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\OrderStatisticsResponse**](../Model/OrderStatisticsResponse.md)
 
 ### Authorization
 

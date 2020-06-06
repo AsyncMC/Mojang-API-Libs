@@ -15,8 +15,8 @@
  * 
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_API_MiscellaneousApi_H_
-#define ORG_OPENAPITOOLS_CLIENT_API_MiscellaneousApi_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_API_MiscellaneousApi_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_API_MiscellaneousApi_H_
 
 
 #include "../ApiClient.h"
@@ -27,12 +27,16 @@
 
 #include <boost/optional.hpp>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
-using namespace org::openapitools::client::model;
+using namespace com::github::asyncmc::mojang::api::cpp::restsdk::model;
 
 
 
@@ -63,6 +67,10 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_API_MiscellaneousApi_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_API_MiscellaneousApi_H_ */
 

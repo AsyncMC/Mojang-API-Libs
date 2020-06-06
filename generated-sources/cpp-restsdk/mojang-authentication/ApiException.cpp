@@ -11,9 +11,13 @@
 
 #include "ApiException.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
 ApiException::ApiException( int errorCode
@@ -47,6 +51,10 @@ std::map<utility::string_t, utility::string_t>& ApiException::getHeaders()
     return m_Headers;
 }
 
+}
+}
+}
+}
 }
 }
 }

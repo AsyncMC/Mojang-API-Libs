@@ -1,22 +1,22 @@
-controllerPackage: org.openapitools.controllers
-modelPackage:  org.openapitools.model
+controllerPackage: com.github.asyncmc.mojang.authentication.java.inflector.server
+modelPackage:  com.github.asyncmc.mojang.authentication.java.inflector.model
 swaggerUrl: ./src/main/swagger/swagger.yaml
 modelMappings:
   # to enable explicit mappings, use this syntax:
   DefinitionFromSwaggerSpecification: fully.qualified.path.to.Model
-  AccessKeys : org.openapitools.model.AccessKeys
-Agent : org.openapitools.model.Agent
-Authentication : org.openapitools.model.Authentication
-AuthenticationRequest : org.openapitools.model.AuthenticationRequest
-Error : org.openapitools.model.Error
-GameProfile : org.openapitools.model.GameProfile
-GameProfileProperty : org.openapitools.model.GameProfileProperty
-PrivateUserData : org.openapitools.model.PrivateUserData
-ProfileId : org.openapitools.model.ProfileId
-ReducedUserData : org.openapitools.model.ReducedUserData
-RefreshRequest : org.openapitools.model.RefreshRequest
-RefreshResponse : org.openapitools.model.RefreshResponse
-UsernamePassword : org.openapitools.model.UsernamePassword
+  AccessKeys : com.github.asyncmc.mojang.authentication.java.inflector.model.AccessKeys
+Agent : com.github.asyncmc.mojang.authentication.java.inflector.model.Agent
+Authentication : com.github.asyncmc.mojang.authentication.java.inflector.model.Authentication
+AuthenticationRequest : com.github.asyncmc.mojang.authentication.java.inflector.model.AuthenticationRequest
+Error : com.github.asyncmc.mojang.authentication.java.inflector.model.Error
+GameProfile : com.github.asyncmc.mojang.authentication.java.inflector.model.GameProfile
+GameProfileProperty : com.github.asyncmc.mojang.authentication.java.inflector.model.GameProfileProperty
+PrivateUserData : com.github.asyncmc.mojang.authentication.java.inflector.model.PrivateUserData
+ProfileId : com.github.asyncmc.mojang.authentication.java.inflector.model.ProfileId
+ReducedUserData : com.github.asyncmc.mojang.authentication.java.inflector.model.ReducedUserData
+RefreshRequest : com.github.asyncmc.mojang.authentication.java.inflector.model.RefreshRequest
+RefreshResponse : com.github.asyncmc.mojang.authentication.java.inflector.model.RefreshResponse
+UsernamePassword : com.github.asyncmc.mojang.authentication.java.inflector.model.UsernamePassword
 
 entityProcessors:
   - json

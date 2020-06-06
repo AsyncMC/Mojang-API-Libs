@@ -18,8 +18,8 @@
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">.\.//Api</directory>
-            <directory suffix=".php">.\.//Model</directory>
+            <directory suffix=".php">.\.//com/github/asyncmc/mojang/authentication/php/symfony/api</directory>
+            <directory suffix=".php">.\.//com/github/asyncmc/mojang/authentication/php/symfony/model</directory>
         </whitelist>
     </filter>
 </phpunit>

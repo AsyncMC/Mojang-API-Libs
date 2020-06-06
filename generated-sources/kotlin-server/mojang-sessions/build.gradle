@@ -1,4 +1,4 @@
-group 'org.openapitools'
+group 'com.github.asyncmc'
 version '1.0.0'
 
 task wrapper(type: Wrapper) {
@@ -50,7 +50,7 @@ kotlin {
 }
 
 shadowJar {
-    baseName = 'kotlin-server'
+    baseName = 'mojang-sessions-kotlin-server'
     classifier = null
     version = null
 }

@@ -26,7 +26,7 @@
 @interface OAIReducedUserData : OAIObject
 
 
-@property(nonatomic) NSURL* _id;
+@property(nonatomic) NSString* _id;
 
 @property(nonatomic) NSArray<OAIGameProfileProperty>* properties;
 

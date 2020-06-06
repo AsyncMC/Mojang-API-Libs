@@ -13,8 +13,13 @@
 
 #include "UsernamePassword.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace model {
 
@@ -72,6 +77,11 @@ void UsernamePassword::setPassword(std::string const& value)
     
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

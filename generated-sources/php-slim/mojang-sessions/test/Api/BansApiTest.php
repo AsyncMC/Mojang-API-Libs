@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Api
+ * @package  com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the endpoint.
  */
-namespace OpenAPIServer\Api;
+namespace com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.api;
 
-use OpenAPIServer\Api\BansApi;
+use com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.api\BansApi;
 
 /**
  * BansApiTest Class Doc Comment
  *
  * @category Class
  * @description BansApi
- * @package  OpenAPIServer\Api
+ * @package  com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\BansApi
+ * @coversDefaultClass \com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\BansApi
  */
 class BansApiTest extends \PHPUnit_Framework_TestCase
 {

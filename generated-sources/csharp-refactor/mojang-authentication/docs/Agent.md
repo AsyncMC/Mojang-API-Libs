@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.Agent
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.refactor.model.Agent
 ## Properties
 
 Name | Type | Description | Notes

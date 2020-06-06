@@ -16,7 +16,7 @@ Get statistics on the sales of Minecraft.
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.MiscellaneousApi;
+//import com.github.asyncmc.mojang.api.android.api.MiscellaneousApi;
 
 MiscellaneousApi apiInstance = new MiscellaneousApi();
 OrderStatisticsRequest orderStatisticsRequest = new OrderStatisticsRequest(); // OrderStatisticsRequest | The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/

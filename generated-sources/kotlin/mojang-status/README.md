@@ -41,7 +41,7 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [org.openapitools.client.models.ApiStatus](docs/ApiStatus.md)
+ - [com.github.asyncmc.mojang.status.kotlin.model.ApiStatus](docs/ApiStatus.md)
 
 
 <a name="documentation-for-authorization"></a>

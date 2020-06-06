@@ -816,6 +816,22 @@ ul.nav-tabs {
   <script>
     // Script section to load models into a JS Var
     var defs = {}
+    defs["ChangeSkinRequest"] = {
+  "required" : [ "url" ],
+  "type" : "object",
+  "properties" : {
+    "model" : {
+      "$ref" : "#/components/schemas/SkinModel"
+    },
+    "url" : {
+      "type" : "string",
+      "description" : "The URL which Mojang servers will download and apply the skin",
+      "format" : "url",
+      "example" : "http://assets.mojang.com/SkinTemplates/steve.png"
+    }
+  },
+  "description" : "Request Mojang to download a skin from an URL and apply to the player"
+};
     defs["CurrentPlayerIDs"] = {
   "required" : [ "id", "name" ],
   "type" : "object",
@@ -858,36 +874,6 @@ ul.nav-tabs {
     }
   },
   "description" : "This is returned when the request fails"
-};
-    defs["inline_object"] = {
-  "required" : [ "file" ],
-  "type" : "object",
-  "properties" : {
-    "model" : {
-      "$ref" : "#/components/schemas/SkinModel"
-    },
-    "file" : {
-      "type" : "string",
-      "description" : "The skin image in PNG format",
-      "format" : "binary"
-    }
-  }
-};
-    defs["inline_object_1"] = {
-  "required" : [ "url" ],
-  "type" : "object",
-  "properties" : {
-    "model" : {
-      "$ref" : "#/components/schemas/SkinModel"
-    },
-    "url" : {
-      "type" : "string",
-      "description" : "The URL which Mojang servers will download and apply the skin",
-      "format" : "url",
-      "example" : "http://assets.mojang.com/SkinTemplates/steve.png"
-    }
-  },
-  "description" : "Request Mojang to download a skin from an URL and apply to the player"
 };
     defs["NameChange"] = {
   "required" : [ "name" ],
@@ -1012,6 +998,20 @@ ul.nav-tabs {
   "description" : "Model is an empty string for the default model (like Steve) and \"slim\" for the slim model (like Alex)",
   "enum" : [ "", "slim" ]
 };
+    defs["UploadSkinRequest"] = {
+  "required" : [ "file" ],
+  "type" : "object",
+  "properties" : {
+    "model" : {
+      "$ref" : "#/components/schemas/SkinModel"
+    },
+    "file" : {
+      "type" : "string",
+      "description" : "The skin image in PNG format",
+      "format" : "binary"
+    }
+  }
+};
 
     var errs = {};
   </script>
@@ -1123,10 +1123,10 @@ ul.nav-tabs {
                             <pre class="prettyprint"><code class="language-bsh">curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Basic [[basicHash]]" "https://api.mojang.com/orders/statistics"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Miscellaneous-getOrdersStatistics-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.MiscellaneousApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.MiscellaneousApi;
 
 import java.io.File;
 import java.util.*;
@@ -1155,7 +1155,7 @@ public class MiscellaneousApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-Miscellaneous-getOrdersStatistics-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.MiscellaneousApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.MiscellaneousApi;
 
 public class MiscellaneousApiExample {
 
@@ -1490,10 +1490,10 @@ $(document).ready(function() {
                             <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://api.mojang.com/profiles/minecraft"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-NameHistory-findUniqueIdsByName-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.NameHistoryApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.NameHistoryApi;
 
 import java.io.File;
 import java.util.*;
@@ -1516,7 +1516,7 @@ public class NameHistoryApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-NameHistory-findUniqueIdsByName-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.NameHistoryApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.NameHistoryApi;
 
 public class NameHistoryApiExample {
 
@@ -1825,10 +1825,10 @@ $(document).ready(function() {
                             <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://api.mojang.com/user/profiles/{stripped_uuid}/names"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-NameHistory-getNameHistory-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.NameHistoryApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.NameHistoryApi;
 
 import java.io.File;
 import java.util.*;
@@ -1851,7 +1851,7 @@ public class NameHistoryApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-NameHistory-getNameHistory-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.NameHistoryApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.NameHistoryApi;
 
 public class NameHistoryApiExample {
 
@@ -2182,10 +2182,10 @@ The player UUID without hyphens
                             <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://api.mojang.com/users/profiles/minecraft/{username}?at="</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-NameHistory-getUniqueIdByName-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.NameHistoryApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.NameHistoryApi;
 
 import java.io.File;
 import java.util.*;
@@ -2209,7 +2209,7 @@ public class NameHistoryApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-NameHistory-getUniqueIdByName-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.NameHistoryApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.NameHistoryApi;
 
 public class NameHistoryApiExample {
 
@@ -2641,10 +2641,10 @@ Find the username in a given time, when 0 selects the original name however, it 
                             <pre class="prettyprint"><code class="language-bsh">curl -X GET -H "Accept: application/json" -H "Authorization: Basic [[basicHash]]" "https://api.mojang.com/user/security/location"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-SecurityQuestionAnswer-checkSecurityStatus-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.SecurityQuestionAnswerApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.SecurityQuestionAnswerApi;
 
 import java.io.File;
 import java.util.*;
@@ -2671,7 +2671,7 @@ public class SecurityQuestionAnswerApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-SecurityQuestionAnswer-checkSecurityStatus-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.SecurityQuestionAnswerApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.SecurityQuestionAnswerApi;
 
 public class SecurityQuestionAnswerApiExample {
 
@@ -2978,10 +2978,10 @@ pub fn main() {
                             <pre class="prettyprint"><code class="language-bsh">curl -X GET -H "Accept: application/json" -H "Authorization: Basic [[basicHash]]" "https://api.mojang.com/user/security/challenges"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-SecurityQuestionAnswer-listPendingSecurityQuestions-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.SecurityQuestionAnswerApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.SecurityQuestionAnswerApi;
 
 import java.io.File;
 import java.util.*;
@@ -3009,7 +3009,7 @@ public class SecurityQuestionAnswerApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-SecurityQuestionAnswer-listPendingSecurityQuestions-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.SecurityQuestionAnswerApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.SecurityQuestionAnswerApi;
 
 public class SecurityQuestionAnswerApiExample {
 
@@ -3302,10 +3302,10 @@ pub fn main() {
                             <pre class="prettyprint"><code class="language-bsh">curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Basic [[basicHash]]" "https://api.mojang.com/user/security/location"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-SecurityQuestionAnswer-sendSecurityQuestionAnswers-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.SecurityQuestionAnswerApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.SecurityQuestionAnswerApi;
 
 import java.io.File;
 import java.util.*;
@@ -3333,7 +3333,7 @@ public class SecurityQuestionAnswerApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-SecurityQuestionAnswer-sendSecurityQuestionAnswers-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.SecurityQuestionAnswerApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.SecurityQuestionAnswerApi;
 
 public class SecurityQuestionAnswerApiExample {
 
@@ -3685,10 +3685,10 @@ $(document).ready(function() {
                             <pre class="prettyprint"><code class="language-bsh">curl -X POST -H "Accept: application/json" -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Basic [[basicHash]]" "https://api.mojang.com/user/profile/{stripped_uuid}/skin"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-SkinOperations-changePlayerSkin-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.SkinOperationsApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.SkinOperationsApi;
 
 import java.io.File;
 import java.util.*;
@@ -3718,7 +3718,7 @@ public class SkinOperationsApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-SkinOperations-changePlayerSkin-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.SkinOperationsApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.SkinOperationsApi;
 
 public class SkinOperationsApiExample {
 
@@ -4134,10 +4134,10 @@ The URL which Mojang servers will download and apply the skin
                             <pre class="prettyprint"><code class="language-bsh">curl -X DELETE -H "Accept: application/json" -H "Authorization: Basic [[basicHash]]" "https://api.mojang.com/user/profile/{stripped_uuid}/skin"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-SkinOperations-resetPlayerSkin-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.SkinOperationsApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.SkinOperationsApi;
 
 import java.io.File;
 import java.util.*;
@@ -4165,7 +4165,7 @@ public class SkinOperationsApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-SkinOperations-resetPlayerSkin-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.SkinOperationsApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.SkinOperationsApi;
 
 public class SkinOperationsApiExample {
 
@@ -4511,10 +4511,10 @@ The player UUID without hyphens
                             <pre class="prettyprint"><code class="language-bsh">curl -X PUT -H "Accept: application/json" -H "Content-Type: multipart/form-data" -H "Authorization: Basic [[basicHash]]" "https://api.mojang.com/user/profile/{stripped_uuid}/skin"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-SkinOperations-uploadPlayerSkin-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.SkinOperationsApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.*;
+import com.github.asyncmc.mojang.api.html2.server.auth.*;
+import com.github.asyncmc.mojang.api.html2.server.model.*;
+import com.github.asyncmc.mojang.api.html2.server.api.SkinOperationsApi;
 
 import java.io.File;
 import java.util.*;
@@ -4544,7 +4544,7 @@ public class SkinOperationsApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-SkinOperations-uploadPlayerSkin-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.SkinOperationsApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.api.html2.server.api.SkinOperationsApi;
 
 public class SkinOperationsApiExample {
 

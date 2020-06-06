@@ -13,9 +13,13 @@
 
 #include "PlayerTexture.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 PlayerTexture::PlayerTexture()
@@ -167,6 +171,10 @@ void PlayerTexture::unsetCAPE()
     m_CAPEIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

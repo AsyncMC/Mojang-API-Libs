@@ -27,13 +27,13 @@ This runs all tests and packages the library.
 
 ## Running
 
-The server builds as a fat jar with a main entrypoint. To start the service, run `java -jar ./build/libs/kotlin-server.jar`.
+The server builds as a fat jar with a main entrypoint. To start the service, run `java -jar ./build/libs/mojang-api-kotlin-server.jar`.
 
 You may also run in docker:
 
 ```
-docker build -t kotlin-server .
-docker run -p 8080:8080 kotlin-server
+docker build -t mojang-api-kotlin-server .
+docker run -p 8080:8080 mojang-api-kotlin-server
 ```
 
 ## Features/Implementation Notes
@@ -64,19 +64,19 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [org.openapitools.server.models.CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
- - [org.openapitools.server.models.Error](docs/Error.md)
- - [org.openapitools.server.models.InlineObject](docs/InlineObject.md)
- - [org.openapitools.server.models.InlineObject1](docs/InlineObject1.md)
- - [org.openapitools.server.models.NameChange](docs/NameChange.md)
- - [org.openapitools.server.models.OrderStatistic](docs/OrderStatistic.md)
- - [org.openapitools.server.models.OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
- - [org.openapitools.server.models.OrderStatisticsResponse](docs/OrderStatisticsResponse.md)
- - [org.openapitools.server.models.SecurityAnswer](docs/SecurityAnswer.md)
- - [org.openapitools.server.models.SecurityAnswerId](docs/SecurityAnswerId.md)
- - [org.openapitools.server.models.SecurityChallenge](docs/SecurityChallenge.md)
- - [org.openapitools.server.models.SecurityQuestion](docs/SecurityQuestion.md)
- - [org.openapitools.server.models.SkinModel](docs/SkinModel.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.ChangeSkinRequest](docs/ChangeSkinRequest.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.Error](docs/Error.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.NameChange](docs/NameChange.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.OrderStatistic](docs/OrderStatistic.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.OrderStatisticsResponse](docs/OrderStatisticsResponse.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.SecurityAnswer](docs/SecurityAnswer.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.SecurityAnswerId](docs/SecurityAnswerId.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.SecurityChallenge](docs/SecurityChallenge.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.SecurityQuestion](docs/SecurityQuestion.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.SkinModel](docs/SkinModel.md)
+ - [com.github.asyncmc.mojang.api.kotlin.server.model.UploadSkinRequest](docs/UploadSkinRequest.md)
 
 
 <a name="documentation-for-authorization"></a>

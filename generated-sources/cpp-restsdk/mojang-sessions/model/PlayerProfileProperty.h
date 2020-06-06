@@ -15,17 +15,21 @@
  * A profile property, may be signed. The values are encoded by base64 and usually contains a json. The schema for the textures are described at PlayerProfileTexturePropertyValue
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_PlayerProfileProperty_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_PlayerProfileProperty_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_SESSIONS_CPP_RESTSDK_MODEL_PlayerProfileProperty_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_SESSIONS_CPP_RESTSDK_MODEL_PlayerProfileProperty_H_
 
 
 #include "../ModelBase.h"
 
 #include <cpprest/details/basic_types.h>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 /// <summary>
@@ -87,5 +91,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_PlayerProfileProperty_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_SESSIONS_CPP_RESTSDK_MODEL_PlayerProfileProperty_H_ */

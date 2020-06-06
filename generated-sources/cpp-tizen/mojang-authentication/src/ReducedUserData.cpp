@@ -57,9 +57,6 @@ ReducedUserData::fromJson(char* jsonStr)
 			jsonToValue(&id, node, "std::string", "");
 		} else {
 			
-			std::string* obj = static_cast<std::string*> (&id);
-			obj->fromJson(json_to_string(node, false));
-			
 		}
 	}
 	const gchar *propertiesKey = "properties";
@@ -103,11 +100,6 @@ ReducedUserData::toJson()
 		node = converttoJson(&obj, "std::string", "");
 	}
 	else {
-		
-		std::string obj = static_cast<std::string> (getId());
-		GError *mygerror;
-		mygerror = NULL;
-		node = json_from_string(obj.toJson(), &mygerror);
 		
 	}
 	const gchar *idKey = "id";

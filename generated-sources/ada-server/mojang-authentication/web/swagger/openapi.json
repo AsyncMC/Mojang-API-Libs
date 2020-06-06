@@ -233,7 +233,7 @@
             "id" : "id"
           },
           "user" : {
-            "id" : "",
+            "id" : "id",
             "properties" : [ {
               "name" : "name",
               "value" : "value"
@@ -292,8 +292,8 @@
           "name" : {
             "type" : "string",
             "description" : "The name of the game",
-            "default" : "Minecraft",
-            "enum" : [ "Minecraft", "Scrolls" ]
+            "enum" : [ "Minecraft", "Scrolls" ],
+            "default" : "Minecraft"
           },
           "version" : {
             "type" : "integer",
@@ -330,7 +330,7 @@
             "paid" : true,
             "id" : "id",
             "migrated" : true,
-            "userId" : "",
+            "userId" : "userId",
             "suspended" : true
           }, {
             "createdAt" : 0,
@@ -341,7 +341,7 @@
             "paid" : true,
             "id" : "id",
             "migrated" : true,
-            "userId" : "",
+            "userId" : "userId",
             "suspended" : true
           } ],
           "selectedProfile" : {
@@ -353,7 +353,7 @@
             "paid" : true,
             "id" : "id",
             "migrated" : true,
-            "userId" : "",
+            "userId" : "userId",
             "suspended" : true
           },
           "user" : {
@@ -382,8 +382,7 @@
         "type" : "object",
         "properties" : {
           "id" : {
-            "type" : "string",
-            "format" : "binary"
+            "type" : "string"
           },
           "properties" : {
             "type" : "array",
@@ -393,7 +392,7 @@
           }
         },
         "example" : {
-          "id" : "",
+          "id" : "id",
           "properties" : [ {
             "name" : "name",
             "value" : "value"
@@ -508,8 +507,7 @@
             "type" : "string"
           },
           "userId" : {
-            "type" : "string",
-            "format" : "binary"
+            "type" : "string"
           },
           "createdAt" : {
             "type" : "integer",
@@ -541,7 +539,7 @@
           "paid" : true,
           "id" : "id",
           "migrated" : true,
-          "userId" : "",
+          "userId" : "userId",
           "suspended" : true
         }
       },

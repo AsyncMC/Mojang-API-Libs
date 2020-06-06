@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.LoginApi
+# Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.refactor.api.LoginApi
 
 All URIs are relative to *https://sessionserver.mojang.com*
 
@@ -19,9 +19,9 @@ This will return the player's username plus any additional information about the
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.refactor.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.refactor.model;
 
 namespace Example
 {

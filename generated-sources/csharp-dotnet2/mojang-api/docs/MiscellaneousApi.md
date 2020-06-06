@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.MiscellaneousApi
+# com.github.asyncmc.mojang.api.csharp.dotnet2.api.MiscellaneousApi
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -17,9 +17,9 @@ Get statistics on the sales of Minecraft.
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using com.github.asyncmc.mojang.api.csharp.dotnet2.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.api.csharp.dotnet2.model;
 
 namespace Example
 {

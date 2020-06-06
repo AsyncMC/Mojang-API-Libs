@@ -181,23 +181,11 @@
           "content" : {
             "multipart/form-data" : {
               "schema" : {
-                "required" : [ "file" ],
-                "type" : "object",
-                "properties" : {
-                  "model" : {
-                    "$ref" : "#/components/schemas/SkinModel"
-                  },
-                  "file" : {
-                    "type" : "string",
-                    "description" : "The skin image in PNG format",
-                    "format" : "binary"
-                  }
-                }
+                "$ref" : "#/components/schemas/UploadSkinRequest"
               }
             }
           },
-          "required" : true,
-          "$ref" : "#/components/requestBodies/inline_object"
+          "required" : true
         },
         "responses" : {
           "204" : {
@@ -242,25 +230,11 @@
           "content" : {
             "application/x-www-form-urlencoded" : {
               "schema" : {
-                "required" : [ "url" ],
-                "type" : "object",
-                "properties" : {
-                  "model" : {
-                    "$ref" : "#/components/schemas/SkinModel"
-                  },
-                  "url" : {
-                    "type" : "string",
-                    "description" : "The URL which Mojang servers will download and apply the skin",
-                    "format" : "url",
-                    "example" : "http://assets.mojang.com/SkinTemplates/steve.png"
-                  }
-                },
-                "description" : "Request Mojang to download a skin from an URL and apply to the player"
+                "$ref" : "#/components/schemas/ChangeSkinRequest"
               }
             }
           },
-          "required" : true,
-          "$ref" : "#/components/requestBodies/inline_object_1"
+          "required" : true
         },
         "responses" : {
           "204" : {
@@ -609,6 +583,36 @@
           "saleVelocityPerSeconds" : 1.46581298050294517310021547018550336360931396484375
         }
       },
+      "UploadSkinRequest" : {
+        "required" : [ "file" ],
+        "type" : "object",
+        "properties" : {
+          "model" : {
+            "$ref" : "#/components/schemas/SkinModel"
+          },
+          "file" : {
+            "type" : "string",
+            "description" : "The skin image in PNG format",
+            "format" : "binary"
+          }
+        }
+      },
+      "ChangeSkinRequest" : {
+        "required" : [ "url" ],
+        "type" : "object",
+        "properties" : {
+          "model" : {
+            "$ref" : "#/components/schemas/SkinModel"
+          },
+          "url" : {
+            "type" : "string",
+            "description" : "The URL which Mojang servers will download and apply the skin",
+            "format" : "url",
+            "example" : "http://assets.mojang.com/SkinTemplates/steve.png"
+          }
+        },
+        "description" : "Request Mojang to download a skin from an URL and apply to the player"
+      },
       "OrderStatisticsRequest" : {
         "required" : [ "metricKeys" ],
         "type" : "object",
@@ -650,56 +654,6 @@
         "example" : {
           "question" : "What is your dream job?",
           "id" : 37
-        }
-      },
-      "inline_object" : {
-        "required" : [ "file" ],
-        "type" : "object",
-        "properties" : {
-          "model" : {
-            "$ref" : "#/components/schemas/SkinModel"
-          },
-          "file" : {
-            "type" : "string",
-            "description" : "The skin image in PNG format",
-            "format" : "binary"
-          }
-        }
-      },
-      "inline_object_1" : {
-        "required" : [ "url" ],
-        "type" : "object",
-        "properties" : {
-          "model" : {
-            "$ref" : "#/components/schemas/SkinModel"
-          },
-          "url" : {
-            "type" : "string",
-            "description" : "The URL which Mojang servers will download and apply the skin",
-            "format" : "url",
-            "example" : "http://assets.mojang.com/SkinTemplates/steve.png"
-          }
-        },
-        "description" : "Request Mojang to download a skin from an URL and apply to the player"
-      }
-    },
-    "requestBodies" : {
-      "inline_object_1" : {
-        "content" : {
-          "application/x-www-form-urlencoded" : {
-            "schema" : {
-              "$ref" : "#/components/schemas/inline_object_1"
-            }
-          }
-        }
-      },
-      "inline_object" : {
-        "content" : {
-          "multipart/form-data" : {
-            "schema" : {
-              "$ref" : "#/components/schemas/inline_object"
-            }
-          }
         }
       }
     },

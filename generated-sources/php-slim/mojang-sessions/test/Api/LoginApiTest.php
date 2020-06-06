@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Api
+ * @package  com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the endpoint.
  */
-namespace OpenAPIServer\Api;
+namespace com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.api;
 
-use OpenAPIServer\Api\LoginApi;
+use com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.api\LoginApi;
 
 /**
  * LoginApiTest Class Doc Comment
  *
  * @category Class
  * @description LoginApi
- * @package  OpenAPIServer\Api
+ * @package  com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\LoginApi
+ * @coversDefaultClass \com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\LoginApi
  */
 class LoginApiTest extends \PHPUnit_Framework_TestCase
 {

@@ -425,7 +425,7 @@ class Decoders {
                 case let .failure(error): break
                 
                 }
-                switch Decoders.decodeOptional(clazz: URL.self, source: sourceDictionary["userId"] as AnyObject?) {
+                switch Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["userId"] as AnyObject?) {
                 
                 case let .success(value): _result.userId = value
                 case let .failure(error): break
@@ -536,7 +536,7 @@ class Decoders {
                 if decoders["\(ReducedUserData.self)"] != nil {
                   _ = Decoders.decode(clazz: ReducedUserData.self, source: source, instance: _result)
                 }
-                switch Decoders.decodeOptional(clazz: URL.self, source: sourceDictionary["id"] as AnyObject?) {
+                switch Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["id"] as AnyObject?) {
                 
                 case let .success(value): _result.id = value
                 case let .failure(error): break
@@ -588,7 +588,7 @@ class Decoders {
         Decoders.addDecoder(clazz: ReducedUserData.self) { (source: AnyObject, instance: AnyObject?) -> Decoded<ReducedUserData> in
             if let sourceDictionary = source as? [AnyHashable: Any] {
                 let _result = instance == nil ? ReducedUserData() : instance as! ReducedUserData
-                switch Decoders.decodeOptional(clazz: URL.self, source: sourceDictionary["id"] as AnyObject?) {
+                switch Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["id"] as AnyObject?) {
                 
                 case let .success(value): _result.id = value
                 case let .failure(error): break

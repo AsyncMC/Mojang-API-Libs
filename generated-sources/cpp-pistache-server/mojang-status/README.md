@@ -44,5 +44,5 @@ cd build
 put it under the model folder
 
 ## Namespaces
-org.openapitools.server.api
-org.openapitools.server.model
+com.github.asyncmc.mojang.status.cpp.pistache.server.api
+com.github.asyncmc.mojang.status.cpp.pistache.server.model

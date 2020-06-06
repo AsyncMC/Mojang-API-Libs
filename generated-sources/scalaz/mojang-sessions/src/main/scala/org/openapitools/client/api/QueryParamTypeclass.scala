@@ -1,4 +1,4 @@
-package org.openapitools.client.api
+package com.github.asyncmc.mojang.sessions.scalaz.api
 
 trait QueryParam[A] {
   def toParamString(a: A): String

@@ -1,4 +1,4 @@
-# OpenAPI\Client\DefaultApi
+# com.github.asyncmc.mojang.authentication.php.server\DefaultApi
 
 All URIs are relative to *https://authserver.mojang.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **authenticate**
-> \OpenAPI\Client\Model\Authentication authenticate($authentication_request)
+> \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\Authentication authenticate($authentication_request)
 
 
 
@@ -21,12 +21,12 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new com.github.asyncmc.mojang.authentication.php.server\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$authentication_request = new \OpenAPI\Client\Model\AuthenticationRequest(); // \OpenAPI\Client\Model\AuthenticationRequest | 
+$authentication_request = new \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\AuthenticationRequest(); // \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\AuthenticationRequest | 
 
 try {
     $result = $apiInstance->authenticate($authentication_request);
@@ -41,11 +41,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authentication_request** | [**\OpenAPI\Client\Model\AuthenticationRequest**](../Model/AuthenticationRequest.md)|  |
+ **authentication_request** | [**\com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\AuthenticationRequest**](../Model/AuthenticationRequest.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Authentication**](../Model/Authentication.md)
+[**\com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\Authentication**](../Model/Authentication.md)
 
 ### Authorization
 
@@ -68,12 +68,12 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new com.github.asyncmc.mojang.authentication.php.server\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$access_keys = new \OpenAPI\Client\Model\AccessKeys(); // \OpenAPI\Client\Model\AccessKeys | 
+$access_keys = new \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\AccessKeys(); // \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\AccessKeys | 
 
 try {
     $apiInstance->invalidate($access_keys);
@@ -87,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **access_keys** | [**\OpenAPI\Client\Model\AccessKeys**](../Model/AccessKeys.md)|  |
+ **access_keys** | [**\com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\AccessKeys**](../Model/AccessKeys.md)|  |
 
 ### Return type
 
@@ -105,7 +105,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **refresh**
-> \OpenAPI\Client\Model\RefreshResponse refresh($refresh_request)
+> \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\RefreshResponse refresh($refresh_request)
 
 
 
@@ -114,12 +114,12 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new com.github.asyncmc.mojang.authentication.php.server\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$refresh_request = new \OpenAPI\Client\Model\RefreshRequest(); // \OpenAPI\Client\Model\RefreshRequest | 
+$refresh_request = new \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\RefreshRequest(); // \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\RefreshRequest | 
 
 try {
     $result = $apiInstance->refresh($refresh_request);
@@ -134,11 +134,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **refresh_request** | [**\OpenAPI\Client\Model\RefreshRequest**](../Model/RefreshRequest.md)|  |
+ **refresh_request** | [**\com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\RefreshRequest**](../Model/RefreshRequest.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RefreshResponse**](../Model/RefreshResponse.md)
+[**\com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\RefreshResponse**](../Model/RefreshResponse.md)
 
 ### Authorization
 
@@ -161,12 +161,12 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new com.github.asyncmc.mojang.authentication.php.server\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$username_password = new \OpenAPI\Client\Model\UsernamePassword(); // \OpenAPI\Client\Model\UsernamePassword | 
+$username_password = new \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\UsernamePassword(); // \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\UsernamePassword | 
 
 try {
     $apiInstance->siginout($username_password);
@@ -180,7 +180,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username_password** | [**\OpenAPI\Client\Model\UsernamePassword**](../Model/UsernamePassword.md)|  |
+ **username_password** | [**\com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\UsernamePassword**](../Model/UsernamePassword.md)|  |
 
 ### Return type
 
@@ -207,12 +207,12 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new OpenAPI\Client\Api\DefaultApi(
+$apiInstance = new com.github.asyncmc.mojang.authentication.php.server\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$access_keys = new \OpenAPI\Client\Model\AccessKeys(); // \OpenAPI\Client\Model\AccessKeys | 
+$access_keys = new \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\AccessKeys(); // \com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\AccessKeys | 
 
 try {
     $apiInstance->validate($access_keys);
@@ -226,7 +226,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **access_keys** | [**\OpenAPI\Client\Model\AccessKeys**](../Model/AccessKeys.md)|  |
+ **access_keys** | [**\com.github.asyncmc.mojang.authentication.php.server\com.github.asyncmc.mojang.authentication.php.model\AccessKeys**](../Model/AccessKeys.md)|  |
 
 ### Return type
 

@@ -89,6 +89,12 @@ instance ApproxEq TI.Day where
 
 -- * Models
  
+instance Arbitrary ChangeSkinRequest where
+  arbitrary =
+    ChangeSkinRequest
+      <$> arbitrary -- changeSkinRequestModel :: Maybe SkinModel
+      <*> arbitrary -- changeSkinRequestUrl :: Text
+    
 instance Arbitrary CurrentPlayerIDs where
   arbitrary =
     CurrentPlayerIDs
@@ -102,18 +108,6 @@ instance Arbitrary Error where
     Error
       <$> arbitrary -- errorError :: Maybe Text
       <*> arbitrary -- errorErrorMessage :: Maybe Text
-    
-instance Arbitrary InlineObject where
-  arbitrary =
-    InlineObject
-      <$> arbitrary -- inlineObjectModel :: Maybe SkinModel
-      <*> arbitrary -- inlineObjectFile :: FilePath
-    
-instance Arbitrary InlineObject1 where
-  arbitrary =
-    InlineObject1
-      <$> arbitrary -- inlineObject1Model :: Maybe SkinModel
-      <*> arbitrary -- inlineObject1Url :: Text
     
 instance Arbitrary NameChange where
   arbitrary =
@@ -154,6 +148,12 @@ instance Arbitrary SecurityQuestion where
     SecurityQuestion
       <$> arbitrary -- securityQuestionId :: Int
       <*> arbitrary -- securityQuestionQuestion :: Text
+    
+instance Arbitrary UploadSkinRequest where
+  arbitrary =
+    UploadSkinRequest
+      <$> arbitrary -- uploadSkinRequestModel :: Maybe SkinModel
+      <*> arbitrary -- uploadSkinRequestFile :: FilePath
     
 
 

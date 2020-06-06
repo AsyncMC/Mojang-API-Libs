@@ -20,7 +20,7 @@ version: 1.0.0
 description: OpenAPI API client
 dependencies:
   openapi:
-    git: https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+    git: https://github.com/AsyncMC/Mojang-API-Libs.git
       version: 'any'
 ```
 
@@ -79,10 +79,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [ChangeSkinRequest](docs\/ChangeSkinRequest.md)
  - [CurrentPlayerIDs](docs\/CurrentPlayerIDs.md)
  - [Error](docs\/Error.md)
- - [InlineObject](docs\/InlineObject.md)
- - [InlineObject1](docs\/InlineObject1.md)
  - [NameChange](docs\/NameChange.md)
  - [OrderStatistic](docs\/OrderStatistic.md)
  - [OrderStatisticsRequest](docs\/OrderStatisticsRequest.md)
@@ -92,6 +91,7 @@ Class | Method | HTTP request | Description
  - [SecurityChallenge](docs\/SecurityChallenge.md)
  - [SecurityQuestion](docs\/SecurityQuestion.md)
  - [SkinModel](docs\/SkinModel.md)
+ - [UploadSkinRequest](docs\/UploadSkinRequest.md)
 
 
 ## Documentation For Authorization

@@ -18,8 +18,8 @@ This will return the player&#39;s username plus any additional information about
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.LoginApi;
+//import com.github.asyncmc.mojang.sessions.java.server.ApiException;
+//import com.github.asyncmc.mojang.sessions.java.api.LoginApi;
 
 
 LoginApi apiInstance = new LoginApi();

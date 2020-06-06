@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Api
+ * @package  com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the endpoint.
  */
-namespace OpenAPIServer\Api;
+namespace com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.api;
 
-use OpenAPIServer\Api\NameHistoryApi;
+use com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.api\NameHistoryApi;
 
 /**
  * NameHistoryApiTest Class Doc Comment
  *
  * @category Class
  * @description NameHistoryApi
- * @package  OpenAPIServer\Api
+ * @package  com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\NameHistoryApi
+ * @coversDefaultClass \com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\NameHistoryApi
  */
 class NameHistoryApiTest extends \PHPUnit_Framework_TestCase
 {

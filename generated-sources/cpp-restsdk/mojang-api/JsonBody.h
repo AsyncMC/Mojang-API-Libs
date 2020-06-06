@@ -15,17 +15,21 @@
  * This is a JSON http body which can be submitted via http
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_JsonBody_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_JsonBody_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_JsonBody_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_JsonBody_H_
 
 
 #include "IHttpBody.h"
 
 #include <cpprest/json.h>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 class  JsonBody
@@ -45,5 +49,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_JsonBody_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_JsonBody_H_ */

@@ -2,10 +2,9 @@ QT += network
 
 HEADERS += \
 # Models
+    $${PWD}/OAIChangeSkinRequest.h \
     $${PWD}/OAICurrentPlayerIDs.h \
     $${PWD}/OAIError.h \
-    $${PWD}/OAIInline_object.h \
-    $${PWD}/OAIInline_object_1.h \
     $${PWD}/OAINameChange.h \
     $${PWD}/OAIOrderStatistic.h \
     $${PWD}/OAIOrderStatisticsRequest.h \
@@ -15,6 +14,7 @@ HEADERS += \
     $${PWD}/OAISecurityChallenge.h \
     $${PWD}/OAISecurityQuestion.h \
     $${PWD}/OAISkinModel.h \
+    $${PWD}/OAIUploadSkinRequest.h \
 # APIs
     $${PWD}/OAIMiscellaneousApi.h \
     $${PWD}/OAINameHistoryApi.h \
@@ -29,10 +29,9 @@ HEADERS += \
 
 SOURCES += \
 # Models
+    $${PWD}/OAIChangeSkinRequest.cpp \
     $${PWD}/OAICurrentPlayerIDs.cpp \
     $${PWD}/OAIError.cpp \
-    $${PWD}/OAIInline_object.cpp \
-    $${PWD}/OAIInline_object_1.cpp \
     $${PWD}/OAINameChange.cpp \
     $${PWD}/OAIOrderStatistic.cpp \
     $${PWD}/OAIOrderStatisticsRequest.cpp \
@@ -42,6 +41,7 @@ SOURCES += \
     $${PWD}/OAISecurityChallenge.cpp \
     $${PWD}/OAISecurityQuestion.cpp \
     $${PWD}/OAISkinModel.cpp \
+    $${PWD}/OAIUploadSkinRequest.cpp \
 # APIs
     $${PWD}/OAIMiscellaneousApi.cpp \
     $${PWD}/OAINameHistoryApi.cpp \

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\DependencyInjection\Compiler
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\DependencyInjection\Compiler
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\DependencyInjection\Compiler;
+namespace com.github.asyncmc.mojang.api.php.symfony.server\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -37,7 +37,7 @@ use Symfony\Component\DependencyInjection\Reference;
  * OpenAPIServerApiPass Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\DependencyInjection\Compiler
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\DependencyInjection\Compiler
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */

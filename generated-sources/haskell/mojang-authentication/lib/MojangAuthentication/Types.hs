@@ -75,7 +75,7 @@ data GameProfile = GameProfile
   { gameProfileAgent :: Text -- ^ 
   , gameProfileId :: Text -- ^ 
   , gameProfileName :: Text -- ^ 
-  , gameProfileUserId :: FilePath -- ^ 
+  , gameProfileUserId :: Text -- ^ 
   , gameProfileCreatedAt :: Integer -- ^ Unix timestamp in milliseconds
   , gameProfileLegacyProfile :: Bool -- ^ 
   , gameProfileSuspended :: Bool -- ^ 
@@ -117,7 +117,7 @@ instance ToJSON ProfileId where
 
 -- | 
 data ReducedUserData = ReducedUserData
-  { reducedUserDataId :: FilePath -- ^ 
+  { reducedUserDataId :: Text -- ^ 
   , reducedUserDataProperties :: [GameProfileProperty] -- ^ 
   } deriving (Show, Eq, Generic)
 

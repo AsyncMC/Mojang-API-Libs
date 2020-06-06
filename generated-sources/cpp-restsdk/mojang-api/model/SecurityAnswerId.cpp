@@ -13,9 +13,13 @@
 
 #include "SecurityAnswerId.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 SecurityAnswerId::SecurityAnswerId()
@@ -79,6 +83,10 @@ void SecurityAnswerId::setId(int32_t value)
     
 }
 
+}
+}
+}
+}
 }
 }
 }

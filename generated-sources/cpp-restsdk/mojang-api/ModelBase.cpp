@@ -11,9 +11,13 @@
 
 #include "ModelBase.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 ModelBase::ModelBase()
@@ -372,6 +376,10 @@ web::json::value ModelBase::valueFromHttpContent(std::shared_ptr<HttpContent> va
     return web::json::value::parse(str);
 }
 
+}
+}
+}
+}
 }
 }
 }

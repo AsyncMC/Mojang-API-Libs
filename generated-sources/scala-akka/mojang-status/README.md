@@ -1,4 +1,4 @@
-# openapi-client
+# mojang-status-scala-akka
 
 Mojang API
 - API version: 2020-06-05
@@ -36,8 +36,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
-  <artifactId>openapi-client</artifactId>
+  <groupId>com.github.asyncmc</groupId>
+  <artifactId>mojang-status-scala-akka</artifactId>
   <version>1.0.0</version>
   <scope>compile</scope>
 </dependency>
@@ -48,13 +48,13 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "org.openapitools:openapi-client:1.0.0"
+compile "com.github.asyncmc:mojang-status-scala-akka:1.0.0"
 ```
 
 ### SBT users
 
 ```scala
-libraryDependencies += "org.openapitools" % "openapi-client" % "1.0.0"
+libraryDependencies += "com.github.asyncmc" % "mojang-status-scala-akka" % "1.0.0"
 ```
 
 ## Getting Started

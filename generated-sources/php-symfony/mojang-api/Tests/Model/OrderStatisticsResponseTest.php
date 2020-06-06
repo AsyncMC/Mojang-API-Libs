@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Tests\Model
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Tests\Model
  * @author   openapi-generator contributors
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Server\Model;
+namespace com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model;
 
 /**
  * OrderStatisticsResponseTest Class Doc Comment
@@ -35,7 +35,7 @@ namespace OpenAPI\Server\Model;
  * @category    Class */
 // * @description A json object is returned with the total amount of copies sold, the amount of copies sold in the last 24h and how many sales there are per second.
 /**
- * @package     OpenAPI\Server\Tests\Model
+ * @package     com.github.asyncmc.mojang.api.php.symfony.server\Tests\Model
  * @author      openapi-generator contributors
  * @link        https://github.com/openapitools/openapi-generator
  */

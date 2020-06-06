@@ -18,12 +18,17 @@
 
 #include "MiscellaneousApi.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::restbed::server::model;
 
 MiscellaneousApi::MiscellaneousApi() {
 	std::shared_ptr<MiscellaneousApiOrdersStatisticsResource> spMiscellaneousApiOrdersStatisticsResource = std::make_shared<MiscellaneousApiOrdersStatisticsResource>();
@@ -93,6 +98,11 @@ void MiscellaneousApiOrdersStatisticsResource::POST_method_handler(const std::sh
 
 
 
+}
+}
+}
+}
+}
 }
 }
 }

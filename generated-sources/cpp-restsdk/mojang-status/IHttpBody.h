@@ -15,15 +15,19 @@
  * This is the interface for contents that can be sent to a remote HTTP server.
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_IHttpBody_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_IHttpBody_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_STATUS_CPP_RESTSDK_MODEL_IHttpBody_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_STATUS_CPP_RESTSDK_MODEL_IHttpBody_H_
 
 
 #include <iostream>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace status {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 class  IHttpBody
@@ -38,5 +42,9 @@ public:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_IHttpBody_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_STATUS_CPP_RESTSDK_MODEL_IHttpBody_H_ */

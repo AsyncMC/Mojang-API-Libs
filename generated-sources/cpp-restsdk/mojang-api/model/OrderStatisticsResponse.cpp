@@ -13,9 +13,13 @@
 
 #include "OrderStatisticsResponse.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 OrderStatisticsResponse::OrderStatisticsResponse()
@@ -111,6 +115,10 @@ void OrderStatisticsResponse::setSaleVelocityPerSeconds(double value)
     
 }
 
+}
+}
+}
+}
 }
 }
 }

@@ -6,10 +6,10 @@
         <version>5</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
-    <artifactId>openapi-inflector-server</artifactId>
+    <groupId>com.github.asyncmc</groupId>
+    <artifactId>mojang-status-java-inflector</artifactId>
     <packaging>jar</packaging>
-    <name>openapi-inflector-server</name>
+    <name>mojang-status-java-inflector</name>
     <version>1.0.0</version>
 
     <licenses>

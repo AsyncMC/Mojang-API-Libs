@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **agent** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
-**user_id** | [***::models::File**](::models::File.md) |  | [optional] 
+**user_id** | **String** |  | [optional] 
 **created_at** | **i64** | Unix timestamp in milliseconds | [optional] 
 **legacy_profile** | **bool** |  | [optional] 
 **suspended** | **bool** |  | [optional] 

@@ -39,14 +39,12 @@ class ApiClient {
           return value is bool ? value : '$value'.toLowerCase() == 'true';
         case 'double':
           return value is double ? value : double.parse('$value');
+        case 'ChangeSkinRequest':
+          return ChangeSkinRequest.fromJson(value);
         case 'CurrentPlayerIDs':
           return CurrentPlayerIDs.fromJson(value);
         case 'Error':
           return Error.fromJson(value);
-        case 'InlineObject':
-          return InlineObject.fromJson(value);
-        case 'InlineObject1':
-          return InlineObject1.fromJson(value);
         case 'NameChange':
           return NameChange.fromJson(value);
         case 'OrderStatistic':
@@ -73,6 +71,8 @@ class ApiClient {
           final listValue = [value];
           final List<dynamic> listResult = dson.map(listValue, []);
           return listResult[0];
+        case 'UploadSkinRequest':
+          return UploadSkinRequest.fromJson(value);
         default:
           {
             Match match;

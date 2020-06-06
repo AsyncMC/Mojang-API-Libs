@@ -33,6 +33,6 @@
         "hoa/regex": "~1.0"
     },
     "autoload": {
-        "psr-4": { "OpenAPI\\Server\\" : "./" }
+        "psr-4": { "com.github.asyncmc.mojang.api.php.symfony.server\\" : "./" }
     }
 }

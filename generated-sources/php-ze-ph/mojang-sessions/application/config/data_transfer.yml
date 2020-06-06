@@ -8,27 +8,27 @@ data_transfer:
       name: blackhole
   strategies:
     invokables:
-      App\Strategy\Date: App\Strategy\Date
-      App\Strategy\DateTime: App\Strategy\DateTime
-      App\Strategy\QueryParameter: App\Strategy\QueryParameter
-      App\Strategy\QueryParameterArray: App\Strategy\QueryParameterArray
+      com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\Date: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\Date
+      com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\DateTime: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\DateTime
+      com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\QueryParameter: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\QueryParameter
+      com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\QueryParameterArray: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\QueryParameterArray
 #    factories:
     aliases:
-      Date: App\Strategy\Date
-      DateTime: App\Strategy\DateTime
-      QueryParameter: App\Strategy\QueryParameter
-      QueryParameterArray: App\Strategy\QueryParameterArray
+      Date: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\Date
+      DateTime: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\DateTime
+      QueryParameter: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\QueryParameter
+      QueryParameterArray: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Strategy\QueryParameterArray
   validators:
     invokables:
-      App\Validator\Type: App\Validator\Type
-      App\Validator\QueryParameterType: App\Validator\QueryParameterType
-      App\Validator\QueryParameterArrayType: App\Validator\QueryParameterArrayType
+      com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator\Type: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator\Type
+      com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator\QueryParameterType: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator\QueryParameterType
+      com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator\QueryParameterArrayType: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator\QueryParameterArrayType
     factories:
       Articus\DataTransfer\Validator\Dictionary: Articus\DataTransfer\Validator\Factory
       Articus\DataTransfer\Validator\Collection: Articus\DataTransfer\Validator\Factory
     aliases:
       Dictionary: Articus\DataTransfer\Validator\Dictionary
       Collection: Articus\DataTransfer\Validator\Collection
-      Type: App\Validator\Type
-      QueryParameterType: App\Validator\QueryParameterType
-      QueryParameterArrayType: App\Validator\QueryParameterArrayType
+      Type: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator\Type
+      QueryParameterType: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator\QueryParameterType
+      QueryParameterArrayType: com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator\QueryParameterArrayType

@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\BansApiInterface
+# com.github.asyncmc.mojang.sessions.php.symfony.server\com.github.asyncmc.mojang.sessions.php.symfony.api\BansApiInterface
 
 All URIs are relative to *https://sessionserver.mojang.com*
 
@@ -33,7 +33,7 @@ Returns a list of SHA1 hashes used to check server addresses against when the cl
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\BansApiInterface;
+use com.github.asyncmc.mojang.sessions.php.symfony.server\com.github.asyncmc.mojang.sessions.php.symfony.api\BansApiInterface;
 
 class BansApi implements BansApiInterface
 {

@@ -11,6 +11,7 @@
 
 
 private_user_data_t *private_user_data_create(
+    char *id,
     list_t *properties
     ) {
 	private_user_data_t *private_user_data = malloc(sizeof(private_user_data_t));
@@ -23,6 +24,7 @@ private_user_data_t *private_user_data_create(
 
 void private_user_data_free(private_user_data_t *private_user_data) {
     listEntry_t *listEntry;
+    free(private_user_data->id);
 		list_ForEach(listEntry, private_user_data->properties) {
 		game_profile_property_free(listEntry->data);
 	}
@@ -34,6 +36,9 @@ void private_user_data_free(private_user_data_t *private_user_data) {
 cJSON *private_user_data_convertToJSON(private_user_data_t *private_user_data) {
 	cJSON *item = cJSON_CreateObject();
 	// private_user_data->id
+    if(cJSON_AddStringToObject(item, "id", private_user_data->id) == NULL) {
+    goto fail; //String
+    }
 
 	// private_user_data->properties
     cJSON *properties = cJSON_AddArrayToObject(item, "properties");
@@ -69,6 +74,10 @@ private_user_data_t *private_user_data_parseFromJSON(char *jsonString){
     }
 
     // private_user_data->id
+    cJSON *id = cJSON_GetObjectItemCaseSensitive(private_user_dataJSON, "id");
+    if(!cJSON_IsString(id) || (id->valuestring == NULL)){
+    goto end; //String
+    }
 
     // private_user_data->properties
     cJSON *properties;
@@ -93,6 +102,7 @@ private_user_data_t *private_user_data_parseFromJSON(char *jsonString){
 
 
     private_user_data = private_user_data_create (
+        strdup(id->valuestring),
         propertiesList
         );
  cJSON_Delete(private_user_dataJSON);

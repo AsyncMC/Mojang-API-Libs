@@ -15,16 +15,20 @@
  * Model is an empty string for the default model (like Steve) and \&quot;slim\&quot; for the slim model (like Alex)
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_SkinModel_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_SkinModel_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_SkinModel_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_SkinModel_H_
 
 
 #include "../ModelBase.h"
 
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 /// <summary>
@@ -59,5 +63,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_SkinModel_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_SkinModel_H_ */

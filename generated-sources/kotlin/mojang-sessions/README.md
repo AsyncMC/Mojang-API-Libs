@@ -42,14 +42,14 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [org.openapitools.client.models.PlayerProfile](docs/PlayerProfile.md)
- - [org.openapitools.client.models.PlayerProfileProperty](docs/PlayerProfileProperty.md)
- - [org.openapitools.client.models.PlayerProfileTexturePropertyValue](docs/PlayerProfileTexturePropertyValue.md)
- - [org.openapitools.client.models.PlayerSkinMetadata](docs/PlayerSkinMetadata.md)
- - [org.openapitools.client.models.PlayerSkinURL](docs/PlayerSkinURL.md)
- - [org.openapitools.client.models.PlayerTexture](docs/PlayerTexture.md)
- - [org.openapitools.client.models.PlayerTextureURL](docs/PlayerTextureURL.md)
- - [org.openapitools.client.models.SessionApiError](docs/SessionApiError.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.model.PlayerProfile](docs/PlayerProfile.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.model.PlayerProfileProperty](docs/PlayerProfileProperty.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.model.PlayerProfileTexturePropertyValue](docs/PlayerProfileTexturePropertyValue.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.model.PlayerSkinMetadata](docs/PlayerSkinMetadata.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.model.PlayerSkinURL](docs/PlayerSkinURL.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.model.PlayerTexture](docs/PlayerTexture.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.model.PlayerTextureURL](docs/PlayerTextureURL.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.model.SessionApiError](docs/SessionApiError.md)
 
 
 <a name="documentation-for-authorization"></a>

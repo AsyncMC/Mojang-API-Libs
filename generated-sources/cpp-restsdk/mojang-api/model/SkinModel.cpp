@@ -13,9 +13,13 @@
 
 #include "SkinModel.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 SkinModel::SkinModel()
@@ -63,6 +67,10 @@ void SkinModel::fromMultiPart(std::shared_ptr<MultipartFormData> multipart, cons
 
 }
 
+}
+}
+}
+}
 }
 }
 }

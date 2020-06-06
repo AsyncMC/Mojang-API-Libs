@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.NameChange
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.model.NameChange
 ## Properties
 
 Name | Type | Description | Notes

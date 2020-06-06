@@ -4,17 +4,17 @@
 ## Enum
 
 
-    * `itemSoldMinecraft` (value: `"item_sold_minecraft"`)
+    * `ITEM_SOLD_MINECRAFT` (value: `"item_sold_minecraft"`)
 
-    * `prepaidCardRedeemedMinecraft` (value: `"prepaid_card_redeemed_minecraft"`)
+    * `PREPAID_CARD_REDEEMED_MINECRAFT` (value: `"prepaid_card_redeemed_minecraft"`)
 
-    * `itemSoldCobalt` (value: `"item_sold_cobalt"`)
+    * `ITEM_SOLD_COBALT` (value: `"item_sold_cobalt"`)
 
-    * `itemSoldScrolls` (value: `"item_sold_scrolls"`)
+    * `ITEM_SOLD_SCROLLS` (value: `"item_sold_scrolls"`)
 
-    * `prepaidCardRedeemedCobalt` (value: `"prepaid_card_redeemed_cobalt"`)
+    * `PREPAID_CARD_REDEEMED_COBALT` (value: `"prepaid_card_redeemed_cobalt"`)
 
-    * `itemSoldDungeons` (value: `"item_sold_dungeons"`)
+    * `ITEM_SOLD_DUNGEONS` (value: `"item_sold_dungeons"`)
 
 
 

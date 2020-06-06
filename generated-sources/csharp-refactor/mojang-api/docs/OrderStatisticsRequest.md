@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.OrderStatisticsRequest
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.model.OrderStatisticsRequest
 ## Properties
 
 Name | Type | Description | Notes

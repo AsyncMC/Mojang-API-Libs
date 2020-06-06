@@ -79,10 +79,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [OASChangeSkinRequest](OASChangeSkinRequest.md)
  - [OASCurrentPlayerIDs](OASCurrentPlayerIDs.md)
  - [OASError](OASError.md)
- - [OASInlineObject](OASInlineObject.md)
- - [OASInlineObject1](OASInlineObject1.md)
  - [OASNameChange](OASNameChange.md)
  - [OASOrderStatistic](OASOrderStatistic.md)
  - [OASOrderStatisticsRequest](OASOrderStatisticsRequest.md)
@@ -92,6 +91,7 @@ Class | Method | HTTP request | Description
  - [OASSecurityChallenge](OASSecurityChallenge.md)
  - [OASSecurityQuestion](OASSecurityQuestion.md)
  - [OASSkinModel](OASSkinModel.md)
+ - [OASUploadSkinRequest](OASUploadSkinRequest.md)
 
 
 ## Documentation for Authorization

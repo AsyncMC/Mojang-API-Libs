@@ -1,5 +1,5 @@
 <?php
-namespace App\Validator;
+namespace com.github.asyncmc.mojang.authentication.php.ze.ph.server\Validator;
 
 use App\Strategy\QueryParameterArray;
 

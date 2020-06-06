@@ -13,9 +13,13 @@
 
 #include "Authentication.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 Authentication::Authentication()
@@ -75,6 +79,10 @@ void Authentication::fromMultiPart(std::shared_ptr<MultipartFormData> multipart,
     }
 }
 
+}
+}
+}
+}
 }
 }
 }

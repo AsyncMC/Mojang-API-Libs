@@ -242,7 +242,7 @@ data GameProfile = GameProfile
   { gameProfileAgent :: !(Maybe Text) -- ^ "agent"
   , gameProfileId :: !(Maybe Text) -- ^ "id"
   , gameProfileName :: !(Maybe Text) -- ^ "name"
-  , gameProfileUserId :: !(Maybe FilePath) -- ^ "userId"
+  , gameProfileUserId :: !(Maybe Text) -- ^ "userId"
   , gameProfileCreatedAt :: !(Maybe Integer) -- ^ "createdAt" - Unix timestamp in milliseconds
   , gameProfileLegacyProfile :: !(Maybe Bool) -- ^ "legacyProfile"
   , gameProfileSuspended :: !(Maybe Bool) -- ^ "suspended"
@@ -335,7 +335,7 @@ mkGameProfileProperty =
 -- ** PrivateUserData
 -- | PrivateUserData
 data PrivateUserData = PrivateUserData
-  { privateUserDataId :: !(Maybe FilePath) -- ^ "id"
+  { privateUserDataId :: !(Maybe Text) -- ^ "id"
   , privateUserDataProperties :: !(Maybe [GameProfileProperty]) -- ^ "properties"
   } deriving (P.Show, P.Eq, P.Typeable)
 
@@ -401,7 +401,7 @@ mkProfileId profileIdId profileIdName =
 -- ** ReducedUserData
 -- | ReducedUserData
 data ReducedUserData = ReducedUserData
-  { reducedUserDataId :: !(Maybe FilePath) -- ^ "id"
+  { reducedUserDataId :: !(Maybe Text) -- ^ "id"
   , reducedUserDataProperties :: !(Maybe [GameProfileProperty]) -- ^ "properties"
   } deriving (P.Show, P.Eq, P.Typeable)
 

@@ -58,7 +58,7 @@ $Manifest = @{
     Description = 'Org.OpenAPITools - the PowerShell module for Mojang API'
 
     RootModule = 'Org.OpenAPITools.psm1'
-    Guid = '{5EB6FD7D-B4F0-4928-85D5-5443F63E43E3}' # Has to be static, otherwise each new build will be considered different module
+    Guid = '{6255C02E-57AE-4514-9590-E5531C11CFA9}' # Has to be static, otherwise each new build will be considered different module
 
     PowerShellVersion = '3.0'
 

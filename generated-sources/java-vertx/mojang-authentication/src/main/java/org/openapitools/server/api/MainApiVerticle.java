@@ -66,7 +66,7 @@ public class MainApiVerticle extends AbstractVerticle {
       
     public void deployVerticles(Future<Void> startFuture) {
         
-        vertx.deployVerticle("org.openapitools.server.api.verticle.DefaultApiVerticle", res -> {
+        vertx.deployVerticle("com.github.asyncmc.mojang.authentication.java.vertx.api.DefaultApiVerticle", res -> {
             if (res.succeeded()) {
                 LOGGER.info("DefaultApiVerticle : Deployed");
             } else {

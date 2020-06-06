@@ -18,7 +18,7 @@ The SDK requires [**ARC (Automatic Reference Counting)**](http://stackoverflow.c
 Add the following to the Podfile:
 
 ```ruby
-pod 'OpenAPIClient', :git => 'https://github.com/GIT_USER_ID/GIT_REPO_ID.git'
+pod 'OpenAPIClient', :git => 'https://github.com/AsyncMC/Mojang-API-Libs.git'
 ```
 
 To specify a particular branch, append `, :branch => 'branch-name-here'`
@@ -41,10 +41,9 @@ Import the following:
 #import <OpenAPIClient/OAIApiClient.h>
 #import <OpenAPIClient/OAIDefaultConfiguration.h>
 // load models
+#import <OpenAPIClient/OAIChangeSkinRequest.h>
 #import <OpenAPIClient/OAICurrentPlayerIDs.h>
 #import <OpenAPIClient/OAIError.h>
-#import <OpenAPIClient/OAIInlineObject.h>
-#import <OpenAPIClient/OAIInlineObject1.h>
 #import <OpenAPIClient/OAINameChange.h>
 #import <OpenAPIClient/OAIOrderStatistic.h>
 #import <OpenAPIClient/OAIOrderStatisticsRequest.h>
@@ -54,6 +53,7 @@ Import the following:
 #import <OpenAPIClient/OAISecurityChallenge.h>
 #import <OpenAPIClient/OAISecurityQuestion.h>
 #import <OpenAPIClient/OAISkinModel.h>
+#import <OpenAPIClient/OAIUploadSkinRequest.h>
 // load API classes for accessing endpoints
 #import <OpenAPIClient/OAIMiscellaneousApi.h>
 #import <OpenAPIClient/OAINameHistoryApi.h>
@@ -115,10 +115,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [OAIChangeSkinRequest](docs/OAIChangeSkinRequest.md)
  - [OAICurrentPlayerIDs](docs/OAICurrentPlayerIDs.md)
  - [OAIError](docs/OAIError.md)
- - [OAIInlineObject](docs/OAIInlineObject.md)
- - [OAIInlineObject1](docs/OAIInlineObject1.md)
  - [OAINameChange](docs/OAINameChange.md)
  - [OAIOrderStatistic](docs/OAIOrderStatistic.md)
  - [OAIOrderStatisticsRequest](docs/OAIOrderStatisticsRequest.md)
@@ -128,6 +127,7 @@ Class | Method | HTTP request | Description
  - [OAISecurityChallenge](docs/OAISecurityChallenge.md)
  - [OAISecurityQuestion](docs/OAISecurityQuestion.md)
  - [OAISkinModel](docs/OAISkinModel.md)
+ - [OAIUploadSkinRequest](docs/OAIUploadSkinRequest.md)
 
 
 ## Documentation For Authorization

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer
+ * @package  com.github.asyncmc.mojang.authentication.php.slim.server
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -23,9 +23,9 @@
  * https://github.com/openapitools/openapi-generator
  * Do not edit the class manually.
  */
-namespace OpenAPIServer;
+namespace com.github.asyncmc.mojang.authentication.php.slim.server;
 
-use OpenAPIServer\Api\DefaultApi;
+use com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.api\DefaultApi;
 use Slim\App;
 use Psr\Container\ContainerInterface;
 use InvalidArgumentException;
@@ -37,7 +37,7 @@ use Tuupola\Middleware\HttpBasicAuthentication;
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Api
+ * @package  com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */

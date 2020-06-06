@@ -16,12 +16,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CurrentPlayerIDs', 'model/Error', 'model/InlineObject', 'model/InlineObject1', 'model/NameChange', 'model/OrderStatistic', 'model/OrderStatisticsRequest', 'model/OrderStatisticsResponse', 'model/SecurityAnswer', 'model/SecurityAnswerId', 'model/SecurityChallenge', 'model/SecurityQuestion', 'model/SkinModel', 'api/MiscellaneousApi', 'api/NameHistoryApi', 'api/SecurityQuestionAnswerApi', 'api/SkinOperationsApi'], factory);
+    define(['com.github.asyncmc.mojang.api.javascript.server/ApiClient', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/ChangeSkinRequest', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/CurrentPlayerIDs', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/Error', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/NameChange', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/OrderStatistic', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/OrderStatisticsRequest', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/OrderStatisticsResponse', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SecurityAnswer', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SecurityAnswerId', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SecurityChallenge', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SecurityQuestion', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SkinModel', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/UploadSkinRequest', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.api/MiscellaneousApi', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.api/NameHistoryApi', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.api/SecurityQuestionAnswerApi', 'com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.api/SkinOperationsApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/CurrentPlayerIDs'), require('./model/Error'), require('./model/InlineObject'), require('./model/InlineObject1'), require('./model/NameChange'), require('./model/OrderStatistic'), require('./model/OrderStatisticsRequest'), require('./model/OrderStatisticsResponse'), require('./model/SecurityAnswer'), require('./model/SecurityAnswerId'), require('./model/SecurityChallenge'), require('./model/SecurityQuestion'), require('./model/SkinModel'), require('./api/MiscellaneousApi'), require('./api/NameHistoryApi'), require('./api/SecurityQuestionAnswerApi'), require('./api/SkinOperationsApi'));
+    module.exports = factory(require('./ApiClient'), require('./com.github.asyncmc.mojang.api.javascript.model/ChangeSkinRequest'), require('./com.github.asyncmc.mojang.api.javascript.model/CurrentPlayerIDs'), require('./com.github.asyncmc.mojang.api.javascript.model/Error'), require('./com.github.asyncmc.mojang.api.javascript.model/NameChange'), require('./com.github.asyncmc.mojang.api.javascript.model/OrderStatistic'), require('./com.github.asyncmc.mojang.api.javascript.model/OrderStatisticsRequest'), require('./com.github.asyncmc.mojang.api.javascript.model/OrderStatisticsResponse'), require('./com.github.asyncmc.mojang.api.javascript.model/SecurityAnswer'), require('./com.github.asyncmc.mojang.api.javascript.model/SecurityAnswerId'), require('./com.github.asyncmc.mojang.api.javascript.model/SecurityChallenge'), require('./com.github.asyncmc.mojang.api.javascript.model/SecurityQuestion'), require('./com.github.asyncmc.mojang.api.javascript.model/SkinModel'), require('./com.github.asyncmc.mojang.api.javascript.model/UploadSkinRequest'), require('./com.github.asyncmc.mojang.api.javascript.api/MiscellaneousApi'), require('./com.github.asyncmc.mojang.api.javascript.api/NameHistoryApi'), require('./com.github.asyncmc.mojang.api.javascript.api/SecurityQuestionAnswerApi'), require('./com.github.asyncmc.mojang.api.javascript.api/SkinOperationsApi'));
   }
-}(function(ApiClient, CurrentPlayerIDs, Error, InlineObject, InlineObject1, NameChange, OrderStatistic, OrderStatisticsRequest, OrderStatisticsResponse, SecurityAnswer, SecurityAnswerId, SecurityChallenge, SecurityQuestion, SkinModel, MiscellaneousApi, NameHistoryApi, SecurityQuestionAnswerApi, SkinOperationsApi) {
+}(function(ApiClient, ChangeSkinRequest, CurrentPlayerIDs, Error, NameChange, OrderStatistic, OrderStatisticsRequest, OrderStatisticsResponse, SecurityAnswer, SecurityAnswerId, SecurityChallenge, SecurityQuestion, SkinModel, UploadSkinRequest, MiscellaneousApi, NameHistoryApi, SecurityQuestionAnswerApi, SkinOperationsApi) {
   'use strict';
 
   /**
@@ -30,7 +30,7 @@
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var MojangApi = require('index'); // See note below*.
+   * var MojangApi = require('com.github.asyncmc.mojang.api.javascript.server/index'); // See note below*.
    * var xxxSvc = new MojangApi.XxxApi(); // Allocate the API class we're going to use.
    * var yyyModel = new MojangApi.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
@@ -38,7 +38,7 @@
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
    * ...
    * </pre>
-   * <em>*NOTE: For a top-level AMD script, use require(['index'], function(){...})
+   * <em>*NOTE: For a top-level AMD script, use require(['com.github.asyncmc.mojang.api.javascript.server/index'], function(){...})
    * and put the application logic within the callback function.</em>
    * </p>
    * <p>
@@ -52,98 +52,98 @@
    * ...
    * </pre>
    * </p>
-   * @module index
+   * @module com.github.asyncmc.mojang.api.javascript.server/index
    * @version 2020-06-05
    */
   var exports = {
     /**
      * The ApiClient constructor.
-     * @property {module:ApiClient}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/ApiClient}
      */
     ApiClient: ApiClient,
     /**
+     * The ChangeSkinRequest model constructor.
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/ChangeSkinRequest}
+     */
+    ChangeSkinRequest: ChangeSkinRequest,
+    /**
      * The CurrentPlayerIDs model constructor.
-     * @property {module:model/CurrentPlayerIDs}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/CurrentPlayerIDs}
      */
     CurrentPlayerIDs: CurrentPlayerIDs,
     /**
      * The Error model constructor.
-     * @property {module:model/Error}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/Error}
      */
     Error: Error,
     /**
-     * The InlineObject model constructor.
-     * @property {module:model/InlineObject}
-     */
-    InlineObject: InlineObject,
-    /**
-     * The InlineObject1 model constructor.
-     * @property {module:model/InlineObject1}
-     */
-    InlineObject1: InlineObject1,
-    /**
      * The NameChange model constructor.
-     * @property {module:model/NameChange}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/NameChange}
      */
     NameChange: NameChange,
     /**
      * The OrderStatistic model constructor.
-     * @property {module:model/OrderStatistic}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/OrderStatistic}
      */
     OrderStatistic: OrderStatistic,
     /**
      * The OrderStatisticsRequest model constructor.
-     * @property {module:model/OrderStatisticsRequest}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/OrderStatisticsRequest}
      */
     OrderStatisticsRequest: OrderStatisticsRequest,
     /**
      * The OrderStatisticsResponse model constructor.
-     * @property {module:model/OrderStatisticsResponse}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/OrderStatisticsResponse}
      */
     OrderStatisticsResponse: OrderStatisticsResponse,
     /**
      * The SecurityAnswer model constructor.
-     * @property {module:model/SecurityAnswer}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SecurityAnswer}
      */
     SecurityAnswer: SecurityAnswer,
     /**
      * The SecurityAnswerId model constructor.
-     * @property {module:model/SecurityAnswerId}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SecurityAnswerId}
      */
     SecurityAnswerId: SecurityAnswerId,
     /**
      * The SecurityChallenge model constructor.
-     * @property {module:model/SecurityChallenge}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SecurityChallenge}
      */
     SecurityChallenge: SecurityChallenge,
     /**
      * The SecurityQuestion model constructor.
-     * @property {module:model/SecurityQuestion}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SecurityQuestion}
      */
     SecurityQuestion: SecurityQuestion,
     /**
      * The SkinModel model constructor.
-     * @property {module:model/SkinModel}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/SkinModel}
      */
     SkinModel: SkinModel,
     /**
+     * The UploadSkinRequest model constructor.
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.model/UploadSkinRequest}
+     */
+    UploadSkinRequest: UploadSkinRequest,
+    /**
      * The MiscellaneousApi service constructor.
-     * @property {module:api/MiscellaneousApi}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.api/MiscellaneousApi}
      */
     MiscellaneousApi: MiscellaneousApi,
     /**
      * The NameHistoryApi service constructor.
-     * @property {module:api/NameHistoryApi}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.api/NameHistoryApi}
      */
     NameHistoryApi: NameHistoryApi,
     /**
      * The SecurityQuestionAnswerApi service constructor.
-     * @property {module:api/SecurityQuestionAnswerApi}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.api/SecurityQuestionAnswerApi}
      */
     SecurityQuestionAnswerApi: SecurityQuestionAnswerApi,
     /**
      * The SkinOperationsApi service constructor.
-     * @property {module:api/SkinOperationsApi}
+     * @property {module:com.github.asyncmc.mojang.api.javascript.server/com.github.asyncmc.mojang.api.javascript.api/SkinOperationsApi}
      */
     SkinOperationsApi: SkinOperationsApi
   };

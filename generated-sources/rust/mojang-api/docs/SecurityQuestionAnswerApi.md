@@ -1,4 +1,4 @@
-# \SecurityQuestionAnswerApi
+# com.github.asyncmc.mojang.api.rust.server\SecurityQuestionAnswerApi
 
 All URIs are relative to *https://api.mojang.com*
 

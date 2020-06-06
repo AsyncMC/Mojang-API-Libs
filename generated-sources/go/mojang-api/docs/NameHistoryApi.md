@@ -1,4 +1,4 @@
-# \NameHistoryApi
+# com.github.asyncmc.mojang.api.go.server\NameHistoryApi
 
 All URIs are relative to *https://api.mojang.com*
 

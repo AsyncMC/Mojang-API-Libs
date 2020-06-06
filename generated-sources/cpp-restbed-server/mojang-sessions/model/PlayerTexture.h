@@ -25,8 +25,13 @@
 #include "PlayerTextureURL.h"
 #include <memory>
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace model {
 
@@ -61,6 +66,11 @@ protected:
     std::shared_ptr<PlayerTextureURL> m_CAPE;
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

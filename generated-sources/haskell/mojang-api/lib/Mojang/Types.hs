@@ -3,10 +3,9 @@
 {-# OPTIONS_GHC -fno-warn-unused-binds -fno-warn-unused-imports #-}
 
 module Mojang.Types (
+  ChangeSkinRequest (..),
   CurrentPlayerIDs (..),
   Error (..),
-  Inline_object (..),
-  Inline_object_1 (..),
   NameChange (..),
   OrderStatistic (..),
   OrderStatisticsRequest (..),
@@ -16,6 +15,7 @@ module Mojang.Types (
   SecurityChallenge (..),
   SecurityQuestion (..),
   SkinModel (..),
+  UploadSkinRequest (..),
   ) where
 
 import Data.List (stripPrefix)
@@ -28,6 +28,17 @@ import qualified Data.Map as Map
 import GHC.Generics (Generic)
 import Data.Function ((&))
 
+
+-- | Request Mojang to download a skin from an URL and apply to the player
+data ChangeSkinRequest = ChangeSkinRequest
+  { changeSkinRequestModel :: SkinModel -- ^ 
+  , changeSkinRequestUrl :: Text -- ^ The URL which Mojang servers will download and apply the skin
+  } deriving (Show, Eq, Generic)
+
+instance FromJSON ChangeSkinRequest where
+  parseJSON = genericParseJSON (removeFieldLabelPrefix True "changeSkinRequest")
+instance ToJSON ChangeSkinRequest where
+  toJSON = genericToJSON (removeFieldLabelPrefix False "changeSkinRequest")
 
 -- | The current player, demo and legacy status of a player identified by the id
 data CurrentPlayerIDs = CurrentPlayerIDs
@@ -52,28 +63,6 @@ instance FromJSON Error where
   parseJSON = genericParseJSON (removeFieldLabelPrefix True "error")
 instance ToJSON Error where
   toJSON = genericToJSON (removeFieldLabelPrefix False "error")
-
--- | 
-data Inline_object = Inline_object
-  { inlineObjectModel :: SkinModel -- ^ 
-  , inlineObjectFile :: FilePath -- ^ The skin image in PNG format
-  } deriving (Show, Eq, Generic)
-
-instance FromJSON Inline_object where
-  parseJSON = genericParseJSON (removeFieldLabelPrefix True "inlineObject")
-instance ToJSON Inline_object where
-  toJSON = genericToJSON (removeFieldLabelPrefix False "inlineObject")
-
--- | Request Mojang to download a skin from an URL and apply to the player
-data Inline_object_1 = Inline_object_1
-  { inlineObject1Model :: SkinModel -- ^ 
-  , inlineObject1Url :: Text -- ^ The URL which Mojang servers will download and apply the skin
-  } deriving (Show, Eq, Generic)
-
-instance FromJSON Inline_object_1 where
-  parseJSON = genericParseJSON (removeFieldLabelPrefix True "inlineObject1")
-instance ToJSON Inline_object_1 where
-  toJSON = genericToJSON (removeFieldLabelPrefix False "inlineObject1")
 
 -- | A registered name change.
 data NameChange = NameChange
@@ -163,6 +152,17 @@ instance FromJSON SkinModel where
   parseJSON = genericParseJSON (removeFieldLabelPrefix True "skinModel")
 instance ToJSON SkinModel where
   toJSON = genericToJSON (removeFieldLabelPrefix False "skinModel")
+
+-- | 
+data UploadSkinRequest = UploadSkinRequest
+  { uploadSkinRequestModel :: SkinModel -- ^ 
+  , uploadSkinRequestFile :: FilePath -- ^ The skin image in PNG format
+  } deriving (Show, Eq, Generic)
+
+instance FromJSON UploadSkinRequest where
+  parseJSON = genericParseJSON (removeFieldLabelPrefix True "uploadSkinRequest")
+instance ToJSON UploadSkinRequest where
+  toJSON = genericToJSON (removeFieldLabelPrefix False "uploadSkinRequest")
 
 -- Remove a field label prefix during JSON parsing.
 -- Also perform any replacements for special characters.

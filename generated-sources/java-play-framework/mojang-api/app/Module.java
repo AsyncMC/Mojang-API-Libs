@@ -1,6 +1,6 @@
 import com.google.inject.AbstractModule;
 
-import controllers.*;
+import com.github.asyncmc.mojang.api.java.play.framework.api.*;
 
 public class Module extends AbstractModule {
 

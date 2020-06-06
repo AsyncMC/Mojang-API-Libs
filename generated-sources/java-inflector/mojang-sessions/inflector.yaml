@@ -1,17 +1,17 @@
-controllerPackage: org.openapitools.controllers
-modelPackage:  org.openapitools.model
+controllerPackage: com.github.asyncmc.mojang.sessions.java.inflector.server
+modelPackage:  com.github.asyncmc.mojang.sessions.java.inflector.model
 swaggerUrl: ./src/main/swagger/swagger.yaml
 modelMappings:
   # to enable explicit mappings, use this syntax:
   DefinitionFromSwaggerSpecification: fully.qualified.path.to.Model
-  PlayerProfile : org.openapitools.model.PlayerProfile
-PlayerProfileProperty : org.openapitools.model.PlayerProfileProperty
-PlayerProfileTexturePropertyValue : org.openapitools.model.PlayerProfileTexturePropertyValue
-PlayerSkinMetadata : org.openapitools.model.PlayerSkinMetadata
-PlayerSkinURL : org.openapitools.model.PlayerSkinURL
-PlayerTexture : org.openapitools.model.PlayerTexture
-PlayerTextureURL : org.openapitools.model.PlayerTextureURL
-SessionApiError : org.openapitools.model.SessionApiError
+  PlayerProfile : com.github.asyncmc.mojang.sessions.java.inflector.model.PlayerProfile
+PlayerProfileProperty : com.github.asyncmc.mojang.sessions.java.inflector.model.PlayerProfileProperty
+PlayerProfileTexturePropertyValue : com.github.asyncmc.mojang.sessions.java.inflector.model.PlayerProfileTexturePropertyValue
+PlayerSkinMetadata : com.github.asyncmc.mojang.sessions.java.inflector.model.PlayerSkinMetadata
+PlayerSkinURL : com.github.asyncmc.mojang.sessions.java.inflector.model.PlayerSkinURL
+PlayerTexture : com.github.asyncmc.mojang.sessions.java.inflector.model.PlayerTexture
+PlayerTextureURL : com.github.asyncmc.mojang.sessions.java.inflector.model.PlayerTextureURL
+SessionApiError : com.github.asyncmc.mojang.sessions.java.inflector.model.SessionApiError
 
 entityProcessors:
   - json

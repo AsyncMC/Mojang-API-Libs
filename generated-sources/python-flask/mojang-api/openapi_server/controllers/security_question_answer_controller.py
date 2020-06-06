@@ -1,9 +1,9 @@
 import connexion
 import six
 
-from openapi_server.models.error import Error  # noqa: E501
-from openapi_server.models.security_answer import SecurityAnswer  # noqa: E501
-from openapi_server.models.security_challenge import SecurityChallenge  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.api.python.flask.model.error import Error  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.api.python.flask.model.security_answer import SecurityAnswer  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.api.python.flask.model.security_challenge import SecurityChallenge  # noqa: E501
 from openapi_server import util
 
 

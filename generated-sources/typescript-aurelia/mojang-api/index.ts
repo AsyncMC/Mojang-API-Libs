@@ -17,9 +17,8 @@ export { NameHistoryApi } from './NameHistoryApi';
 export { SecurityQuestionAnswerApi } from './SecurityQuestionAnswerApi';
 export { SkinOperationsApi } from './SkinOperationsApi';
 export {
+  ChangeSkinRequest,
   CurrentPlayerIDs,
-  InlineObject,
-  InlineObject1,
   ModelError,
   NameChange,
   OrderStatistic,
@@ -30,4 +29,5 @@ export {
   SecurityChallenge,
   SecurityQuestion,
   SkinModel,
+  UploadSkinRequest,
 } from './models';

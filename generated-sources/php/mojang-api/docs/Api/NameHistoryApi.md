@@ -1,4 +1,4 @@
-# OpenAPI\Client\NameHistoryApi
+# com.github.asyncmc.mojang.api.php.server\NameHistoryApi
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **findUniqueIdsByName**
-> \OpenAPI\Client\Model\CurrentPlayerIDs[] findUniqueIdsByName($request_body)
+> \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\CurrentPlayerIDs[] findUniqueIdsByName($request_body)
 
 Find the current UUID of multiple players at once
 
@@ -21,7 +21,7 @@ Find the current players name, UUID, demo status and migration flag by the curre
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new OpenAPI\Client\Api\NameHistoryApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\NameHistoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CurrentPlayerIDs[]**](../Model/CurrentPlayerIDs.md)
+[**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\CurrentPlayerIDs[]**](../Model/CurrentPlayerIDs.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getNameHistory**
-> \OpenAPI\Client\Model\NameChange[] getNameHistory($stripped_uuid)
+> \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\NameChange[] getNameHistory($stripped_uuid)
 
 Gets the full player's name history
 
@@ -68,7 +68,7 @@ Gets the full player's name history
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new OpenAPI\Client\Api\NameHistoryApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\NameHistoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\NameChange[]**](../Model/NameChange.md)
+[**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\NameChange[]**](../Model/NameChange.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniqueIdByName**
-> \OpenAPI\Client\Model\CurrentPlayerIDs getUniqueIdByName($username, $at)
+> \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\CurrentPlayerIDs getUniqueIdByName($username, $at)
 
 Find the UUID by name
 
@@ -117,7 +117,7 @@ Find the current player name, UUID, demo status and migration flag by the curren
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new OpenAPI\Client\Api\NameHistoryApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\NameHistoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CurrentPlayerIDs**](../Model/CurrentPlayerIDs.md)
+[**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\CurrentPlayerIDs**](../Model/CurrentPlayerIDs.md)
 
 ### Authorization
 

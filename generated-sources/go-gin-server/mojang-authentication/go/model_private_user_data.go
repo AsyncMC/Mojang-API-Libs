@@ -9,13 +9,9 @@
 
 package openapi
 
-import (
-	"os"
-)
-
 type PrivateUserData struct {
 
-	Id **os.File `json:"id,omitempty"`
+	Id string `json:"id,omitempty"`
 
 	Properties []GameProfileProperty `json:"properties,omitempty"`
 }

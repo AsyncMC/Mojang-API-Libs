@@ -11,6 +11,17 @@
  */
 
 /**
+ * Request Mojang to download a skin from an URL and apply to the player
+ */
+export interface ChangeSkinRequest {
+  model?: SkinModel;
+  /**
+   * The URL which Mojang servers will download and apply the skin
+   */
+  url: string;
+}
+
+/**
  * The current player, demo and legacy status of a player identified by the id
  */
 export interface CurrentPlayerIDs {
@@ -30,25 +41,6 @@ export interface CurrentPlayerIDs {
    * If the player has not puchased the game
    */
   demo?: boolean;
-}
-
-export interface InlineObject {
-  model?: SkinModel;
-  /**
-   * The skin image in PNG format
-   */
-  file: any;
-}
-
-/**
- * Request Mojang to download a skin from an URL and apply to the player
- */
-export interface InlineObject1 {
-  model?: SkinModel;
-  /**
-   * The URL which Mojang servers will download and apply the skin
-   */
-  url: string;
 }
 
 /**
@@ -144,3 +136,11 @@ export interface SecurityQuestion {
  * Model is an empty string for the default model (like Steve) and \"slim\" for the slim model (like Alex)
  */
 export type SkinModel = '' | 'slim';
+export interface UploadSkinRequest {
+  model?: SkinModel;
+  /**
+   * The skin image in PNG format
+   */
+  file: any;
+}
+

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\DependencyInjection
+ * @package  com.github.asyncmc.mojang.authentication.php.symfony.server\DependencyInjection
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\DependencyInjection;
+namespace com.github.asyncmc.mojang.authentication.php.symfony.server\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -38,7 +38,7 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
  * OpenAPIServerExtension Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\DependencyInjection
+ * @package  com.github.asyncmc.mojang.authentication.php.symfony.server\DependencyInjection
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */

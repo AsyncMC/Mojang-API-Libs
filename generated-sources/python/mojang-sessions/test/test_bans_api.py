@@ -15,7 +15,7 @@ from __future__ import absolute_import
 import unittest
 
 import openapi_client
-from openapi_client.api.bans_api import BansApi  # noqa: E501
+from com.github.asyncmc.mojang.sessions.python.api.bans_api import BansApi  # noqa: E501
 from openapi_client.rest import ApiException
 
 
@@ -23,7 +23,7 @@ class TestBansApi(unittest.TestCase):
     """BansApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.bans_api.BansApi()  # noqa: E501
+        self.api = com.github.asyncmc.mojang.sessions.python.api.bans_api.BansApi()  # noqa: E501
 
     def tearDown(self):
         pass

@@ -19,12 +19,16 @@
 
 #include <boost/algorithm/string/replace.hpp>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
-using namespace org::openapitools::client::model;
+using namespace com::github::asyncmc::mojang::api::cpp::restsdk::model;
 
 MiscellaneousApi::MiscellaneousApi( std::shared_ptr<ApiClient> apiClient )
     : m_ApiClient(apiClient)
@@ -178,6 +182,10 @@ pplx::task<std::shared_ptr<OrderStatisticsResponse>> MiscellaneousApi::getOrders
     });
 }
 
+}
+}
+}
+}
 }
 }
 }

@@ -12,12 +12,17 @@
 
 #include "SkinOperationsApiImpl.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::pistache::server::model;
 
 SkinOperationsApiImpl::SkinOperationsApiImpl(std::shared_ptr<Pistache::Rest::Router> rtr)
     : SkinOperationsApi(rtr)
@@ -33,6 +38,11 @@ void SkinOperationsApiImpl::upload_player_skin(const Pistache::Rest::Request &re
     response.send(Pistache::Http::Code::Ok, "Do some magic\n");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

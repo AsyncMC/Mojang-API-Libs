@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.sessions.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,19 +27,19 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace com.github.asyncmc.mojang.sessions.php.symfony.server\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller as BaseController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use OpenAPI\Server\Service\SerializerInterface;
-use OpenAPI\Server\Service\ValidatorInterface;
+use com.github.asyncmc.mojang.sessions.php.symfony.server\Service\SerializerInterface;
+use com.github.asyncmc.mojang.sessions.php.symfony.server\Service\ValidatorInterface;
 
 /**
  * Controller Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.sessions.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */

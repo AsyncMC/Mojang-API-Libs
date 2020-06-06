@@ -20,11 +20,11 @@ This will set the skin for the selected profile, but Mojang&#39;s servers will f
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.SkinOperationsApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiClient;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.server.Configuration;
+//import com.github.asyncmc.mojang.api.java.server.auth.*;
+//import com.github.asyncmc.mojang.api.java.api.SkinOperationsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -75,11 +75,11 @@ Resets the player skin to default
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.SkinOperationsApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiClient;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.server.Configuration;
+//import com.github.asyncmc.mojang.api.java.server.auth.*;
+//import com.github.asyncmc.mojang.api.java.api.SkinOperationsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -128,11 +128,11 @@ This uploads a skin to Mojang&#39;s servers. It also sets the users skin. This w
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.SkinOperationsApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiClient;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.server.Configuration;
+//import com.github.asyncmc.mojang.api.java.server.auth.*;
+//import com.github.asyncmc.mojang.api.java.api.SkinOperationsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

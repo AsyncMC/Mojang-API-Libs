@@ -22,7 +22,7 @@ PrivateUserData <- R6::R6Class(
     `properties` = NULL,
     initialize = function(`id`, `properties`){
       if (!missing(`id`)) {
-        stopifnot(R6::is.R6(`id`))
+        stopifnot(is.character(`id`), length(`id`) == 1)
         self$`id` <- `id`
       }
       if (!missing(`properties`)) {
@@ -34,7 +34,7 @@ PrivateUserData <- R6::R6Class(
     toJSON = function() {
       PrivateUserDataObject <- list()
       if (!is.null(self$`id`)) {
-        PrivateUserDataObject[['id']] <- self$`id`$toJSON()
+        PrivateUserDataObject[['id']] <- self$`id`
       }
       if (!is.null(self$`properties`)) {
         PrivateUserDataObject[['properties']] <- lapply(self$`properties`, function(x) x$toJSON())
@@ -45,9 +45,7 @@ PrivateUserData <- R6::R6Class(
     fromJSON = function(PrivateUserDataJson) {
       PrivateUserDataObject <- jsonlite::fromJSON(PrivateUserDataJson)
       if (!is.null(PrivateUserDataObject$`id`)) {
-        idObject <- data.frame$new()
-        idObject$fromJSON(jsonlite::toJSON(PrivateUserDataObject$id, auto_unbox = TRUE))
-        self$`id` <- idObject
+        self$`id` <- PrivateUserDataObject$`id`
       }
       if (!is.null(PrivateUserDataObject$`properties`)) {
         self$`properties` <- lapply(PrivateUserDataObject$`properties`, function(x) {
@@ -63,14 +61,13 @@ PrivateUserData <- R6::R6Class(
            "id": %s,
            "properties": [%s]
         }',
-        self$`id`$toJSON(),
+        self$`id`,
         lapply(self$`properties`, function(x) paste(x$toJSON(), sep=","))
       )
     },
     fromJSONString = function(PrivateUserDataJson) {
       PrivateUserDataObject <- jsonlite::fromJSON(PrivateUserDataJson)
-      data.frameObject <- data.frame$new()
-      self$`id` <- data.frameObject$fromJSON(jsonlite::toJSON(PrivateUserDataObject$id, auto_unbox = TRUE))
+      self$`id` <- PrivateUserDataObject$`id`
       self$`properties` <- lapply(PrivateUserDataObject$`properties`, function(x) GameProfileProperty$new()$fromJSON(jsonlite::toJSON(x, auto_unbox = TRUE)))
     }
   )

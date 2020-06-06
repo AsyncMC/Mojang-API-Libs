@@ -1,13 +1,13 @@
 import connexion
 import six
 
-from openapi_server.models.access_keys import AccessKeys  # noqa: E501
-from openapi_server.models.authentication import Authentication  # noqa: E501
-from openapi_server.models.authentication_request import AuthenticationRequest  # noqa: E501
-from openapi_server.models.error import Error  # noqa: E501
-from openapi_server.models.refresh_request import RefreshRequest  # noqa: E501
-from openapi_server.models.refresh_response import RefreshResponse  # noqa: E501
-from openapi_server.models.username_password import UsernamePassword  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.authentication.python.flask.model.access_keys import AccessKeys  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.authentication.python.flask.model.authentication import Authentication  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.authentication.python.flask.model.authentication_request import AuthenticationRequest  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.authentication.python.flask.model.error import Error  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.authentication.python.flask.model.refresh_request import RefreshRequest  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.authentication.python.flask.model.refresh_response import RefreshResponse  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.authentication.python.flask.model.username_password import UsernamePassword  # noqa: E501
 from openapi_server import util
 
 

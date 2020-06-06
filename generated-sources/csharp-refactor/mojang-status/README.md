@@ -36,9 +36,9 @@ Run the following command to generate the DLL
 
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 ```csharp
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.status.csharp.refactor.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.status.csharp.refactor.model;
 ```
 <a name="packaging"></a>
 ## Packaging
@@ -59,9 +59,9 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.status.csharp.refactor.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.status.csharp.refactor.model;
 
 namespace Example
 {
@@ -101,7 +101,7 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [Model.ApiStatus](docs/ApiStatus.md)
+ - [com.github.asyncmc.mojang.status.csharp.refactor.model.ApiStatus](docs/ApiStatus.md)
 
 
 <a name="documentation-for-authorization"></a>

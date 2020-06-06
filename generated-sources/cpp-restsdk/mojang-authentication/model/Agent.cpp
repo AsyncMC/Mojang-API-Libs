@@ -13,9 +13,13 @@
 
 #include "Agent.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 Agent::Agent()
@@ -149,6 +153,10 @@ void Agent::unsetVersion()
     m_VersionIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

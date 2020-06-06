@@ -29,7 +29,7 @@ module OpenapiClient
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'id' => :'File',
+        :'id' => :'String',
         :'properties' => :'Array<GameProfileProperty>'
       }
     end

@@ -20,8 +20,8 @@ Find the current players name, UUID, demo status and migration flag by the curre
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.NameHistoryApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.api.NameHistoryApi;
 
 
 NameHistoryApi apiInstance = new NameHistoryApi();
@@ -63,8 +63,8 @@ Gets the full player&#39;s name history
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.NameHistoryApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.api.NameHistoryApi;
 
 
 NameHistoryApi apiInstance = new NameHistoryApi();
@@ -108,8 +108,8 @@ Find the current player name, UUID, demo status and migration flag by the curren
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.NameHistoryApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.api.NameHistoryApi;
 
 
 NameHistoryApi apiInstance = new NameHistoryApi();

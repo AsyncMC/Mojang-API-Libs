@@ -47,7 +47,7 @@ export interface GameProfile {
   agent?: string;
   id?: string;
   name?: string;
-  userId?: any;
+  userId?: string;
   /**
    * Unix timestamp in milliseconds
    */
@@ -84,7 +84,7 @@ export interface ProfileId {
 }
 
 export interface ReducedUserData {
-  id?: any;
+  id?: string;
   properties?: Array<GameProfileProperty>;
 }
 

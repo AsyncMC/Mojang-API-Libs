@@ -15,8 +15,8 @@
  * This is the exception being thrown in case the api call was not successful
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_API_ApiException_H_
-#define ORG_OPENAPITOOLS_CLIENT_API_ApiException_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_AUTHENTICATION_CPP_RESTSDK_API_ApiException_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_AUTHENTICATION_CPP_RESTSDK_API_ApiException_H_
 
 
 
@@ -27,9 +27,13 @@
 #include <cpprest/http_msg.h>
 
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
 class  ApiException
@@ -57,5 +61,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_API_ApiBase_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_AUTHENTICATION_CPP_RESTSDK_API_ApiBase_H_ */

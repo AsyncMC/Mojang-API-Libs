@@ -1,4 +1,4 @@
-# \LoginApi
+# com.github.asyncmc.mojang.sessions.rust.server\LoginApi
 
 All URIs are relative to *https://sessionserver.mojang.com*
 

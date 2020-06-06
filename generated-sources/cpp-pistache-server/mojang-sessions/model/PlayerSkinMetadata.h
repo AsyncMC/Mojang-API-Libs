@@ -23,8 +23,13 @@
 
 #include <string>
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace model {
 
@@ -62,6 +67,11 @@ protected:
     bool m_ModelIsSet;
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

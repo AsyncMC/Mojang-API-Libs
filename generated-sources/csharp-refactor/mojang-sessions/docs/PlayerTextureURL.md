@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PlayerTextureURL
+# Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.refactor.model.PlayerTextureURL
 ## Properties
 
 Name | Type | Description | Notes

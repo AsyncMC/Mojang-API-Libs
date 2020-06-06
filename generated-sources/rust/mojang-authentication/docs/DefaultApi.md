@@ -1,4 +1,4 @@
-# \DefaultApi
+# com.github.asyncmc.mojang.authentication.rust.server\DefaultApi
 
 All URIs are relative to *https://authserver.mojang.com*
 

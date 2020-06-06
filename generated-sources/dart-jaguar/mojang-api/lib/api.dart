@@ -12,10 +12,9 @@ import 'package:openapi/api/name_history_api.dart';
 import 'package:openapi/api/security_question_answer_api.dart';
 import 'package:openapi/api/skin_operations_api.dart';
 
+import 'package:openapi/model/change_skin_request.dart';
 import 'package:openapi/model/current_player_i_ds.dart';
 import 'package:openapi/model/error.dart';
-import 'package:openapi/model/inline_object.dart';
-import 'package:openapi/model/inline_object1.dart';
 import 'package:openapi/model/name_change.dart';
 import 'package:openapi/model/order_statistic.dart';
 import 'package:openapi/model/order_statistics_request.dart';
@@ -25,13 +24,13 @@ import 'package:openapi/model/security_answer_id.dart';
 import 'package:openapi/model/security_challenge.dart';
 import 'package:openapi/model/security_question.dart';
 import 'package:openapi/model/skin_model.dart';
+import 'package:openapi/model/upload_skin_request.dart';
 
 
 final jsonJaguarRepo = JsonRepo()
+..add(ChangeSkinRequestSerializer())
 ..add(CurrentPlayerIDsSerializer())
 ..add(ErrorSerializer())
-..add(InlineObjectSerializer())
-..add(InlineObject1Serializer())
 ..add(NameChangeSerializer())
 ..add(OrderStatisticSerializer())
 ..add(OrderStatisticsRequestSerializer())
@@ -41,6 +40,7 @@ final jsonJaguarRepo = JsonRepo()
 ..add(SecurityChallengeSerializer())
 ..add(SecurityQuestionSerializer())
 ..add(SkinModelSerializer())
+..add(UploadSkinRequestSerializer())
 ;
 
 final _defaultInterceptors = [OAuthInterceptor(), BasicAuthInterceptor(), ApiKeyAuthInterceptor()];

@@ -23,7 +23,7 @@ import six
 from six.moves.urllib.parse import quote
 
 from openapi_client.configuration import Configuration
-import openapi_client.models
+import openapi_client.com.github.asyncmc.mojang.status.python.model
 from openapi_client import rest
 
 
@@ -271,7 +271,7 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(openapi_client.models, klass)
+                klass = getattr(openapi_client.com.github.asyncmc.mojang.status.python.model, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Strategy;
+namespace com.github.asyncmc.mojang.api.php.ze.ph.server\Strategy;
 
 use Articus\DataTransfer\Strategy\StrategyInterface;
 

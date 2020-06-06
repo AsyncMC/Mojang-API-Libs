@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SecurityQuestionAnswerApi
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.api.SecurityQuestionAnswerApi
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -19,9 +19,9 @@ Check if security questions are needed
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.model;
 
 namespace Example
 {
@@ -77,9 +77,9 @@ Get list of questions
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.model;
 
 namespace Example
 {
@@ -136,9 +136,9 @@ Send back the answers
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.model;
 
 namespace Example
 {

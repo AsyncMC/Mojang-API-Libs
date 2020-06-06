@@ -12,12 +12,17 @@
 
 #include "NameHistoryApiImpl.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::pistache::server::model;
 
 NameHistoryApiImpl::NameHistoryApiImpl(std::shared_ptr<Pistache::Rest::Router> rtr)
     : NameHistoryApi(rtr)
@@ -33,6 +38,11 @@ void NameHistoryApiImpl::get_unique_id_by_name(const std::string &username, cons
     response.send(Pistache::Http::Code::Ok, "Do some magic\n");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

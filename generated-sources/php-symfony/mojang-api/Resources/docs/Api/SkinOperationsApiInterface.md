@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\SkinOperationsApiInterface
+# com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SkinOperationsApiInterface
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -35,7 +35,7 @@ This will set the skin for the selected profile, but Mojang's servers will fetch
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\SkinOperationsApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SkinOperationsApiInterface;
 
 class SkinOperationsApi implements SkinOperationsApiInterface
 {
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **strippedUuid** | **string**| The player UUID without hyphens |
  **url** | **string**| The URL which Mojang servers will download and apply the skin |
- **model** | [**OpenAPI\Server\Model\SkinModel**](../Model/SkinModel.md)|  | [optional]
+ **model** | [**com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SkinModel**](../Model/SkinModel.md)|  | [optional]
 
 ### Return type
 
@@ -89,7 +89,7 @@ Resets the player skin to default
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\SkinOperationsApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SkinOperationsApiInterface;
 
 class SkinOperationsApi implements SkinOperationsApiInterface
 {
@@ -143,7 +143,7 @@ This uploads a skin to Mojang's servers. It also sets the users skin. This works
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\SkinOperationsApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SkinOperationsApiInterface;
 
 class SkinOperationsApi implements SkinOperationsApiInterface
 {
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **strippedUuid** | **string**| The player UUID without hyphens |
  **file** | **UploadedFile****UploadedFile**| The skin image in PNG format |
- **model** | [**OpenAPI\Server\Model\SkinModel**](../Model/SkinModel.md)|  | [optional]
+ **model** | [**com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SkinModel**](../Model/SkinModel.md)|  | [optional]
 
 ### Return type
 

@@ -66,7 +66,7 @@ public class MainApiVerticle extends AbstractVerticle {
       
     public void deployVerticles(Future<Void> startFuture) {
         
-        vertx.deployVerticle("org.openapitools.server.api.verticle.MiscellaneousApiVerticle", res -> {
+        vertx.deployVerticle("com.github.asyncmc.mojang.api.java.vertx.api.MiscellaneousApiVerticle", res -> {
             if (res.succeeded()) {
                 LOGGER.info("MiscellaneousApiVerticle : Deployed");
             } else {
@@ -75,7 +75,7 @@ public class MainApiVerticle extends AbstractVerticle {
             }
         });
         
-        vertx.deployVerticle("org.openapitools.server.api.verticle.NameHistoryApiVerticle", res -> {
+        vertx.deployVerticle("com.github.asyncmc.mojang.api.java.vertx.api.NameHistoryApiVerticle", res -> {
             if (res.succeeded()) {
                 LOGGER.info("NameHistoryApiVerticle : Deployed");
             } else {
@@ -84,7 +84,7 @@ public class MainApiVerticle extends AbstractVerticle {
             }
         });
         
-        vertx.deployVerticle("org.openapitools.server.api.verticle.SecurityQuestionAnswerApiVerticle", res -> {
+        vertx.deployVerticle("com.github.asyncmc.mojang.api.java.vertx.api.SecurityQuestionAnswerApiVerticle", res -> {
             if (res.succeeded()) {
                 LOGGER.info("SecurityQuestionAnswerApiVerticle : Deployed");
             } else {
@@ -93,7 +93,7 @@ public class MainApiVerticle extends AbstractVerticle {
             }
         });
         
-        vertx.deployVerticle("org.openapitools.server.api.verticle.SkinOperationsApiVerticle", res -> {
+        vertx.deployVerticle("com.github.asyncmc.mojang.api.java.vertx.api.SkinOperationsApiVerticle", res -> {
             if (res.succeeded()) {
                 LOGGER.info("SkinOperationsApiVerticle : Deployed");
             } else {

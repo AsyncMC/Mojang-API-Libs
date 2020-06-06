@@ -2,8 +2,8 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     
-    <groupId>org.openapitools</groupId>
-    <artifactId>openapi-java-vertx-server</artifactId>
+    <groupId>com.github.asyncmc</groupId>
+    <artifactId>mojang-sessions-java-vertx</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
   

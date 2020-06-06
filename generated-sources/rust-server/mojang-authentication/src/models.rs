@@ -135,7 +135,7 @@ pub struct GameProfile {
 
     #[serde(rename = "userId")]
     #[serde(skip_serializing_if="Option::is_none")]
-    pub user_id: Option<swagger::ByteArray>,
+    pub user_id: Option<String>,
 
     /// Unix timestamp in milliseconds
     #[serde(rename = "createdAt")]
@@ -206,7 +206,7 @@ impl GameProfileProperty {
 pub struct PrivateUserData {
     #[serde(rename = "id")]
     #[serde(skip_serializing_if="Option::is_none")]
-    pub id: Option<swagger::ByteArray>,
+    pub id: Option<String>,
 
     #[serde(rename = "properties")]
     #[serde(skip_serializing_if="Option::is_none")]
@@ -247,7 +247,7 @@ impl ProfileId {
 pub struct ReducedUserData {
     #[serde(rename = "id")]
     #[serde(skip_serializing_if="Option::is_none")]
-    pub id: Option<swagger::ByteArray>,
+    pub id: Option<String>,
 
     #[serde(rename = "properties")]
     #[serde(skip_serializing_if="Option::is_none")]

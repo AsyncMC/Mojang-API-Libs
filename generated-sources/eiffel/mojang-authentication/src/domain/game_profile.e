@@ -30,7 +30,7 @@ feature --Access
       
     name: detachable STRING_32 
       
-    user_id: detachable FILE 
+    user_id: detachable STRING_32 
       
     created_at: INTEGER_64 
       -- Unix timestamp in milliseconds

@@ -15,7 +15,7 @@ from __future__ import absolute_import
 import unittest
 
 import openapi_client
-from openapi_client.api.security_question_answer_api import SecurityQuestionAnswerApi  # noqa: E501
+from com.github.asyncmc.mojang.api.python.api.security_question_answer_api import SecurityQuestionAnswerApi  # noqa: E501
 from openapi_client.rest import ApiException
 
 
@@ -23,7 +23,7 @@ class TestSecurityQuestionAnswerApi(unittest.TestCase):
     """SecurityQuestionAnswerApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.security_question_answer_api.SecurityQuestionAnswerApi()  # noqa: E501
+        self.api = com.github.asyncmc.mojang.api.python.api.security_question_answer_api.SecurityQuestionAnswerApi()  # noqa: E501
 
     def tearDown(self):
         pass

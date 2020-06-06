@@ -11,9 +11,13 @@
 
 #include "HttpContent.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 HttpContent::HttpContent()
@@ -80,6 +84,10 @@ void HttpContent::writeTo( std::ostream& stream )
     stream << m_Data->rdbuf();
 }
 
+}
+}
+}
+}
 }
 }
 }

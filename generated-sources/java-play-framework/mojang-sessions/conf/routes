@@ -2,14 +2,14 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /api                        controllers.ApiDocController.api
+GET     /api                        com.github.asyncmc.mojang.sessions.java.play.framework.api.ApiDocController.api
 
 
 #Functions for Bans API
-GET     /blockedservers                     controllers.BansApiController.getBlockedServerHashes()
+GET     /blockedservers                     com.github.asyncmc.mojang.sessions.java.play.framework.api.BansApiController.getBlockedServerHashes()
 
 #Functions for Login API
-GET     /session/minecraft/profile/:strippedUuid                     controllers.LoginApiController.getPlayerProfile(strippedUuid: String)
+GET     /session/minecraft/profile/:strippedUuid                     com.github.asyncmc.mojang.sessions.java.play.framework.api.LoginApiController.getPlayerProfile(strippedUuid: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET /assets/*file           controllers.Assets.at(file)

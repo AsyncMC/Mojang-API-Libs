@@ -33,12 +33,17 @@
 #include "RefreshResponse.h"
 #include "UsernamePassword.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::authentication::cpp::pistache::server::model;
 
 class  DefaultApi {
 public:
@@ -107,6 +112,11 @@ private:
 
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

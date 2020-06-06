@@ -1,6 +1,6 @@
 version := "1.0.0"
-name := "openapi-client"
-organization := "org.openapitools"
+name := "mojang-status-scala-akka"
+organization := "com.github.asyncmc"
 scalaVersion := "2.11.12"
 
 libraryDependencies ++= Seq(

@@ -27,12 +27,17 @@
 
 #include <string>
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::sessions::cpp::restbed::server::model;
 
 class  BansApi: public restbed::Service
 {
@@ -59,6 +64,11 @@ public:
 };
 
 
+}
+}
+}
+}
+}
 }
 }
 }

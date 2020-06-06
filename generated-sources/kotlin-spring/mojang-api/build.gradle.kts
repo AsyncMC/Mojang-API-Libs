@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-group = "org.openapitools"
+group = "com.github.asyncmc"
 version = "1.0.0"
 
 repositories {

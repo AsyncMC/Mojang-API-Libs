@@ -13,8 +13,13 @@
 
 #include "CurrentPlayerIDs.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace model {
 
@@ -126,6 +131,11 @@ void CurrentPlayerIDs::unsetDemo()
     m_DemoIsSet = false;
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

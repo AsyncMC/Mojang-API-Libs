@@ -5,8 +5,8 @@ from __future__ import absolute_import
 from flask import json
 from six import BytesIO
 
-from openapi_server.models.order_statistics_request import OrderStatisticsRequest  # noqa: E501
-from openapi_server.models.order_statistics_response import OrderStatisticsResponse  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.api.python.flask.model.order_statistics_request import OrderStatisticsRequest  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.api.python.flask.model.order_statistics_response import OrderStatisticsResponse  # noqa: E501
 from openapi_server.test import BaseTestCase
 
 

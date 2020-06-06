@@ -21,7 +21,7 @@ Method | HTTP request | Description
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.authentication.kotlin.model.*
 
 val apiInstance = DefaultApi()
 val authenticationRequest : AuthenticationRequest =  // AuthenticationRequest | 
@@ -66,7 +66,7 @@ No authorization required
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.authentication.kotlin.model.*
 
 val apiInstance = DefaultApi()
 val accessKeys : AccessKeys =  // AccessKeys | 
@@ -110,7 +110,7 @@ No authorization required
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.authentication.kotlin.model.*
 
 val apiInstance = DefaultApi()
 val refreshRequest : RefreshRequest =  // RefreshRequest | 
@@ -155,7 +155,7 @@ No authorization required
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.authentication.kotlin.model.*
 
 val apiInstance = DefaultApi()
 val usernamePassword : UsernamePassword =  // UsernamePassword | 
@@ -199,7 +199,7 @@ No authorization required
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.authentication.kotlin.model.*
 
 val apiInstance = DefaultApi()
 val accessKeys : AccessKeys =  // AccessKeys | 

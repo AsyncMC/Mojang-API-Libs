@@ -15,7 +15,7 @@ from __future__ import absolute_import
 import unittest
 
 import openapi_client
-from openapi_client.models.profile_id import ProfileId  # noqa: E501
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.profile_id import ProfileId  # noqa: E501
 from openapi_client.rest import ApiException
 
 

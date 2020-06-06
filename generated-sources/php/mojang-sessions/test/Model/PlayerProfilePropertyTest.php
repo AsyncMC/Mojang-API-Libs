@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.sessions.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace com.github.asyncmc.mojang.sessions.php.server;
 
 /**
  * PlayerProfilePropertyTest Class Doc Comment
  *
  * @category    Class
  * @description A profile property, may be signed. The values are encoded by base64 and usually contains a json. The schema for the textures are described at PlayerProfileTexturePropertyValue
- * @package     OpenAPI\Client
+ * @package     com.github.asyncmc.mojang.sessions.php.server
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

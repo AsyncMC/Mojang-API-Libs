@@ -13,9 +13,13 @@
 
 #include "RefreshResponse.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 RefreshResponse::RefreshResponse()
@@ -75,6 +79,10 @@ void RefreshResponse::fromMultiPart(std::shared_ptr<MultipartFormData> multipart
     }
 }
 
+}
+}
+}
+}
 }
 }
 }

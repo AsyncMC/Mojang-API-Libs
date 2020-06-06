@@ -1054,10 +1054,10 @@ This check is done by the bootstrap class in netty. The default netty class is o
                             <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://sessionserver.mojang.com/blockedservers"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Bans-getBlockedServerHashes-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.BansApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.sessions.html2.server.*;
+import com.github.asyncmc.mojang.sessions.html2.server.auth.*;
+import com.github.asyncmc.mojang.sessions.html2.server.model.*;
+import com.github.asyncmc.mojang.sessions.html2.server.api.BansApi;
 
 import java.io.File;
 import java.util.*;
@@ -1079,7 +1079,7 @@ public class BansApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-Bans-getBlockedServerHashes-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.BansApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.sessions.html2.server.api.BansApi;
 
 public class BansApiExample {
 
@@ -1347,10 +1347,10 @@ This has a much stricter rate limit: You can request the same profile once per m
                             <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://sessionserver.mojang.com/session/minecraft/profile/{stripped_uuid}?unsigned="</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Login-getPlayerProfile-0-java">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.*;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.LoginApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.sessions.html2.server.*;
+import com.github.asyncmc.mojang.sessions.html2.server.auth.*;
+import com.github.asyncmc.mojang.sessions.html2.server.model.*;
+import com.github.asyncmc.mojang.sessions.html2.server.api.LoginApi;
 
 import java.io.File;
 import java.util.*;
@@ -1374,7 +1374,7 @@ public class LoginApiExample {
                           </div>
 
                           <div class="tab-pane" id="examples-Login-getPlayerProfile-0-android">
-                            <pre class="prettyprint"><code class="language-java">import org.openapitools.client.api.LoginApi;
+                            <pre class="prettyprint"><code class="language-java">import com.github.asyncmc.mojang.sessions.html2.server.api.LoginApi;
 
 public class LoginApiExample {
 

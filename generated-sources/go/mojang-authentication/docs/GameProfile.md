@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **Agent** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
 **Name** | **string** |  | [optional] 
-**UserId** | [***os.File**](*os.File.md) |  | [optional] 
+**UserId** | **string** |  | [optional] 
 **CreatedAt** | **int64** | Unix timestamp in milliseconds | [optional] 
 **LegacyProfile** | **bool** |  | [optional] 
 **Suspended** | **bool** |  | [optional] 

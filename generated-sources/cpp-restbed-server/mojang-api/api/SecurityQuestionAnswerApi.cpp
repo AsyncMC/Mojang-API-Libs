@@ -18,12 +18,17 @@
 
 #include "SecurityQuestionAnswerApi.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::restbed::server::model;
 
 SecurityQuestionAnswerApi::SecurityQuestionAnswerApi() {
 	std::shared_ptr<SecurityQuestionAnswerApiUserSecurityLocationResource> spSecurityQuestionAnswerApiUserSecurityLocationResource = std::make_shared<SecurityQuestionAnswerApiUserSecurityLocationResource>();
@@ -160,6 +165,11 @@ void SecurityQuestionAnswerApiUserSecurityChallengesResource::GET_method_handler
 
 
 
+}
+}
+}
+}
+}
 }
 }
 }

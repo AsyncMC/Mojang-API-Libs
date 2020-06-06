@@ -18,8 +18,8 @@ Returns a list of SHA1 hashes used to check server addresses against when the cl
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.BansApi;
+//import com.github.asyncmc.mojang.sessions.java.server.ApiException;
+//import com.github.asyncmc.mojang.sessions.java.api.BansApi;
 
 
 BansApi apiInstance = new BansApi();

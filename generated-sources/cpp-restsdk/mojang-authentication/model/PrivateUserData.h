@@ -15,18 +15,22 @@
  * 
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_PrivateUserData_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_PrivateUserData_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_AUTHENTICATION_CPP_RESTSDK_MODEL_PrivateUserData_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_AUTHENTICATION_CPP_RESTSDK_MODEL_PrivateUserData_H_
 
 
 #include "ReducedUserData.h"
-#include "HttpContent.h"
+#include <cpprest/details/basic_types.h>
 #include <vector>
 #include "GameProfileProperty.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 /// <summary>
@@ -61,5 +65,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_PrivateUserData_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_AUTHENTICATION_CPP_RESTSDK_MODEL_PrivateUserData_H_ */

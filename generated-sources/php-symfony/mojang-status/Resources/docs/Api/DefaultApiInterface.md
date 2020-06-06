@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\DefaultApiInterface
+# com.github.asyncmc.mojang.status.php.symfony.server\com.github.asyncmc.mojang.status.php.symfony.api\DefaultApiInterface
 
 All URIs are relative to *https://status.mojang.com*
 
@@ -20,7 +20,7 @@ services:
 ```
 
 ## **checkStatuses**
-> OpenAPI\Server\Model\ApiStatus checkStatuses()
+> com.github.asyncmc.mojang.status.php.symfony.server\com.github.asyncmc.mojang.status.php.symfony.model\ApiStatus checkStatuses()
 
 Checks the Mojang service statuses
 
@@ -31,7 +31,7 @@ Checks the Mojang service statuses
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\DefaultApiInterface;
+use com.github.asyncmc.mojang.status.php.symfony.server\com.github.asyncmc.mojang.status.php.symfony.api\DefaultApiInterface;
 
 class DefaultApi implements DefaultApiInterface
 {
@@ -55,7 +55,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**OpenAPI\Server\Model\ApiStatus**
+**com.github.asyncmc.mojang.status.php.symfony.server\com.github.asyncmc.mojang.status.php.symfony.model\ApiStatus**
 
 ### Authorization
 

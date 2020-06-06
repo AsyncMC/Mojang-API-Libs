@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+      "url": "https://github.com/AsyncMC/Mojang-API-Libs.git"
     }
   ],
   "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
+    "AsyncMC/Mojang-API-Libs": "*@dev"
   }
 }
 ```
@@ -57,17 +57,17 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: MojangStatisticsToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = com.github.asyncmc.mojang.api.php.server\Configuration::getDefaultConfiguration()
     ->setUsername('YOUR_USERNAME')
     ->setPassword('YOUR_PASSWORD');
 
-$apiInstance = new OpenAPI\Client\Api\MiscellaneousApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\MiscellaneousApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$order_statistics_request = new \OpenAPI\Client\Model\OrderStatisticsRequest(); // \OpenAPI\Client\Model\OrderStatisticsRequest | The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/
+$order_statistics_request = new \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\OrderStatisticsRequest(); // \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\OrderStatisticsRequest | The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/
 
 try {
     $result = $apiInstance->getOrdersStatistics($order_statistics_request);
@@ -99,10 +99,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [ChangeSkinRequest](docs\Model/ChangeSkinRequest.md)
  - [CurrentPlayerIDs](docs\Model/CurrentPlayerIDs.md)
  - [Error](docs\Model/Error.md)
- - [InlineObject](docs\Model/InlineObject.md)
- - [InlineObject1](docs\Model/InlineObject1.md)
  - [NameChange](docs\Model/NameChange.md)
  - [OrderStatistic](docs\Model/OrderStatistic.md)
  - [OrderStatisticsRequest](docs\Model/OrderStatisticsRequest.md)
@@ -112,6 +111,7 @@ Class | Method | HTTP request | Description
  - [SecurityChallenge](docs\Model/SecurityChallenge.md)
  - [SecurityQuestion](docs\Model/SecurityQuestion.md)
  - [SkinModel](docs\Model/SkinModel.md)
+ - [UploadSkinRequest](docs\Model/UploadSkinRequest.md)
 
 
 ## Documentation For Authorization

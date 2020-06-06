@@ -13,13 +13,18 @@
 #include "NameHistoryApi.h"
 #include "Helpers.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
 using namespace org::openapitools::server::helpers;
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::pistache::server::model;
 
 NameHistoryApi::NameHistoryApi(std::shared_ptr<Pistache::Rest::Router> rtr) { 
     router = rtr;
@@ -97,6 +102,11 @@ void NameHistoryApi::name_history_api_default_handler(const Pistache::Rest::Requ
     response.send(Pistache::Http::Code::Not_Found, "The requested method does not exist");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

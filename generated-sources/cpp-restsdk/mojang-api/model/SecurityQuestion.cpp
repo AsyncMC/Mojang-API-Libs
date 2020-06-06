@@ -13,9 +13,13 @@
 
 #include "SecurityQuestion.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 SecurityQuestion::SecurityQuestion()
@@ -95,6 +99,10 @@ void SecurityQuestion::setQuestion(const utility::string_t& value)
     
 }
 
+}
+}
+}
+}
 }
 }
 }

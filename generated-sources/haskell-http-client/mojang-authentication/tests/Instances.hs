@@ -125,7 +125,7 @@ instance Arbitrary GameProfile where
       <$> arbitrary -- gameProfileAgent :: Maybe Text
       <*> arbitrary -- gameProfileId :: Maybe Text
       <*> arbitrary -- gameProfileName :: Maybe Text
-      <*> arbitrary -- gameProfileUserId :: Maybe FilePath
+      <*> arbitrary -- gameProfileUserId :: Maybe Text
       <*> arbitrary -- gameProfileCreatedAt :: Maybe Integer
       <*> arbitrary -- gameProfileLegacyProfile :: Maybe Bool
       <*> arbitrary -- gameProfileSuspended :: Maybe Bool
@@ -142,7 +142,7 @@ instance Arbitrary GameProfileProperty where
 instance Arbitrary PrivateUserData where
   arbitrary =
     PrivateUserData
-      <$> arbitrary -- privateUserDataId :: Maybe FilePath
+      <$> arbitrary -- privateUserDataId :: Maybe Text
       <*> arbitrary -- privateUserDataProperties :: Maybe [GameProfileProperty]
     
 instance Arbitrary ProfileId where
@@ -154,7 +154,7 @@ instance Arbitrary ProfileId where
 instance Arbitrary ReducedUserData where
   arbitrary =
     ReducedUserData
-      <$> arbitrary -- reducedUserDataId :: Maybe FilePath
+      <$> arbitrary -- reducedUserDataId :: Maybe Text
       <*> arbitrary -- reducedUserDataProperties :: Maybe [GameProfileProperty]
     
 instance Arbitrary RefreshRequest where

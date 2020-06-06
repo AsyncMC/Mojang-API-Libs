@@ -24,19 +24,19 @@ Articus\PathHandler\Router\FastRouteAnnotation:
     adapter:
       name: blackhole
   handlers:
-    - App\Handler\OrdersStatistics
-    - App\Handler\ProfilesMinecraft
-    - App\Handler\UserProfileStrippedUuidSkin
-    - App\Handler\UserProfilesStrippedUuidNames
-    - App\Handler\UserSecurityChallenges
-    - App\Handler\UserSecurityLocation
-    - App\Handler\UsersProfilesMinecraftUsername
+    - com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\OrdersStatistics
+    - com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\ProfilesMinecraft
+    - com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UserProfileStrippedUuidSkin
+    - com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UserProfilesStrippedUuidNames
+    - com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UserSecurityChallenges
+    - com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UserSecurityLocation
+    - com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UsersProfilesMinecraftUsername
 
 Zend\ServiceManager\AbstractFactory\ConfigAbstractFactory:
-  App\Handler\OrdersStatistics: []
-  App\Handler\ProfilesMinecraft: []
-  App\Handler\UserProfileStrippedUuidSkin: []
-  App\Handler\UserProfilesStrippedUuidNames: []
-  App\Handler\UserSecurityChallenges: []
-  App\Handler\UserSecurityLocation: []
-  App\Handler\UsersProfilesMinecraftUsername: []
+  com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\OrdersStatistics: []
+  com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\ProfilesMinecraft: []
+  com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UserProfileStrippedUuidSkin: []
+  com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UserProfilesStrippedUuidNames: []
+  com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UserSecurityChallenges: []
+  com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UserSecurityLocation: []
+  com.github.asyncmc.mojang.api.php.ze.ph.server\com.github.asyncmc.mojang.api.php.ze.ph.api\UsersProfilesMinecraftUsername: []

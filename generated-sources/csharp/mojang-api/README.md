@@ -36,9 +36,9 @@ Run the following command to generate the DLL
 
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 ```csharp
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.model;
 ```
 <a name="packaging"></a>
 ## Packaging
@@ -59,9 +59,9 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.model;
 
 namespace Example
 {
@@ -115,19 +115,19 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [Model.CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
- - [Model.Error](docs/Error.md)
- - [Model.InlineObject](docs/InlineObject.md)
- - [Model.InlineObject1](docs/InlineObject1.md)
- - [Model.NameChange](docs/NameChange.md)
- - [Model.OrderStatistic](docs/OrderStatistic.md)
- - [Model.OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
- - [Model.OrderStatisticsResponse](docs/OrderStatisticsResponse.md)
- - [Model.SecurityAnswer](docs/SecurityAnswer.md)
- - [Model.SecurityAnswerId](docs/SecurityAnswerId.md)
- - [Model.SecurityChallenge](docs/SecurityChallenge.md)
- - [Model.SecurityQuestion](docs/SecurityQuestion.md)
- - [Model.SkinModel](docs/SkinModel.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.ChangeSkinRequest](docs/ChangeSkinRequest.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.Error](docs/Error.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.NameChange](docs/NameChange.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.OrderStatistic](docs/OrderStatistic.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.OrderStatisticsResponse](docs/OrderStatisticsResponse.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.SecurityAnswer](docs/SecurityAnswer.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.SecurityAnswerId](docs/SecurityAnswerId.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.SecurityChallenge](docs/SecurityChallenge.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.SecurityQuestion](docs/SecurityQuestion.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.SkinModel](docs/SkinModel.md)
+ - [com.github.asyncmc.mojang.api.csharp.model.UploadSkinRequest](docs/UploadSkinRequest.md)
 
 
 <a name="documentation-for-authorization"></a>

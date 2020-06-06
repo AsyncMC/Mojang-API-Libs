@@ -15,8 +15,8 @@
  * Provide links to the player&#39;s skin and cape
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_PlayerTexture_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_PlayerTexture_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_SESSIONS_CPP_RESTSDK_MODEL_PlayerTexture_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_SESSIONS_CPP_RESTSDK_MODEL_PlayerTexture_H_
 
 
 #include "../ModelBase.h"
@@ -24,9 +24,13 @@
 #include "PlayerSkinURL.h"
 #include "PlayerTextureURL.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 /// <summary>
@@ -83,5 +87,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_PlayerTexture_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_SESSIONS_CPP_RESTSDK_MODEL_PlayerTexture_H_ */

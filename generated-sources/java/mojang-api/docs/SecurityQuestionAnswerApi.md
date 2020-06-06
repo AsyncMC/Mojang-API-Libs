@@ -18,11 +18,11 @@ Check if security questions are needed
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.SecurityQuestionAnswerApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiClient;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.server.Configuration;
+//import com.github.asyncmc.mojang.api.java.server.auth.*;
+//import com.github.asyncmc.mojang.api.java.api.SecurityQuestionAnswerApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -65,11 +65,11 @@ Get list of questions
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.SecurityQuestionAnswerApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiClient;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.server.Configuration;
+//import com.github.asyncmc.mojang.api.java.server.auth.*;
+//import com.github.asyncmc.mojang.api.java.api.SecurityQuestionAnswerApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -113,11 +113,11 @@ Send back the answers
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.SecurityQuestionAnswerApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiClient;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.server.Configuration;
+//import com.github.asyncmc.mojang.api.java.server.auth.*;
+//import com.github.asyncmc.mojang.api.java.api.SecurityQuestionAnswerApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

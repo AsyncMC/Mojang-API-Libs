@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **agent** | **NSString*** |  | [optional] 
 **_id** | **NSString*** |  | [optional] 
 **name** | **NSString*** |  | [optional] 
-**userId** | **NSURL*** |  | [optional] 
+**userId** | **NSString*** |  | [optional] 
 **createdAt** | **NSNumber*** | Unix timestamp in milliseconds | [optional] 
 **legacyProfile** | **NSNumber*** |  | [optional] 
 **suspended** | **NSNumber*** |  | [optional] 

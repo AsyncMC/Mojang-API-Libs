@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.CurrentPlayerIDs
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.model.CurrentPlayerIDs
 ## Properties
 
 Name | Type | Description | Notes

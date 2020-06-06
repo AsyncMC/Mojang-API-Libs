@@ -13,8 +13,13 @@
 
 #include "GameProfile.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace model {
 
@@ -26,6 +31,7 @@ GameProfile::GameProfile()
     m_IdIsSet = false;
     m_Name = "";
     m_NameIsSet = false;
+    m_UserId = "";
     m_UserIdIsSet = false;
     m_CreatedAt = 0L;
     m_CreatedAtIsSet = false;
@@ -117,7 +123,6 @@ void GameProfile::fromJson(const nlohmann::json& val)
     if(val.find("userId") != val.end())
     {
         setUserId(val.at("userId"));
-        
     }
     if(val.find("createdAt") != val.end())
     {
@@ -318,6 +323,11 @@ void GameProfile::unsetLegacy()
     m_LegacyIsSet = false;
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.OrderStatistic
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.model.OrderStatistic
 ## Properties
 
 Name | Type | Description | Notes

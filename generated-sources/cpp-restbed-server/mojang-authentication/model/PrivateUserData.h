@@ -27,8 +27,13 @@
 #include "GameProfileProperty.h"
 #include <memory>
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace model {
 
@@ -63,6 +68,11 @@ protected:
     std::vector<std::shared_ptr<GameProfileProperty>> m_Properties;
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

@@ -19,7 +19,7 @@ Check if security questions are needed
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = SecurityQuestionAnswerApi()
 try {
@@ -59,7 +59,7 @@ Get list of questions
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = SecurityQuestionAnswerApi()
 try {
@@ -100,7 +100,7 @@ Send back the answers
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = SecurityQuestionAnswerApi()
 val securityAnswer : kotlin.Array<SecurityAnswer> =  // kotlin.Array<SecurityAnswer> | An array with all the answers

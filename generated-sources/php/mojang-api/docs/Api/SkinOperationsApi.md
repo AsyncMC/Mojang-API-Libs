@@ -1,4 +1,4 @@
-# OpenAPI\Client\SkinOperationsApi
+# com.github.asyncmc.mojang.api.php.server\SkinOperationsApi
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -22,11 +22,11 @@ This will set the skin for the selected profile, but Mojang's servers will fetch
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: PlayerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = com.github.asyncmc.mojang.api.php.server\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
-$apiInstance = new OpenAPI\Client\Api\SkinOperationsApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\SkinOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -34,7 +34,7 @@ $apiInstance = new OpenAPI\Client\Api\SkinOperationsApi(
 );
 $stripped_uuid = 38ba542eb5924231a54cca0f2eac2b54; // string | The player UUID without hyphens
 $url = 'url_example'; // string | The URL which Mojang servers will download and apply the skin
-$model = new \OpenAPI\Client\Model\SkinModel(); // \OpenAPI\Client\Model\SkinModel | 
+$model = new \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SkinModel(); // \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SkinModel | 
 
 try {
     $apiInstance->changePlayerSkin($stripped_uuid, $url, $model);
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **stripped_uuid** | **string**| The player UUID without hyphens |
  **url** | **string**| The URL which Mojang servers will download and apply the skin |
- **model** | [**\OpenAPI\Client\Model\SkinModel**](../Model/SkinModel.md)|  | [optional]
+ **model** | [**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SkinModel**](../Model/SkinModel.md)|  | [optional]
 
 ### Return type
 
@@ -78,11 +78,11 @@ Resets the player skin to default
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: PlayerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = com.github.asyncmc.mojang.api.php.server\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
-$apiInstance = new OpenAPI\Client\Api\SkinOperationsApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\SkinOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -132,11 +132,11 @@ This uploads a skin to Mojang's servers. It also sets the users skin. This works
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: PlayerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = com.github.asyncmc.mojang.api.php.server\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
-$apiInstance = new OpenAPI\Client\Api\SkinOperationsApi(
+$apiInstance = new com.github.asyncmc.mojang.api.php.server\Api\SkinOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -144,7 +144,7 @@ $apiInstance = new OpenAPI\Client\Api\SkinOperationsApi(
 );
 $stripped_uuid = 38ba542eb5924231a54cca0f2eac2b54; // string | The player UUID without hyphens
 $file = "/path/to/file.txt"; // \SplFileObject | The skin image in PNG format
-$model = new \OpenAPI\Client\Model\SkinModel(); // \OpenAPI\Client\Model\SkinModel | 
+$model = new \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SkinModel(); // \com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SkinModel | 
 
 try {
     $apiInstance->uploadPlayerSkin($stripped_uuid, $file, $model);
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **stripped_uuid** | **string**| The player UUID without hyphens |
  **file** | **\SplFileObject****\SplFileObject**| The skin image in PNG format |
- **model** | [**\OpenAPI\Client\Model\SkinModel**](../Model/SkinModel.md)|  | [optional]
+ **model** | [**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SkinModel**](../Model/SkinModel.md)|  | [optional]
 
 ### Return type
 

@@ -13,8 +13,13 @@
 
 #include "SkinModel.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace model {
 
@@ -48,6 +53,11 @@ void SkinModel::fromJson(const nlohmann::json& val)
 
 
 
+}
+}
+}
+}
+}
 }
 }
 }

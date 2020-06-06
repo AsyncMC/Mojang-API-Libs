@@ -2,11 +2,11 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /api                        controllers.ApiDocController.api
+GET     /api                        com.github.asyncmc.mojang.status.java.play.framework.api.ApiDocController.api
 
 
 #Functions for Default API
-GET     /check                     controllers.DefaultApiController.checkStatuses()
+GET     /check                     com.github.asyncmc.mojang.status.java.play.framework.api.DefaultApiController.checkStatuses()
 
 # Map static resources from the /public folder to the /assets URL path
 GET /assets/*file           controllers.Assets.at(file)

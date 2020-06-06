@@ -14,7 +14,7 @@ class GameProfile {
   final String name;
   
   @Alias('userId')
-  final MultipartFile userId;
+  final String userId;
    /* Unix timestamp in milliseconds */
   @Alias('createdAt')
   final int createdAt;

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.authentication.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace com.github.asyncmc.mojang.authentication.php.server;
 
 /**
  * AuthenticationRequestTest Class Doc Comment
  *
  * @category    Class
  * @description Request body needed to authenticate the player using the username/e-mail and password. Use with care. This is a risky operation.
- * @package     OpenAPI\Client
+ * @package     com.github.asyncmc.mojang.authentication.php.server
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

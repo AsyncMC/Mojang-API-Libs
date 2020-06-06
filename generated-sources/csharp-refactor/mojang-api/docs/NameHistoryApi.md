@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.NameHistoryApi
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.api.NameHistoryApi
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -21,9 +21,9 @@ Find the current players name, UUID, demo status and migration flag by the curre
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.model;
 
 namespace Example
 {
@@ -80,9 +80,9 @@ Gets the full player's name history
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.model;
 
 namespace Example
 {
@@ -141,9 +141,9 @@ Find the current player name, UUID, demo status and migration flag by the curren
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-name := """openapi-java-playframework"""
+name := """mojang-api-java-play-framework"""
 
 version := "1.0-SNAPSHOT"
 

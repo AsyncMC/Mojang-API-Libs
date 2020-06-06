@@ -21,7 +21,7 @@ This will set the skin for the selected profile, but Mojang&#39;s servers will f
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = SkinOperationsApi()
 val strippedUuid : kotlin.String = 38ba542eb5924231a54cca0f2eac2b54 // kotlin.String | The player UUID without hyphens
@@ -69,7 +69,7 @@ Resets the player skin to default
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = SkinOperationsApi()
 val strippedUuid : kotlin.String = 38ba542eb5924231a54cca0f2eac2b54 // kotlin.String | The player UUID without hyphens
@@ -115,7 +115,7 @@ This uploads a skin to Mojang&#39;s servers. It also sets the users skin. This w
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = SkinOperationsApi()
 val strippedUuid : kotlin.String = 38ba542eb5924231a54cca0f2eac2b54 // kotlin.String | The player UUID without hyphens

@@ -27,13 +27,13 @@ This runs all tests and packages the library.
 
 ## Running
 
-The server builds as a fat jar with a main entrypoint. To start the service, run `java -jar ./build/libs/kotlin-server.jar`.
+The server builds as a fat jar with a main entrypoint. To start the service, run `java -jar ./build/libs/mojang-status-kotlin-server.jar`.
 
 You may also run in docker:
 
 ```
-docker build -t kotlin-server .
-docker run -p 8080:8080 kotlin-server
+docker build -t mojang-status-kotlin-server .
+docker run -p 8080:8080 mojang-status-kotlin-server
 ```
 
 ## Features/Implementation Notes
@@ -55,7 +55,7 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [org.openapitools.server.models.ApiStatus](docs/ApiStatus.md)
+ - [com.github.asyncmc.mojang.status.kotlin.server.model.ApiStatus](docs/ApiStatus.md)
 
 
 <a name="documentation-for-authorization"></a>

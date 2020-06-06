@@ -23,13 +23,19 @@ using boost::property_tree::ptree;
 using boost::property_tree::read_json;
 using boost::property_tree::write_json;
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace model {
 
 PrivateUserData::PrivateUserData()
 {
+    m_Id = "";
     
 }
 
@@ -41,6 +47,7 @@ std::string PrivateUserData::toJsonString()
 {
 	std::stringstream ss;
 	ptree pt;
+	pt.put("Id", m_Id);
 	write_json(ss, pt, false);
 	return ss.str();
 }
@@ -50,6 +57,7 @@ void PrivateUserData::fromJsonString(std::string const& jsonString)
 	std::stringstream ss(jsonString);
 	ptree pt;
 	read_json(ss,pt);
+	m_Id = pt.get("Id", "");
 }
 
 std::string PrivateUserData::getId() const
@@ -69,6 +77,11 @@ void PrivateUserData::setProperties(std::vector<std::shared_ptr<GameProfilePrope
     m_Properties = value;
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

@@ -11,9 +11,13 @@
 
 #include "JsonBody.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 JsonBody::JsonBody( const web::json::value& json)
@@ -30,6 +34,10 @@ void JsonBody::writeTo( std::ostream& target )
     m_Json.serialize(target);
 }
 
+}
+}
+}
+}
 }
 }
 }

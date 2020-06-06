@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.DefaultApi
+# com.github.asyncmc.mojang.authentication.csharp.dotnet2.api.DefaultApi
 
 All URIs are relative to *https://authserver.mojang.com*
 
@@ -21,9 +21,9 @@ Method | HTTP request | Description
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.model;
 
 namespace Example
 {
@@ -80,9 +80,9 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.model;
 
 namespace Example
 {
@@ -138,9 +138,9 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.model;
 
 namespace Example
 {
@@ -197,9 +197,9 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.model;
 
 namespace Example
 {
@@ -255,9 +255,9 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.authentication.csharp.dotnet2.model;
 
 namespace Example
 {

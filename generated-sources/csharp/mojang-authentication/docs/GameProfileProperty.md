@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.GameProfileProperty
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model.GameProfileProperty
 ## Properties
 
 Name | Type | Description | Notes

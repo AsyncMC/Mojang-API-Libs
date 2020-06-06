@@ -15,7 +15,7 @@ from __future__ import absolute_import
 import unittest
 
 import openapi_client
-from openapi_client.models.player_skin_metadata import PlayerSkinMetadata  # noqa: E501
+from openapi_client.com.github.asyncmc.mojang.sessions.python.model.player_skin_metadata import PlayerSkinMetadata  # noqa: E501
 from openapi_client.rest import ApiException
 
 

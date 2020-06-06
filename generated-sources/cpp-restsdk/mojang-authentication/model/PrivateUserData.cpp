@@ -13,9 +13,13 @@
 
 #include "PrivateUserData.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 PrivateUserData::PrivateUserData()
@@ -55,10 +59,7 @@ void PrivateUserData::toMultipart(std::shared_ptr<MultipartFormData> multipart, 
 
     if(m_IdIsSet)
     {
-        if (m_Id.get())
-        {
-            m_Id->toMultipart(multipart, utility::conversions::to_string_t("id."));
-        }
+        multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t("id"), m_Id));
     }
     {
         std::vector<web::json::value> jsonArray;
@@ -84,12 +85,7 @@ void PrivateUserData::fromMultiPart(std::shared_ptr<MultipartFormData> multipart
 
     if(multipart->hasContent(utility::conversions::to_string_t("id")))
     {
-        if(multipart->hasContent(utility::conversions::to_string_t("id")))
-        {
-            HttpContent newItem(utility::conversions::to_string_t(""));
-            newItem->fromMultiPart(multipart, utility::conversions::to_string_t("id."));
-            setId( newItem );
-        }
+        setId(ModelBase::stringFromHttpContent(multipart->getContent(utility::conversions::to_string_t("id"))));
     }
     {
         m_Properties.clear();
@@ -114,6 +110,10 @@ void PrivateUserData::fromMultiPart(std::shared_ptr<MultipartFormData> multipart
     }
 }
 
+}
+}
+}
+}
 }
 }
 }

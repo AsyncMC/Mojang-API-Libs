@@ -36,9 +36,9 @@ Run the following command to generate the DLL
 
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 ```csharp
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model;
 ```
 <a name="packaging"></a>
 ## Packaging
@@ -59,9 +59,9 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model;
 
 namespace Example
 {
@@ -105,19 +105,19 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [Model.AccessKeys](docs/AccessKeys.md)
- - [Model.Agent](docs/Agent.md)
- - [Model.Authentication](docs/Authentication.md)
- - [Model.AuthenticationRequest](docs/AuthenticationRequest.md)
- - [Model.Error](docs/Error.md)
- - [Model.GameProfile](docs/GameProfile.md)
- - [Model.GameProfileProperty](docs/GameProfileProperty.md)
- - [Model.PrivateUserData](docs/PrivateUserData.md)
- - [Model.ProfileId](docs/ProfileId.md)
- - [Model.ReducedUserData](docs/ReducedUserData.md)
- - [Model.RefreshRequest](docs/RefreshRequest.md)
- - [Model.RefreshResponse](docs/RefreshResponse.md)
- - [Model.UsernamePassword](docs/UsernamePassword.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.AccessKeys](docs/AccessKeys.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.Agent](docs/Agent.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.Authentication](docs/Authentication.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.AuthenticationRequest](docs/AuthenticationRequest.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.Error](docs/Error.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.GameProfile](docs/GameProfile.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.GameProfileProperty](docs/GameProfileProperty.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.PrivateUserData](docs/PrivateUserData.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.ProfileId](docs/ProfileId.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.ReducedUserData](docs/ReducedUserData.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.RefreshRequest](docs/RefreshRequest.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.RefreshResponse](docs/RefreshResponse.md)
+ - [com.github.asyncmc.mojang.authentication.csharp.model.UsernamePassword](docs/UsernamePassword.md)
 
 
 <a name="documentation-for-authorization"></a>

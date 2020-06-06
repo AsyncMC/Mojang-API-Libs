@@ -13,7 +13,7 @@ import io.ktor.locations.*
 import io.ktor.metrics.*
 import io.ktor.routing.*
 import java.util.concurrent.*
-import org.openapitools.server.apis.*
+import com.github.asyncmc.mojang.sessions.kotlin.server.api.*
 
 
 internal val settings = HoconApplicationConfig(ConfigFactory.defaultApplication(HTTP::class.java.classLoader))

@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\SecurityQuestionAnswerApiInterface
+# com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SecurityQuestionAnswerApiInterface
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -33,7 +33,7 @@ Check if security questions are needed
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\SecurityQuestionAnswerApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SecurityQuestionAnswerApiInterface;
 
 class SecurityQuestionAnswerApi implements SecurityQuestionAnswerApiInterface
 {
@@ -71,7 +71,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **listPendingSecurityQuestions**
-> OpenAPI\Server\Model\SecurityChallenge listPendingSecurityQuestions()
+> com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SecurityChallenge listPendingSecurityQuestions()
 
 Get list of questions
 
@@ -82,7 +82,7 @@ Get list of questions
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\SecurityQuestionAnswerApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SecurityQuestionAnswerApiInterface;
 
 class SecurityQuestionAnswerApi implements SecurityQuestionAnswerApiInterface
 {
@@ -106,7 +106,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OpenAPI\Server\Model\SecurityChallenge**](../Model/SecurityChallenge.md)
+[**com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SecurityChallenge**](../Model/SecurityChallenge.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ Send back the answers
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\SecurityQuestionAnswerApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SecurityQuestionAnswerApiInterface;
 
 class SecurityQuestionAnswerApi implements SecurityQuestionAnswerApiInterface
 {
@@ -154,7 +154,7 @@ class SecurityQuestionAnswerApi implements SecurityQuestionAnswerApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **securityAnswer** | [**OpenAPI\Server\Model\SecurityAnswer**](../Model/array.md)| An array with all the answers |
+ **securityAnswer** | [**com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SecurityAnswer**](../Model/array.md)| An array with all the answers |
 
 ### Return type
 

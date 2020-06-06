@@ -27,13 +27,13 @@ This runs all tests and packages the library.
 
 ## Running
 
-The server builds as a fat jar with a main entrypoint. To start the service, run `java -jar ./build/libs/kotlin-server.jar`.
+The server builds as a fat jar with a main entrypoint. To start the service, run `java -jar ./build/libs/mojang-sessions-kotlin-server.jar`.
 
 You may also run in docker:
 
 ```
-docker build -t kotlin-server .
-docker run -p 8080:8080 kotlin-server
+docker build -t mojang-sessions-kotlin-server .
+docker run -p 8080:8080 mojang-sessions-kotlin-server
 ```
 
 ## Features/Implementation Notes
@@ -56,14 +56,14 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [org.openapitools.server.models.PlayerProfile](docs/PlayerProfile.md)
- - [org.openapitools.server.models.PlayerProfileProperty](docs/PlayerProfileProperty.md)
- - [org.openapitools.server.models.PlayerProfileTexturePropertyValue](docs/PlayerProfileTexturePropertyValue.md)
- - [org.openapitools.server.models.PlayerSkinMetadata](docs/PlayerSkinMetadata.md)
- - [org.openapitools.server.models.PlayerSkinURL](docs/PlayerSkinURL.md)
- - [org.openapitools.server.models.PlayerTexture](docs/PlayerTexture.md)
- - [org.openapitools.server.models.PlayerTextureURL](docs/PlayerTextureURL.md)
- - [org.openapitools.server.models.SessionApiError](docs/SessionApiError.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.server.model.PlayerProfile](docs/PlayerProfile.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.server.model.PlayerProfileProperty](docs/PlayerProfileProperty.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.server.model.PlayerProfileTexturePropertyValue](docs/PlayerProfileTexturePropertyValue.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.server.model.PlayerSkinMetadata](docs/PlayerSkinMetadata.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.server.model.PlayerSkinURL](docs/PlayerSkinURL.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.server.model.PlayerTexture](docs/PlayerTexture.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.server.model.PlayerTextureURL](docs/PlayerTextureURL.md)
+ - [com.github.asyncmc.mojang.sessions.kotlin.server.model.SessionApiError](docs/SessionApiError.md)
 
 
 <a name="documentation-for-authorization"></a>

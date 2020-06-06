@@ -56,6 +56,6 @@ Class | Method | HTTP request | Description
 
 ## Models
 
-* OpenAPIServer\Model\ApiStatus
+* com.github.asyncmc.mojang.status.php.slim.server\com.github.asyncmc.mojang.status.php.slim.model\ApiStatus
 
 

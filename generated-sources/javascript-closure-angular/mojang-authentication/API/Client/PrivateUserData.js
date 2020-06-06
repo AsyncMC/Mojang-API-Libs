@@ -6,7 +6,7 @@ goog.provide('API.Client.PrivateUserData');
 API.Client.PrivateUserData = function() {}
 
 /**
- * @type {!Object}
+ * @type {!string}
  * @export
  */
 API.Client.PrivateUserData.prototype.id;

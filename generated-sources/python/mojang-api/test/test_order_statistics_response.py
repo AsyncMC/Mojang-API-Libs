@@ -15,7 +15,7 @@ from __future__ import absolute_import
 import unittest
 
 import openapi_client
-from openapi_client.models.order_statistics_response import OrderStatisticsResponse  # noqa: E501
+from openapi_client.com.github.asyncmc.mojang.api.python.model.order_statistics_response import OrderStatisticsResponse  # noqa: E501
 from openapi_client.rest import ApiException
 
 

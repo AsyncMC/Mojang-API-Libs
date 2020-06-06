@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAPI\Server\Service;
+namespace com.github.asyncmc.mojang.api.php.symfony.server\Service;
 
 use Symfony\Component\Validator\Validation;
 

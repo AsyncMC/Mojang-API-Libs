@@ -13,9 +13,13 @@
 
 #include "PlayerSkinMetadata.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 PlayerSkinMetadata::PlayerSkinMetadata()
@@ -106,6 +110,10 @@ void PlayerSkinMetadata::unsetModel()
     m_ModelIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

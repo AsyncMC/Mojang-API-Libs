@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the model.
  */
-namespace OpenAPIServer\Model;
+namespace com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model;
 
-use OpenAPIServer\Model\SkinModel;
+use com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\SkinModel;
 
 /**
  * SkinModelTest Class Doc Comment
  *
  * @category Class
  * @description Model is an empty string for the default model (like Steve) and \&quot;slim\&quot; for the slim model (like Alex)
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\SkinModel
+ * @coversDefaultClass \com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\SkinModel
  */
 class SkinModelTest extends \PHPUnit_Framework_TestCase
 {

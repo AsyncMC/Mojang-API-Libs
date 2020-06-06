@@ -20,7 +20,7 @@ version: 1.0.0
 description: OpenAPI API client
 dependencies:
   openapi:
-    git: https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+    git: https://github.com/AsyncMC/Mojang-API-Libs.git
       version: 'any'
 ```
 

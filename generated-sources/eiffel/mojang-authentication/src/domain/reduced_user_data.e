@@ -24,7 +24,7 @@ inherit
 
 feature --Access
 
-    id: detachable FILE 
+    id: detachable STRING_32 
       
     properties: detachable LIST [GAME_PROFILE_PROPERTY] 
       

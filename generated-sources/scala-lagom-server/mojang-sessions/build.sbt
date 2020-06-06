@@ -1,8 +1,8 @@
 version       := "1.0.0"
 
-name          := "scala-lagom-server"
+name          := "mojang-sessions-scala-lagom-server"
 
-organization  := "org.openapitools"
+organization  := "com.github.asyncmc"
 
 scalaVersion  := "2.11.8"
 

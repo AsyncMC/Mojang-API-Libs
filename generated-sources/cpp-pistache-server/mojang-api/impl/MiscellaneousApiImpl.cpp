@@ -12,12 +12,17 @@
 
 #include "MiscellaneousApiImpl.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::pistache::server::model;
 
 MiscellaneousApiImpl::MiscellaneousApiImpl(std::shared_ptr<Pistache::Rest::Router> rtr)
     : MiscellaneousApi(rtr)
@@ -27,6 +32,11 @@ void MiscellaneousApiImpl::get_orders_statistics(const OrderStatisticsRequest &o
     response.send(Pistache::Http::Code::Ok, "Do some magic\n");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

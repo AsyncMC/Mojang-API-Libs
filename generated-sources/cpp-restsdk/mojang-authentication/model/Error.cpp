@@ -13,9 +13,13 @@
 
 #include "Error.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 Error::Error()
@@ -149,6 +153,10 @@ void Error::unsetErrorMessage()
     m_ErrorMessageIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

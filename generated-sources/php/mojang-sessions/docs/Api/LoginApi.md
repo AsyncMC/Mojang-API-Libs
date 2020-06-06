@@ -1,4 +1,4 @@
-# OpenAPI\Client\LoginApi
+# com.github.asyncmc.mojang.sessions.php.server\LoginApi
 
 All URIs are relative to *https://sessionserver.mojang.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getPlayerProfile**
-> \OpenAPI\Client\Model\PlayerProfile getPlayerProfile($stripped_uuid, $unsigned)
+> \com.github.asyncmc.mojang.sessions.php.server\com.github.asyncmc.mojang.sessions.php.model\PlayerProfile getPlayerProfile($stripped_uuid, $unsigned)
 
 Gets the player's game profile
 
@@ -19,7 +19,7 @@ This will return the player's username plus any additional information about the
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new OpenAPI\Client\Api\LoginApi(
+$apiInstance = new com.github.asyncmc.mojang.sessions.php.server\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PlayerProfile**](../Model/PlayerProfile.md)
+[**\com.github.asyncmc.mojang.sessions.php.server\com.github.asyncmc.mojang.sessions.php.model\PlayerProfile**](../Model/PlayerProfile.md)
 
 ### Authorization
 

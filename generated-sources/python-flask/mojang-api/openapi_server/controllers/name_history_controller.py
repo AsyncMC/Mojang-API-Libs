@@ -1,9 +1,9 @@
 import connexion
 import six
 
-from openapi_server.models.current_player_i_ds import CurrentPlayerIDs  # noqa: E501
-from openapi_server.models.error import Error  # noqa: E501
-from openapi_server.models.name_change import NameChange  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.api.python.flask.model.current_player_i_ds import CurrentPlayerIDs  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.api.python.flask.model.error import Error  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.api.python.flask.model.name_change import NameChange  # noqa: E501
 from openapi_server import util
 
 

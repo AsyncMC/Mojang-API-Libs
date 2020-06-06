@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,23 +27,23 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace com.github.asyncmc.mojang.api.php.symfony.server\Controller;
 
 use \Exception;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Validator\Constraints as Assert;
-use OpenAPI\Server\Api\NameHistoryApiInterface;
-use OpenAPI\Server\Model\CurrentPlayerIDs;
-use OpenAPI\Server\Model\Error;
-use OpenAPI\Server\Model\NameChange;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\NameHistoryApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\CurrentPlayerIDs;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\Error;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\NameChange;
 
 /**
  * NameHistoryController Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */

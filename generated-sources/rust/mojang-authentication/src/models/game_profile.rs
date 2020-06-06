@@ -21,7 +21,7 @@ pub struct GameProfile {
   #[serde(rename = "name")]
   name: Option<String>,
   #[serde(rename = "userId")]
-  user_id: Option<::models::File>,
+  user_id: Option<String>,
   /// Unix timestamp in milliseconds
   #[serde(rename = "createdAt")]
   created_at: Option<i64>,
@@ -104,16 +104,16 @@ impl GameProfile {
     self.name = None;
   }
 
-  pub fn set_user_id(&mut self, user_id: ::models::File) {
+  pub fn set_user_id(&mut self, user_id: String) {
     self.user_id = Some(user_id);
   }
 
-  pub fn with_user_id(mut self, user_id: ::models::File) -> GameProfile {
+  pub fn with_user_id(mut self, user_id: String) -> GameProfile {
     self.user_id = Some(user_id);
     self
   }
 
-  pub fn user_id(&self) -> Option<&::models::File> {
+  pub fn user_id(&self) -> Option<&String> {
     self.user_id.as_ref()
   }
 

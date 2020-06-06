@@ -13,9 +13,13 @@
 
 #include "OrderStatistic.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 OrderStatistic::OrderStatistic()
@@ -63,6 +67,10 @@ void OrderStatistic::fromMultiPart(std::shared_ptr<MultipartFormData> multipart,
 
 }
 
+}
+}
+}
+}
 }
 }
 }

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SecurityChallenge
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.model.SecurityChallenge
 ## Properties
 
 Name | Type | Description | Notes

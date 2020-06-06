@@ -15,17 +15,21 @@
  * The current player, demo and legacy status of a player identified by the id
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_CurrentPlayerIDs_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_CurrentPlayerIDs_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_CurrentPlayerIDs_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_CurrentPlayerIDs_H_
 
 
 #include "../ModelBase.h"
 
 #include <cpprest/details/basic_types.h>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 /// <summary>
@@ -98,5 +102,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_CurrentPlayerIDs_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_CurrentPlayerIDs_H_ */

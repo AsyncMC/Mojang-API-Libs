@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace com.github.asyncmc.mojang.authentication.php.ze.ph.server;
 
 use Interop\Http\ServerMiddleware\DelegateInterface;
 use Interop\Http\ServerMiddleware\MiddlewareInterface;

@@ -13,9 +13,13 @@
 
 #include "AuthenticationRequest.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 AuthenticationRequest::AuthenticationRequest()
@@ -69,6 +73,10 @@ void AuthenticationRequest::fromMultiPart(std::shared_ptr<MultipartFormData> mul
     setPassword(ModelBase::stringFromHttpContent(multipart->getContent(utility::conversions::to_string_t("password"))));
 }
 
+}
+}
+}
+}
 }
 }
 }

@@ -6,10 +6,10 @@
         <version>5</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
-    <artifactId>openapi-undertow-server</artifactId>
+    <groupId>com.github.asyncmc</groupId>
+    <artifactId>mojang-authentication-java-undertow-server</artifactId>
     <packaging>jar</packaging>
-    <name>openapi-undertow-server</name>
+    <name>mojang-authentication-java-undertow-server</name>
     <version>1.0.0</version>
 
     <properties>

@@ -13,9 +13,13 @@
 
 #include "NameChange.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 NameChange::NameChange()
@@ -122,6 +126,10 @@ void NameChange::unsetChangedToAt()
     m_ChangedToAtIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

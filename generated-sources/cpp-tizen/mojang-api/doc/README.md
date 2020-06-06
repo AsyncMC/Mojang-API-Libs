@@ -78,10 +78,9 @@ Method | HTTP request | Description
 ## What are the Model files for the data structures/objects?
 Class | Description
 ------------- | -------------
+ *ChangeSkinRequest* | Request Mojang to download a skin from an URL and apply to the player
  *CurrentPlayerIDs* | The current player, demo and legacy status of a player identified by the id
  *Error* | This is returned when the request fails
- *Inline_object* | 
- *Inline_object_1* | Request Mojang to download a skin from an URL and apply to the player
  *NameChange* | A registered name change.
  *OrderStatistic* | Valid options to query the order statistics
  *OrderStatisticsRequest* | The body of the request to get the order statistics
@@ -91,4 +90,5 @@ Class | Description
  *SecurityChallenge* | Binds a question to an answer id, the answer must respect the answer id.
  *SecurityQuestion* | A security question requested by Mojang
  *SkinModel* | Model is an empty string for the default model (like Steve) and \"slim\" for the slim model (like Alex)
+ *UploadSkinRequest* | 
 

@@ -17,7 +17,7 @@ Get statistics on the sales of Minecraft.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = MiscellaneousApi()
 val orderStatisticsRequest : OrderStatisticsRequest =  // OrderStatisticsRequest | The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/

@@ -35,10 +35,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [CHANGE_SKIN_REQUEST](docs/CHANGE_SKIN_REQUEST.md)
  - [CURRENT_PLAYER_I_DS](docs/CURRENT_PLAYER_I_DS.md)
  - [ERROR](docs/ERROR.md)
- - [INLINE_OBJECT](docs/INLINE_OBJECT.md)
- - [INLINE_OBJECT_1](docs/INLINE_OBJECT_1.md)
  - [NAME_CHANGE](docs/NAME_CHANGE.md)
  - [ORDER_STATISTIC](docs/ORDER_STATISTIC.md)
  - [ORDER_STATISTICS_REQUEST](docs/ORDER_STATISTICS_REQUEST.md)
@@ -48,6 +47,7 @@ Class | Method | HTTP request | Description
  - [SECURITY_CHALLENGE](docs/SECURITY_CHALLENGE.md)
  - [SECURITY_QUESTION](docs/SECURITY_QUESTION.md)
  - [SKIN_MODEL](docs/SKIN_MODEL.md)
+ - [UPLOAD_SKIN_REQUEST](docs/UPLOAD_SKIN_REQUEST.md)
 
 
 ## Documentation For Authorization

@@ -16,10 +16,10 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/PlayerProfile', 'model/PlayerProfileProperty', 'model/PlayerProfileTexturePropertyValue', 'model/PlayerSkinMetadata', 'model/PlayerSkinURL', 'model/PlayerTexture', 'model/PlayerTextureURL', 'model/SessionApiError', 'api/BansApi', 'api/LoginApi'], factory);
+    define(['com.github.asyncmc.mojang.sessions.javascript.server/ApiClient', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerProfile', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerProfileProperty', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerProfileTexturePropertyValue', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerSkinMetadata', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerSkinURL', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerTexture', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerTextureURL', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/SessionApiError', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.api/BansApi', 'com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.api/LoginApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/PlayerProfile'), require('./model/PlayerProfileProperty'), require('./model/PlayerProfileTexturePropertyValue'), require('./model/PlayerSkinMetadata'), require('./model/PlayerSkinURL'), require('./model/PlayerTexture'), require('./model/PlayerTextureURL'), require('./model/SessionApiError'), require('./api/BansApi'), require('./api/LoginApi'));
+    module.exports = factory(require('./ApiClient'), require('./com.github.asyncmc.mojang.sessions.javascript.model/PlayerProfile'), require('./com.github.asyncmc.mojang.sessions.javascript.model/PlayerProfileProperty'), require('./com.github.asyncmc.mojang.sessions.javascript.model/PlayerProfileTexturePropertyValue'), require('./com.github.asyncmc.mojang.sessions.javascript.model/PlayerSkinMetadata'), require('./com.github.asyncmc.mojang.sessions.javascript.model/PlayerSkinURL'), require('./com.github.asyncmc.mojang.sessions.javascript.model/PlayerTexture'), require('./com.github.asyncmc.mojang.sessions.javascript.model/PlayerTextureURL'), require('./com.github.asyncmc.mojang.sessions.javascript.model/SessionApiError'), require('./com.github.asyncmc.mojang.sessions.javascript.api/BansApi'), require('./com.github.asyncmc.mojang.sessions.javascript.api/LoginApi'));
   }
 }(function(ApiClient, PlayerProfile, PlayerProfileProperty, PlayerProfileTexturePropertyValue, PlayerSkinMetadata, PlayerSkinURL, PlayerTexture, PlayerTextureURL, SessionApiError, BansApi, LoginApi) {
   'use strict';
@@ -30,7 +30,7 @@
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var MojangSessionApi = require('index'); // See note below*.
+   * var MojangSessionApi = require('com.github.asyncmc.mojang.sessions.javascript.server/index'); // See note below*.
    * var xxxSvc = new MojangSessionApi.XxxApi(); // Allocate the API class we're going to use.
    * var yyyModel = new MojangSessionApi.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
@@ -38,7 +38,7 @@
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
    * ...
    * </pre>
-   * <em>*NOTE: For a top-level AMD script, use require(['index'], function(){...})
+   * <em>*NOTE: For a top-level AMD script, use require(['com.github.asyncmc.mojang.sessions.javascript.server/index'], function(){...})
    * and put the application logic within the callback function.</em>
    * </p>
    * <p>
@@ -52,63 +52,63 @@
    * ...
    * </pre>
    * </p>
-   * @module index
+   * @module com.github.asyncmc.mojang.sessions.javascript.server/index
    * @version 2020-06-05
    */
   var exports = {
     /**
      * The ApiClient constructor.
-     * @property {module:ApiClient}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/ApiClient}
      */
     ApiClient: ApiClient,
     /**
      * The PlayerProfile model constructor.
-     * @property {module:model/PlayerProfile}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerProfile}
      */
     PlayerProfile: PlayerProfile,
     /**
      * The PlayerProfileProperty model constructor.
-     * @property {module:model/PlayerProfileProperty}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerProfileProperty}
      */
     PlayerProfileProperty: PlayerProfileProperty,
     /**
      * The PlayerProfileTexturePropertyValue model constructor.
-     * @property {module:model/PlayerProfileTexturePropertyValue}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerProfileTexturePropertyValue}
      */
     PlayerProfileTexturePropertyValue: PlayerProfileTexturePropertyValue,
     /**
      * The PlayerSkinMetadata model constructor.
-     * @property {module:model/PlayerSkinMetadata}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerSkinMetadata}
      */
     PlayerSkinMetadata: PlayerSkinMetadata,
     /**
      * The PlayerSkinURL model constructor.
-     * @property {module:model/PlayerSkinURL}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerSkinURL}
      */
     PlayerSkinURL: PlayerSkinURL,
     /**
      * The PlayerTexture model constructor.
-     * @property {module:model/PlayerTexture}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerTexture}
      */
     PlayerTexture: PlayerTexture,
     /**
      * The PlayerTextureURL model constructor.
-     * @property {module:model/PlayerTextureURL}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/PlayerTextureURL}
      */
     PlayerTextureURL: PlayerTextureURL,
     /**
      * The SessionApiError model constructor.
-     * @property {module:model/SessionApiError}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.model/SessionApiError}
      */
     SessionApiError: SessionApiError,
     /**
      * The BansApi service constructor.
-     * @property {module:api/BansApi}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.api/BansApi}
      */
     BansApi: BansApi,
     /**
      * The LoginApi service constructor.
-     * @property {module:api/LoginApi}
+     * @property {module:com.github.asyncmc.mojang.sessions.javascript.server/com.github.asyncmc.mojang.sessions.javascript.api/LoginApi}
      */
     LoginApi: LoginApi
   };

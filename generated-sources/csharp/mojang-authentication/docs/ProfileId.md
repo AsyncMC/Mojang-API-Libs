@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.ProfileId
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model.ProfileId
 ## Properties
 
 Name | Type | Description | Notes

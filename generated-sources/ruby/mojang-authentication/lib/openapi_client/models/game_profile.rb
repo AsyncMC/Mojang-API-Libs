@@ -57,7 +57,7 @@ module OpenapiClient
         :'agent' => :'String',
         :'id' => :'String',
         :'name' => :'String',
-        :'user_id' => :'File',
+        :'user_id' => :'String',
         :'created_at' => :'Integer',
         :'legacy_profile' => :'BOOLEAN',
         :'suspended' => :'BOOLEAN',

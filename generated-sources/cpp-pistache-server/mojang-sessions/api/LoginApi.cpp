@@ -13,13 +13,18 @@
 #include "LoginApi.h"
 #include "Helpers.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
 using namespace org::openapitools::server::helpers;
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::sessions::cpp::pistache::server::model;
 
 LoginApi::LoginApi(std::shared_ptr<Pistache::Rest::Router> rtr) { 
     router = rtr;
@@ -66,6 +71,11 @@ void LoginApi::login_api_default_handler(const Pistache::Rest::Request &request,
     response.send(Pistache::Http::Code::Not_Found, "The requested method does not exist");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

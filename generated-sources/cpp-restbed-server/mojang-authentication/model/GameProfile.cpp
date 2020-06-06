@@ -23,8 +23,13 @@ using boost::property_tree::ptree;
 using boost::property_tree::read_json;
 using boost::property_tree::write_json;
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace model {
 
@@ -33,6 +38,7 @@ GameProfile::GameProfile()
     m_Agent = "";
     m_Id = "";
     m_Name = "";
+    m_UserId = "";
     m_CreatedAt = 0L;
     m_LegacyProfile = false;
     m_Suspended = false;
@@ -53,6 +59,7 @@ std::string GameProfile::toJsonString()
 	pt.put("Agent", m_Agent);
 	pt.put("Id", m_Id);
 	pt.put("Name", m_Name);
+	pt.put("UserId", m_UserId);
 	pt.put("CreatedAt", m_CreatedAt);
 	pt.put("LegacyProfile", m_LegacyProfile);
 	pt.put("Suspended", m_Suspended);
@@ -71,6 +78,7 @@ void GameProfile::fromJsonString(std::string const& jsonString)
 	m_Agent = pt.get("Agent", "");
 	m_Id = pt.get("Id", "");
 	m_Name = pt.get("Name", "");
+	m_UserId = pt.get("UserId", "");
 	m_CreatedAt = pt.get("CreatedAt", 0L);
 	m_LegacyProfile = pt.get("LegacyProfile", false);
 	m_Suspended = pt.get("Suspended", false);
@@ -160,6 +168,11 @@ void GameProfile::setLegacy(bool value)
     m_Legacy = value;
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

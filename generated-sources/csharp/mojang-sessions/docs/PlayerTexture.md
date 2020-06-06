@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PlayerTexture
+# Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.model.PlayerTexture
 ## Properties
 
 Name | Type | Description | Notes

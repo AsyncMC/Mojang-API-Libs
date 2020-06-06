@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **agent** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
-**userId** | **File** |  | [optional] 
+**userId** | **String** |  | [optional] 
 **createdAt** | **Number** | Unix timestamp in milliseconds | [optional] 
 **legacyProfile** | **Boolean** |  | [optional] 
 **suspended** | **Boolean** |  | [optional] 

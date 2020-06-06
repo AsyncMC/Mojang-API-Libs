@@ -15,7 +15,7 @@ use serde_json::Value;
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ReducedUserData {
   #[serde(rename = "id")]
-  id: Option<::models::File>,
+  id: Option<String>,
   #[serde(rename = "properties")]
   properties: Option<Vec<::models::GameProfileProperty>>
 }
@@ -28,16 +28,16 @@ impl ReducedUserData {
     }
   }
 
-  pub fn set_id(&mut self, id: ::models::File) {
+  pub fn set_id(&mut self, id: String) {
     self.id = Some(id);
   }
 
-  pub fn with_id(mut self, id: ::models::File) -> ReducedUserData {
+  pub fn with_id(mut self, id: String) -> ReducedUserData {
     self.id = Some(id);
     self
   }
 
-  pub fn id(&self) -> Option<&::models::File> {
+  pub fn id(&self) -> Option<&String> {
     self.id.as_ref()
   }
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.GameProfile
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model.GameProfile
 ## Properties
 
 Name | Type | Description | Notes
@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **Agent** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
 **Name** | **string** |  | [optional] 
-**UserId** | **System.IO.Stream** |  | [optional] 
+**UserId** | **string** |  | [optional] 
 **CreatedAt** | **long?** | Unix timestamp in milliseconds | [optional] 
 **LegacyProfile** | **bool?** |  | [optional] 
 **Suspended** | **bool?** |  | [optional] 

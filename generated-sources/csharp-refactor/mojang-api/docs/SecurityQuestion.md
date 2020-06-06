@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SecurityQuestion
+# Org.OpenAPITools.com.github.asyncmc.mojang.api.csharp.refactor.model.SecurityQuestion
 ## Properties
 
 Name | Type | Description | Notes

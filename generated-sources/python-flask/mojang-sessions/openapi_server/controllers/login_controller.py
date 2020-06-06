@@ -1,8 +1,8 @@
 import connexion
 import six
 
-from openapi_server.models.player_profile import PlayerProfile  # noqa: E501
-from openapi_server.models.session_api_error import SessionApiError  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.sessions.python.flask.model.player_profile import PlayerProfile  # noqa: E501
+from openapi_server.com.github.asyncmc.mojang.sessions.python.flask.model.session_api_error import SessionApiError  # noqa: E501
 from openapi_server import util
 
 

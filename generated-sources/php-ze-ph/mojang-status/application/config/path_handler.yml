@@ -24,7 +24,7 @@ Articus\PathHandler\Router\FastRouteAnnotation:
     adapter:
       name: blackhole
   handlers:
-    - App\Handler\Check
+    - com.github.asyncmc.mojang.status.php.ze.ph.server\com.github.asyncmc.mojang.status.php.ze.ph.api\Check
 
 Zend\ServiceManager\AbstractFactory\ConfigAbstractFactory:
-  App\Handler\Check: []
+  com.github.asyncmc.mojang.status.php.ze.ph.server\com.github.asyncmc.mojang.status.php.ze.ph.api\Check: []

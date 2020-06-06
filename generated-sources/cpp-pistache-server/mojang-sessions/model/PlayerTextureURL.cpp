@@ -13,8 +13,13 @@
 
 #include "PlayerTextureURL.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace model {
 
@@ -60,6 +65,11 @@ void PlayerTextureURL::setUrl(std::string const& value)
     
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

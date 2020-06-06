@@ -6,7 +6,7 @@ part 'reduced_user_data.jser.dart';
 class ReducedUserData {
   
   @Alias('id')
-  final MultipartFile id;
+  final String id;
   
   @Alias('properties')
   final List<GameProfileProperty> properties;

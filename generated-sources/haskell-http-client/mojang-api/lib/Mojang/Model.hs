@@ -90,6 +90,40 @@ newtype Username = Username { unUsername :: Text } deriving (P.Eq, P.Show)
 -- * Models
 
 
+-- ** ChangeSkinRequest
+-- | ChangeSkinRequest
+-- Request Mojang to download a skin from an URL and apply to the player
+data ChangeSkinRequest = ChangeSkinRequest
+  { changeSkinRequestModel :: !(Maybe SkinModel) -- ^ "model"
+  , changeSkinRequestUrl :: !(Text) -- ^ /Required/ "url" - The URL which Mojang servers will download and apply the skin
+  } deriving (P.Show, P.Eq, P.Typeable)
+
+-- | FromJSON ChangeSkinRequest
+instance A.FromJSON ChangeSkinRequest where
+  parseJSON = A.withObject "ChangeSkinRequest" $ \o ->
+    ChangeSkinRequest
+      <$> (o .:? "model")
+      <*> (o .:  "url")
+
+-- | ToJSON ChangeSkinRequest
+instance A.ToJSON ChangeSkinRequest where
+  toJSON ChangeSkinRequest {..} =
+   _omitNulls
+      [ "model" .= changeSkinRequestModel
+      , "url" .= changeSkinRequestUrl
+      ]
+
+
+-- | Construct a value of type 'ChangeSkinRequest' (by applying it's required fields, if any)
+mkChangeSkinRequest
+  :: Text -- ^ 'changeSkinRequestUrl': The URL which Mojang servers will download and apply the skin
+  -> ChangeSkinRequest
+mkChangeSkinRequest changeSkinRequestUrl =
+  ChangeSkinRequest
+  { changeSkinRequestModel = Nothing
+  , changeSkinRequestUrl
+  }
+
 -- ** CurrentPlayerIDs
 -- | CurrentPlayerIDs
 -- The current player, demo and legacy status of a player identified by the id
@@ -164,73 +198,6 @@ mkError =
   Error
   { errorError = Nothing
   , errorErrorMessage = Nothing
-  }
-
--- ** InlineObject
--- | InlineObject
-data InlineObject = InlineObject
-  { inlineObjectModel :: !(Maybe SkinModel) -- ^ "model"
-  , inlineObjectFile :: !(FilePath) -- ^ /Required/ "file" - The skin image in PNG format
-  } deriving (P.Show, P.Eq, P.Typeable)
-
--- | FromJSON InlineObject
-instance A.FromJSON InlineObject where
-  parseJSON = A.withObject "InlineObject" $ \o ->
-    InlineObject
-      <$> (o .:? "model")
-      <*> (o .:  "file")
-
--- | ToJSON InlineObject
-instance A.ToJSON InlineObject where
-  toJSON InlineObject {..} =
-   _omitNulls
-      [ "model" .= inlineObjectModel
-      , "file" .= inlineObjectFile
-      ]
-
-
--- | Construct a value of type 'InlineObject' (by applying it's required fields, if any)
-mkInlineObject
-  :: FilePath -- ^ 'inlineObjectFile': The skin image in PNG format
-  -> InlineObject
-mkInlineObject inlineObjectFile =
-  InlineObject
-  { inlineObjectModel = Nothing
-  , inlineObjectFile
-  }
-
--- ** InlineObject1
--- | InlineObject1
--- Request Mojang to download a skin from an URL and apply to the player
-data InlineObject1 = InlineObject1
-  { inlineObject1Model :: !(Maybe SkinModel) -- ^ "model"
-  , inlineObject1Url :: !(Text) -- ^ /Required/ "url" - The URL which Mojang servers will download and apply the skin
-  } deriving (P.Show, P.Eq, P.Typeable)
-
--- | FromJSON InlineObject1
-instance A.FromJSON InlineObject1 where
-  parseJSON = A.withObject "InlineObject1" $ \o ->
-    InlineObject1
-      <$> (o .:? "model")
-      <*> (o .:  "url")
-
--- | ToJSON InlineObject1
-instance A.ToJSON InlineObject1 where
-  toJSON InlineObject1 {..} =
-   _omitNulls
-      [ "model" .= inlineObject1Model
-      , "url" .= inlineObject1Url
-      ]
-
-
--- | Construct a value of type 'InlineObject1' (by applying it's required fields, if any)
-mkInlineObject1
-  :: Text -- ^ 'inlineObject1Url': The URL which Mojang servers will download and apply the skin
-  -> InlineObject1
-mkInlineObject1 inlineObject1Url =
-  InlineObject1
-  { inlineObject1Model = Nothing
-  , inlineObject1Url
   }
 
 -- ** NameChange
@@ -465,6 +432,39 @@ mkSecurityQuestion securityQuestionId securityQuestionQuestion =
   SecurityQuestion
   { securityQuestionId
   , securityQuestionQuestion
+  }
+
+-- ** UploadSkinRequest
+-- | UploadSkinRequest
+data UploadSkinRequest = UploadSkinRequest
+  { uploadSkinRequestModel :: !(Maybe SkinModel) -- ^ "model"
+  , uploadSkinRequestFile :: !(FilePath) -- ^ /Required/ "file" - The skin image in PNG format
+  } deriving (P.Show, P.Eq, P.Typeable)
+
+-- | FromJSON UploadSkinRequest
+instance A.FromJSON UploadSkinRequest where
+  parseJSON = A.withObject "UploadSkinRequest" $ \o ->
+    UploadSkinRequest
+      <$> (o .:? "model")
+      <*> (o .:  "file")
+
+-- | ToJSON UploadSkinRequest
+instance A.ToJSON UploadSkinRequest where
+  toJSON UploadSkinRequest {..} =
+   _omitNulls
+      [ "model" .= uploadSkinRequestModel
+      , "file" .= uploadSkinRequestFile
+      ]
+
+
+-- | Construct a value of type 'UploadSkinRequest' (by applying it's required fields, if any)
+mkUploadSkinRequest
+  :: FilePath -- ^ 'uploadSkinRequestFile': The skin image in PNG format
+  -> UploadSkinRequest
+mkUploadSkinRequest uploadSkinRequestFile =
+  UploadSkinRequest
+  { uploadSkinRequestModel = Nothing
+  , uploadSkinRequestFile
   }
 
 

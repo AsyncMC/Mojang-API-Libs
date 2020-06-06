@@ -10,8 +10,8 @@
  */
 
 
-import org.openapitools.server.api._
-import org.openapitools.app.{ ResourcesApp, OpenAPIApp }
+import com.github.asyncmc.mojang.sessions.scalatra.api._
+import com.github.asyncmc.mojang.sessions.scalatra.server.app.{ ResourcesApp, OpenAPIApp }
 import javax.servlet.ServletContext
 import org.scalatra.LifeCycle
 

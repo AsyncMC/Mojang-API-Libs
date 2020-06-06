@@ -20,7 +20,7 @@ This will set the skin for the selected profile, but Mojang&#39;s servers will f
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.SkinOperationsApi;
+//import com.github.asyncmc.mojang.api.android.api.SkinOperationsApi;
 
 SkinOperationsApi apiInstance = new SkinOperationsApi();
 String strippedUuid = 38ba542eb5924231a54cca0f2eac2b54; // String | The player UUID without hyphens
@@ -64,7 +64,7 @@ Resets the player skin to default
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.SkinOperationsApi;
+//import com.github.asyncmc.mojang.api.android.api.SkinOperationsApi;
 
 SkinOperationsApi apiInstance = new SkinOperationsApi();
 String strippedUuid = 38ba542eb5924231a54cca0f2eac2b54; // String | The player UUID without hyphens
@@ -106,7 +106,7 @@ This uploads a skin to Mojang&#39;s servers. It also sets the users skin. This w
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.SkinOperationsApi;
+//import com.github.asyncmc.mojang.api.android.api.SkinOperationsApi;
 
 SkinOperationsApi apiInstance = new SkinOperationsApi();
 String strippedUuid = 38ba542eb5924231a54cca0f2eac2b54; // String | The player UUID without hyphens

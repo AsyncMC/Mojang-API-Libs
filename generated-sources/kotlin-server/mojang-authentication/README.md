@@ -27,13 +27,13 @@ This runs all tests and packages the library.
 
 ## Running
 
-The server builds as a fat jar with a main entrypoint. To start the service, run `java -jar ./build/libs/kotlin-server.jar`.
+The server builds as a fat jar with a main entrypoint. To start the service, run `java -jar ./build/libs/mojang-authentication-kotlin-server.jar`.
 
 You may also run in docker:
 
 ```
-docker build -t kotlin-server .
-docker run -p 8080:8080 kotlin-server
+docker build -t mojang-authentication-kotlin-server .
+docker run -p 8080:8080 mojang-authentication-kotlin-server
 ```
 
 ## Features/Implementation Notes
@@ -59,19 +59,19 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [org.openapitools.server.models.AccessKeys](docs/AccessKeys.md)
- - [org.openapitools.server.models.Agent](docs/Agent.md)
- - [org.openapitools.server.models.Authentication](docs/Authentication.md)
- - [org.openapitools.server.models.AuthenticationRequest](docs/AuthenticationRequest.md)
- - [org.openapitools.server.models.Error](docs/Error.md)
- - [org.openapitools.server.models.GameProfile](docs/GameProfile.md)
- - [org.openapitools.server.models.GameProfileProperty](docs/GameProfileProperty.md)
- - [org.openapitools.server.models.PrivateUserData](docs/PrivateUserData.md)
- - [org.openapitools.server.models.ProfileId](docs/ProfileId.md)
- - [org.openapitools.server.models.ReducedUserData](docs/ReducedUserData.md)
- - [org.openapitools.server.models.RefreshRequest](docs/RefreshRequest.md)
- - [org.openapitools.server.models.RefreshResponse](docs/RefreshResponse.md)
- - [org.openapitools.server.models.UsernamePassword](docs/UsernamePassword.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.AccessKeys](docs/AccessKeys.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.Agent](docs/Agent.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.Authentication](docs/Authentication.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.AuthenticationRequest](docs/AuthenticationRequest.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.Error](docs/Error.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.GameProfile](docs/GameProfile.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.GameProfileProperty](docs/GameProfileProperty.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.PrivateUserData](docs/PrivateUserData.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.ProfileId](docs/ProfileId.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.ReducedUserData](docs/ReducedUserData.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.RefreshRequest](docs/RefreshRequest.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.RefreshResponse](docs/RefreshResponse.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.server.model.UsernamePassword](docs/UsernamePassword.md)
 
 
 <a name="documentation-for-authorization"></a>

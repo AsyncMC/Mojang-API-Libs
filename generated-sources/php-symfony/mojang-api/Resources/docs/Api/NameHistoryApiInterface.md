@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\NameHistoryApiInterface
+# com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\NameHistoryApiInterface
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -22,7 +22,7 @@ services:
 ```
 
 ## **findUniqueIdsByName**
-> OpenAPI\Server\Model\CurrentPlayerIDs findUniqueIdsByName($requestBody)
+> com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\CurrentPlayerIDs findUniqueIdsByName($requestBody)
 
 Find the current UUID of multiple players at once
 
@@ -35,7 +35,7 @@ Find the current players name, UUID, demo status and migration flag by the curre
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\NameHistoryApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\NameHistoryApiInterface;
 
 class NameHistoryApi implements NameHistoryApiInterface
 {
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OpenAPI\Server\Model\CurrentPlayerIDs**](../Model/CurrentPlayerIDs.md)
+[**com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\CurrentPlayerIDs**](../Model/CurrentPlayerIDs.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **getNameHistory**
-> OpenAPI\Server\Model\NameChange getNameHistory($strippedUuid)
+> com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\NameChange getNameHistory($strippedUuid)
 
 Gets the full player's name history
 
@@ -87,7 +87,7 @@ Gets the full player's name history
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\NameHistoryApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\NameHistoryApiInterface;
 
 class NameHistoryApi implements NameHistoryApiInterface
 {
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OpenAPI\Server\Model\NameChange**](../Model/NameChange.md)
+[**com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\NameChange**](../Model/NameChange.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **getUniqueIdByName**
-> OpenAPI\Server\Model\CurrentPlayerIDs getUniqueIdByName($username, $at)
+> com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\CurrentPlayerIDs getUniqueIdByName($username, $at)
 
 Find the UUID by name
 
@@ -141,7 +141,7 @@ Find the current player name, UUID, demo status and migration flag by the curren
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\NameHistoryApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\NameHistoryApiInterface;
 
 class NameHistoryApi implements NameHistoryApiInterface
 {
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OpenAPI\Server\Model\CurrentPlayerIDs**](../Model/CurrentPlayerIDs.md)
+[**com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\CurrentPlayerIDs**](../Model/CurrentPlayerIDs.md)
 
 ### Authorization
 

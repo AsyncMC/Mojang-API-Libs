@@ -24,7 +24,7 @@ API.Client.GameProfile.prototype.id;
 API.Client.GameProfile.prototype.name;
 
 /**
- * @type {!Object}
+ * @type {!string}
  * @export
  */
 API.Client.GameProfile.prototype.userId;

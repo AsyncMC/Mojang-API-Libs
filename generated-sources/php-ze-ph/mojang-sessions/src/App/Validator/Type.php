@@ -1,5 +1,5 @@
 <?php
-namespace App\Validator;
+namespace com.github.asyncmc.mojang.sessions.php.ze.ph.server\Validator;
 
 use Zend\Validator\AbstractValidator;
 use Zend\Validator\Exception;

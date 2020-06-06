@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the model.
  */
-namespace OpenAPIServer\Model;
+namespace com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model;
 
-use OpenAPIServer\Model\PlayerTextureURL;
+use com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerTextureURL;
 
 /**
  * PlayerTextureURLTest Class Doc Comment
  *
  * @category Class
  * @description Wraps the URL to the texture
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\PlayerTextureURL
+ * @coversDefaultClass \com.github.asyncmc.mojang.sessions.php.slim.server\com.github.asyncmc.mojang.sessions.php.slim.model\PlayerTextureURL
  */
 class PlayerTextureURLTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PlayerProfileTexturePropertyValue
+# Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.model.PlayerProfileTexturePropertyValue
 ## Properties
 
 Name | Type | Description | Notes

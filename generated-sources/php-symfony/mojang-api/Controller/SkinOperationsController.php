@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,22 +27,22 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace com.github.asyncmc.mojang.api.php.symfony.server\Controller;
 
 use \Exception;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Validator\Constraints as Assert;
-use OpenAPI\Server\Api\SkinOperationsApiInterface;
-use OpenAPI\Server\Model\Error;
-use OpenAPI\Server\Model\SkinModel;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SkinOperationsApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\Error;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SkinModel;
 
 /**
  * SkinOperationsController Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -82,7 +82,7 @@ class SkinOperationsController extends Controller
         // Deserialize the input values that needs it
         $strippedUuid = $this->deserialize($strippedUuid, 'string', 'string');
         $url = $this->deserialize($url, 'string', 'string');
-        $model = $this->deserialize($model, 'OpenAPI\Server\Model\SkinModel', 'string');
+        $model = $this->deserialize($model, 'com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SkinModel', 'string');
 
         // Validate the input values
         $asserts = [];
@@ -100,7 +100,7 @@ class SkinOperationsController extends Controller
             return $response;
         }
         $asserts = [];
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\SkinModel");
+        $asserts[] = new Assert\Type("com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SkinModel");
         $response = $this->validate($model, $asserts);
         if ($response instanceof Response) {
             return $response;
@@ -260,7 +260,7 @@ class SkinOperationsController extends Controller
 
         // Deserialize the input values that needs it
         $strippedUuid = $this->deserialize($strippedUuid, 'string', 'string');
-        $model = $this->deserialize($model, 'OpenAPI\Server\Model\SkinModel', 'string');
+        $model = $this->deserialize($model, 'com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SkinModel', 'string');
 
         // Validate the input values
         $asserts = [];
@@ -278,7 +278,7 @@ class SkinOperationsController extends Controller
             return $response;
         }
         $asserts = [];
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\SkinModel");
+        $asserts[] = new Assert\Type("com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SkinModel");
         $response = $this->validate($model, $asserts);
         if ($response instanceof Response) {
             return $response;

@@ -21,7 +21,7 @@ Find the current players name, UUID, demo status and migration flag by the curre
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = NameHistoryApi()
 val requestBody : kotlin.Array<kotlin.String> = [ "joserobjr", "nonExistingPlayer", "maksimkurb" ] // kotlin.Array<kotlin.String> | Array with the player names
@@ -66,7 +66,7 @@ Gets the full player&#39;s name history
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = NameHistoryApi()
 val strippedUuid : kotlin.String = 38ba542eb5924231a54cca0f2eac2b54 // kotlin.String | The player UUID without hyphens
@@ -113,7 +113,7 @@ Find the current player name, UUID, demo status and migration flag by the curren
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.api.kotlin.model.*
 
 val apiInstance = NameHistoryApi()
 val username : kotlin.String = LordofMC_Playerz // kotlin.String | The username in a given time, or in present if \"at\" is not sent

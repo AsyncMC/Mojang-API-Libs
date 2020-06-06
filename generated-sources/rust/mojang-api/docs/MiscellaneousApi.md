@@ -1,4 +1,4 @@
-# \MiscellaneousApi
+# com.github.asyncmc.mojang.api.rust.server\MiscellaneousApi
 
 All URIs are relative to *https://api.mojang.com*
 

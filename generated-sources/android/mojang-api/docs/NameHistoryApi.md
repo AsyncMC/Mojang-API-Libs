@@ -20,7 +20,7 @@ Find the current players name, UUID, demo status and migration flag by the curre
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.NameHistoryApi;
+//import com.github.asyncmc.mojang.api.android.api.NameHistoryApi;
 
 NameHistoryApi apiInstance = new NameHistoryApi();
 List<String> requestBody = [ "joserobjr", "nonExistingPlayer", "maksimkurb" ]; // List<String> | Array with the player names
@@ -61,7 +61,7 @@ Gets the full player&#39;s name history
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.NameHistoryApi;
+//import com.github.asyncmc.mojang.api.android.api.NameHistoryApi;
 
 NameHistoryApi apiInstance = new NameHistoryApi();
 String strippedUuid = 38ba542eb5924231a54cca0f2eac2b54; // String | The player UUID without hyphens
@@ -104,7 +104,7 @@ Find the current player name, UUID, demo status and migration flag by the curren
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.NameHistoryApi;
+//import com.github.asyncmc.mojang.api.android.api.NameHistoryApi;
 
 NameHistoryApi apiInstance = new NameHistoryApi();
 String username = LordofMC_Playerz; // String | The username in a given time, or in present if \"at\" is not sent

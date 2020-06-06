@@ -18,7 +18,7 @@ This will return the player&#39;s username plus any additional information about
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.LoginApi;
+//import com.github.asyncmc.mojang.sessions.android.api.LoginApi;
 
 LoginApi apiInstance = new LoginApi();
 String strippedUuid = 853c80ef3c3749fdaa49938b674adae6; // String | The player UUID without hyphens

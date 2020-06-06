@@ -151,6 +151,20 @@ class Decoders {
                 fatalError("formatter failed to parse \(source)")
             }) 
 
+            // Decoder for [ChangeSkinRequest]
+            Decoders.addDecoder(clazz: [ChangeSkinRequest].self) { (source: AnyObject) -> [ChangeSkinRequest] in
+                return Decoders.decode(clazz: [ChangeSkinRequest].self, source: source)
+            }
+            // Decoder for ChangeSkinRequest
+            Decoders.addDecoder(clazz: ChangeSkinRequest.self) { (source: AnyObject) -> ChangeSkinRequest in
+                let sourceDictionary = source as! [NSObject:AnyObject]
+                let instance = ChangeSkinRequest()
+                instance.model = Decoders.decodeOptional(clazz: SkinModel.self, source: sourceDictionary["model"])
+                instance.url = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["url"])
+                return instance
+            }
+
+
             // Decoder for [CurrentPlayerIDs]
             Decoders.addDecoder(clazz: [CurrentPlayerIDs].self) { (source: AnyObject) -> [CurrentPlayerIDs] in
                 return Decoders.decode(clazz: [CurrentPlayerIDs].self, source: source)
@@ -177,34 +191,6 @@ class Decoders {
                 let instance = Error()
                 instance.error = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["error"])
                 instance.errorMessage = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["errorMessage"])
-                return instance
-            }
-
-
-            // Decoder for [InlineObject]
-            Decoders.addDecoder(clazz: [InlineObject].self) { (source: AnyObject) -> [InlineObject] in
-                return Decoders.decode(clazz: [InlineObject].self, source: source)
-            }
-            // Decoder for InlineObject
-            Decoders.addDecoder(clazz: InlineObject.self) { (source: AnyObject) -> InlineObject in
-                let sourceDictionary = source as! [NSObject:AnyObject]
-                let instance = InlineObject()
-                instance.model = Decoders.decodeOptional(clazz: SkinModel.self, source: sourceDictionary["model"])
-                instance.file = Decoders.decodeOptional(clazz: NSURL.self, source: sourceDictionary["file"])
-                return instance
-            }
-
-
-            // Decoder for [InlineObject1]
-            Decoders.addDecoder(clazz: [InlineObject1].self) { (source: AnyObject) -> [InlineObject1] in
-                return Decoders.decode(clazz: [InlineObject1].self, source: source)
-            }
-            // Decoder for InlineObject1
-            Decoders.addDecoder(clazz: InlineObject1.self) { (source: AnyObject) -> InlineObject1 in
-                let sourceDictionary = source as! [NSObject:AnyObject]
-                let instance = InlineObject1()
-                instance.model = Decoders.decodeOptional(clazz: SkinModel.self, source: sourceDictionary["model"])
-                instance.url = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["url"])
                 return instance
             }
 
@@ -325,6 +311,20 @@ class Decoders {
             Decoders.addDecoder(clazz: SkinModel.self) { (source: AnyObject) -> SkinModel in
                 let sourceDictionary = source as! [NSObject:AnyObject]
                 let instance = SkinModel()
+                return instance
+            }
+
+
+            // Decoder for [UploadSkinRequest]
+            Decoders.addDecoder(clazz: [UploadSkinRequest].self) { (source: AnyObject) -> [UploadSkinRequest] in
+                return Decoders.decode(clazz: [UploadSkinRequest].self, source: source)
+            }
+            // Decoder for UploadSkinRequest
+            Decoders.addDecoder(clazz: UploadSkinRequest.self) { (source: AnyObject) -> UploadSkinRequest in
+                let sourceDictionary = source as! [NSObject:AnyObject]
+                let instance = UploadSkinRequest()
+                instance.model = Decoders.decodeOptional(clazz: SkinModel.self, source: sourceDictionary["model"])
+                instance.file = Decoders.decodeOptional(clazz: NSURL.self, source: sourceDictionary["file"])
                 return instance
             }
         }

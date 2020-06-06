@@ -3,15 +3,15 @@
 # Do not edit the class manually.
 
 parameters:
-    open_apiserver.serializer: 'OpenAPI\Server\Service\JmsSerializer'
-    open_apiserver.validator:  'OpenAPI\Server\Service\SymfonyValidator'
+    open_apiserver.serializer: 'com.github.asyncmc.mojang.api.php.symfony.server\Service\JmsSerializer'
+    open_apiserver.validator:  'com.github.asyncmc.mojang.api.php.symfony.server\Service\SymfonyValidator'
 
 services:
     open_apiserver.api.api_server:
-        class: OpenAPI\Server\Api\ApiServer
+        class: com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\ApiServer
 
     open_apiserver.model.model_serializer:
-        class: OpenAPI\Server\Model\ModelSerializer
+        class: com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\ModelSerializer
 
     open_apiserver.service.serializer:
         class: '%open_apiserver.serializer%'
@@ -20,28 +20,28 @@ services:
         class: '%open_apiserver.validator%'
 
     open_apiserver.controller.miscellaneous:
-        class: OpenAPI\Server\Controller\MiscellaneousController
+        class: com.github.asyncmc.mojang.api.php.symfony.server\Controller\MiscellaneousController
         calls:
          - [setSerializer, ['@open_apiserver.service.serializer']]
          - [setValidator,  ['@open_apiserver.service.validator']]
          - [setApiServer,  ['@open_apiserver.api.api_server']]
 
     open_apiserver.controller.nameHistory:
-        class: OpenAPI\Server\Controller\NameHistoryController
+        class: com.github.asyncmc.mojang.api.php.symfony.server\Controller\NameHistoryController
         calls:
          - [setSerializer, ['@open_apiserver.service.serializer']]
          - [setValidator,  ['@open_apiserver.service.validator']]
          - [setApiServer,  ['@open_apiserver.api.api_server']]
 
     open_apiserver.controller.securityQuestionAnswer:
-        class: OpenAPI\Server\Controller\SecurityQuestionAnswerController
+        class: com.github.asyncmc.mojang.api.php.symfony.server\Controller\SecurityQuestionAnswerController
         calls:
          - [setSerializer, ['@open_apiserver.service.serializer']]
          - [setValidator,  ['@open_apiserver.service.validator']]
          - [setApiServer,  ['@open_apiserver.api.api_server']]
 
     open_apiserver.controller.skinOperations:
-        class: OpenAPI\Server\Controller\SkinOperationsController
+        class: com.github.asyncmc.mojang.api.php.symfony.server\Controller\SkinOperationsController
         calls:
          - [setSerializer, ['@open_apiserver.service.serializer']]
          - [setValidator,  ['@open_apiserver.service.validator']]

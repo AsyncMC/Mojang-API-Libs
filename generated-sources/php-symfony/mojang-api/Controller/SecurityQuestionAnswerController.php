@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,23 +27,23 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace com.github.asyncmc.mojang.api.php.symfony.server\Controller;
 
 use \Exception;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Validator\Constraints as Assert;
-use OpenAPI\Server\Api\SecurityQuestionAnswerApiInterface;
-use OpenAPI\Server\Model\Error;
-use OpenAPI\Server\Model\SecurityAnswer;
-use OpenAPI\Server\Model\SecurityChallenge;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\SecurityQuestionAnswerApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\Error;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SecurityAnswer;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SecurityChallenge;
 
 /**
  * SecurityQuestionAnswerController Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -231,13 +231,13 @@ class SecurityQuestionAnswerController extends Controller
         // Use the default value if no value was provided
 
         // Deserialize the input values that needs it
-        $securityAnswer = $this->deserialize($securityAnswer, 'array<OpenAPI\Server\Model\SecurityAnswer>', $inputFormat);
+        $securityAnswer = $this->deserialize($securityAnswer, 'array<com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SecurityAnswer>', $inputFormat);
 
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
         $asserts[] = new Assert\All([
-            new Assert\Type("OpenAPI\Server\Model\SecurityAnswer")
+            new Assert\Type("com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\SecurityAnswer")
         ]);
         $response = $this->validate($securityAnswer, $asserts);
         if ($response instanceof Response) {

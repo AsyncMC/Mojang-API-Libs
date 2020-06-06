@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.api.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace com.github.asyncmc.mojang.api.php.server;
 
 /**
  * SkinModelTest Class Doc Comment
  *
  * @category    Class
  * @description Model is an empty string for the default model (like Steve) and \&quot;slim\&quot; for the slim model (like Alex)
- * @package     OpenAPI\Client
+ * @package     com.github.asyncmc.mojang.api.php.server
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

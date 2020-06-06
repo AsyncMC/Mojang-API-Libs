@@ -1,8 +1,8 @@
-defmodule MojangSessionAPI.Mixfile do
+defmodule com.github.asyncmc.mojang.sessions.elixir.server.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :mojang_session_api,
+    [app: :com/github/asyncmc/mojang/sessions/elixir/server,
      version: "0.1.0",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,

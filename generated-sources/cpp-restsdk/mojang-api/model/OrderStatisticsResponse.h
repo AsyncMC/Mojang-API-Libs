@@ -15,16 +15,20 @@
  * A json object is returned with the total amount of copies sold, the amount of copies sold in the last 24h and how many sales there are per second.
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_OrderStatisticsResponse_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_OrderStatisticsResponse_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_OrderStatisticsResponse_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_OrderStatisticsResponse_H_
 
 
 #include "../ModelBase.h"
 
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 /// <summary>
@@ -83,5 +87,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_OrderStatisticsResponse_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_OrderStatisticsResponse_H_ */

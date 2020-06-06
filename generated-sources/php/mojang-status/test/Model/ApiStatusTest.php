@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.status.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace com.github.asyncmc.mojang.status.php.server;
 
 /**
  * ApiStatusTest Class Doc Comment
  *
  * @category    Class
  * @description The status of a Mojang services. Possible values are green (no issues), yellow (some issues), red (service unavailable).
- * @package     OpenAPI\Client
+ * @package     com.github.asyncmc.mojang.status.php.server
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

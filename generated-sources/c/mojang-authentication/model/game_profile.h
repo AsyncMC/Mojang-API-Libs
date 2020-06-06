@@ -32,6 +32,7 @@ typedef struct game_profile_t {
         char *agent; //no enum string
         char *id; //no enum string
         char *name; //no enum string
+        char *userId; //no enum string
         long createdAt; //numeric
         bool legacyProfile; //boolean
         bool suspended; //boolean
@@ -45,6 +46,7 @@ game_profile_t *game_profile_create(
         char *agent,
         char *id,
         char *name,
+        char *userId,
         long createdAt,
         bool legacyProfile,
         bool suspended,

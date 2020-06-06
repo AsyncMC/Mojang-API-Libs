@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.Error
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.refactor.model.Error
 ## Properties
 
 Name | Type | Description | Notes

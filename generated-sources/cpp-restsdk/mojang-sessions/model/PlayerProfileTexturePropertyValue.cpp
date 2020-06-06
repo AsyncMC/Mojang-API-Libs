@@ -13,9 +13,13 @@
 
 #include "PlayerProfileTexturePropertyValue.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 PlayerProfileTexturePropertyValue::PlayerProfileTexturePropertyValue()
@@ -206,6 +210,10 @@ void PlayerProfileTexturePropertyValue::unsetTextures()
     m_TexturesIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

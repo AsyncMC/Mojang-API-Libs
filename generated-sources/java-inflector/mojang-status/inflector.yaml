@@ -1,10 +1,10 @@
-controllerPackage: org.openapitools.controllers
-modelPackage:  org.openapitools.model
+controllerPackage: com.github.asyncmc.mojang.status.java.inflector.server
+modelPackage:  com.github.asyncmc.mojang.status.java.inflector.model
 swaggerUrl: ./src/main/swagger/swagger.yaml
 modelMappings:
   # to enable explicit mappings, use this syntax:
   DefinitionFromSwaggerSpecification: fully.qualified.path.to.Model
-  ApiStatus : org.openapitools.model.ApiStatus
+  ApiStatus : com.github.asyncmc.mojang.status.java.inflector.model.ApiStatus
 
 entityProcessors:
   - json

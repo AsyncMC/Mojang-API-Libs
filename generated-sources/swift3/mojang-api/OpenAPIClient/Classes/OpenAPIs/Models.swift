@@ -288,6 +288,32 @@ class Decoders {
             }
         }
 
+        // Decoder for [ChangeSkinRequest]
+        Decoders.addDecoder(clazz: [ChangeSkinRequest].self) { (source: AnyObject, instance: AnyObject?) -> Decoded<[ChangeSkinRequest]> in
+            return Decoders.decode(clazz: [ChangeSkinRequest].self, source: source)
+        }
+
+        // Decoder for ChangeSkinRequest
+        Decoders.addDecoder(clazz: ChangeSkinRequest.self) { (source: AnyObject, instance: AnyObject?) -> Decoded<ChangeSkinRequest> in
+            if let sourceDictionary = source as? [AnyHashable: Any] {
+                let _result = instance == nil ? ChangeSkinRequest() : instance as! ChangeSkinRequest
+                switch Decoders.decodeOptional(clazz: SkinModel.self, source: sourceDictionary["model"] as AnyObject?) {
+                
+                case let .success(value): _result.model = value
+                case let .failure(error): break
+                
+                }
+                switch Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["url"] as AnyObject?) {
+                
+                case let .success(value): _result.url = value
+                case let .failure(error): break
+                
+                }
+                return .success(_result)
+            } else {
+                return .failure(.typeMismatch(expected: "ChangeSkinRequest", actual: "\(source)"))
+            }
+        }
         // Decoder for [CurrentPlayerIDs]
         Decoders.addDecoder(clazz: [CurrentPlayerIDs].self) { (source: AnyObject, instance: AnyObject?) -> Decoded<[CurrentPlayerIDs]> in
             return Decoders.decode(clazz: [CurrentPlayerIDs].self, source: source)
@@ -324,58 +350,6 @@ class Decoders {
                 return .success(_result)
             } else {
                 return .failure(.typeMismatch(expected: "CurrentPlayerIDs", actual: "\(source)"))
-            }
-        }
-        // Decoder for [InlineObject]
-        Decoders.addDecoder(clazz: [InlineObject].self) { (source: AnyObject, instance: AnyObject?) -> Decoded<[InlineObject]> in
-            return Decoders.decode(clazz: [InlineObject].self, source: source)
-        }
-
-        // Decoder for InlineObject
-        Decoders.addDecoder(clazz: InlineObject.self) { (source: AnyObject, instance: AnyObject?) -> Decoded<InlineObject> in
-            if let sourceDictionary = source as? [AnyHashable: Any] {
-                let _result = instance == nil ? InlineObject() : instance as! InlineObject
-                switch Decoders.decodeOptional(clazz: SkinModel.self, source: sourceDictionary["model"] as AnyObject?) {
-                
-                case let .success(value): _result.model = value
-                case let .failure(error): break
-                
-                }
-                switch Decoders.decodeOptional(clazz: URL.self, source: sourceDictionary["file"] as AnyObject?) {
-                
-                case let .success(value): _result.file = value
-                case let .failure(error): break
-                
-                }
-                return .success(_result)
-            } else {
-                return .failure(.typeMismatch(expected: "InlineObject", actual: "\(source)"))
-            }
-        }
-        // Decoder for [InlineObject1]
-        Decoders.addDecoder(clazz: [InlineObject1].self) { (source: AnyObject, instance: AnyObject?) -> Decoded<[InlineObject1]> in
-            return Decoders.decode(clazz: [InlineObject1].self, source: source)
-        }
-
-        // Decoder for InlineObject1
-        Decoders.addDecoder(clazz: InlineObject1.self) { (source: AnyObject, instance: AnyObject?) -> Decoded<InlineObject1> in
-            if let sourceDictionary = source as? [AnyHashable: Any] {
-                let _result = instance == nil ? InlineObject1() : instance as! InlineObject1
-                switch Decoders.decodeOptional(clazz: SkinModel.self, source: sourceDictionary["model"] as AnyObject?) {
-                
-                case let .success(value): _result.model = value
-                case let .failure(error): break
-                
-                }
-                switch Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["url"] as AnyObject?) {
-                
-                case let .success(value): _result.url = value
-                case let .failure(error): break
-                
-                }
-                return .success(_result)
-            } else {
-                return .failure(.typeMismatch(expected: "InlineObject1", actual: "\(source)"))
             }
         }
         // Decoder for [ModelError]
@@ -596,6 +570,32 @@ class Decoders {
         Decoders.addDecoder(clazz: SkinModel.self) { (source: AnyObject, instance: AnyObject?) -> Decoded<SkinModel> in
             //TODO: I don't think we need this anymore
             return Decoders.decode(clazz: SkinModel.self, source: source, instance: instance)
+        }
+        // Decoder for [UploadSkinRequest]
+        Decoders.addDecoder(clazz: [UploadSkinRequest].self) { (source: AnyObject, instance: AnyObject?) -> Decoded<[UploadSkinRequest]> in
+            return Decoders.decode(clazz: [UploadSkinRequest].self, source: source)
+        }
+
+        // Decoder for UploadSkinRequest
+        Decoders.addDecoder(clazz: UploadSkinRequest.self) { (source: AnyObject, instance: AnyObject?) -> Decoded<UploadSkinRequest> in
+            if let sourceDictionary = source as? [AnyHashable: Any] {
+                let _result = instance == nil ? UploadSkinRequest() : instance as! UploadSkinRequest
+                switch Decoders.decodeOptional(clazz: SkinModel.self, source: sourceDictionary["model"] as AnyObject?) {
+                
+                case let .success(value): _result.model = value
+                case let .failure(error): break
+                
+                }
+                switch Decoders.decodeOptional(clazz: URL.self, source: sourceDictionary["file"] as AnyObject?) {
+                
+                case let .success(value): _result.file = value
+                case let .failure(error): break
+                
+                }
+                return .success(_result)
+            } else {
+                return .failure(.typeMismatch(expected: "UploadSkinRequest", actual: "\(source)"))
+            }
         }
     }()
 

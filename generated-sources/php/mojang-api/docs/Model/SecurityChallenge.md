@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**question** | [**\OpenAPI\Client\Model\SecurityQuestion**](SecurityQuestion.md) |  | 
-**answer** | [**\OpenAPI\Client\Model\SecurityAnswerId**](SecurityAnswerId.md) |  | 
+**question** | [**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SecurityQuestion**](SecurityQuestion.md) |  | 
+**answer** | [**\com.github.asyncmc.mojang.api.php.server\com.github.asyncmc.mojang.api.php.model\SecurityAnswerId**](SecurityAnswerId.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

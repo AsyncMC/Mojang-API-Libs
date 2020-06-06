@@ -6,7 +6,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use OpenAPIServer\SlimRouter;
+use com.github.asyncmc.mojang.api.php.slim.server\SlimRouter;
 
 $router = new SlimRouter();
 $app = $router->getSlimApp();

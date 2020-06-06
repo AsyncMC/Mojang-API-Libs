@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server
+ * @package  com.github.asyncmc.mojang.sessions.php.symfony.server
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server;
+namespace com.github.asyncmc.mojang.sessions.php.symfony.server;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use OpenAPI\Server\DependencyInjection\Compiler\OpenAPIServerApiPass;
+use com.github.asyncmc.mojang.sessions.php.symfony.server\DependencyInjection\Compiler\OpenAPIServerApiPass;
 
 /**
  * OpenAPIServerBundle Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server
+ * @package  com.github.asyncmc.mojang.sessions.php.symfony.server
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */

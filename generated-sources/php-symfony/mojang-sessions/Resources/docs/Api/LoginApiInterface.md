@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\LoginApiInterface
+# com.github.asyncmc.mojang.sessions.php.symfony.server\com.github.asyncmc.mojang.sessions.php.symfony.api\LoginApiInterface
 
 All URIs are relative to *https://sessionserver.mojang.com*
 
@@ -20,7 +20,7 @@ services:
 ```
 
 ## **getPlayerProfile**
-> OpenAPI\Server\Model\PlayerProfile getPlayerProfile($strippedUuid, $unsigned)
+> com.github.asyncmc.mojang.sessions.php.symfony.server\com.github.asyncmc.mojang.sessions.php.symfony.model\PlayerProfile getPlayerProfile($strippedUuid, $unsigned)
 
 Gets the player's game profile
 
@@ -33,7 +33,7 @@ This will return the player's username plus any additional information about the
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\LoginApiInterface;
+use com.github.asyncmc.mojang.sessions.php.symfony.server\com.github.asyncmc.mojang.sessions.php.symfony.api\LoginApiInterface;
 
 class LoginApi implements LoginApiInterface
 {
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OpenAPI\Server\Model\PlayerProfile**](../Model/PlayerProfile.md)
+[**com.github.asyncmc.mojang.sessions.php.symfony.server\com.github.asyncmc.mojang.sessions.php.symfony.model\PlayerProfile**](../Model/PlayerProfile.md)
 
 ### Authorization
 

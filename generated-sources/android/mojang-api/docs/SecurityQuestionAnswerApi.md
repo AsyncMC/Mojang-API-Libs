@@ -18,7 +18,7 @@ Check if security questions are needed
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.SecurityQuestionAnswerApi;
+//import com.github.asyncmc.mojang.api.android.api.SecurityQuestionAnswerApi;
 
 SecurityQuestionAnswerApi apiInstance = new SecurityQuestionAnswerApi();
 try {
@@ -54,7 +54,7 @@ Get list of questions
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.SecurityQuestionAnswerApi;
+//import com.github.asyncmc.mojang.api.android.api.SecurityQuestionAnswerApi;
 
 SecurityQuestionAnswerApi apiInstance = new SecurityQuestionAnswerApi();
 try {
@@ -91,7 +91,7 @@ Send back the answers
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.api.SecurityQuestionAnswerApi;
+//import com.github.asyncmc.mojang.api.android.api.SecurityQuestionAnswerApi;
 
 SecurityQuestionAnswerApi apiInstance = new SecurityQuestionAnswerApi();
 List<SecurityAnswer> securityAnswer = Arrays.asList(new List()); // List<SecurityAnswer> | An array with all the answers

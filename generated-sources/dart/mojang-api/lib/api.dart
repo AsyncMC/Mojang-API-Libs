@@ -18,10 +18,9 @@ part 'api/name_history_api.dart';
 part 'api/security_question_answer_api.dart';
 part 'api/skin_operations_api.dart';
 
+part 'model/change_skin_request.dart';
 part 'model/current_player_i_ds.dart';
 part 'model/error.dart';
-part 'model/inline_object.dart';
-part 'model/inline_object1.dart';
 part 'model/name_change.dart';
 part 'model/order_statistic.dart';
 part 'model/order_statistics_request.dart';
@@ -31,6 +30,7 @@ part 'model/security_answer_id.dart';
 part 'model/security_challenge.dart';
 part 'model/security_question.dart';
 part 'model/skin_model.dart';
+part 'model/upload_skin_request.dart';
 
 
 ApiClient defaultApiClient = ApiClient();

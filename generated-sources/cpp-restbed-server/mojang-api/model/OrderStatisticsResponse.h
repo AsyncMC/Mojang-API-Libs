@@ -23,8 +23,13 @@
 
 #include <memory>
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace model {
 
@@ -65,6 +70,11 @@ protected:
     double m_SaleVelocityPerSeconds;
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

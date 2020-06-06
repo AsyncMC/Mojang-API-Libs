@@ -15,8 +15,8 @@
  * The body of the request to get the order statistics
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_OrderStatisticsRequest_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_OrderStatisticsRequest_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_OrderStatisticsRequest_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_OrderStatisticsRequest_H_
 
 
 #include "../ModelBase.h"
@@ -24,9 +24,13 @@
 #include "OrderStatistic.h"
 #include <vector>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 /// <summary>
@@ -69,5 +73,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_OrderStatisticsRequest_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_MODEL_OrderStatisticsRequest_H_ */

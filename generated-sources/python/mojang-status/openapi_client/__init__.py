@@ -17,10 +17,10 @@ from __future__ import absolute_import
 __version__ = "1.0.0"
 
 # import apis into sdk package
-from openapi_client.api.default_api import DefaultApi
+from com.github.asyncmc.mojang.status.python.api.default_api import DefaultApi
 
 # import ApiClient
 from openapi_client.api_client import ApiClient
 from openapi_client.configuration import Configuration
 # import models into sdk package
-from openapi_client.models.api_status import ApiStatus
+from openapi_client.com.github.asyncmc.mojang.status.python.model.api_status import ApiStatus

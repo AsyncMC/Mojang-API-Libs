@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.UsernamePassword
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model.UsernamePassword
 ## Properties
 
 Name | Type | Description | Notes

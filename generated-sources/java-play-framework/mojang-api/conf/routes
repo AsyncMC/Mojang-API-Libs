@@ -2,26 +2,26 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /api                        controllers.ApiDocController.api
+GET     /api                        com.github.asyncmc.mojang.api.java.play.framework.api.ApiDocController.api
 
 
 #Functions for Miscellaneous API
-POST     /orders/statistics                     controllers.MiscellaneousApiController.getOrdersStatistics()
+POST     /orders/statistics                     com.github.asyncmc.mojang.api.java.play.framework.api.MiscellaneousApiController.getOrdersStatistics()
 
 #Functions for NameHistory API
-POST     /profiles/minecraft                     controllers.NameHistoryApiController.findUniqueIdsByName()
-GET     /user/profiles/:strippedUuid/names                     controllers.NameHistoryApiController.getNameHistory(strippedUuid: String)
-GET     /users/profiles/minecraft/:username                     controllers.NameHistoryApiController.getUniqueIdByName(username: String)
+POST     /profiles/minecraft                     com.github.asyncmc.mojang.api.java.play.framework.api.NameHistoryApiController.findUniqueIdsByName()
+GET     /user/profiles/:strippedUuid/names                     com.github.asyncmc.mojang.api.java.play.framework.api.NameHistoryApiController.getNameHistory(strippedUuid: String)
+GET     /users/profiles/minecraft/:username                     com.github.asyncmc.mojang.api.java.play.framework.api.NameHistoryApiController.getUniqueIdByName(username: String)
 
 #Functions for SecurityQuestionAnswer API
-GET     /user/security/location                     controllers.SecurityQuestionAnswerApiController.checkSecurityStatus()
-GET     /user/security/challenges                     controllers.SecurityQuestionAnswerApiController.listPendingSecurityQuestions()
-POST     /user/security/location                     controllers.SecurityQuestionAnswerApiController.sendSecurityQuestionAnswers()
+GET     /user/security/location                     com.github.asyncmc.mojang.api.java.play.framework.api.SecurityQuestionAnswerApiController.checkSecurityStatus()
+GET     /user/security/challenges                     com.github.asyncmc.mojang.api.java.play.framework.api.SecurityQuestionAnswerApiController.listPendingSecurityQuestions()
+POST     /user/security/location                     com.github.asyncmc.mojang.api.java.play.framework.api.SecurityQuestionAnswerApiController.sendSecurityQuestionAnswers()
 
 #Functions for SkinOperations API
-POST     /user/profile/:strippedUuid/skin                     controllers.SkinOperationsApiController.changePlayerSkin(strippedUuid: String)
-DELETE     /user/profile/:strippedUuid/skin                     controllers.SkinOperationsApiController.resetPlayerSkin(strippedUuid: String)
-PUT     /user/profile/:strippedUuid/skin                     controllers.SkinOperationsApiController.uploadPlayerSkin(strippedUuid: String)
+POST     /user/profile/:strippedUuid/skin                     com.github.asyncmc.mojang.api.java.play.framework.api.SkinOperationsApiController.changePlayerSkin(strippedUuid: String)
+DELETE     /user/profile/:strippedUuid/skin                     com.github.asyncmc.mojang.api.java.play.framework.api.SkinOperationsApiController.resetPlayerSkin(strippedUuid: String)
+PUT     /user/profile/:strippedUuid/skin                     com.github.asyncmc.mojang.api.java.play.framework.api.SkinOperationsApiController.uploadPlayerSkin(strippedUuid: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET /assets/*file           controllers.Assets.at(file)

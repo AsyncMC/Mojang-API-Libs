@@ -10,7 +10,7 @@
  * Do not edit the class manually.
  */
 
-package org.openapitools.client
+package com.github.asyncmc.mojang.authentication.scala.httpclient.server
 
 import com.sun.jersey.api.client.Client
 import com.sun.jersey.api.client.ClientResponse

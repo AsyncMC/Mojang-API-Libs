@@ -65,19 +65,19 @@ Class | Method | HTTP request | Description
 
 ## Models
 
-* OpenAPIServer\Model\CurrentPlayerIDs
-* OpenAPIServer\Model\Error
-* OpenAPIServer\Model\InlineObject
-* OpenAPIServer\Model\InlineObject1
-* OpenAPIServer\Model\NameChange
-* OpenAPIServer\Model\OrderStatistic
-* OpenAPIServer\Model\OrderStatisticsRequest
-* OpenAPIServer\Model\OrderStatisticsResponse
-* OpenAPIServer\Model\SecurityAnswer
-* OpenAPIServer\Model\SecurityAnswerId
-* OpenAPIServer\Model\SecurityChallenge
-* OpenAPIServer\Model\SecurityQuestion
-* OpenAPIServer\Model\SkinModel
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\ChangeSkinRequest
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\CurrentPlayerIDs
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\Error
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\NameChange
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\OrderStatistic
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\OrderStatisticsRequest
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\OrderStatisticsResponse
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\SecurityAnswer
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\SecurityAnswerId
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\SecurityChallenge
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\SecurityQuestion
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\SkinModel
+* com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\UploadSkinRequest
 
 
 ## Authentication

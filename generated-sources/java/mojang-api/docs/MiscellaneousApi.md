@@ -16,11 +16,11 @@ Get statistics on the sales of Minecraft.
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.Configuration;
-//import org.openapitools.client.auth.*;
-//import org.openapitools.client.api.MiscellaneousApi;
+//import com.github.asyncmc.mojang.api.java.server.ApiClient;
+//import com.github.asyncmc.mojang.api.java.server.ApiException;
+//import com.github.asyncmc.mojang.api.java.server.Configuration;
+//import com.github.asyncmc.mojang.api.java.server.auth.*;
+//import com.github.asyncmc.mojang.api.java.api.MiscellaneousApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

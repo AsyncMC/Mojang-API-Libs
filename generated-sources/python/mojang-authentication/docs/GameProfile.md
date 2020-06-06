@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **agent** | **str** |  | [optional] 
 **id** | **str** |  | [optional] 
 **name** | **str** |  | [optional] 
-**user_id** | **file** |  | [optional] 
+**user_id** | **str** |  | [optional] 
 **created_at** | **int** | Unix timestamp in milliseconds | [optional] 
 **legacy_profile** | **bool** |  | [optional] 
 **suspended** | **bool** |  | [optional] 

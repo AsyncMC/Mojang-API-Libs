@@ -230,10 +230,9 @@ use WWW::OpenAPIClient::SkinOperationsApi;
 
 To load the models:
 ```perl
+use WWW::OpenAPIClient::Object::ChangeSkinRequest;
 use WWW::OpenAPIClient::Object::CurrentPlayerIDs;
 use WWW::OpenAPIClient::Object::Error;
-use WWW::OpenAPIClient::Object::InlineObject;
-use WWW::OpenAPIClient::Object::InlineObject1;
 use WWW::OpenAPIClient::Object::NameChange;
 use WWW::OpenAPIClient::Object::OrderStatistic;
 use WWW::OpenAPIClient::Object::OrderStatisticsRequest;
@@ -243,6 +242,7 @@ use WWW::OpenAPIClient::Object::SecurityAnswerId;
 use WWW::OpenAPIClient::Object::SecurityChallenge;
 use WWW::OpenAPIClient::Object::SecurityQuestion;
 use WWW::OpenAPIClient::Object::SkinModel;
+use WWW::OpenAPIClient::Object::UploadSkinRequest;
 
 ````
 
@@ -260,10 +260,9 @@ use WWW::OpenAPIClient::SecurityQuestionAnswerApi;
 use WWW::OpenAPIClient::SkinOperationsApi;
 
 # load the models
+use WWW::OpenAPIClient::Object::ChangeSkinRequest;
 use WWW::OpenAPIClient::Object::CurrentPlayerIDs;
 use WWW::OpenAPIClient::Object::Error;
-use WWW::OpenAPIClient::Object::InlineObject;
-use WWW::OpenAPIClient::Object::InlineObject1;
 use WWW::OpenAPIClient::Object::NameChange;
 use WWW::OpenAPIClient::Object::OrderStatistic;
 use WWW::OpenAPIClient::Object::OrderStatisticsRequest;
@@ -273,6 +272,7 @@ use WWW::OpenAPIClient::Object::SecurityAnswerId;
 use WWW::OpenAPIClient::Object::SecurityChallenge;
 use WWW::OpenAPIClient::Object::SecurityQuestion;
 use WWW::OpenAPIClient::Object::SkinModel;
+use WWW::OpenAPIClient::Object::UploadSkinRequest;
 
 # for displaying the API response data
 use Data::Dumper;
@@ -316,10 +316,9 @@ Class | Method | HTTP request | Description
 
 
 # DOCUMENTATION FOR MODELS
+ - [WWW::OpenAPIClient::Object::ChangeSkinRequest](docs/ChangeSkinRequest.md)
  - [WWW::OpenAPIClient::Object::CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
  - [WWW::OpenAPIClient::Object::Error](docs/Error.md)
- - [WWW::OpenAPIClient::Object::InlineObject](docs/InlineObject.md)
- - [WWW::OpenAPIClient::Object::InlineObject1](docs/InlineObject1.md)
  - [WWW::OpenAPIClient::Object::NameChange](docs/NameChange.md)
  - [WWW::OpenAPIClient::Object::OrderStatistic](docs/OrderStatistic.md)
  - [WWW::OpenAPIClient::Object::OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
@@ -329,6 +328,7 @@ Class | Method | HTTP request | Description
  - [WWW::OpenAPIClient::Object::SecurityChallenge](docs/SecurityChallenge.md)
  - [WWW::OpenAPIClient::Object::SecurityQuestion](docs/SecurityQuestion.md)
  - [WWW::OpenAPIClient::Object::SkinModel](docs/SkinModel.md)
+ - [WWW::OpenAPIClient::Object::UploadSkinRequest](docs/UploadSkinRequest.md)
 
 
 # DOCUMENTATION FOR AUTHORIZATION

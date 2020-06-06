@@ -11,6 +11,7 @@ game_profile_t *game_profile_create(
     char *agent,
     char *id,
     char *name,
+    char *userId,
     long createdAt,
     bool legacyProfile,
     bool suspended,
@@ -39,6 +40,7 @@ void game_profile_free(game_profile_t *game_profile) {
     free(game_profile->agent);
     free(game_profile->id);
     free(game_profile->name);
+    free(game_profile->userId);
 
 	free(game_profile);
 }
@@ -61,6 +63,9 @@ cJSON *game_profile_convertToJSON(game_profile_t *game_profile) {
     }
 
 	// game_profile->userId
+    if(cJSON_AddStringToObject(item, "userId", game_profile->userId) == NULL) {
+    goto fail; //String
+    }
 
 	// game_profile->createdAt
     if(cJSON_AddNumberToObject(item, "createdAt", game_profile->createdAt) == NULL) {
@@ -129,6 +134,10 @@ game_profile_t *game_profile_parseFromJSON(char *jsonString){
     }
 
     // game_profile->userId
+    cJSON *userId = cJSON_GetObjectItemCaseSensitive(game_profileJSON, "userId");
+    if(!cJSON_IsString(userId) || (userId->valuestring == NULL)){
+    goto end; //String
+    }
 
     // game_profile->createdAt
     cJSON *createdAt = cJSON_GetObjectItemCaseSensitive(game_profileJSON, "createdAt");
@@ -177,6 +186,7 @@ game_profile_t *game_profile_parseFromJSON(char *jsonString){
         strdup(agent->valuestring),
         strdup(id->valuestring),
         strdup(name->valuestring),
+        strdup(userId->valuestring),
         createdAt->valuedouble,
         legacyProfile->valueint,
         suspended->valueint,

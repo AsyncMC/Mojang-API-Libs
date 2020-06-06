@@ -10,6 +10,28 @@ use models;
 use swagger;
 
 
+/// Request Mojang to download a skin from an URL and apply to the player
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub struct ChangeSkinRequest {
+    #[serde(rename = "model")]
+    #[serde(skip_serializing_if="Option::is_none")]
+    pub model: Option<models::SkinModel>,
+
+    /// The URL which Mojang servers will download and apply the skin
+    #[serde(rename = "url")]
+    pub url: String,
+
+}
+
+impl ChangeSkinRequest {
+    pub fn new(url: String, ) -> ChangeSkinRequest {
+        ChangeSkinRequest {
+            model: None,
+            url: url,
+        }
+    }
+}
+
 /// The current player, demo and legacy status of a player identified by the id
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct CurrentPlayerIDs {
@@ -62,49 +84,6 @@ impl Error {
         Error {
             error: None,
             error_message: None,
-        }
-    }
-}
-
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
-pub struct InlineObject {
-    #[serde(rename = "model")]
-    #[serde(skip_serializing_if="Option::is_none")]
-    pub model: Option<models::SkinModel>,
-
-    /// The skin image in PNG format
-    #[serde(rename = "file")]
-    pub file: swagger::ByteArray,
-
-}
-
-impl InlineObject {
-    pub fn new(file: swagger::ByteArray, ) -> InlineObject {
-        InlineObject {
-            model: None,
-            file: file,
-        }
-    }
-}
-
-/// Request Mojang to download a skin from an URL and apply to the player
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
-pub struct InlineObject1 {
-    #[serde(rename = "model")]
-    #[serde(skip_serializing_if="Option::is_none")]
-    pub model: Option<models::SkinModel>,
-
-    /// The URL which Mojang servers will download and apply the skin
-    #[serde(rename = "url")]
-    pub url: String,
-
-}
-
-impl InlineObject1 {
-    pub fn new(url: String, ) -> InlineObject1 {
-        InlineObject1 {
-            model: None,
-            url: url,
         }
     }
 }
@@ -331,6 +310,27 @@ impl ::std::str::FromStr for SkinModel {
             "" => Ok(SkinModel::),
             "slim" => Ok(SkinModel::SLIM),
             _ => Err(()),
+        }
+    }
+}
+
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub struct UploadSkinRequest {
+    #[serde(rename = "model")]
+    #[serde(skip_serializing_if="Option::is_none")]
+    pub model: Option<models::SkinModel>,
+
+    /// The skin image in PNG format
+    #[serde(rename = "file")]
+    pub file: swagger::ByteArray,
+
+}
+
+impl UploadSkinRequest {
+    pub fn new(file: swagger::ByteArray, ) -> UploadSkinRequest {
+        UploadSkinRequest {
+            model: None,
+            file: file,
         }
     }
 }

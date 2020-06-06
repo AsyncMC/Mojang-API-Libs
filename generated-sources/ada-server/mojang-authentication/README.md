@@ -19,9 +19,9 @@ run the following command:
 ```
 
 After the build is successful, you will get the server binary
-in bin/-server and you can start it as follows:
+in bin/com-github-asyncmc-mojang-authentication-ada-server-model-server and you can start it as follows:
 ```
-  ./bin/-server
+  ./bin/com-github-asyncmc-mojang-authentication-ada-server-model-server
 ```
 
 ## Structure of the server
@@ -31,23 +31,23 @@ the OpenAPI specification.
 
 Source file | Package | Description
 ------------ | ------------- | -------------
-src/.ads||The server root package declaration
-src/-servers.ads|.Servers|The server declaration and instantiation
-src/-servers.adb|.Servers|The server implementation (empty stubs)
-src/server/-skeletons.ads|.Skeletons|The server skeleton declaration
-src/server/-skeletons.adb|.Skeletons|The server skeleton implementation
-src/server/-models.ads|.Skeletons|The server model types declaration
-src/server/-models.adb|.Skeletons|The server model types implementation
-src/-server.adb|.Server|The server main procedure
+src/com-github-asyncmc-mojang-authentication-ada-server-model.ads|com.github.asyncmc.mojang.authentication.ada.server.model|The server root package declaration
+src/com-github-asyncmc-mojang-authentication-ada-server-model-servers.ads|com.github.asyncmc.mojang.authentication.ada.server.model.Servers|The server declaration and instantiation
+src/com-github-asyncmc-mojang-authentication-ada-server-model-servers.adb|com.github.asyncmc.mojang.authentication.ada.server.model.Servers|The server implementation (empty stubs)
+src/server/com-github-asyncmc-mojang-authentication-ada-server-model-skeletons.ads|com.github.asyncmc.mojang.authentication.ada.server.model.Skeletons|The server skeleton declaration
+src/server/com-github-asyncmc-mojang-authentication-ada-server-model-skeletons.adb|com.github.asyncmc.mojang.authentication.ada.server.model.Skeletons|The server skeleton implementation
+src/server/com-github-asyncmc-mojang-authentication-ada-server-model-models.ads|com.github.asyncmc.mojang.authentication.ada.server.model.Skeletons|The server model types declaration
+src/server/com-github-asyncmc-mojang-authentication-ada-server-model-models.adb|com.github.asyncmc.mojang.authentication.ada.server.model.Skeletons|The server model types implementation
+src/com-github-asyncmc-mojang-authentication-ada-server-model-server.adb|com.github.asyncmc.mojang.authentication.ada.server.model.Server|The server main procedure
 
 Files generated in **src/server** should not be modified.  The server implementation
-files (**src/-server.ads** and **src/-server.adb**) should
+files (**src/com-github-asyncmc-mojang-authentication-ada-server-model-server.ads** and **src/com-github-asyncmc-mojang-authentication-ada-server-model-server.adb**) should
 be modified to implement the server operations.  You can also customize the server
 main procedure according to your needs.
 
 ## Server model
 
-The server instance is represented by the **.Servers.Server_Type** Ada type.
+The server instance is represented by the **com.github.asyncmc.mojang.authentication.ada.server.model.Servers.Server_Type** Ada type.
 The REST API will need an instance of it to make the operation call.  Two server model
 exists:
 
@@ -55,13 +55,13 @@ exists:
 * The shared instance model shares the same instance across all concurrent REST requests.  This instance is protected using an Ada protected object which holds the server instance.
 
 The choice of the server model is made at the compilation time by instantiating either
-the **.Skeletons.Skeleton** package or the **.Skeletons.Shared_Instance**
-package.  Such instantiation is done in **src/-server.ads** and the default
+the **com.github.asyncmc.mojang.authentication.ada.server.model.Skeletons.Skeleton** package or the **com.github.asyncmc.mojang.authentication.ada.server.model.Skeletons.Shared_Instance**
+package.  Such instantiation is done in **src/com-github-asyncmc-mojang-authentication-ada-server-model-server.ads** and the default
 is to use the **Shared_Instance**.
 
 ## Implementing a server operation
 
-All you have to do is implement the server operation in the **src/-servers.adb** file.
+All you have to do is implement the server operation in the **src/com-github-asyncmc-mojang-authentication-ada-server-model-servers.adb** file.
 The package already contains the operation with its parameters and you only have to replace
 the **null** instruction by real code.
 
@@ -81,19 +81,19 @@ Method | HTTP request | Description
 
 
 ## Models
- - [.Models.AccessKeys_Type](AccessKeys_Type.md)
- - [.Models.Agent_Type](Agent_Type.md)
- - [.Models.AuthenticationRequest_Type](AuthenticationRequest_Type.md)
- - [.Models.Authentication_Type](Authentication_Type.md)
- - [.Models.Error_Type](Error_Type.md)
- - [.Models.GameProfileProperty_Type](GameProfileProperty_Type.md)
- - [.Models.GameProfile_Type](GameProfile_Type.md)
- - [.Models.PrivateUserData_Type](PrivateUserData_Type.md)
- - [.Models.ProfileId_Type](ProfileId_Type.md)
- - [.Models.ReducedUserData_Type](ReducedUserData_Type.md)
- - [.Models.RefreshRequest_Type](RefreshRequest_Type.md)
- - [.Models.RefreshResponse_Type](RefreshResponse_Type.md)
- - [.Models.UsernamePassword_Type](UsernamePassword_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.AccessKeys_Type](AccessKeys_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.Agent_Type](Agent_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.AuthenticationRequest_Type](AuthenticationRequest_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.Authentication_Type](Authentication_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.Error_Type](Error_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.GameProfileProperty_Type](GameProfileProperty_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.GameProfile_Type](GameProfile_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.PrivateUserData_Type](PrivateUserData_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.ProfileId_Type](ProfileId_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.ReducedUserData_Type](ReducedUserData_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.RefreshRequest_Type](RefreshRequest_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.RefreshResponse_Type](RefreshResponse_Type.md)
+ - [com.github.asyncmc.mojang.authentication.ada.server.model.Models.UsernamePassword_Type](UsernamePassword_Type.md)
 
 
 ## Authorization

@@ -35,14 +35,19 @@
 #include <string>
 #include <vector>
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::pistache::server::model;
 
-class NameHistoryApiImpl : public org::openapitools::server::api::NameHistoryApi {
+class NameHistoryApiImpl : public com::github::asyncmc::mojang::api::cpp::pistache::server::api::NameHistoryApi {
 public:
     NameHistoryApiImpl(std::shared_ptr<Pistache::Rest::Router>);
     ~NameHistoryApiImpl() {}
@@ -53,6 +58,11 @@ public:
 
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

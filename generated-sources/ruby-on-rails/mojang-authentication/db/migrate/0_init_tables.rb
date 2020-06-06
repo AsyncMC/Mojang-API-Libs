@@ -49,7 +49,7 @@ class InitTables < ActiveRecord::Migration
       t.string :agent
       t.string :id
       t.string :name
-      t.File :user_id
+      t.string :user_id
       t.integer :created_at
       t.boolean :legacy_profile
       t.boolean :suspended
@@ -68,7 +68,7 @@ class InitTables < ActiveRecord::Migration
     end
 
     create_table "private_user_data".pluralize.to_sym, id: false do |t|
-      t.File :id
+      t.string :id
       t.string :properties
 
       t.timestamps
@@ -82,7 +82,7 @@ class InitTables < ActiveRecord::Migration
     end
 
     create_table "reduced_user_data".pluralize.to_sym, id: false do |t|
-      t.File :id
+      t.string :id
       t.string :properties
 
       t.timestamps

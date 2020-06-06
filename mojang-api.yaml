@@ -165,18 +165,7 @@ paths:
         content:
           application/x-www-form-urlencoded:
             schema:
-              type: object
-              description: Request Mojang to download a skin from an URL and apply to the player
-              required:
-                - url
-              properties:
-                model:
-                  $ref: '#/components/schemas/SkinModel'
-                url:
-                  type: string
-                  format: url
-                  example: http://assets.mojang.com/SkinTemplates/steve.png
-                  description: The URL which Mojang servers will download and apply the skin
+              $ref: '#/components/schemas/ChangeSkinRequest'
       responses:
         204:
           description: The skin has been changed. The response has no body
@@ -199,16 +188,7 @@ paths:
         content:
           multipart/form-data:
             schema:
-              type: object
-              required:
-                - file
-              properties:
-                model:
-                  $ref: '#/components/schemas/SkinModel'
-                file:
-                  type: string
-                  format: binary
-                  description: The skin image in PNG format
+              $ref: '#/components/schemas/UploadSkinRequest'
       responses:
         204:
           description: The skin has been changed. The response has no body
@@ -447,6 +427,30 @@ components:
           type: number
           format: double
           description: decimal average sales per second
+    UploadSkinRequest:
+      type: object
+      required:
+        - file
+      properties:
+        model:
+          $ref: '#/components/schemas/SkinModel'
+        file:
+          type: string
+          format: binary
+          description: The skin image in PNG format
+    ChangeSkinRequest:
+      type: object
+      description: Request Mojang to download a skin from an URL and apply to the player
+      required:
+        - url
+      properties:
+        model:
+          $ref: '#/components/schemas/SkinModel'
+        url:
+          type: string
+          format: url
+          example: http://assets.mojang.com/SkinTemplates/steve.png
+          description: The URL which Mojang servers will download and apply the skin
     OrderStatisticsRequest:
       type: object
       description: The body of the request to get the order statistics

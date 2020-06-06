@@ -38,7 +38,7 @@ namespace Org.OpenAPITools.Model {
     /// </summary>
     [DataMember(Name="userId", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "userId")]
-    public System.IO.Stream UserId { get; set; }
+    public string UserId { get; set; }
 
     /// <summary>
     /// Unix timestamp in milliseconds

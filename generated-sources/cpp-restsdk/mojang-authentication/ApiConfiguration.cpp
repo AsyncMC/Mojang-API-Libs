@@ -11,9 +11,13 @@
 
 #include "ApiConfiguration.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
 ApiConfiguration::ApiConfiguration()
@@ -74,6 +78,10 @@ void ApiConfiguration::setApiKey( const utility::string_t& prefix, const utility
     m_ApiKeys[prefix] = apiKey;
 }
 
+}
+}
+}
+}
 }
 }
 }

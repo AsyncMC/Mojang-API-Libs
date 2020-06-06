@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SessionApiError
+# Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.model.SessionApiError
 ## Properties
 
 Name | Type | Description | Notes

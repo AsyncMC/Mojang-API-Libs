@@ -19,7 +19,7 @@ Returns a list of SHA1 hashes used to check server addresses against when the cl
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.sessions.kotlin.model.*
 
 val apiInstance = BansApi()
 try {

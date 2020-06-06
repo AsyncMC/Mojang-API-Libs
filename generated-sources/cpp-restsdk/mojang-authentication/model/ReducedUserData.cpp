@@ -13,13 +13,18 @@
 
 #include "ReducedUserData.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 ReducedUserData::ReducedUserData()
 {
+    m_Id = utility::conversions::to_string_t("");
     m_IdIsSet = false;
     m_PropertiesIsSet = false;
 }
@@ -63,9 +68,7 @@ void ReducedUserData::fromJson(const web::json::value& val)
         const web::json::value& fieldValue = val.at(utility::conversions::to_string_t("id"));
         if(!fieldValue.is_null())
         {
-            HttpContent newItem(utility::conversions::to_string_t(""));
-            newItem->fromJson(fieldValue);
-            setId( newItem );
+            setId(ModelBase::stringFromJson(fieldValue));
         }
     }
     {
@@ -100,10 +103,7 @@ void ReducedUserData::toMultipart(std::shared_ptr<MultipartFormData> multipart, 
 
     if(m_IdIsSet)
     {
-        if (m_Id.get())
-        {
-            m_Id->toMultipart(multipart, utility::conversions::to_string_t("id."));
-        }
+        multipart->add(ModelBase::toHttpContent(namePrefix + utility::conversions::to_string_t("id"), m_Id));
     }
     {
         std::vector<web::json::value> jsonArray;
@@ -129,12 +129,7 @@ void ReducedUserData::fromMultiPart(std::shared_ptr<MultipartFormData> multipart
 
     if(multipart->hasContent(utility::conversions::to_string_t("id")))
     {
-        if(multipart->hasContent(utility::conversions::to_string_t("id")))
-        {
-            HttpContent newItem(utility::conversions::to_string_t(""));
-            newItem->fromMultiPart(multipart, utility::conversions::to_string_t("id."));
-            setId( newItem );
-        }
+        setId(ModelBase::stringFromHttpContent(multipart->getContent(utility::conversions::to_string_t("id"))));
     }
     {
         m_Properties.clear();
@@ -159,12 +154,12 @@ void ReducedUserData::fromMultiPart(std::shared_ptr<MultipartFormData> multipart
     }
 }
 
-HttpContent ReducedUserData::getId() const
+utility::string_t ReducedUserData::getId() const
 {
     return m_Id;
 }
 
-void ReducedUserData::setId(const HttpContent& value)
+void ReducedUserData::setId(const utility::string_t& value)
 {
     m_Id = value;
     m_IdIsSet = true;
@@ -201,6 +196,10 @@ void ReducedUserData::unsetProperties()
     m_PropertiesIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

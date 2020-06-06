@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PlayerSkinURL
+# Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.model.PlayerSkinURL
 ## Properties
 
 Name | Type | Description | Notes

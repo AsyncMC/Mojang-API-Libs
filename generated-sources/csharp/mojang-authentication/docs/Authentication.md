@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.Authentication
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model.Authentication
 ## Properties
 
 Name | Type | Description | Notes

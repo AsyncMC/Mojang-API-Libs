@@ -17,7 +17,7 @@ import io.ktor.locations.*
 import io.ktor.pipeline.PipelineContext
 import io.ktor.routing.Route
 import io.ktor.routing.method
-import org.openapitools.server.models.*
+import com.github.asyncmc.mojang.api.kotlin.server.model.*
 
 
 // NOTE: ktor-location@0.9.0 is missing extension for Route.delete. This includes it.

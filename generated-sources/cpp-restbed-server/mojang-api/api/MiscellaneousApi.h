@@ -28,12 +28,17 @@
 #include "OrderStatisticsRequest.h"
 #include "OrderStatisticsResponse.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::restbed::server::model;
 
 class  MiscellaneousApi: public restbed::Service
 {
@@ -60,6 +65,11 @@ public:
 };
 
 
+}
+}
+}
+}
+}
 }
 }
 }

@@ -15,10 +15,9 @@
 
 #include "OAIObject.h"
 
+#include "OAIChangeSkinRequest.h"
 #include "OAICurrentPlayerIDs.h"
 #include "OAIError.h"
-#include "OAIInline_object.h"
-#include "OAIInline_object_1.h"
 #include "OAINameChange.h"
 #include "OAIOrderStatistic.h"
 #include "OAIOrderStatisticsRequest.h"
@@ -28,21 +27,19 @@
 #include "OAISecurityChallenge.h"
 #include "OAISecurityQuestion.h"
 #include "OAISkinModel.h"
+#include "OAIUploadSkinRequest.h"
 
 namespace OpenAPI {
 
   inline void* create(QString type) {
+    if(QString("OAIChangeSkinRequest").compare(type) == 0) {
+      return new OAIChangeSkinRequest();
+    }
     if(QString("OAICurrentPlayerIDs").compare(type) == 0) {
       return new OAICurrentPlayerIDs();
     }
     if(QString("OAIError").compare(type) == 0) {
       return new OAIError();
-    }
-    if(QString("OAIInline_object").compare(type) == 0) {
-      return new OAIInline_object();
-    }
-    if(QString("OAIInline_object_1").compare(type) == 0) {
-      return new OAIInline_object_1();
     }
     if(QString("OAINameChange").compare(type) == 0) {
       return new OAINameChange();
@@ -70,6 +67,9 @@ namespace OpenAPI {
     }
     if(QString("OAISkinModel").compare(type) == 0) {
       return new OAISkinModel();
+    }
+    if(QString("OAIUploadSkinRequest").compare(type) == 0) {
+      return new OAIUploadSkinRequest();
     }
     
     return nullptr;

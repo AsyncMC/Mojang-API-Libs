@@ -12,8 +12,13 @@
 
 #include "BansApiImpl.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
@@ -27,6 +32,11 @@ void BansApiImpl::get_blocked_server_hashes(Pistache::Http::ResponseWriter &resp
     response.send(Pistache::Http::Code::Ok, "Do some magic\n");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

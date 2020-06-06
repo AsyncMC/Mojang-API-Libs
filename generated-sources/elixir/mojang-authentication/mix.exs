@@ -1,8 +1,8 @@
-defmodule MojangAuthenticationAPI.Mixfile do
+defmodule com.github.asyncmc.mojang.authentication.elixir.server.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :mojang_authentication_api,
+    [app: :com/github/asyncmc/mojang/authentication/elixir/server,
      version: "0.1.0",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,

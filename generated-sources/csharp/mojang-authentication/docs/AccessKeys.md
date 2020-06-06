@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.AccessKeys
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model.AccessKeys
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# \SkinOperationsApi
+# com.github.asyncmc.mojang.api.go.server\SkinOperationsApi
 
 All URIs are relative to *https://api.mojang.com*
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.AuthenticationRequest
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.refactor.model.AuthenticationRequest
 ## Properties
 
 Name | Type | Description | Notes

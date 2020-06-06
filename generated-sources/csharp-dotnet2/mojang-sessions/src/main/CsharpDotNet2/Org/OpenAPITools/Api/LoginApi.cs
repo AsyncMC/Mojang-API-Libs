@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using RestSharp;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.sessions.csharp.dotnet2.model;
 
-namespace Org.OpenAPITools.Api
+namespace com.github.asyncmc.mojang.sessions.csharp.dotnet2.api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints

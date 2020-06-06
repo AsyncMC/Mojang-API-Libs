@@ -15,8 +15,8 @@
  * This is an API client responsible for stating the HTTP calls
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_API_ApiClient_H_
-#define ORG_OPENAPITOOLS_CLIENT_API_ApiClient_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_API_ApiClient_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_API_ApiClient_H_
 
 
 #include "ApiConfiguration.h"
@@ -31,12 +31,16 @@
 #include <cpprest/details/basic_types.h>
 #include <cpprest/http_client.h>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
-using namespace org::openapitools::client::model;
+using namespace com::github::asyncmc::mojang::api::cpp::restsdk::model;
 
 class  ApiClient
 {
@@ -96,5 +100,9 @@ utility::string_t ApiClient::parameterToString(const std::vector<T>& value)
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_API_ApiClient_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_API_CPP_RESTSDK_API_ApiClient_H_ */

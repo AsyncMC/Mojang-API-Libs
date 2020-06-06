@@ -13,8 +13,13 @@
 #include "BansApi.h"
 #include "Helpers.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
@@ -54,6 +59,11 @@ void BansApi::bans_api_default_handler(const Pistache::Rest::Request &request, P
     response.send(Pistache::Http::Code::Not_Found, "The requested method does not exist");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

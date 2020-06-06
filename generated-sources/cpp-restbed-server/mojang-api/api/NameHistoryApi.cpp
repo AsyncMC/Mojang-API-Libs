@@ -18,12 +18,17 @@
 
 #include "NameHistoryApi.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::restbed::server::model;
 
 NameHistoryApi::NameHistoryApi() {
 	std::shared_ptr<NameHistoryApiProfilesMinecraftResource> spNameHistoryApiProfilesMinecraftResource = std::make_shared<NameHistoryApiProfilesMinecraftResource>();
@@ -187,6 +192,11 @@ void NameHistoryApiUsersProfilesMinecraftUsernameResource::GET_method_handler(co
 
 
 
+}
+}
+}
+}
+}
 }
 }
 }

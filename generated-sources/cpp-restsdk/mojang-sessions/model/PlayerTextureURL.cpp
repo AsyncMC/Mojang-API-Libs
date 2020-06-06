@@ -13,9 +13,13 @@
 
 #include "PlayerTextureURL.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 PlayerTextureURL::PlayerTextureURL()
@@ -79,6 +83,10 @@ void PlayerTextureURL::setUrl(const utility::string_t& value)
     
 }
 
+}
+}
+}
+}
 }
 }
 }

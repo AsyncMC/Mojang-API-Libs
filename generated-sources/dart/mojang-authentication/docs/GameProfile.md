@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **agent** | **String** |  | [optional] [default to null]
 **id** | **String** |  | [optional] [default to null]
 **name** | **String** |  | [optional] [default to null]
-**userId** | [**MultipartFile**](File.md) |  | [optional] [default to null]
+**userId** | **String** |  | [optional] [default to null]
 **createdAt** | **int** | Unix timestamp in milliseconds | [optional] [default to null]
 **legacyProfile** | **bool** |  | [optional] [default to null]
 **suspended** | **bool** |  | [optional] [default to null]

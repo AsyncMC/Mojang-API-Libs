@@ -22,8 +22,13 @@
 #include "ModelBase.h"
 
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace status {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace model {
 
@@ -52,6 +57,11 @@ public:
 protected:
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

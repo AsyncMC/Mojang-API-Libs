@@ -712,6 +712,7 @@ font-style: italic;
 
   <h3>Table of Contents</h3>
   <ol>
+    <li><a href="#ChangeSkinRequest"><code>ChangeSkinRequest</code> - </a></li>
     <li><a href="#CurrentPlayerIDs"><code>CurrentPlayerIDs</code> - </a></li>
     <li><a href="#Error"><code>Error</code> - </a></li>
     <li><a href="#NameChange"><code>NameChange</code> - </a></li>
@@ -723,10 +724,17 @@ font-style: italic;
     <li><a href="#SecurityChallenge"><code>SecurityChallenge</code> - </a></li>
     <li><a href="#SecurityQuestion"><code>SecurityQuestion</code> - </a></li>
     <li><a href="#SkinModel"><code>SkinModel</code> - </a></li>
-    <li><a href="#inline_object"><code>inline_object</code> - </a></li>
-    <li><a href="#inline_object_1"><code>inline_object_1</code> - </a></li>
+    <li><a href="#UploadSkinRequest"><code>UploadSkinRequest</code> - </a></li>
   </ol>
 
+  <div class="model">
+    <h3><a name="ChangeSkinRequest"><code>ChangeSkinRequest</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>Request Mojang to download a skin from an URL and apply to the player</div>
+    <div class="field-items">
+      <div class="param">model (optional)</div><div class="param-desc"><span class="param-type"><a href="#SkinModel">SkinModel</a></span>  </div>
+<div class="param">url </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The URL which Mojang servers will download and apply the skin format: url</div>
+    </div>  <!-- field-items -->
+  </div>
   <div class="model">
     <h3><a name="CurrentPlayerIDs"><code>CurrentPlayerIDs</code> - </a> <a class="up" href="#__Models">Up</a></h3>
     <div class='model-description'>The current player, demo and legacy status of a player identified by the id</div>
@@ -851,19 +859,11 @@ font-style: italic;
           </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3><a name="inline_object"><code>inline_object</code> - </a> <a class="up" href="#__Models">Up</a></h3>
-    
+    <h3><a name="UploadSkinRequest"><code>UploadSkinRequest</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
     <div class="field-items">
       <div class="param">model (optional)</div><div class="param-desc"><span class="param-type"><a href="#SkinModel">SkinModel</a></span>  </div>
 <div class="param">file </div><div class="param-desc"><span class="param-type"><a href="#file">File</a></span> The skin image in PNG format format: binary</div>
-    </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3><a name="inline_object_1"><code>inline_object_1</code> - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>Request Mojang to download a skin from an URL and apply to the player</div>
-    <div class="field-items">
-      <div class="param">model (optional)</div><div class="param-desc"><span class="param-type"><a href="#SkinModel">SkinModel</a></span>  </div>
-<div class="param">url </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The URL which Mojang servers will download and apply the skin format: url</div>
     </div>  <!-- field-items -->
   </div>
   </body>

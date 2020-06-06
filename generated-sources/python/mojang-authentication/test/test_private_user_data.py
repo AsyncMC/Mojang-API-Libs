@@ -15,7 +15,7 @@ from __future__ import absolute_import
 import unittest
 
 import openapi_client
-from openapi_client.models.private_user_data import PrivateUserData  # noqa: E501
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.private_user_data import PrivateUserData  # noqa: E501
 from openapi_client.rest import ApiException
 
 

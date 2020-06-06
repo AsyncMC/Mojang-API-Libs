@@ -25,12 +25,16 @@ utility::string_t toString(const T value)
   return out.str();
 }
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace status {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
-using namespace org::openapitools::client::model;
+using namespace com::github::asyncmc::mojang::status::cpp::restsdk::model;
 
 ApiClient::ApiClient(std::shared_ptr<ApiConfiguration> configuration )
     : m_Configuration(configuration)
@@ -195,6 +199,10 @@ pplx::task<web::http::http_response> ApiClient::callApi(
     return client.request(request);
 }
 
+}
+}
+}
+}
 }
 }
 }

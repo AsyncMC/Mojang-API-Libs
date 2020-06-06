@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PlayerSkinMetadata
+# Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.model.PlayerSkinMetadata
 ## Properties
 
 Name | Type | Description | Notes

@@ -19,5 +19,5 @@ restbed
 
 
 ## Namespaces
-org.openapitools.server.api
-org.openapitools.server.model
+com.github.asyncmc.mojang.sessions.cpp.restbed.server.api
+com.github.asyncmc.mojang.sessions.cpp.restbed.server.model

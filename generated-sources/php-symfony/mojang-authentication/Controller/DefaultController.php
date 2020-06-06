@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.authentication.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,27 +27,27 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace com.github.asyncmc.mojang.authentication.php.symfony.server\Controller;
 
 use \Exception;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Validator\Constraints as Assert;
-use OpenAPI\Server\Api\DefaultApiInterface;
-use OpenAPI\Server\Model\AccessKeys;
-use OpenAPI\Server\Model\Authentication;
-use OpenAPI\Server\Model\AuthenticationRequest;
-use OpenAPI\Server\Model\Error;
-use OpenAPI\Server\Model\RefreshRequest;
-use OpenAPI\Server\Model\RefreshResponse;
-use OpenAPI\Server\Model\UsernamePassword;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.api\DefaultApiInterface;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AccessKeys;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\Authentication;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AuthenticationRequest;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\Error;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\RefreshRequest;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\RefreshResponse;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\UsernamePassword;
 
 /**
  * DefaultController Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.authentication.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -87,12 +87,12 @@ class DefaultController extends Controller
         // Use the default value if no value was provided
 
         // Deserialize the input values that needs it
-        $authenticationRequest = $this->deserialize($authenticationRequest, 'OpenAPI\Server\Model\AuthenticationRequest', $inputFormat);
+        $authenticationRequest = $this->deserialize($authenticationRequest, 'com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AuthenticationRequest', $inputFormat);
 
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\AuthenticationRequest");
+        $asserts[] = new Assert\Type("com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AuthenticationRequest");
         $response = $this->validate($authenticationRequest, $asserts);
         if ($response instanceof Response) {
             return $response;
@@ -170,12 +170,12 @@ class DefaultController extends Controller
         // Use the default value if no value was provided
 
         // Deserialize the input values that needs it
-        $accessKeys = $this->deserialize($accessKeys, 'OpenAPI\Server\Model\AccessKeys', $inputFormat);
+        $accessKeys = $this->deserialize($accessKeys, 'com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AccessKeys', $inputFormat);
 
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\AccessKeys");
+        $asserts[] = new Assert\Type("com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AccessKeys");
         $response = $this->validate($accessKeys, $asserts);
         if ($response instanceof Response) {
             return $response;
@@ -253,12 +253,12 @@ class DefaultController extends Controller
         // Use the default value if no value was provided
 
         // Deserialize the input values that needs it
-        $refreshRequest = $this->deserialize($refreshRequest, 'OpenAPI\Server\Model\RefreshRequest', $inputFormat);
+        $refreshRequest = $this->deserialize($refreshRequest, 'com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\RefreshRequest', $inputFormat);
 
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\RefreshRequest");
+        $asserts[] = new Assert\Type("com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\RefreshRequest");
         $response = $this->validate($refreshRequest, $asserts);
         if ($response instanceof Response) {
             return $response;
@@ -336,12 +336,12 @@ class DefaultController extends Controller
         // Use the default value if no value was provided
 
         // Deserialize the input values that needs it
-        $usernamePassword = $this->deserialize($usernamePassword, 'OpenAPI\Server\Model\UsernamePassword', $inputFormat);
+        $usernamePassword = $this->deserialize($usernamePassword, 'com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\UsernamePassword', $inputFormat);
 
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\UsernamePassword");
+        $asserts[] = new Assert\Type("com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\UsernamePassword");
         $response = $this->validate($usernamePassword, $asserts);
         if ($response instanceof Response) {
             return $response;
@@ -419,12 +419,12 @@ class DefaultController extends Controller
         // Use the default value if no value was provided
 
         // Deserialize the input values that needs it
-        $accessKeys = $this->deserialize($accessKeys, 'OpenAPI\Server\Model\AccessKeys', $inputFormat);
+        $accessKeys = $this->deserialize($accessKeys, 'com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AccessKeys', $inputFormat);
 
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\AccessKeys");
+        $asserts[] = new Assert\Type("com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AccessKeys");
         $response = $this->validate($accessKeys, $asserts);
         if ($response instanceof Response) {
             return $response;

@@ -19,12 +19,16 @@
 
 #include <boost/algorithm/string/replace.hpp>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace status {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
-using namespace org::openapitools::client::model;
+using namespace com::github::asyncmc::mojang::status::cpp::restsdk::model;
 
 DefaultApi::DefaultApi( std::shared_ptr<ApiClient> apiClient )
     : m_ApiClient(apiClient)
@@ -161,6 +165,10 @@ pplx::task<std::vector<std::map<utility::string_t, std::shared_ptr<ApiStatus>>>>
     });
 }
 
+}
+}
+}
+}
 }
 }
 }

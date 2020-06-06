@@ -15,18 +15,21 @@
  * 
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_GameProfile_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_GameProfile_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_AUTHENTICATION_CPP_RESTSDK_MODEL_GameProfile_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_AUTHENTICATION_CPP_RESTSDK_MODEL_GameProfile_H_
 
 
 #include "../ModelBase.h"
 
 #include <cpprest/details/basic_types.h>
-#include "HttpContent.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 /// <summary>
@@ -83,11 +86,11 @@ public:
     /// <summary>
     /// 
     /// </summary>
-    HttpContent getUserId() const;
+    utility::string_t getUserId() const;
     bool userIdIsSet() const;
     void unsetUserId();
 
-    void setUserId(const HttpContent& value);
+    void setUserId(const utility::string_t& value);
 
     /// <summary>
     /// Unix timestamp in milliseconds
@@ -151,7 +154,7 @@ protected:
     bool m_IdIsSet;
     utility::string_t m_Name;
     bool m_NameIsSet;
-    HttpContent m_UserId;
+    utility::string_t m_UserId;
     bool m_UserIdIsSet;
     int64_t m_CreatedAt;
     bool m_CreatedAtIsSet;
@@ -171,5 +174,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_GameProfile_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_AUTHENTICATION_CPP_RESTSDK_MODEL_GameProfile_H_ */

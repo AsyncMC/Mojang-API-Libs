@@ -13,9 +13,13 @@
 
 #include "AccessKeys.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 AccessKeys::AccessKeys()
@@ -122,6 +126,10 @@ void AccessKeys::unsetClientToken()
     m_ClientTokenIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

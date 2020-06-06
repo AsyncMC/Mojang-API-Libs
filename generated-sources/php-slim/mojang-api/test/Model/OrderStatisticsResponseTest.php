@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the model.
  */
-namespace OpenAPIServer\Model;
+namespace com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model;
 
-use OpenAPIServer\Model\OrderStatisticsResponse;
+use com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\OrderStatisticsResponse;
 
 /**
  * OrderStatisticsResponseTest Class Doc Comment
  *
  * @category Class
  * @description A json object is returned with the total amount of copies sold, the amount of copies sold in the last 24h and how many sales there are per second.
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\OrderStatisticsResponse
+ * @coversDefaultClass \com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\OrderStatisticsResponse
  */
 class OrderStatisticsResponseTest extends \PHPUnit_Framework_TestCase
 {

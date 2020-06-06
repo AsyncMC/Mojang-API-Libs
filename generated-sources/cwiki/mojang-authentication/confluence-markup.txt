@@ -344,7 +344,7 @@ h2. Models
          |agent | |String | |
  |id | |String | |
  |name | |String | |
- |userId | |File | |
+ |userId | |String | |
  |createdAt | |Long |Unix timestamp in milliseconds |
  |legacyProfile | |Boolean | |
  |suspended | |Boolean | |
@@ -357,7 +357,7 @@ h2. Models
  |value | |String | |
         h3. PrivateUserData
         ||Field Name||Required||Type||Description||
-         |id | |File | |
+         |id | |String | |
  |properties | |array[GameProfileProperty] | |
         h3. ProfileId
         ||Field Name||Required||Type||Description||
@@ -365,7 +365,7 @@ h2. Models
  |name | |String |The player name |
         h3. ReducedUserData
         ||Field Name||Required||Type||Description||
-         |id | |File | |
+         |id | |String | |
  |properties | |array[GameProfileProperty] | |
         h3. RefreshRequest
         ||Field Name||Required||Type||Description||

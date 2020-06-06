@@ -17,10 +17,9 @@ require 'openapi_client/version'
 require 'openapi_client/configuration'
 
 # Models
+require 'openapi_client/models/change_skin_request'
 require 'openapi_client/models/current_player_i_ds'
 require 'openapi_client/models/error'
-require 'openapi_client/models/inline_object'
-require 'openapi_client/models/inline_object1'
 require 'openapi_client/models/name_change'
 require 'openapi_client/models/order_statistic'
 require 'openapi_client/models/order_statistics_request'
@@ -30,6 +29,7 @@ require 'openapi_client/models/security_answer_id'
 require 'openapi_client/models/security_challenge'
 require 'openapi_client/models/security_question'
 require 'openapi_client/models/skin_model'
+require 'openapi_client/models/upload_skin_request'
 
 # APIs
 require 'openapi_client/api/miscellaneous_api'

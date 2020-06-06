@@ -18,12 +18,17 @@
 
 #include "DefaultApi.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::authentication::cpp::restbed::server::model;
 
 DefaultApi::DefaultApi() {
 	std::shared_ptr<DefaultApiAuthenticateResource> spDefaultApiAuthenticateResource = std::make_shared<DefaultApiAuthenticateResource>();
@@ -313,6 +318,11 @@ void DefaultApiValidateResource::POST_method_handler(const std::shared_ptr<restb
 
 
 
+}
+}
+}
+}
+}
 }
 }
 }

@@ -1,4 +1,4 @@
-# \BansApi
+# com.github.asyncmc.mojang.sessions.go.server\BansApi
 
 All URIs are relative to *https://sessionserver.mojang.com*
 

@@ -30,7 +30,7 @@ namespace Org.OpenAPITools..Models
         /// <summary>
         /// UserId
         /// </summary>
-        public System.IO.Stream UserId { get; private set; }
+        public string UserId { get; private set; }
 
         /// <summary>
         /// Unix timestamp in milliseconds
@@ -72,7 +72,7 @@ namespace Org.OpenAPITools..Models
         {
         }
 
-        private GameProfile(string Agent, string Id, string Name, System.IO.Stream UserId, long? CreatedAt, bool? LegacyProfile, bool? Suspended, bool? Paid, bool? Migrated, bool? Legacy)
+        private GameProfile(string Agent, string Id, string Name, string UserId, long? CreatedAt, bool? LegacyProfile, bool? Suspended, bool? Paid, bool? Migrated, bool? Legacy)
         {
             
             this.Agent = Agent;
@@ -176,7 +176,7 @@ namespace Org.OpenAPITools..Models
             private string _Agent;
             private string _Id;
             private string _Name;
-            private System.IO.Stream _UserId;
+            private string _UserId;
             private long? _CreatedAt;
             private bool? _LegacyProfile;
             private bool? _Suspended;
@@ -227,7 +227,7 @@ namespace Org.OpenAPITools..Models
             /// Sets value for GameProfile.UserId property.
             /// </summary>
             /// <param name="value">UserId</param>
-            public GameProfileBuilder UserId(System.IO.Stream value)
+            public GameProfileBuilder UserId(string value)
             {
                 _UserId = value;
                 return this;

@@ -9,10 +9,6 @@
 
 package openapi
 
-import (
-	"os"
-)
-
 type GameProfile struct {
 
 	Agent string `json:"agent,omitempty"`
@@ -21,7 +17,7 @@ type GameProfile struct {
 
 	Name string `json:"name,omitempty"`
 
-	UserId **os.File `json:"userId,omitempty"`
+	UserId string `json:"userId,omitempty"`
 
 	// Unix timestamp in milliseconds
 	CreatedAt int64 `json:"createdAt,omitempty"`

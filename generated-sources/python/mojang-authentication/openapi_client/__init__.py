@@ -17,22 +17,22 @@ from __future__ import absolute_import
 __version__ = "1.0.0"
 
 # import apis into sdk package
-from openapi_client.api.default_api import DefaultApi
+from com.github.asyncmc.mojang.authentication.python.api.default_api import DefaultApi
 
 # import ApiClient
 from openapi_client.api_client import ApiClient
 from openapi_client.configuration import Configuration
 # import models into sdk package
-from openapi_client.models.access_keys import AccessKeys
-from openapi_client.models.agent import Agent
-from openapi_client.models.authentication import Authentication
-from openapi_client.models.authentication_request import AuthenticationRequest
-from openapi_client.models.error import Error
-from openapi_client.models.game_profile import GameProfile
-from openapi_client.models.game_profile_property import GameProfileProperty
-from openapi_client.models.private_user_data import PrivateUserData
-from openapi_client.models.profile_id import ProfileId
-from openapi_client.models.reduced_user_data import ReducedUserData
-from openapi_client.models.refresh_request import RefreshRequest
-from openapi_client.models.refresh_response import RefreshResponse
-from openapi_client.models.username_password import UsernamePassword
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.access_keys import AccessKeys
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.agent import Agent
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.authentication import Authentication
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.authentication_request import AuthenticationRequest
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.error import Error
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.game_profile import GameProfile
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.game_profile_property import GameProfileProperty
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.private_user_data import PrivateUserData
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.profile_id import ProfileId
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.reduced_user_data import ReducedUserData
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.refresh_request import RefreshRequest
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.refresh_response import RefreshResponse
+from openapi_client.com.github.asyncmc.mojang.authentication.python.model.username_password import UsernamePassword

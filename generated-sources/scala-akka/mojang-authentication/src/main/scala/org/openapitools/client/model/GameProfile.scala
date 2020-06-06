@@ -19,7 +19,7 @@ case class GameProfile (
   agent: Option[String] = None,
   id: Option[String] = None,
   name: Option[String] = None,
-  userId: Option[File] = None,
+  userId: Option[String] = None,
   /* Unix timestamp in milliseconds */
   createdAt: Option[Long] = None,
   legacyProfile: Option[Boolean] = None,

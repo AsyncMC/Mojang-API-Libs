@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `GameProfile` (
   `agent` TEXT DEFAULT NULL,
   `id` TEXT DEFAULT NULL,
   `name` TEXT DEFAULT NULL,
-  `userId` MEDIUMBLOB DEFAULT NULL,
+  `userId` TEXT DEFAULT NULL,
   `createdAt` BIGINT DEFAULT NULL COMMENT 'Unix timestamp in milliseconds',
   `legacyProfile` TINYINT(1) DEFAULT NULL,
   `suspended` TINYINT(1) DEFAULT NULL,
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `GameProfileProperty` (
 --
 
 CREATE TABLE IF NOT EXISTS `PrivateUserData` (
-  `id` MEDIUMBLOB DEFAULT NULL,
+  `id` TEXT DEFAULT NULL,
   `properties` JSON DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `ProfileId` (
 --
 
 CREATE TABLE IF NOT EXISTS `ReducedUserData` (
-  `id` MEDIUMBLOB DEFAULT NULL,
+  `id` TEXT DEFAULT NULL,
   `properties` JSON DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

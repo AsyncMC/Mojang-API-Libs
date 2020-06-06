@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.DefaultApi
+# Org.OpenAPITools.com.github.asyncmc.mojang.status.csharp.api.DefaultApi
 
 All URIs are relative to *https://status.mojang.com*
 
@@ -17,9 +17,9 @@ Checks the Mojang service statuses
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.status.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.status.csharp.model;
 
 namespace Example
 {

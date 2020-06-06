@@ -66,7 +66,7 @@ public class MainApiVerticle extends AbstractVerticle {
       
     public void deployVerticles(Future<Void> startFuture) {
         
-        vertx.deployVerticle("org.openapitools.server.api.verticle.BansApiVerticle", res -> {
+        vertx.deployVerticle("com.github.asyncmc.mojang.sessions.java.vertx.api.BansApiVerticle", res -> {
             if (res.succeeded()) {
                 LOGGER.info("BansApiVerticle : Deployed");
             } else {
@@ -75,7 +75,7 @@ public class MainApiVerticle extends AbstractVerticle {
             }
         });
         
-        vertx.deployVerticle("org.openapitools.server.api.verticle.LoginApiVerticle", res -> {
+        vertx.deployVerticle("com.github.asyncmc.mojang.sessions.java.vertx.api.LoginApiVerticle", res -> {
             if (res.succeeded()) {
                 LOGGER.info("LoginApiVerticle : Deployed");
             } else {

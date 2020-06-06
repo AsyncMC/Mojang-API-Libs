@@ -15,9 +15,13 @@
 #include <boost/uuid/random_generator.hpp>
 #include <boost/uuid/uuid_io.hpp>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 MultipartFormData::MultipartFormData()
@@ -106,6 +110,10 @@ void MultipartFormData::writeTo( std::ostream& target )
     target << "\r\n--" << utility::conversions::to_utf8string( m_Boundary ) << "--\r\n";
 }
 
+}
+}
+}
+}
 }
 }
 }

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.SkinOperationsApi
+# com.github.asyncmc.mojang.api.csharp.dotnet2.api.SkinOperationsApi
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -21,9 +21,9 @@ This will set the skin for the selected profile, but Mojang's servers will fetch
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using com.github.asyncmc.mojang.api.csharp.dotnet2.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.api.csharp.dotnet2.model;
 
 namespace Example
 {
@@ -88,9 +88,9 @@ Resets the player skin to default
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using com.github.asyncmc.mojang.api.csharp.dotnet2.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.api.csharp.dotnet2.model;
 
 namespace Example
 {
@@ -153,9 +153,9 @@ This uploads a skin to Mojang's servers. It also sets the users skin. This works
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using com.github.asyncmc.mojang.api.csharp.dotnet2.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using com.github.asyncmc.mojang.api.csharp.dotnet2.model;
 
 namespace Example
 {

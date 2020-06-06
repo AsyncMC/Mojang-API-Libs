@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\DefaultApiInterface
+# com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.api\DefaultApiInterface
 
 All URIs are relative to *https://authserver.mojang.com*
 
@@ -24,7 +24,7 @@ services:
 ```
 
 ## **authenticate**
-> OpenAPI\Server\Model\Authentication authenticate($authenticationRequest)
+> com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\Authentication authenticate($authenticationRequest)
 
 
 
@@ -35,7 +35,7 @@ services:
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\DefaultApiInterface;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.api\DefaultApiInterface;
 
 class DefaultApi implements DefaultApiInterface
 {
@@ -58,11 +58,11 @@ class DefaultApi implements DefaultApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authenticationRequest** | [**OpenAPI\Server\Model\AuthenticationRequest**](../Model/AuthenticationRequest.md)|  |
+ **authenticationRequest** | [**com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AuthenticationRequest**](../Model/AuthenticationRequest.md)|  |
 
 ### Return type
 
-[**OpenAPI\Server\Model\Authentication**](../Model/Authentication.md)
+[**com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\Authentication**](../Model/Authentication.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ No authorization required
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\DefaultApiInterface;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.api\DefaultApiInterface;
 
 class DefaultApi implements DefaultApiInterface
 {
@@ -110,7 +110,7 @@ class DefaultApi implements DefaultApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accessKeys** | [**OpenAPI\Server\Model\AccessKeys**](../Model/AccessKeys.md)|  |
+ **accessKeys** | [**com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AccessKeys**](../Model/AccessKeys.md)|  |
 
 ### Return type
 
@@ -128,7 +128,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **refresh**
-> OpenAPI\Server\Model\RefreshResponse refresh($refreshRequest)
+> com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\RefreshResponse refresh($refreshRequest)
 
 
 
@@ -139,7 +139,7 @@ No authorization required
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\DefaultApiInterface;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.api\DefaultApiInterface;
 
 class DefaultApi implements DefaultApiInterface
 {
@@ -162,11 +162,11 @@ class DefaultApi implements DefaultApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **refreshRequest** | [**OpenAPI\Server\Model\RefreshRequest**](../Model/RefreshRequest.md)|  |
+ **refreshRequest** | [**com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\RefreshRequest**](../Model/RefreshRequest.md)|  |
 
 ### Return type
 
-[**OpenAPI\Server\Model\RefreshResponse**](../Model/RefreshResponse.md)
+[**com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\RefreshResponse**](../Model/RefreshResponse.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ No authorization required
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\DefaultApiInterface;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.api\DefaultApiInterface;
 
 class DefaultApi implements DefaultApiInterface
 {
@@ -214,7 +214,7 @@ class DefaultApi implements DefaultApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **usernamePassword** | [**OpenAPI\Server\Model\UsernamePassword**](../Model/UsernamePassword.md)|  |
+ **usernamePassword** | [**com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\UsernamePassword**](../Model/UsernamePassword.md)|  |
 
 ### Return type
 
@@ -243,7 +243,7 @@ No authorization required
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\DefaultApiInterface;
+use com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.api\DefaultApiInterface;
 
 class DefaultApi implements DefaultApiInterface
 {
@@ -266,7 +266,7 @@ class DefaultApi implements DefaultApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accessKeys** | [**OpenAPI\Server\Model\AccessKeys**](../Model/AccessKeys.md)|  |
+ **accessKeys** | [**com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\AccessKeys**](../Model/AccessKeys.md)|  |
 
 ### Return type
 

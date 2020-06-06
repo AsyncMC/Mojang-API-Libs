@@ -173,10 +173,10 @@ export type GameProfile = {
     name?: string;
     /**
      * 
-     * @type {any}
+     * @type {string}
      * @memberof GameProfile
      */
-    userId?: any;
+    userId?: string;
     /**
      * Unix timestamp in milliseconds
      * @type {number}
@@ -271,10 +271,10 @@ export type ProfileId = {
 export type ReducedUserData = {
     /**
      * 
-     * @type {any}
+     * @type {string}
      * @memberof ReducedUserData
      */
-    id?: any;
+    id?: string;
     /**
      * 
      * @type {Array<GameProfileProperty>}

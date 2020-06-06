@@ -13,9 +13,13 @@
 
 #include "CurrentPlayerIDs.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 CurrentPlayerIDs::CurrentPlayerIDs()
@@ -181,6 +185,10 @@ void CurrentPlayerIDs::unsetDemo()
     m_DemoIsSet = false;
 }
 
+}
+}
+}
+}
 }
 }
 }

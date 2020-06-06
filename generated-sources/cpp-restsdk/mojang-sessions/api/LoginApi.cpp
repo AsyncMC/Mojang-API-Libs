@@ -19,12 +19,16 @@
 
 #include <boost/algorithm/string/replace.hpp>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
-using namespace org::openapitools::client::model;
+using namespace com::github::asyncmc::mojang::sessions::cpp::restsdk::model;
 
 LoginApi::LoginApi( std::shared_ptr<ApiClient> apiClient )
     : m_ApiClient(apiClient)
@@ -159,6 +163,10 @@ pplx::task<std::shared_ptr<PlayerProfile>> LoginApi::getPlayerProfile(utility::s
     });
 }
 
+}
+}
+}
+}
 }
 }
 }

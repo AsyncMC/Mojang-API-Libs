@@ -7,7 +7,7 @@ part 'private_user_data.jser.dart';
 class PrivateUserData {
   
   @Alias('id')
-  final MultipartFile id;
+  final String id;
   
   @Alias('properties')
   final List<GameProfileProperty> properties;

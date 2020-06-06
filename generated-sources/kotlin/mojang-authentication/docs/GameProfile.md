@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **agent** | **kotlin.String** |  |  [optional]
 **id** | **kotlin.String** |  |  [optional]
 **name** | **kotlin.String** |  |  [optional]
-**userId** | [**java.io.File**](java.io.File.md) |  |  [optional]
+**userId** | **kotlin.String** |  |  [optional]
 **createdAt** | **kotlin.Long** | Unix timestamp in milliseconds |  [optional]
 **legacyProfile** | **kotlin.Boolean** |  |  [optional]
 **suspended** | **kotlin.Boolean** |  |  [optional]

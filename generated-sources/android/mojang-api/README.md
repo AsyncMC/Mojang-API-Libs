@@ -1,4 +1,4 @@
-# openapi-android-client
+# mojang-api-android
 
 ## Requirements
 
@@ -26,8 +26,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
-    <artifactId>openapi-android-client</artifactId>
+    <groupId>com.github.asyncmc</groupId>
+    <artifactId>mojang-api-android</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
 </dependency>
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "org.openapitools:openapi-android-client:1.0.0"
+compile "com.github.asyncmc:mojang-api-android:1.0.0"
 ```
 
 ### Others
@@ -49,7 +49,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/openapi-android-client-1.0.0.jar
+* target/mojang-api-android-1.0.0.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -58,7 +58,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import org.openapitools.client.api.MiscellaneousApi;
+import com.github.asyncmc.mojang.api.android.api.MiscellaneousApi;
 
 public class MiscellaneousApiExample {
 
@@ -97,10 +97,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [ChangeSkinRequest](docs/ChangeSkinRequest.md)
  - [CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
  - [Error](docs/Error.md)
- - [InlineObject](docs/InlineObject.md)
- - [InlineObject1](docs/InlineObject1.md)
  - [NameChange](docs/NameChange.md)
  - [OrderStatistic](docs/OrderStatistic.md)
  - [OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
@@ -110,6 +109,7 @@ Class | Method | HTTP request | Description
  - [SecurityChallenge](docs/SecurityChallenge.md)
  - [SecurityQuestion](docs/SecurityQuestion.md)
  - [SkinModel](docs/SkinModel.md)
+ - [UploadSkinRequest](docs/UploadSkinRequest.md)
 
 
 ## Documentation for Authorization

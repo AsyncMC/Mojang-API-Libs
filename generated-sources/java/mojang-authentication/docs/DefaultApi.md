@@ -20,8 +20,8 @@ Method | HTTP request | Description
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.java.server.ApiException;
+//import com.github.asyncmc.mojang.authentication.java.api.DefaultApi;
 
 
 DefaultApi apiInstance = new DefaultApi();
@@ -63,8 +63,8 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.java.server.ApiException;
+//import com.github.asyncmc.mojang.authentication.java.api.DefaultApi;
 
 
 DefaultApi apiInstance = new DefaultApi();
@@ -105,8 +105,8 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.java.server.ApiException;
+//import com.github.asyncmc.mojang.authentication.java.api.DefaultApi;
 
 
 DefaultApi apiInstance = new DefaultApi();
@@ -148,8 +148,8 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.java.server.ApiException;
+//import com.github.asyncmc.mojang.authentication.java.api.DefaultApi;
 
 
 DefaultApi apiInstance = new DefaultApi();
@@ -190,8 +190,8 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.authentication.java.server.ApiException;
+//import com.github.asyncmc.mojang.authentication.java.api.DefaultApi;
 
 
 DefaultApi apiInstance = new DefaultApi();

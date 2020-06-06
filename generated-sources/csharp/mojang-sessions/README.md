@@ -36,9 +36,9 @@ Run the following command to generate the DLL
 
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 ```csharp
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.model;
 ```
 <a name="packaging"></a>
 ## Packaging
@@ -59,9 +59,9 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.model;
 
 namespace Example
 {
@@ -102,14 +102,14 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [Model.PlayerProfile](docs/PlayerProfile.md)
- - [Model.PlayerProfileProperty](docs/PlayerProfileProperty.md)
- - [Model.PlayerProfileTexturePropertyValue](docs/PlayerProfileTexturePropertyValue.md)
- - [Model.PlayerSkinMetadata](docs/PlayerSkinMetadata.md)
- - [Model.PlayerSkinURL](docs/PlayerSkinURL.md)
- - [Model.PlayerTexture](docs/PlayerTexture.md)
- - [Model.PlayerTextureURL](docs/PlayerTextureURL.md)
- - [Model.SessionApiError](docs/SessionApiError.md)
+ - [com.github.asyncmc.mojang.sessions.csharp.model.PlayerProfile](docs/PlayerProfile.md)
+ - [com.github.asyncmc.mojang.sessions.csharp.model.PlayerProfileProperty](docs/PlayerProfileProperty.md)
+ - [com.github.asyncmc.mojang.sessions.csharp.model.PlayerProfileTexturePropertyValue](docs/PlayerProfileTexturePropertyValue.md)
+ - [com.github.asyncmc.mojang.sessions.csharp.model.PlayerSkinMetadata](docs/PlayerSkinMetadata.md)
+ - [com.github.asyncmc.mojang.sessions.csharp.model.PlayerSkinURL](docs/PlayerSkinURL.md)
+ - [com.github.asyncmc.mojang.sessions.csharp.model.PlayerTexture](docs/PlayerTexture.md)
+ - [com.github.asyncmc.mojang.sessions.csharp.model.PlayerTextureURL](docs/PlayerTextureURL.md)
+ - [com.github.asyncmc.mojang.sessions.csharp.model.SessionApiError](docs/SessionApiError.md)
 
 
 <a name="documentation-for-authorization"></a>

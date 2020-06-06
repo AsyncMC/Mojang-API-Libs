@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the model.
  */
-namespace OpenAPIServer\Model;
+namespace com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model;
 
-use OpenAPIServer\Model\AuthenticationRequest;
+use com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\AuthenticationRequest;
 
 /**
  * AuthenticationRequestTest Class Doc Comment
  *
  * @category Class
  * @description Request body needed to authenticate the player using the username/e-mail and password. Use with care. This is a risky operation.
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\AuthenticationRequest
+ * @coversDefaultClass \com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\AuthenticationRequest
  */
 class AuthenticationRequestTest extends \PHPUnit_Framework_TestCase
 {

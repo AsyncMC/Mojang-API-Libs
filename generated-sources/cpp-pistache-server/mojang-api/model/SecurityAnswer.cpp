@@ -13,8 +13,13 @@
 
 #include "SecurityAnswer.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace model {
 
@@ -60,6 +65,11 @@ void SecurityAnswer::setId(int32_t const value)
     
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

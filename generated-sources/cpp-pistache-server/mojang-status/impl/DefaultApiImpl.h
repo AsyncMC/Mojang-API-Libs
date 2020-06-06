@@ -31,14 +31,19 @@
 
 #include "ApiStatus.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace status {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::status::cpp::pistache::server::model;
 
-class DefaultApiImpl : public org::openapitools::server::api::DefaultApi {
+class DefaultApiImpl : public com::github::asyncmc::mojang::status::cpp::pistache::server::api::DefaultApi {
 public:
     DefaultApiImpl(std::shared_ptr<Pistache::Rest::Router>);
     ~DefaultApiImpl() {}
@@ -47,6 +52,11 @@ public:
 
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

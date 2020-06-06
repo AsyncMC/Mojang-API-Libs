@@ -93,10 +93,9 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
+ - [Org.OpenAPITools.Model.ChangeSkinRequest](docs/ChangeSkinRequest.md)
  - [Org.OpenAPITools.Model.CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
  - [Org.OpenAPITools.Model.Error](docs/Error.md)
- - [Org.OpenAPITools.Model.InlineObject](docs/InlineObject.md)
- - [Org.OpenAPITools.Model.InlineObject1](docs/InlineObject1.md)
  - [Org.OpenAPITools.Model.NameChange](docs/NameChange.md)
  - [Org.OpenAPITools.Model.OrderStatistic](docs/OrderStatistic.md)
  - [Org.OpenAPITools.Model.OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
@@ -106,6 +105,7 @@ Class | Method | HTTP request | Description
  - [Org.OpenAPITools.Model.SecurityChallenge](docs/SecurityChallenge.md)
  - [Org.OpenAPITools.Model.SecurityQuestion](docs/SecurityQuestion.md)
  - [Org.OpenAPITools.Model.SkinModel](docs/SkinModel.md)
+ - [Org.OpenAPITools.Model.UploadSkinRequest](docs/UploadSkinRequest.md)
 
 
 <a name="documentation-for-authorization"></a>

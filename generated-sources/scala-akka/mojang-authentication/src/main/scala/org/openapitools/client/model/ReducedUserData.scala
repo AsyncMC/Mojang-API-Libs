@@ -16,7 +16,7 @@ import org.joda.time.DateTime
 import java.util.UUID
 
 case class ReducedUserData (
-  id: Option[File] = None,
+  id: Option[String] = None,
   properties: Option[Seq[GameProfileProperty]] = None
 ) extends ApiModel
 

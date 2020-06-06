@@ -71,6 +71,26 @@ export class RequiredError extends Error {
 }
 
 /**
+ * Request Mojang to download a skin from an URL and apply to the player
+ * @export
+ */
+export type ChangeSkinRequest = {
+    /**
+     * 
+     * @type {SkinModel}
+     * @memberof ChangeSkinRequest
+     */
+    model?: SkinModel;
+    /**
+     * The URL which Mojang servers will download and apply the skin
+     * @type {string}
+     * @memberof ChangeSkinRequest
+     */
+    url: string;
+}
+
+
+/**
  * The current player, demo and legacy status of a player identified by the id
  * @export
  */
@@ -119,46 +139,6 @@ export type Error = {
      * @memberof Error
      */
     errorMessage?: string;
-}
-
-
-/**
- * 
- * @export
- */
-export type InlineObject = {
-    /**
-     * 
-     * @type {SkinModel}
-     * @memberof InlineObject
-     */
-    model?: SkinModel;
-    /**
-     * The skin image in PNG format
-     * @type {any}
-     * @memberof InlineObject
-     */
-    file: any;
-}
-
-
-/**
- * Request Mojang to download a skin from an URL and apply to the player
- * @export
- */
-export type InlineObject1 = {
-    /**
-     * 
-     * @type {SkinModel}
-     * @memberof InlineObject1
-     */
-    model?: SkinModel;
-    /**
-     * The URL which Mojang servers will download and apply the skin
-     * @type {string}
-     * @memberof InlineObject1
-     */
-    url: string;
 }
 
 
@@ -297,6 +277,26 @@ export type SecurityQuestion = {
  * @enum {string}
  */
 export type SkinModel = '' | 'slim';
+
+/**
+ * 
+ * @export
+ */
+export type UploadSkinRequest = {
+    /**
+     * 
+     * @type {SkinModel}
+     * @memberof UploadSkinRequest
+     */
+    model?: SkinModel;
+    /**
+     * The skin image in PNG format
+     * @type {any}
+     * @memberof UploadSkinRequest
+     */
+    file: any;
+}
+
 
 
 

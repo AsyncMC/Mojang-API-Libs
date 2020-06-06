@@ -18,12 +18,17 @@
 
 #include "LoginApi.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::sessions::cpp::restbed::server::model;
 
 LoginApi::LoginApi() {
 	std::shared_ptr<LoginApiSessionMinecraftProfileStripped_uuidResource> spLoginApiSessionMinecraftProfileStripped_uuidResource = std::make_shared<LoginApiSessionMinecraftProfileStripped_uuidResource>();
@@ -89,6 +94,11 @@ void LoginApiSessionMinecraftProfileStripped_uuidResource::GET_method_handler(co
 
 
 
+}
+}
+}
+}
+}
 }
 }
 }

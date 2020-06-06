@@ -46,7 +46,7 @@ namespace Org.OpenAPITools.Models
         /// Gets or Sets UserId
         /// </summary>
         [DataMember(Name="userId")]
-        public System.IO.Stream UserId { get; set; }
+        public string UserId { get; set; }
 
         /// <summary>
         /// Unix timestamp in milliseconds

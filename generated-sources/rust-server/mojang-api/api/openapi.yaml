@@ -159,22 +159,10 @@ paths:
           type: string
         style: simple
       requestBody:
-        $ref: '#/components/requestBodies/inline_object_1'
         content:
           application/x-www-form-urlencoded:
             schema:
-              description: Request Mojang to download a skin from an URL and apply to the player
-              properties:
-                model:
-                  $ref: '#/components/schemas/SkinModel'
-                url:
-                  description: The URL which Mojang servers will download and apply the skin
-                  example: http://assets.mojang.com/SkinTemplates/steve.png
-                  format: url
-                  type: string
-              required:
-              - url
-              type: object
+              $ref: '#/components/schemas/ChangeSkinRequest'
         required: true
       responses:
         204:
@@ -205,20 +193,10 @@ paths:
           type: string
         style: simple
       requestBody:
-        $ref: '#/components/requestBodies/inline_object'
         content:
           multipart/form-data:
             schema:
-              properties:
-                model:
-                  $ref: '#/components/schemas/SkinModel'
-                file:
-                  description: The skin image in PNG format
-                  format: binary
-                  type: string
-              required:
-              - file
-              type: object
+              $ref: '#/components/schemas/UploadSkinRequest'
         required: true
       responses:
         204:
@@ -325,17 +303,6 @@ paths:
       tags:
       - Miscellaneous
 components:
-  requestBodies:
-    inline_object_1:
-      content:
-        application/x-www-form-urlencoded:
-          schema:
-            $ref: '#/components/schemas/inline_object_1'
-    inline_object:
-      content:
-        multipart/form-data:
-          schema:
-            $ref: '#/components/schemas/inline_object'
   schemas:
     CurrentPlayerIDs:
       description: The current player, demo and legacy status of a player identified by the id
@@ -465,6 +432,30 @@ components:
       - saleVelocityPerSeconds
       - total
       type: object
+    UploadSkinRequest:
+      properties:
+        model:
+          $ref: '#/components/schemas/SkinModel'
+        file:
+          description: The skin image in PNG format
+          format: binary
+          type: string
+      required:
+      - file
+      type: object
+    ChangeSkinRequest:
+      description: Request Mojang to download a skin from an URL and apply to the player
+      properties:
+        model:
+          $ref: '#/components/schemas/SkinModel'
+        url:
+          description: The URL which Mojang servers will download and apply the skin
+          example: http://assets.mojang.com/SkinTemplates/steve.png
+          format: url
+          type: string
+      required:
+      - url
+      type: object
     OrderStatisticsRequest:
       description: The body of the request to get the order statistics
       properties:
@@ -543,30 +534,6 @@ components:
       required:
       - id
       - question
-      type: object
-    inline_object:
-      properties:
-        model:
-          $ref: '#/components/schemas/SkinModel'
-        file:
-          description: The skin image in PNG format
-          format: binary
-          type: string
-      required:
-      - file
-      type: object
-    inline_object_1:
-      description: Request Mojang to download a skin from an URL and apply to the player
-      properties:
-        model:
-          $ref: '#/components/schemas/SkinModel'
-        url:
-          description: The URL which Mojang servers will download and apply the skin
-          example: http://assets.mojang.com/SkinTemplates/steve.png
-          format: url
-          type: string
-      required:
-      - url
       type: object
   securitySchemes:
     PlayerAccessToken:

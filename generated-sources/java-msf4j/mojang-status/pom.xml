@@ -5,10 +5,10 @@
     <version>2.0.0</version>
   </parent> 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.openapitools</groupId>
-  <artifactId>openapi-jaxrs-server</artifactId>
+  <groupId>com.github.asyncmc</groupId>
+  <artifactId>mojang-status-java-msf4j</artifactId>
   <packaging>jar</packaging>
-  <name>openapi-jaxrs-server</name>
+  <name>mojang-status-java-msf4j</name>
   <version>1.0.0</version>
   <build>
     <sourceDirectory>src/main/java</sourceDirectory>

@@ -29,7 +29,7 @@
 
 @property(nonatomic) NSString* name;
 
-@property(nonatomic) NSURL* userId;
+@property(nonatomic) NSString* userId;
 /* Unix timestamp in milliseconds [optional]
  */
 @property(nonatomic) NSNumber* createdAt;

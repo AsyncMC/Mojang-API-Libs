@@ -17,7 +17,7 @@ Checks the Mojang service statuses
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.status.kotlin.model.*
 
 val apiInstance = DefaultApi()
 try {

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAPI\Server\Service;
+namespace com.github.asyncmc.mojang.authentication.php.symfony.server\Service;
 
 interface ValidatorInterface
 {

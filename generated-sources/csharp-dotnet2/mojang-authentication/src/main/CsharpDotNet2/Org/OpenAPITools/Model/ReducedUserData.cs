@@ -17,7 +17,7 @@ namespace Org.OpenAPITools.Model {
     /// </summary>
     [DataMember(Name="id", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "id")]
-    public System.IO.Stream Id { get; set; }
+    public string Id { get; set; }
 
     /// <summary>
     /// Gets or Sets Properties

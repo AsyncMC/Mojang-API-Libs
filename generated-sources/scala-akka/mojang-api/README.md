@@ -1,4 +1,4 @@
-# openapi-client
+# mojang-api-scala-akka
 
 Mojang API
 - API version: 2020-06-05
@@ -36,8 +36,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
-  <artifactId>openapi-client</artifactId>
+  <groupId>com.github.asyncmc</groupId>
+  <artifactId>mojang-api-scala-akka</artifactId>
   <version>1.0.0</version>
   <scope>compile</scope>
 </dependency>
@@ -48,13 +48,13 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "org.openapitools:openapi-client:1.0.0"
+compile "com.github.asyncmc:mojang-api-scala-akka:1.0.0"
 ```
 
 ### SBT users
 
 ```scala
-libraryDependencies += "org.openapitools" % "openapi-client" % "1.0.0"
+libraryDependencies += "com.github.asyncmc" % "mojang-api-scala-akka" % "1.0.0"
 ```
 
 ## Getting Started
@@ -79,10 +79,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [ChangeSkinRequest](ChangeSkinRequest.md)
  - [CurrentPlayerIDs](CurrentPlayerIDs.md)
  - [Error](Error.md)
- - [InlineObject](InlineObject.md)
- - [InlineObject1](InlineObject1.md)
  - [NameChange](NameChange.md)
  - [OrderStatistic](OrderStatistic.md)
  - [OrderStatisticsRequest](OrderStatisticsRequest.md)
@@ -92,6 +91,7 @@ Class | Method | HTTP request | Description
  - [SecurityChallenge](SecurityChallenge.md)
  - [SecurityQuestion](SecurityQuestion.md)
  - [SkinModel](SkinModel.md)
+ - [UploadSkinRequest](UploadSkinRequest.md)
 
 
 ## Documentation for Authorization

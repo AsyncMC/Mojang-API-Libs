@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.api.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace com.github.asyncmc.mojang.api.php.server;
 
 /**
  * OrderStatisticsRequestTest Class Doc Comment
  *
  * @category    Class
  * @description The body of the request to get the order statistics
- * @package     OpenAPI\Client
+ * @package     com.github.asyncmc.mojang.api.php.server
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

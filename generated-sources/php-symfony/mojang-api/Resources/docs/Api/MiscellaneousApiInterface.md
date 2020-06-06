@@ -1,4 +1,4 @@
-# OpenAPI\Server\Api\MiscellaneousApiInterface
+# com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\MiscellaneousApiInterface
 
 All URIs are relative to *https://api.mojang.com*
 
@@ -20,7 +20,7 @@ services:
 ```
 
 ## **getOrdersStatistics**
-> OpenAPI\Server\Model\OrderStatisticsResponse getOrdersStatistics($orderStatisticsRequest)
+> com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\OrderStatisticsResponse getOrdersStatistics($orderStatisticsRequest)
 
 Get statistics on the sales of Minecraft.
 
@@ -31,7 +31,7 @@ Get statistics on the sales of Minecraft.
 
 namespace Acme\MyBundle\Api;
 
-use OpenAPI\Server\Api\MiscellaneousApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\MiscellaneousApiInterface;
 
 class MiscellaneousApi implements MiscellaneousApiInterface
 {
@@ -54,11 +54,11 @@ class MiscellaneousApi implements MiscellaneousApiInterface
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **orderStatisticsRequest** | [**OpenAPI\Server\Model\OrderStatisticsRequest**](../Model/OrderStatisticsRequest.md)| The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/ |
+ **orderStatisticsRequest** | [**com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\OrderStatisticsRequest**](../Model/OrderStatisticsRequest.md)| The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/ |
 
 ### Return type
 
-[**OpenAPI\Server\Model\OrderStatisticsResponse**](../Model/OrderStatisticsResponse.md)
+[**com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\OrderStatisticsResponse**](../Model/OrderStatisticsResponse.md)
 
 ### Authorization
 

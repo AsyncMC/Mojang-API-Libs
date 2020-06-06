@@ -13,13 +13,19 @@
 
 #include "ReducedUserData.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace model {
 
 ReducedUserData::ReducedUserData()
 {
+    m_Id = "";
     m_IdIsSet = false;
     m_PropertiesIsSet = false;
     
@@ -64,7 +70,6 @@ void ReducedUserData::fromJson(const nlohmann::json& val)
     if(val.find("id") != val.end())
     {
         setId(val.at("id"));
-        
     }
     {
         m_Properties.clear();
@@ -121,6 +126,11 @@ void ReducedUserData::unsetProperties()
     m_PropertiesIsSet = false;
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

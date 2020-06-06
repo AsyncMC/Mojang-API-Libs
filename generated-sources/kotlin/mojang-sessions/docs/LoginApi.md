@@ -19,7 +19,7 @@ This will return the player&#39;s username plus any additional information about
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import com.github.asyncmc.mojang.sessions.kotlin.model.*
 
 val apiInstance = LoginApi()
 val strippedUuid : kotlin.String = 853c80ef3c3749fdaa49938b674adae6 // kotlin.String | The player UUID without hyphens

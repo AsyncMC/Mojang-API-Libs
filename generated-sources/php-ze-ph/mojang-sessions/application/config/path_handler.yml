@@ -24,9 +24,9 @@ Articus\PathHandler\Router\FastRouteAnnotation:
     adapter:
       name: blackhole
   handlers:
-    - App\Handler\Blockedservers
-    - App\Handler\SessionMinecraftProfileStrippedUuid
+    - com.github.asyncmc.mojang.sessions.php.ze.ph.server\com.github.asyncmc.mojang.sessions.php.ze.ph.api\Blockedservers
+    - com.github.asyncmc.mojang.sessions.php.ze.ph.server\com.github.asyncmc.mojang.sessions.php.ze.ph.api\SessionMinecraftProfileStrippedUuid
 
 Zend\ServiceManager\AbstractFactory\ConfigAbstractFactory:
-  App\Handler\Blockedservers: []
-  App\Handler\SessionMinecraftProfileStrippedUuid: []
+  com.github.asyncmc.mojang.sessions.php.ze.ph.server\com.github.asyncmc.mojang.sessions.php.ze.ph.api\Blockedservers: []
+  com.github.asyncmc.mojang.sessions.php.ze.ph.server\com.github.asyncmc.mojang.sessions.php.ze.ph.api\SessionMinecraftProfileStrippedUuid: []

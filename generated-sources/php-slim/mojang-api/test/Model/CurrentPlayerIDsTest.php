@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the model.
  */
-namespace OpenAPIServer\Model;
+namespace com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model;
 
-use OpenAPIServer\Model\CurrentPlayerIDs;
+use com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\CurrentPlayerIDs;
 
 /**
  * CurrentPlayerIDsTest Class Doc Comment
  *
  * @category Class
  * @description The current player, demo and legacy status of a player identified by the id
- * @package  OpenAPIServer\Model
+ * @package  com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\CurrentPlayerIDs
+ * @coversDefaultClass \com.github.asyncmc.mojang.api.php.slim.server\com.github.asyncmc.mojang.api.php.slim.model\CurrentPlayerIDs
  */
 class CurrentPlayerIDsTest extends \PHPUnit_Framework_TestCase
 {

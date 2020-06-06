@@ -12,12 +12,17 @@
 
 #include "SecurityQuestionAnswerApiImpl.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::pistache::server::model;
 
 SecurityQuestionAnswerApiImpl::SecurityQuestionAnswerApiImpl(std::shared_ptr<Pistache::Rest::Router> rtr)
     : SecurityQuestionAnswerApi(rtr)
@@ -33,6 +38,11 @@ void SecurityQuestionAnswerApiImpl::send_security_question_answers(const std::ve
     response.send(Pistache::Http::Code::Ok, "Do some magic\n");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

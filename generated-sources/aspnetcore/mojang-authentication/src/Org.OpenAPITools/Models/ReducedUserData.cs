@@ -28,7 +28,7 @@ namespace Org.OpenAPITools.Models
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id")]
-        public System.IO.Stream Id { get; set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Properties

@@ -18,12 +18,17 @@
 
 #include "SkinOperationsApi.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::restbed::server::model;
 
 SkinOperationsApi::SkinOperationsApi() {
 	std::shared_ptr<SkinOperationsApiUserProfileStripped_uuidSkinResource> spSkinOperationsApiUserProfileStripped_uuidSkinResource = std::make_shared<SkinOperationsApiUserProfileStripped_uuidSkinResource>();
@@ -147,6 +152,11 @@ void SkinOperationsApiUserProfileStripped_uuidSkinResource::PUT_method_handler(c
 
 
 
+}
+}
+}
+}
+}
 }
 }
 }

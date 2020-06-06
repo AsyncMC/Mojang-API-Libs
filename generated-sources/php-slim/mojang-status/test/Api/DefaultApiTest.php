@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPIServer\Api
+ * @package  com.github.asyncmc.mojang.status.php.slim.server\com.github.asyncmc.mojang.status.php.slim.api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -22,19 +22,19 @@
  * https://github.com/openapitools/openapi-generator
  * Please update the test case below to test the endpoint.
  */
-namespace OpenAPIServer\Api;
+namespace com.github.asyncmc.mojang.status.php.slim.server\com.github.asyncmc.mojang.status.php.slim.api;
 
-use OpenAPIServer\Api\DefaultApi;
+use com.github.asyncmc.mojang.status.php.slim.server\com.github.asyncmc.mojang.status.php.slim.api\DefaultApi;
 
 /**
  * DefaultApiTest Class Doc Comment
  *
  * @category Class
  * @description DefaultApi
- * @package  OpenAPIServer\Api
+ * @package  com.github.asyncmc.mojang.status.php.slim.server\com.github.asyncmc.mojang.status.php.slim.api
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
- * @coversDefaultClass \OpenAPIServer\Model\DefaultApi
+ * @coversDefaultClass \com.github.asyncmc.mojang.status.php.slim.server\com.github.asyncmc.mojang.status.php.slim.model\DefaultApi
  */
 class DefaultApiTest extends \PHPUnit_Framework_TestCase
 {

@@ -35,9 +35,9 @@ Finally add this to the Gemfile:
 
 ### Install from Git
 
-If the Ruby gem is hosted at a git repository: https://github.com/GIT_USER_ID/GIT_REPO_ID, then add the following in the Gemfile:
+If the Ruby gem is hosted at a git repository: https://github.com/AsyncMC/Mojang-API-Libs, then add the following in the Gemfile:
 
-    gem 'openapi_client', :git => 'https://github.com/GIT_USER_ID/GIT_REPO_ID.git'
+    gem 'openapi_client', :git => 'https://github.com/AsyncMC/Mojang-API-Libs.git'
 
 ### Include the Ruby code directly
 
@@ -94,10 +94,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [OpenapiClient::ChangeSkinRequest](docs/ChangeSkinRequest.md)
  - [OpenapiClient::CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
  - [OpenapiClient::Error](docs/Error.md)
- - [OpenapiClient::InlineObject](docs/InlineObject.md)
- - [OpenapiClient::InlineObject1](docs/InlineObject1.md)
  - [OpenapiClient::NameChange](docs/NameChange.md)
  - [OpenapiClient::OrderStatistic](docs/OrderStatistic.md)
  - [OpenapiClient::OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
@@ -107,6 +106,7 @@ Class | Method | HTTP request | Description
  - [OpenapiClient::SecurityChallenge](docs/SecurityChallenge.md)
  - [OpenapiClient::SecurityQuestion](docs/SecurityQuestion.md)
  - [OpenapiClient::SkinModel](docs/SkinModel.md)
+ - [OpenapiClient::UploadSkinRequest](docs/UploadSkinRequest.md)
 
 
 ## Documentation for Authorization

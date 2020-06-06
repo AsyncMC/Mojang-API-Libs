@@ -27,12 +27,17 @@
 
 #include "ApiStatus.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace status {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::status::cpp::restbed::server::model;
 
 class  DefaultApi: public restbed::Service
 {
@@ -59,6 +64,11 @@ public:
 };
 
 
+}
+}
+}
+}
+}
 }
 }
 }

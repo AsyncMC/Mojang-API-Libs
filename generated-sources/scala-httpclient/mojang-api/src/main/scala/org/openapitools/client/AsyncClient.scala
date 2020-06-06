@@ -1,6 +1,6 @@
-package org.openapitools.client
+package com.github.asyncmc.mojang.api.scala.httpclient.server
 
-import org.openapitools.client.api._
+import com.github.asyncmc.mojang.api.scala.httpclient.api._
 
 import com.wordnik.swagger.client._
 

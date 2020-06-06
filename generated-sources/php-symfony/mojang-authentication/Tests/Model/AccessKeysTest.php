@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Tests\Model
+ * @package  com.github.asyncmc.mojang.authentication.php.symfony.server\Tests\Model
  * @author   openapi-generator contributors
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Server\Model;
+namespace com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model;
 
 /**
  * AccessKeysTest Class Doc Comment
@@ -35,7 +35,7 @@ namespace OpenAPI\Server\Model;
  * @category    Class */
 // * @description AccessKeys
 /**
- * @package     OpenAPI\Server\Tests\Model
+ * @package     com.github.asyncmc.mojang.authentication.php.symfony.server\Tests\Model
  * @author      openapi-generator contributors
  * @link        https://github.com/openapitools/openapi-generator
  */

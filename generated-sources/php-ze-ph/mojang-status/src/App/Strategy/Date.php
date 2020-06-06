@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Strategy;
+namespace com.github.asyncmc.mojang.status.php.ze.ph.server\Strategy;
 
 class Date extends DateTime
 {

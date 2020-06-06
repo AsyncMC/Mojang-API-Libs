@@ -17,25 +17,25 @@ from __future__ import absolute_import
 __version__ = "1.0.0"
 
 # import apis into sdk package
-from openapi_client.api.miscellaneous_api import MiscellaneousApi
-from openapi_client.api.name_history_api import NameHistoryApi
-from openapi_client.api.security_question_answer_api import SecurityQuestionAnswerApi
-from openapi_client.api.skin_operations_api import SkinOperationsApi
+from com.github.asyncmc.mojang.api.python.api.miscellaneous_api import MiscellaneousApi
+from com.github.asyncmc.mojang.api.python.api.name_history_api import NameHistoryApi
+from com.github.asyncmc.mojang.api.python.api.security_question_answer_api import SecurityQuestionAnswerApi
+from com.github.asyncmc.mojang.api.python.api.skin_operations_api import SkinOperationsApi
 
 # import ApiClient
 from openapi_client.api_client import ApiClient
 from openapi_client.configuration import Configuration
 # import models into sdk package
-from openapi_client.models.current_player_i_ds import CurrentPlayerIDs
-from openapi_client.models.error import Error
-from openapi_client.models.inline_object import InlineObject
-from openapi_client.models.inline_object1 import InlineObject1
-from openapi_client.models.name_change import NameChange
-from openapi_client.models.order_statistic import OrderStatistic
-from openapi_client.models.order_statistics_request import OrderStatisticsRequest
-from openapi_client.models.order_statistics_response import OrderStatisticsResponse
-from openapi_client.models.security_answer import SecurityAnswer
-from openapi_client.models.security_answer_id import SecurityAnswerId
-from openapi_client.models.security_challenge import SecurityChallenge
-from openapi_client.models.security_question import SecurityQuestion
-from openapi_client.models.skin_model import SkinModel
+from openapi_client.com.github.asyncmc.mojang.api.python.model.change_skin_request import ChangeSkinRequest
+from openapi_client.com.github.asyncmc.mojang.api.python.model.current_player_i_ds import CurrentPlayerIDs
+from openapi_client.com.github.asyncmc.mojang.api.python.model.error import Error
+from openapi_client.com.github.asyncmc.mojang.api.python.model.name_change import NameChange
+from openapi_client.com.github.asyncmc.mojang.api.python.model.order_statistic import OrderStatistic
+from openapi_client.com.github.asyncmc.mojang.api.python.model.order_statistics_request import OrderStatisticsRequest
+from openapi_client.com.github.asyncmc.mojang.api.python.model.order_statistics_response import OrderStatisticsResponse
+from openapi_client.com.github.asyncmc.mojang.api.python.model.security_answer import SecurityAnswer
+from openapi_client.com.github.asyncmc.mojang.api.python.model.security_answer_id import SecurityAnswerId
+from openapi_client.com.github.asyncmc.mojang.api.python.model.security_challenge import SecurityChallenge
+from openapi_client.com.github.asyncmc.mojang.api.python.model.security_question import SecurityQuestion
+from openapi_client.com.github.asyncmc.mojang.api.python.model.skin_model import SkinModel
+from openapi_client.com.github.asyncmc.mojang.api.python.model.upload_skin_request import UploadSkinRequest

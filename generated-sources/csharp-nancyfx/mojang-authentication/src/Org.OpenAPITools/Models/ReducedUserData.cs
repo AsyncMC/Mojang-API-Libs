@@ -15,7 +15,7 @@ namespace Org.OpenAPITools..Models
         /// <summary>
         /// Id
         /// </summary>
-        public System.IO.Stream Id { get; private set; }
+        public string Id { get; private set; }
 
         /// <summary>
         /// Properties
@@ -32,7 +32,7 @@ namespace Org.OpenAPITools..Models
         {
         }
 
-        protected ReducedUserData(System.IO.Stream Id, List<GameProfileProperty> Properties)
+        protected ReducedUserData(string Id, List<GameProfileProperty> Properties)
         {
             
             this.Id = Id;
@@ -109,7 +109,7 @@ namespace Org.OpenAPITools..Models
         /// </summary>
         public sealed class ReducedUserDataBuilder
         {
-            private System.IO.Stream _Id;
+            private string _Id;
             private List<GameProfileProperty> _Properties;
 
             internal ReducedUserDataBuilder()
@@ -125,7 +125,7 @@ namespace Org.OpenAPITools..Models
             /// Sets value for ReducedUserData.Id property.
             /// </summary>
             /// <param name="value">Id</param>
-            public ReducedUserDataBuilder Id(System.IO.Stream value)
+            public ReducedUserDataBuilder Id(string value)
             {
                 _Id = value;
                 return this;

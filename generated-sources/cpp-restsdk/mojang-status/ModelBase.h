@@ -15,8 +15,8 @@
  * This is the base class for all model classes
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_ModelBase_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_ModelBase_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_STATUS_CPP_RESTSDK_MODEL_ModelBase_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_STATUS_CPP_RESTSDK_MODEL_ModelBase_H_
 
 
 #include "HttpContent.h"
@@ -27,9 +27,13 @@
 
 #include <vector>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace status {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 class  ModelBase
@@ -116,5 +120,9 @@ std::shared_ptr<HttpContent> ModelBase::toHttpContent( const utility::string_t& 
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_ModelBase_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_STATUS_CPP_RESTSDK_MODEL_ModelBase_H_ */

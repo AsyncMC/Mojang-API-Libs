@@ -13,9 +13,13 @@
 
 #include "SecurityChallenge.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 SecurityChallenge::SecurityChallenge()
@@ -101,6 +105,10 @@ void SecurityChallenge::setAnswer(const std::shared_ptr<SecurityAnswerId>& value
     
 }
 
+}
+}
+}
+}
 }
 }
 }

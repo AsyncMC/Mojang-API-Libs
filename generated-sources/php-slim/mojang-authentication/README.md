@@ -60,18 +60,18 @@ Class | Method | HTTP request | Description
 
 ## Models
 
-* OpenAPIServer\Model\AccessKeys
-* OpenAPIServer\Model\Agent
-* OpenAPIServer\Model\Authentication
-* OpenAPIServer\Model\AuthenticationRequest
-* OpenAPIServer\Model\Error
-* OpenAPIServer\Model\GameProfile
-* OpenAPIServer\Model\GameProfileProperty
-* OpenAPIServer\Model\PrivateUserData
-* OpenAPIServer\Model\ProfileId
-* OpenAPIServer\Model\ReducedUserData
-* OpenAPIServer\Model\RefreshRequest
-* OpenAPIServer\Model\RefreshResponse
-* OpenAPIServer\Model\UsernamePassword
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\AccessKeys
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\Agent
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\Authentication
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\AuthenticationRequest
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\Error
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\GameProfile
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\GameProfileProperty
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\PrivateUserData
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\ProfileId
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\ReducedUserData
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\RefreshRequest
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\RefreshResponse
+* com.github.asyncmc.mojang.authentication.php.slim.server\com.github.asyncmc.mojang.authentication.php.slim.model\UsernamePassword
 
 

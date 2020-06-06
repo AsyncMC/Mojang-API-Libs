@@ -3,15 +3,15 @@
 # Do not edit the class manually.
 
 parameters:
-    open_apiserver.serializer: 'OpenAPI\Server\Service\JmsSerializer'
-    open_apiserver.validator:  'OpenAPI\Server\Service\SymfonyValidator'
+    open_apiserver.serializer: 'com.github.asyncmc.mojang.authentication.php.symfony.server\Service\JmsSerializer'
+    open_apiserver.validator:  'com.github.asyncmc.mojang.authentication.php.symfony.server\Service\SymfonyValidator'
 
 services:
     open_apiserver.api.api_server:
-        class: OpenAPI\Server\Api\ApiServer
+        class: com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.api\ApiServer
 
     open_apiserver.model.model_serializer:
-        class: OpenAPI\Server\Model\ModelSerializer
+        class: com.github.asyncmc.mojang.authentication.php.symfony.server\com.github.asyncmc.mojang.authentication.php.symfony.model\ModelSerializer
 
     open_apiserver.service.serializer:
         class: '%open_apiserver.serializer%'
@@ -20,7 +20,7 @@ services:
         class: '%open_apiserver.validator%'
 
     open_apiserver.controller.default:
-        class: OpenAPI\Server\Controller\DefaultController
+        class: com.github.asyncmc.mojang.authentication.php.symfony.server\Controller\DefaultController
         calls:
          - [setSerializer, ['@open_apiserver.service.serializer']]
          - [setValidator,  ['@open_apiserver.service.validator']]

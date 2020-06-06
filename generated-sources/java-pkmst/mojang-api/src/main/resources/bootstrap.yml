@@ -1,5 +1,5 @@
 spring:
   application:
-    name: pkmst-microservice
+    name: mojang-api-java-pkmst
   profiles:
     active: local

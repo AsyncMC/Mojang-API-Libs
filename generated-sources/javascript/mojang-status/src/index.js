@@ -16,10 +16,10 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/ApiStatus', 'api/DefaultApi'], factory);
+    define(['com.github.asyncmc.mojang.status.javascript.server/ApiClient', 'com.github.asyncmc.mojang.status.javascript.server/com.github.asyncmc.mojang.status.javascript.model/ApiStatus', 'com.github.asyncmc.mojang.status.javascript.server/com.github.asyncmc.mojang.status.javascript.api/DefaultApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/ApiStatus'), require('./api/DefaultApi'));
+    module.exports = factory(require('./ApiClient'), require('./com.github.asyncmc.mojang.status.javascript.model/ApiStatus'), require('./com.github.asyncmc.mojang.status.javascript.api/DefaultApi'));
   }
 }(function(ApiClient, ApiStatus, DefaultApi) {
   'use strict';
@@ -30,7 +30,7 @@
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var MojangApi = require('index'); // See note below*.
+   * var MojangApi = require('com.github.asyncmc.mojang.status.javascript.server/index'); // See note below*.
    * var xxxSvc = new MojangApi.XxxApi(); // Allocate the API class we're going to use.
    * var yyyModel = new MojangApi.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
@@ -38,7 +38,7 @@
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
    * ...
    * </pre>
-   * <em>*NOTE: For a top-level AMD script, use require(['index'], function(){...})
+   * <em>*NOTE: For a top-level AMD script, use require(['com.github.asyncmc.mojang.status.javascript.server/index'], function(){...})
    * and put the application logic within the callback function.</em>
    * </p>
    * <p>
@@ -52,23 +52,23 @@
    * ...
    * </pre>
    * </p>
-   * @module index
+   * @module com.github.asyncmc.mojang.status.javascript.server/index
    * @version 2020-06-05
    */
   var exports = {
     /**
      * The ApiClient constructor.
-     * @property {module:ApiClient}
+     * @property {module:com.github.asyncmc.mojang.status.javascript.server/ApiClient}
      */
     ApiClient: ApiClient,
     /**
      * The ApiStatus model constructor.
-     * @property {module:model/ApiStatus}
+     * @property {module:com.github.asyncmc.mojang.status.javascript.server/com.github.asyncmc.mojang.status.javascript.model/ApiStatus}
      */
     ApiStatus: ApiStatus,
     /**
      * The DefaultApi service constructor.
-     * @property {module:api/DefaultApi}
+     * @property {module:com.github.asyncmc.mojang.status.javascript.server/com.github.asyncmc.mojang.status.javascript.api/DefaultApi}
      */
     DefaultApi: DefaultApi
   };

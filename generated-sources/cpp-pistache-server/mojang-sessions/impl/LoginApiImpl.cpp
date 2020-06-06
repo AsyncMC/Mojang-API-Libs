@@ -12,12 +12,17 @@
 
 #include "LoginApiImpl.h"
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::sessions::cpp::pistache::server::model;
 
 LoginApiImpl::LoginApiImpl(std::shared_ptr<Pistache::Rest::Router> rtr)
     : LoginApi(rtr)
@@ -27,6 +32,11 @@ void LoginApiImpl::get_player_profile(const std::string &strippedUuid, const Pis
     response.send(Pistache::Http::Code::Ok, "Do some magic\n");
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

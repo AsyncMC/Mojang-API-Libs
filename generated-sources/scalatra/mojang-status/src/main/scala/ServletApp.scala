@@ -10,7 +10,7 @@
  */
 
 
-package org.openapitools.app
+package com.github.asyncmc.mojang.status.scalatra.server.app
 
 import org.scalatra.swagger.{ ApiInfo, SwaggerWithAuth, Swagger }
 import org.scalatra.swagger.{ JacksonSwaggerBase, Swagger }

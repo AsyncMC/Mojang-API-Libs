@@ -15,8 +15,8 @@
  * This class represents a container for building application/x-multipart-formdata requests.
  */
 
-#ifndef ORG_OPENAPITOOLS_CLIENT_MODEL_MultipartFormData_H_
-#define ORG_OPENAPITOOLS_CLIENT_MODEL_MultipartFormData_H_
+#ifndef COM_GITHUB_ASYNCMC_MOJANG_SESSIONS_CPP_RESTSDK_MODEL_MultipartFormData_H_
+#define COM_GITHUB_ASYNCMC_MOJANG_SESSIONS_CPP_RESTSDK_MODEL_MultipartFormData_H_
 
 
 #include "IHttpBody.h"
@@ -29,9 +29,13 @@
 #include <cpprest/details/basic_types.h>
 
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 class  MultipartFormData
@@ -58,5 +62,9 @@ protected:
 }
 }
 }
+}
+}
+}
+}
 
-#endif /* ORG_OPENAPITOOLS_CLIENT_MODEL_MultipartFormData_H_ */
+#endif /* COM_GITHUB_ASYNCMC_MOJANG_SESSIONS_CPP_RESTSDK_MODEL_MultipartFormData_H_ */

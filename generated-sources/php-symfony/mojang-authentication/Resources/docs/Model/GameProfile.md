@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **agent** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **name** | **string** |  | [optional] 
-**userId** | [**UploadedFile**](UploadedFile.md) |  | [optional] 
+**userId** | **string** |  | [optional] 
 **createdAt** | **int** | Unix timestamp in milliseconds | [optional] 
 **legacyProfile** | **bool** |  | [optional] 
 **suspended** | **bool** |  | [optional] 

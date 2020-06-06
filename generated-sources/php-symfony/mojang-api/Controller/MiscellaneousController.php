@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -27,22 +27,22 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Server\Controller;
+namespace com.github.asyncmc.mojang.api.php.symfony.server\Controller;
 
 use \Exception;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Validator\Constraints as Assert;
-use OpenAPI\Server\Api\MiscellaneousApiInterface;
-use OpenAPI\Server\Model\OrderStatisticsRequest;
-use OpenAPI\Server\Model\OrderStatisticsResponse;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.api\MiscellaneousApiInterface;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\OrderStatisticsRequest;
+use com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\OrderStatisticsResponse;
 
 /**
  * MiscellaneousController Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Server\Controller
+ * @package  com.github.asyncmc.mojang.api.php.symfony.server\Controller
  * @author   OpenAPI Generator team
  * @link     https://github.com/openapitools/openapi-generator
  */
@@ -87,12 +87,12 @@ class MiscellaneousController extends Controller
         // Use the default value if no value was provided
 
         // Deserialize the input values that needs it
-        $orderStatisticsRequest = $this->deserialize($orderStatisticsRequest, 'OpenAPI\Server\Model\OrderStatisticsRequest', $inputFormat);
+        $orderStatisticsRequest = $this->deserialize($orderStatisticsRequest, 'com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\OrderStatisticsRequest', $inputFormat);
 
         // Validate the input values
         $asserts = [];
         $asserts[] = new Assert\NotNull();
-        $asserts[] = new Assert\Type("OpenAPI\Server\Model\OrderStatisticsRequest");
+        $asserts[] = new Assert\Type("com.github.asyncmc.mojang.api.php.symfony.server\com.github.asyncmc.mojang.api.php.symfony.model\OrderStatisticsRequest");
         $response = $this->validate($orderStatisticsRequest, $asserts);
         if ($response instanceof Response) {
             return $response;

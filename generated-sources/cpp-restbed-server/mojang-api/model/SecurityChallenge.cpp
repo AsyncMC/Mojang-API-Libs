@@ -23,8 +23,13 @@ using boost::property_tree::ptree;
 using boost::property_tree::read_json;
 using boost::property_tree::write_json;
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace model {
 
@@ -69,6 +74,11 @@ void SecurityChallenge::setAnswer(std::shared_ptr<SecurityAnswerId> value)
     m_Answer = value;
 }
 
+}
+}
+}
+}
+}
 }
 }
 }

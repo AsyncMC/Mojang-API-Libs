@@ -19,8 +19,8 @@
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./lib//Api</directory>
-            <directory suffix=".php">./lib//Model</directory>
+            <directory suffix=".php">./lib//com/github/asyncmc/mojang/status/php/slim/api</directory>
+            <directory suffix=".php">./lib//com/github/asyncmc/mojang/status/php/slim/model</directory>
         </whitelist>
     </filter>
 </phpunit>

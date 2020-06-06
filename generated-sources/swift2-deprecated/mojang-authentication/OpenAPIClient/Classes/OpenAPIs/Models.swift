@@ -232,7 +232,7 @@ class Decoders {
                 instance.agent = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["agent"])
                 instance.id = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["id"])
                 instance.name = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["name"])
-                instance.userId = Decoders.decodeOptional(clazz: NSURL.self, source: sourceDictionary["userId"])
+                instance.userId = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["userId"])
                 instance.createdAt = Decoders.decodeOptional(clazz: Int64.self, source: sourceDictionary["createdAt"])
                 instance.legacyProfile = Decoders.decodeOptional(clazz: Bool.self, source: sourceDictionary["legacyProfile"])
                 instance.suspended = Decoders.decodeOptional(clazz: Bool.self, source: sourceDictionary["suspended"])
@@ -265,7 +265,7 @@ class Decoders {
             Decoders.addDecoder(clazz: PrivateUserData.self) { (source: AnyObject) -> PrivateUserData in
                 let sourceDictionary = source as! [NSObject:AnyObject]
                 let instance = PrivateUserData()
-                instance.id = Decoders.decodeOptional(clazz: NSURL.self, source: sourceDictionary["id"])
+                instance.id = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["id"])
                 instance.properties = Decoders.decodeOptional(clazz: Array.self, source: sourceDictionary["properties"])
                 return instance
             }
@@ -293,7 +293,7 @@ class Decoders {
             Decoders.addDecoder(clazz: ReducedUserData.self) { (source: AnyObject) -> ReducedUserData in
                 let sourceDictionary = source as! [NSObject:AnyObject]
                 let instance = ReducedUserData()
-                instance.id = Decoders.decodeOptional(clazz: NSURL.self, source: sourceDictionary["id"])
+                instance.id = Decoders.decodeOptional(clazz: String.self, source: sourceDictionary["id"])
                 instance.properties = Decoders.decodeOptional(clazz: Array.self, source: sourceDictionary["properties"])
                 return instance
             }

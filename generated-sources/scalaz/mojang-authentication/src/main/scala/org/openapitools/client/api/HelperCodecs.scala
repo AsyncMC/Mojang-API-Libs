@@ -1,4 +1,4 @@
-package org.openapitools.client.api
+package com.github.asyncmc.mojang.authentication.scalaz.api
 
 import argonaut._
 import argonaut.EncodeJson._

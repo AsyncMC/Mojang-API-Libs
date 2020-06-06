@@ -24,8 +24,13 @@
 #include <string>
 #include <memory>
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace model {
 
@@ -66,6 +71,11 @@ protected:
     std::string m_Signature;
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

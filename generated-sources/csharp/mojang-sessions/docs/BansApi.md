@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.BansApi
+# Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.api.BansApi
 
 All URIs are relative to *https://sessionserver.mojang.com*
 
@@ -19,9 +19,9 @@ Returns a list of SHA1 hashes used to check server addresses against when the cl
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.sessions.csharp.model;
 
 namespace Example
 {

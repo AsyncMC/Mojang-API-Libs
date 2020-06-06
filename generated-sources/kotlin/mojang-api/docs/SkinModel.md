@@ -4,9 +4,9 @@
 ## Enum
 
 
-    * `eMPTY` (value: `""`)
+    * `EMPTY` (value: `""`)
 
-    * `slim` (value: `"slim"`)
+    * `SLIM` (value: `"slim"`)
 
 
 

@@ -1,4 +1,4 @@
-# \DefaultApi
+# com.github.asyncmc.mojang.status.rust.server\DefaultApi
 
 All URIs are relative to *https://status.mojang.com*
 

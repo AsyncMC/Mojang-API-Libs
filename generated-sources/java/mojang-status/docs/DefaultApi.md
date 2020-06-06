@@ -16,8 +16,8 @@ Checks the Mojang service statuses
 ### Example
 ```java
 // Import classes:
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.api.DefaultApi;
+//import com.github.asyncmc.mojang.status.java.server.ApiException;
+//import com.github.asyncmc.mojang.status.java.api.DefaultApi;
 
 
 DefaultApi apiInstance = new DefaultApi();

@@ -36,6 +36,20 @@ import Mojang.Model
 import Mojang.Core
 
 
+-- * ChangeSkinRequest
+
+-- | 'changeSkinRequestModel' Lens
+changeSkinRequestModelL :: Lens_' ChangeSkinRequest (Maybe SkinModel)
+changeSkinRequestModelL f ChangeSkinRequest{..} = (\changeSkinRequestModel -> ChangeSkinRequest { changeSkinRequestModel, ..} ) <$> f changeSkinRequestModel
+{-# INLINE changeSkinRequestModelL #-}
+
+-- | 'changeSkinRequestUrl' Lens
+changeSkinRequestUrlL :: Lens_' ChangeSkinRequest (Text)
+changeSkinRequestUrlL f ChangeSkinRequest{..} = (\changeSkinRequestUrl -> ChangeSkinRequest { changeSkinRequestUrl, ..} ) <$> f changeSkinRequestUrl
+{-# INLINE changeSkinRequestUrlL #-}
+
+
+
 -- * CurrentPlayerIDs
 
 -- | 'currentPlayerIDsId' Lens
@@ -71,34 +85,6 @@ errorErrorL f Error{..} = (\errorError -> Error { errorError, ..} ) <$> f errorE
 errorErrorMessageL :: Lens_' Error (Maybe Text)
 errorErrorMessageL f Error{..} = (\errorErrorMessage -> Error { errorErrorMessage, ..} ) <$> f errorErrorMessage
 {-# INLINE errorErrorMessageL #-}
-
-
-
--- * InlineObject
-
--- | 'inlineObjectModel' Lens
-inlineObjectModelL :: Lens_' InlineObject (Maybe SkinModel)
-inlineObjectModelL f InlineObject{..} = (\inlineObjectModel -> InlineObject { inlineObjectModel, ..} ) <$> f inlineObjectModel
-{-# INLINE inlineObjectModelL #-}
-
--- | 'inlineObjectFile' Lens
-inlineObjectFileL :: Lens_' InlineObject (FilePath)
-inlineObjectFileL f InlineObject{..} = (\inlineObjectFile -> InlineObject { inlineObjectFile, ..} ) <$> f inlineObjectFile
-{-# INLINE inlineObjectFileL #-}
-
-
-
--- * InlineObject1
-
--- | 'inlineObject1Model' Lens
-inlineObject1ModelL :: Lens_' InlineObject1 (Maybe SkinModel)
-inlineObject1ModelL f InlineObject1{..} = (\inlineObject1Model -> InlineObject1 { inlineObject1Model, ..} ) <$> f inlineObject1Model
-{-# INLINE inlineObject1ModelL #-}
-
--- | 'inlineObject1Url' Lens
-inlineObject1UrlL :: Lens_' InlineObject1 (Text)
-inlineObject1UrlL f InlineObject1{..} = (\inlineObject1Url -> InlineObject1 { inlineObject1Url, ..} ) <$> f inlineObject1Url
-{-# INLINE inlineObject1UrlL #-}
 
 
 
@@ -195,5 +181,19 @@ securityQuestionQuestionL f SecurityQuestion{..} = (\securityQuestionQuestion ->
 
 
 -- * SkinModel
+
+
+
+-- * UploadSkinRequest
+
+-- | 'uploadSkinRequestModel' Lens
+uploadSkinRequestModelL :: Lens_' UploadSkinRequest (Maybe SkinModel)
+uploadSkinRequestModelL f UploadSkinRequest{..} = (\uploadSkinRequestModel -> UploadSkinRequest { uploadSkinRequestModel, ..} ) <$> f uploadSkinRequestModel
+{-# INLINE uploadSkinRequestModelL #-}
+
+-- | 'uploadSkinRequestFile' Lens
+uploadSkinRequestFileL :: Lens_' UploadSkinRequest (FilePath)
+uploadSkinRequestFileL f UploadSkinRequest{..} = (\uploadSkinRequestFile -> UploadSkinRequest { uploadSkinRequestFile, ..} ) <$> f uploadSkinRequestFile
+{-# INLINE uploadSkinRequestFileL #-}
 
 

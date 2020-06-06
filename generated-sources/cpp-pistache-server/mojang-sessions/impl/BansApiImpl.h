@@ -31,14 +31,19 @@
 
 #include <string>
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace pistache {
 namespace server {
 namespace api {
 
 
 
-class BansApiImpl : public org::openapitools::server::api::BansApi {
+class BansApiImpl : public com::github::asyncmc::mojang::sessions::cpp::pistache::server::api::BansApi {
 public:
     BansApiImpl(std::shared_ptr<Pistache::Rest::Router>);
     ~BansApiImpl() {}
@@ -47,6 +52,11 @@ public:
 
 };
 
+}
+}
+}
+}
+}
 }
 }
 }

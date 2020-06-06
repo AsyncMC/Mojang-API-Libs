@@ -6,7 +6,7 @@ goog.provide('API.Client.ReducedUserData');
 API.Client.ReducedUserData = function() {}
 
 /**
- * @type {!Object}
+ * @type {!string}
  * @export
  */
 API.Client.ReducedUserData.prototype.id;

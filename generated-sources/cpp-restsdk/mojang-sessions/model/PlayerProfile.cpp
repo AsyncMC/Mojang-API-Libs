@@ -13,9 +13,13 @@
 
 #include "PlayerProfile.h"
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace sessions {
+namespace cpp {
+namespace restsdk {
 namespace model {
 
 PlayerProfile::PlayerProfile()
@@ -200,6 +204,10 @@ void PlayerProfile::setProperties(const std::vector<std::shared_ptr<PlayerProfil
     
 }
 
+}
+}
+}
+}
 }
 }
 }

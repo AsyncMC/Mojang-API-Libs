@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.DefaultApi
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.api.DefaultApi
 
 All URIs are relative to *https://authserver.mojang.com*
 
@@ -21,9 +21,9 @@ Method | HTTP request | Description
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model;
 
 namespace Example
 {
@@ -79,9 +79,9 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model;
 
 namespace Example
 {
@@ -136,9 +136,9 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model;
 
 namespace Example
 {
@@ -194,9 +194,9 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model;
 
 namespace Example
 {
@@ -251,9 +251,9 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.api;
 using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.model;
 
 namespace Example
 {

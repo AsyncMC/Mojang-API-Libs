@@ -16,10 +16,10 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AccessKeys', 'model/Agent', 'model/Authentication', 'model/AuthenticationRequest', 'model/Error', 'model/GameProfile', 'model/GameProfileProperty', 'model/PrivateUserData', 'model/ProfileId', 'model/ReducedUserData', 'model/RefreshRequest', 'model/RefreshResponse', 'model/UsernamePassword', 'api/DefaultApi'], factory);
+    define(['com.github.asyncmc.mojang.authentication.javascript.server/ApiClient', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/AccessKeys', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/Agent', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/Authentication', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/AuthenticationRequest', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/Error', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/GameProfile', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/GameProfileProperty', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/PrivateUserData', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/ProfileId', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/ReducedUserData', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/RefreshRequest', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/RefreshResponse', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/UsernamePassword', 'com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.api/DefaultApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/AccessKeys'), require('./model/Agent'), require('./model/Authentication'), require('./model/AuthenticationRequest'), require('./model/Error'), require('./model/GameProfile'), require('./model/GameProfileProperty'), require('./model/PrivateUserData'), require('./model/ProfileId'), require('./model/ReducedUserData'), require('./model/RefreshRequest'), require('./model/RefreshResponse'), require('./model/UsernamePassword'), require('./api/DefaultApi'));
+    module.exports = factory(require('./ApiClient'), require('./com.github.asyncmc.mojang.authentication.javascript.model/AccessKeys'), require('./com.github.asyncmc.mojang.authentication.javascript.model/Agent'), require('./com.github.asyncmc.mojang.authentication.javascript.model/Authentication'), require('./com.github.asyncmc.mojang.authentication.javascript.model/AuthenticationRequest'), require('./com.github.asyncmc.mojang.authentication.javascript.model/Error'), require('./com.github.asyncmc.mojang.authentication.javascript.model/GameProfile'), require('./com.github.asyncmc.mojang.authentication.javascript.model/GameProfileProperty'), require('./com.github.asyncmc.mojang.authentication.javascript.model/PrivateUserData'), require('./com.github.asyncmc.mojang.authentication.javascript.model/ProfileId'), require('./com.github.asyncmc.mojang.authentication.javascript.model/ReducedUserData'), require('./com.github.asyncmc.mojang.authentication.javascript.model/RefreshRequest'), require('./com.github.asyncmc.mojang.authentication.javascript.model/RefreshResponse'), require('./com.github.asyncmc.mojang.authentication.javascript.model/UsernamePassword'), require('./com.github.asyncmc.mojang.authentication.javascript.api/DefaultApi'));
   }
 }(function(ApiClient, AccessKeys, Agent, Authentication, AuthenticationRequest, Error, GameProfile, GameProfileProperty, PrivateUserData, ProfileId, ReducedUserData, RefreshRequest, RefreshResponse, UsernamePassword, DefaultApi) {
   'use strict';
@@ -30,7 +30,7 @@
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var MojangAuthenticationApi = require('index'); // See note below*.
+   * var MojangAuthenticationApi = require('com.github.asyncmc.mojang.authentication.javascript.server/index'); // See note below*.
    * var xxxSvc = new MojangAuthenticationApi.XxxApi(); // Allocate the API class we're going to use.
    * var yyyModel = new MojangAuthenticationApi.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
@@ -38,7 +38,7 @@
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
    * ...
    * </pre>
-   * <em>*NOTE: For a top-level AMD script, use require(['index'], function(){...})
+   * <em>*NOTE: For a top-level AMD script, use require(['com.github.asyncmc.mojang.authentication.javascript.server/index'], function(){...})
    * and put the application logic within the callback function.</em>
    * </p>
    * <p>
@@ -52,83 +52,83 @@
    * ...
    * </pre>
    * </p>
-   * @module index
+   * @module com.github.asyncmc.mojang.authentication.javascript.server/index
    * @version 2020-06-05
    */
   var exports = {
     /**
      * The ApiClient constructor.
-     * @property {module:ApiClient}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/ApiClient}
      */
     ApiClient: ApiClient,
     /**
      * The AccessKeys model constructor.
-     * @property {module:model/AccessKeys}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/AccessKeys}
      */
     AccessKeys: AccessKeys,
     /**
      * The Agent model constructor.
-     * @property {module:model/Agent}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/Agent}
      */
     Agent: Agent,
     /**
      * The Authentication model constructor.
-     * @property {module:model/Authentication}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/Authentication}
      */
     Authentication: Authentication,
     /**
      * The AuthenticationRequest model constructor.
-     * @property {module:model/AuthenticationRequest}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/AuthenticationRequest}
      */
     AuthenticationRequest: AuthenticationRequest,
     /**
      * The Error model constructor.
-     * @property {module:model/Error}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/Error}
      */
     Error: Error,
     /**
      * The GameProfile model constructor.
-     * @property {module:model/GameProfile}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/GameProfile}
      */
     GameProfile: GameProfile,
     /**
      * The GameProfileProperty model constructor.
-     * @property {module:model/GameProfileProperty}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/GameProfileProperty}
      */
     GameProfileProperty: GameProfileProperty,
     /**
      * The PrivateUserData model constructor.
-     * @property {module:model/PrivateUserData}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/PrivateUserData}
      */
     PrivateUserData: PrivateUserData,
     /**
      * The ProfileId model constructor.
-     * @property {module:model/ProfileId}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/ProfileId}
      */
     ProfileId: ProfileId,
     /**
      * The ReducedUserData model constructor.
-     * @property {module:model/ReducedUserData}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/ReducedUserData}
      */
     ReducedUserData: ReducedUserData,
     /**
      * The RefreshRequest model constructor.
-     * @property {module:model/RefreshRequest}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/RefreshRequest}
      */
     RefreshRequest: RefreshRequest,
     /**
      * The RefreshResponse model constructor.
-     * @property {module:model/RefreshResponse}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/RefreshResponse}
      */
     RefreshResponse: RefreshResponse,
     /**
      * The UsernamePassword model constructor.
-     * @property {module:model/UsernamePassword}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.model/UsernamePassword}
      */
     UsernamePassword: UsernamePassword,
     /**
      * The DefaultApi service constructor.
-     * @property {module:api/DefaultApi}
+     * @property {module:com.github.asyncmc.mojang.authentication.javascript.server/com.github.asyncmc.mojang.authentication.javascript.api/DefaultApi}
      */
     DefaultApi: DefaultApi
   };

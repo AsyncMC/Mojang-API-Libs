@@ -19,12 +19,16 @@
 
 #include <boost/algorithm/string/replace.hpp>
 
-namespace org {
-namespace openapitools {
-namespace client {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace authentication {
+namespace cpp {
+namespace restsdk {
 namespace api {
 
-using namespace org::openapitools::client::model;
+using namespace com::github::asyncmc::mojang::authentication::cpp::restsdk::model;
 
 DefaultApi::DefaultApi( std::shared_ptr<ApiClient> apiClient )
     : m_ApiClient(apiClient)
@@ -682,6 +686,10 @@ pplx::task<void> DefaultApi::validate(std::shared_ptr<AccessKeys> accessKeys)
     });
 }
 
+}
+}
+}
+}
 }
 }
 }

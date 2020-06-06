@@ -45,19 +45,19 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [org.openapitools.client.models.AccessKeys](docs/AccessKeys.md)
- - [org.openapitools.client.models.Agent](docs/Agent.md)
- - [org.openapitools.client.models.Authentication](docs/Authentication.md)
- - [org.openapitools.client.models.AuthenticationRequest](docs/AuthenticationRequest.md)
- - [org.openapitools.client.models.Error](docs/Error.md)
- - [org.openapitools.client.models.GameProfile](docs/GameProfile.md)
- - [org.openapitools.client.models.GameProfileProperty](docs/GameProfileProperty.md)
- - [org.openapitools.client.models.PrivateUserData](docs/PrivateUserData.md)
- - [org.openapitools.client.models.ProfileId](docs/ProfileId.md)
- - [org.openapitools.client.models.ReducedUserData](docs/ReducedUserData.md)
- - [org.openapitools.client.models.RefreshRequest](docs/RefreshRequest.md)
- - [org.openapitools.client.models.RefreshResponse](docs/RefreshResponse.md)
- - [org.openapitools.client.models.UsernamePassword](docs/UsernamePassword.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.AccessKeys](docs/AccessKeys.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.Agent](docs/Agent.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.Authentication](docs/Authentication.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.AuthenticationRequest](docs/AuthenticationRequest.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.Error](docs/Error.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.GameProfile](docs/GameProfile.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.GameProfileProperty](docs/GameProfileProperty.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.PrivateUserData](docs/PrivateUserData.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.ProfileId](docs/ProfileId.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.ReducedUserData](docs/ReducedUserData.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.RefreshRequest](docs/RefreshRequest.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.RefreshResponse](docs/RefreshResponse.md)
+ - [com.github.asyncmc.mojang.authentication.kotlin.model.UsernamePassword](docs/UsernamePassword.md)
 
 
 <a name="documentation-for-authorization"></a>

@@ -50,7 +50,7 @@ GameProfile <- R6::R6Class(
         self$`name` <- `name`
       }
       if (!missing(`userId`)) {
-        stopifnot(R6::is.R6(`userId`))
+        stopifnot(is.character(`userId`), length(`userId`) == 1)
         self$`userId` <- `userId`
       }
       if (!missing(`createdAt`)) {
@@ -85,7 +85,7 @@ GameProfile <- R6::R6Class(
         GameProfileObject[['name']] <- self$`name`
       }
       if (!is.null(self$`userId`)) {
-        GameProfileObject[['userId']] <- self$`userId`$toJSON()
+        GameProfileObject[['userId']] <- self$`userId`
       }
       if (!is.null(self$`createdAt`)) {
         GameProfileObject[['createdAt']] <- self$`createdAt`
@@ -120,9 +120,7 @@ GameProfile <- R6::R6Class(
         self$`name` <- GameProfileObject$`name`
       }
       if (!is.null(GameProfileObject$`userId`)) {
-        userIdObject <- data.frame$new()
-        userIdObject$fromJSON(jsonlite::toJSON(GameProfileObject$userId, auto_unbox = TRUE))
-        self$`userId` <- userIdObject
+        self$`userId` <- GameProfileObject$`userId`
       }
       if (!is.null(GameProfileObject$`createdAt`)) {
         self$`createdAt` <- GameProfileObject$`createdAt`
@@ -160,7 +158,7 @@ GameProfile <- R6::R6Class(
         self$`agent`,
         self$`id`,
         self$`name`,
-        self$`userId`$toJSON(),
+        self$`userId`,
         self$`createdAt`,
         self$`legacyProfile`,
         self$`suspended`,
@@ -174,8 +172,7 @@ GameProfile <- R6::R6Class(
       self$`agent` <- GameProfileObject$`agent`
       self$`id` <- GameProfileObject$`id`
       self$`name` <- GameProfileObject$`name`
-      data.frameObject <- data.frame$new()
-      self$`userId` <- data.frameObject$fromJSON(jsonlite::toJSON(GameProfileObject$userId, auto_unbox = TRUE))
+      self$`userId` <- GameProfileObject$`userId`
       self$`createdAt` <- GameProfileObject$`createdAt`
       self$`legacyProfile` <- GameProfileObject$`legacyProfile`
       self$`suspended` <- GameProfileObject$`suspended`

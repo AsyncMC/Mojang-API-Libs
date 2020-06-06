@@ -50,11 +50,11 @@ command above from.
 #### git
 #
 If the library is hosted at a git repository, e.g.
-https://github.com/GIT_USER_ID/GIT_REPO_ID
+https://github.com/AsyncMC/Mojang-API-Libs
 then install it via:
 
 ```shell
-    npm install GIT_USER_ID/GIT_REPO_ID --save
+    npm install AsyncMC/Mojang-API-Libs --save
 ```
 
 ### For browser
@@ -136,10 +136,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [MojangApi.ChangeSkinRequest](docs/ChangeSkinRequest.md)
  - [MojangApi.CurrentPlayerIDs](docs/CurrentPlayerIDs.md)
  - [MojangApi.Error](docs/Error.md)
- - [MojangApi.InlineObject](docs/InlineObject.md)
- - [MojangApi.InlineObject1](docs/InlineObject1.md)
  - [MojangApi.NameChange](docs/NameChange.md)
  - [MojangApi.OrderStatistic](docs/OrderStatistic.md)
  - [MojangApi.OrderStatisticsRequest](docs/OrderStatisticsRequest.md)
@@ -149,6 +148,7 @@ Class | Method | HTTP request | Description
  - [MojangApi.SecurityChallenge](docs/SecurityChallenge.md)
  - [MojangApi.SecurityQuestion](docs/SecurityQuestion.md)
  - [MojangApi.SkinModel](docs/SkinModel.md)
+ - [MojangApi.UploadSkinRequest](docs/UploadSkinRequest.md)
 
 
 ## Documentation for Authorization

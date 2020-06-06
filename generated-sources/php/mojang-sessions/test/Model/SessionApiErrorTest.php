@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  com.github.asyncmc.mojang.sessions.php.server
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace com.github.asyncmc.mojang.sessions.php.server;
 
 /**
  * SessionApiErrorTest Class Doc Comment
  *
  * @category    Class
  * @description An object describing giving a bit of information about the error
- * @package     OpenAPI\Client
+ * @package     com.github.asyncmc.mojang.sessions.php.server
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

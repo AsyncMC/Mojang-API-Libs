@@ -31,12 +31,17 @@
 #include <string>
 #include <vector>
 
-namespace org {
-namespace openapitools {
+namespace com {
+namespace github {
+namespace asyncmc {
+namespace mojang {
+namespace api {
+namespace cpp {
+namespace restbed {
 namespace server {
 namespace api {
 
-using namespace org::openapitools::server::model;
+using namespace com::github::asyncmc::mojang::api::cpp::restbed::server::model;
 
 class  NameHistoryApi: public restbed::Service
 {
@@ -91,6 +96,11 @@ public:
 };
 
 
+}
+}
+}
+}
+}
 }
 }
 }

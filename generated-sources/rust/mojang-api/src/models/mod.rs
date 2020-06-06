@@ -1,11 +1,9 @@
+mod change_skin_request;
+pub use self::change_skin_request::ChangeSkinRequest;
 mod current_player_i_ds;
 pub use self::current_player_i_ds::CurrentPlayerIDs;
 mod error;
 pub use self::error::Error;
-mod inline_object;
-pub use self::inline_object::InlineObject;
-mod inline_object_1;
-pub use self::inline_object_1::InlineObject1;
 mod name_change;
 pub use self::name_change::NameChange;
 mod order_statistic;
@@ -24,6 +22,8 @@ mod security_question;
 pub use self::security_question::SecurityQuestion;
 mod skin_model;
 pub use self::skin_model::SkinModel;
+mod upload_skin_request;
+pub use self::upload_skin_request::UploadSkinRequest;
 
 // TODO(farcaller): sort out files
 pub struct File;

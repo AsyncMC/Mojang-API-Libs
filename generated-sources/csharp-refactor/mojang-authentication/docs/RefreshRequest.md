@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.RefreshRequest
+# Org.OpenAPITools.com.github.asyncmc.mojang.authentication.csharp.refactor.model.RefreshRequest
 ## Properties
 
 Name | Type | Description | Notes

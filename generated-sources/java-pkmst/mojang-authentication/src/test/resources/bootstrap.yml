@@ -1,5 +1,5 @@
 spring:
   application:
-    name: pkmst-microservice
+    name: mojang-authentication-java-pkmst
   profiles:
     active: test    
