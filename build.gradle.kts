@@ -21,6 +21,7 @@ swaggerSources {
         .asSequence()
     file("language-list.txt")
         .readLines().asSequence()
+        .filter { it.isNotBlank() }
         .flatMap { lang -> apis.map { api-> lang to api } }
         .forEach { (lang, api) ->
             register(lang.split('-').asSequence().map { it.capitalize() }.joinToString("").decapitalize() + "Mojang" + api.capitalize()) {
