@@ -8,6 +8,7 @@ servers:
 paths:
   /authenticate:
     post:
+      operationId: authenticate
       requestBody:
         required: true
         content:
@@ -29,6 +30,7 @@ paths:
                 $ref: 'mojang-api.yaml#/components/schemas/Error'
   /refresh:
     post:
+      operationId: refresh
       requestBody:
         required: true
         content:
@@ -50,6 +52,7 @@ paths:
                 $ref: 'mojang-api.yaml#/components/schemas/Error'
   /validate:
     post:
+      operationId: validate
       requestBody:
         required: true
         content:
@@ -67,6 +70,7 @@ paths:
                 $ref: 'mojang-api.yaml#/components/schemas/Error'
   /signout:
     post:
+      operationId: siginout
       requestBody:
         required: true
         content:
@@ -84,6 +88,7 @@ paths:
                 $ref: 'mojang-api.yaml#/components/schemas/Error'
   /invalidate:
     post:
+      operationId: invalidate
       requestBody:
         required: true
         content:

@@ -28,6 +28,7 @@ paths:
           type: integer
           format: int64
     get:
+      operationId: getUniqueIdByName
       summary: Find the UUID by name
       tags:
         - Name History
@@ -59,6 +60,7 @@ paths:
           format: stripped-uuid
     get:
       summary: Gets the full player's name history
+      operationId: getNameHistory
       tags:
         - Name History
       responses:
@@ -99,6 +101,7 @@ paths:
           description: Username not found at the given time
   /profiles/minecraft:
     post:
+      operationId: findUniqueIdsByName
       summary: Find the current UUID of multiple players at once
       description: Find the current players name, UUID, demo status and migration flag by the current players name. The "at" parameter is not supported. Players not found are not returned. If no players are found, an empty array is returned.
       tags:
@@ -150,6 +153,7 @@ paths:
           type: string
           format: stripped-uuid
     post:
+      operationId: changePlayerSkin
       summary: Changes the player skin by URL
       description: This will set the skin for the selected profile, but Mojang's servers will fetch the skin from a URL. This will also work for legacy accounts.
       tags:
@@ -183,6 +187,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
     put:
+      operationId: uploadPlayerSkin
       summary: Changes the player skin by upload
       description: This uploads a skin to Mojang's servers. It also sets the users skin. This works on legacy counts as well.
       tags:
@@ -214,6 +219,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
     delete:
+      operationId: resetPlayerSkin
       summary: Resets the player skin to default
       tags:
         - Skin Operations
@@ -230,6 +236,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /user/security/location:
     get:
+      operationId: checkSecurityStatus
       summary: Check if security questions are needed
       tags:
         - 'Security question-answer'
@@ -251,6 +258,7 @@ paths:
                   "errorMessage": "Current IP is not secured"
                 }'
     post:
+      operationId: sendSecurityQuestionAnswers
       summary: Send back the answers
       tags:
         - 'Security question-answer'
@@ -283,6 +291,7 @@ paths:
 
   /user/security/challenges:
     get:
+      operationId: listPendingSecurityQuestions
       summary: Get list of questions
       tags:
         - 'Security question-answer'
@@ -297,8 +306,9 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/SecurityChallenge'
-  /order/statistics:
+  /orders/statistics:
     post:
+      operationId: getOrdersStatistics
       summary: Get statistics on the sales of Minecraft.
       tags:
         - Miscellaneous

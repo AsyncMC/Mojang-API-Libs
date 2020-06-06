@@ -7,6 +7,7 @@ servers:
 paths:
   /check:
     get:
+      operationId: checkStatuses
       summary: Checks the Mojang service statuses
       responses:
         200:

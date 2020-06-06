@@ -10,6 +10,7 @@ tags:
 paths:
   /blockedservers:
     get:
+      operationId: getBlockedServerHashes
       tags:
         - Bans
       summary: A list of SHA1 hashes of banned servers
@@ -56,6 +57,7 @@ paths:
         schema:
           type: boolean
     get:
+      operationId: getPlayerProfile
       tags:
         - Login
       summary: Gets the player's game profile
