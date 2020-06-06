@@ -25,7 +25,7 @@ import javax.validation.Valid;
  * The current player, demo and legacy status of a player identified by the id
  */
 @ApiModel(description = "The current player, demo and legacy status of a player identified by the id")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T02:33:09.626845200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T05:00:01.117726-03:00[America/Sao_Paulo]")
 public class CurrentPlayerIDs   {
   @JsonProperty("id")
   private String id;

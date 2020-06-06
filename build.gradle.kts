@@ -8,6 +8,7 @@ repositories {
 
 dependencies {
     swaggerCodegen("org.openapitools:openapi-generator-cli:3.3.4")
+    swaggerUI("org.webjars:swagger-ui:3.10.0")
 }
 
 swaggerSources {
@@ -19,16 +20,51 @@ swaggerSources {
     val apis = contracts
         .map { it.name.removeSurrounding("mojang-", ".yaml") }
         .asSequence()
-    file("language-list.txt")
-        .readLines().asSequence()
+    
+    val languages = file("language-list.txt")
+        .readLines()
+        .asSequence()
         .filter { it.isNotBlank() }
+    
+    val docLanguages = setOf("html", "html2")
+    
+    val generateDocumentation by tasks.creating
+    generateDocumentation.group = "documentation"
+    
+    apis.forEach { api ->
+        register(api) {
+            setInputFile(File(contractsDir, "mojang-$api.yaml"))
+            ui.apply {
+                outputDir = file("docs/mojang-$api/swagger-ui")
+            }
+            reDoc.apply {
+                outputDir = file("docs/$api/re-doc")
+                
+                // Not working well yet: https://github.com/int128/gradle-swagger-generator-plugin/issues/86
+                enabled = false
+            }
+            code.apply {
+                enabled = false
+            }
+        }
+        afterEvaluate {
+            generateDocumentation.dependsOn("generateReDoc${api.capitalize()}", "generateSwaggerUI${api.capitalize()}")
+        }
+    }
+    
+    languages
         .flatMap { lang -> apis.map { api-> lang to api } }
         .forEach { (lang, api) ->
             register(lang.split('-').asSequence().map { it.capitalize() }.joinToString("").decapitalize() + "Mojang" + api.capitalize()) {
                 setInputFile(File(contractsDir, "mojang-$api.yaml"))
                 code.apply {
                     language = lang
-                    outputDir = file("generated-sources/$language/mojang-$api")
+                    outputDir = if (lang in docLanguages) {
+                        generateDocumentation.dependsOn(name)
+                        file("docs/mojang-$api/$lang")
+                    } else {
+                        file("generated-sources/$lang/mojang-$api")
+                    }
                     val basePackage = "com.github.asyncmc.mojang.$api.${lang.replace('-', '.')}"
                     rawOptions = listOf(
                         "--api-package", "$basePackage.api", 
@@ -44,6 +80,46 @@ swaggerSources {
                         "enumPropertyNaming" to "UPPERCASE"
                     )
                 }
+
+                ui.apply {
+                    enabled = false
+                }
+                
+                reDoc.apply { 
+                    enabled = false
+                }
             }
         }
+}
+
+tasks.create("generateEverything") {
+    group = "build"
+    dependsOn("generateDocumentation", "generateSwaggerCode")
+}
+
+tasks.create("build") {
+    group = "build"
+    dependsOn("generateEverything")
+}
+
+tasks.create<Delete>("cleanDocs") {
+    group = "documentation"
+    file("docs").listFiles { dir, _ -> dir.isDirectory }?.forEach { doc ->
+        delete(doc)
+    }
+}
+
+tasks.create<Delete>("cleanGeneratedSources") {
+    group = "build"
+    delete(buildDir)
+    delete("generated-sources")
+    file("docs").listFiles { dir, _ -> dir.isDirectory }?.forEach { doc ->
+        delete(doc)
+    }
+}
+
+tasks.create<Delete>("clean") {
+    group = "build"
+    dependsOn("cleanGeneratedSources", "cleanDocs")
+    delete(buildDir)
 }

@@ -14,7 +14,7 @@ import io.swagger.annotations.ApiModelProperty;
  **/
 
 @ApiModel(description = "Contains details about the skin")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T02:32:24.401424300-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T04:59:15.983452700-03:00[America/Sao_Paulo]")
 public class PlayerSkinMetadata   {
   /**
    * The player model, currently only \"slim\" (Alex) is valid, for Steve's model this property must be absent.

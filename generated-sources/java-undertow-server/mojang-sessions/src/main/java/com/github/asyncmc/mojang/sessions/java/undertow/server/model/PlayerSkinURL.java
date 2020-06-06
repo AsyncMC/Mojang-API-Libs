@@ -11,7 +11,7 @@ import io.swagger.annotations.ApiModel;
  **/
 
 @ApiModel(description = "Wraps the URL to the texture and configures the player's model")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaUndertowServerCodegen", date = "2020-06-06T02:32:42.773102900-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaUndertowServerCodegen", date = "2020-06-06T04:59:34.437175500-03:00[America/Sao_Paulo]")
 public class PlayerSkinURL extends PlayerTextureURL  {
   
 

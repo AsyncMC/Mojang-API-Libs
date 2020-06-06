@@ -29,7 +29,7 @@ import java.io.IOException;
  * Request Mojang to download a skin from an URL and apply to the player
  */
 @ApiModel(description = "Request Mojang to download a skin from an URL and apply to the player")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:26.085625400-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:17.682564700-03:00[America/Sao_Paulo]")
 public class ChangeSkinRequest {
   public static final String SERIALIZED_NAME_MODEL = "model";
   @SerializedName(SERIALIZED_NAME_MODEL)

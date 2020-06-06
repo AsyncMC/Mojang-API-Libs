@@ -28,7 +28,7 @@ import java.io.IOException;
  * A registered name change.
  */
 @ApiModel(description = "A registered name change.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:26.085625400-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:17.682564700-03:00[America/Sao_Paulo]")
 public class NameChange {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)

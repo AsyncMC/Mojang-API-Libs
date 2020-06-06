@@ -10,7 +10,7 @@ import javax.validation.constraints.*;
 /**
  * Binds a question to an answer id, the answer must respect the answer id.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2020-06-06T02:32:37.270382100-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2020-06-06T04:59:28.832500800-03:00[America/Sao_Paulo]")
 
 @SuppressWarnings({"UnusedReturnValue", "WeakerAccess"})
 public class SecurityChallenge   {

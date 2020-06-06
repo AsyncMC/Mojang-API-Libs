@@ -20,7 +20,7 @@ import com.github.asyncmc.mojang.authentication.java.model.AccessKeys;
 /**
  * Authentication
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:27.172994600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:18.749321-03:00[America/Sao_Paulo]")
 public class Authentication extends AccessKeys {
 
   @Override

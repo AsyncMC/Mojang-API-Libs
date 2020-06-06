@@ -24,7 +24,7 @@ import javax.validation.constraints.*;
 @Api(description = "the blockedservers API")
 
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSCXFCDIServerCodegen", date = "2020-06-06T02:33:00.757857600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSCXFCDIServerCodegen", date = "2020-06-06T04:59:52.199488500-03:00[America/Sao_Paulo]")
 
 public class BlockedserversApi  {
 

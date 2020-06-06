@@ -28,7 +28,7 @@ import javax.validation.Valid;
  * The body of the request to get the order statistics
  */
 @ApiModel(description = "The body of the request to get the order statistics")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T02:33:09.626845200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T05:00:01.117726-03:00[America/Sao_Paulo]")
 public class OrderStatisticsRequest   {
   @JsonProperty("metricKeys")
   private List<OrderStatistic> metricKeys = new ArrayList<OrderStatistic>();

@@ -10,7 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
  * A json object is returned with the total amount of copies sold, the amount of copies sold in the last 24h and how many sales there are per second.
  */
 @ApiModel(description = "A json object is returned with the total amount of copies sold, the amount of copies sold in the last 24h and how many sales there are per second.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T02:32:29.917115200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T04:59:21.461323800-03:00[America/Sao_Paulo]")
 public class OrderStatisticsResponse   {
   @JsonProperty("total")
   private Long total;

@@ -26,7 +26,7 @@ import javax.validation.Valid;
  * Contains details about the skin
  */
 @ApiModel(description = "Contains details about the skin")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T02:33:11.618967200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T05:00:03.118240-03:00[America/Sao_Paulo]")
 public class PlayerSkinMetadata   {
   /**
    * The player model, currently only \&quot;slim\&quot; (Alex) is valid, for Steve&#39;s model this property must be absent.

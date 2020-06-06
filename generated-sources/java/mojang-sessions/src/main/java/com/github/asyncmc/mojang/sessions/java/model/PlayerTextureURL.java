@@ -28,7 +28,7 @@ import java.io.IOException;
  * Wraps the URL to the texture
  */
 @ApiModel(description = "Wraps the URL to the texture")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:28.129510600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:19.675082-03:00[America/Sao_Paulo]")
 public class PlayerTextureURL {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)

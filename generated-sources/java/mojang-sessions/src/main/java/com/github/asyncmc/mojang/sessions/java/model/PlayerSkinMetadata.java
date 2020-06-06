@@ -28,7 +28,7 @@ import java.io.IOException;
  * Contains details about the skin
  */
 @ApiModel(description = "Contains details about the skin")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:28.129510600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:19.675082-03:00[America/Sao_Paulo]")
 public class PlayerSkinMetadata {
   /**
    * The player model, currently only \&quot;slim\&quot; (Alex) is valid, for Steve&#39;s model this property must be absent.

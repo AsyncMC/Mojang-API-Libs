@@ -10,7 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The current player, demo and legacy status of a player identified by the id
  */
 @ApiModel(description = "The current player, demo and legacy status of a player identified by the id")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T02:32:29.917115200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T04:59:21.461323800-03:00[America/Sao_Paulo]")
 public class CurrentPlayerIDs   {
   @JsonProperty("id")
   private String id;

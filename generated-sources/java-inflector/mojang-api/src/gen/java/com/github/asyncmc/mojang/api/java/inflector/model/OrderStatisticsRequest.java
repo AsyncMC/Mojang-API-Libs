@@ -16,7 +16,7 @@ import java.util.List;
  **/
 
 @ApiModel(description = "The body of the request to get the order statistics")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T02:32:22.425407700-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T04:59:14.045797500-03:00[America/Sao_Paulo]")
 public class OrderStatisticsRequest   {
   @JsonProperty("metricKeys")
   private List<OrderStatistic> metricKeys = new ArrayList<OrderStatistic>();

@@ -292,8 +292,8 @@
           "name" : {
             "type" : "string",
             "description" : "The name of the game",
-            "enum" : [ "Minecraft", "Scrolls" ],
-            "default" : "Minecraft"
+            "default" : "Minecraft",
+            "enum" : [ "Minecraft", "Scrolls" ]
           },
           "version" : {
             "type" : "integer",

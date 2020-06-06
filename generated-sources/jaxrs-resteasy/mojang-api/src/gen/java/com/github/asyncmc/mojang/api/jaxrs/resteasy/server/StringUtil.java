@@ -1,6 +1,6 @@
 package com.github.asyncmc.mojang.api.jaxrs.resteasy.server;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T02:33:16.982094400-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T05:00:08.418392200-03:00[America/Sao_Paulo]")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

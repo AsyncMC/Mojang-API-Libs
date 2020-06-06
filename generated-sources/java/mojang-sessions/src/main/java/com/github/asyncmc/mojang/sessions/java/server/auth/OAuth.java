@@ -18,7 +18,7 @@ import com.github.asyncmc.mojang.sessions.java.server.Pair;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:28.129510600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:19.675082-03:00[America/Sao_Paulo]")
 public class OAuth implements Authentication {
   private String accessToken;
 

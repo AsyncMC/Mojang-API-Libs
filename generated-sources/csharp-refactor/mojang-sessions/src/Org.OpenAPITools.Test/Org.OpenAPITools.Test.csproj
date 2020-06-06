@@ -81,7 +81,7 @@ OpenAPI spec version: 2020-06-05
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\Org.OpenAPITools\Org.OpenAPITools.csproj">
-          <Project>{D5DFA6DB-A238-475A-88FB-1AAF8BD338FC}</Project>
+          <Project>{0D5D3EB2-A15C-4BBA-A43B-13C90BAE2DB1}</Project>
           <Name>Org.OpenAPITools</Name>
       </ProjectReference>
   </ItemGroup>

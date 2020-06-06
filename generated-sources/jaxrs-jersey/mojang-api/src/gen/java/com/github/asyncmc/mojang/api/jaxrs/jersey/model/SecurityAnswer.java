@@ -23,7 +23,7 @@ import javax.validation.Valid;
  * A security question answer given by the player using the id given by Mojang
  */
 @ApiModel(description = "A security question answer given by the player using the id given by Mojang")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T02:33:09.626845200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T05:00:01.117726-03:00[America/Sao_Paulo]")
 public class SecurityAnswer extends SecurityAnswerId  {
 
   @Override

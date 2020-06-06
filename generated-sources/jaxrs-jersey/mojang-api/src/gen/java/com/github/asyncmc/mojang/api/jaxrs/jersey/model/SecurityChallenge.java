@@ -27,7 +27,7 @@ import javax.validation.Valid;
  * Binds a question to an answer id, the answer must respect the answer id.
  */
 @ApiModel(description = "Binds a question to an answer id, the answer must respect the answer id.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T02:33:09.626845200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T05:00:01.117726-03:00[America/Sao_Paulo]")
 public class SecurityChallenge   {
   @JsonProperty("question")
   private SecurityQuestion question = null;

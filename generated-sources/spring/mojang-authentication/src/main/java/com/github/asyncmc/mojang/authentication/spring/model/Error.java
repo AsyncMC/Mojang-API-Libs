@@ -12,7 +12,7 @@ import javax.validation.constraints.*;
  * This is returned when the request fails
  */
 @ApiModel(description = "This is returned when the request fails")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T02:35:20.256253900-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T05:02:21.986099700-03:00[America/Sao_Paulo]")
 
 public class Error   {
   @JsonProperty("error")

@@ -26,7 +26,7 @@ import javax.validation.Valid;
 
 
 @io.swagger.annotations.Api(description = "the blockedservers API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T02:33:18.906240-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T05:00:10.317348300-03:00[America/Sao_Paulo]")
 public class BlockedserversApi  {
 
     @Inject BlockedserversApiService service;

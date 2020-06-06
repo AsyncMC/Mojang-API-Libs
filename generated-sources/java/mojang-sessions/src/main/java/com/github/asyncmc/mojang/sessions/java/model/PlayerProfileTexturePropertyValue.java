@@ -29,7 +29,7 @@ import java.io.IOException;
  * This is obtained by decoding the \&quot;textures\&quot; property
  */
 @ApiModel(description = "This is obtained by decoding the \"textures\" property")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:28.129510600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:19.675082-03:00[America/Sao_Paulo]")
 public class PlayerProfileTexturePropertyValue {
   public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
   @SerializedName(SERIALIZED_NAME_TIMESTAMP)

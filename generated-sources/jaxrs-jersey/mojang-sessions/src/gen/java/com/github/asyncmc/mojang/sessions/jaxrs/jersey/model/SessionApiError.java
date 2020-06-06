@@ -25,7 +25,7 @@ import javax.validation.Valid;
  * An object describing giving a bit of information about the error
  */
 @ApiModel(description = "An object describing giving a bit of information about the error")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T02:33:11.618967200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T05:00:03.118240-03:00[America/Sao_Paulo]")
 public class SessionApiError   {
   @JsonProperty("error")
   private String error;

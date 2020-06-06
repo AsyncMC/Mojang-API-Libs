@@ -28,7 +28,7 @@ import java.io.IOException;
  * An object describing giving a bit of information about the error
  */
 @ApiModel(description = "An object describing giving a bit of information about the error")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:28.129510600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:19.675082-03:00[America/Sao_Paulo]")
 public class SessionApiError {
   public static final String SERIALIZED_NAME_ERROR = "error";
   @SerializedName(SERIALIZED_NAME_ERROR)

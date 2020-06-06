@@ -7,7 +7,7 @@ import com.github.asyncmc.mojang.authentication.java.undertow.server.model.Acces
 
 
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaUndertowServerCodegen", date = "2020-06-06T02:32:41.893573-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaUndertowServerCodegen", date = "2020-06-06T04:59:33.567570500-03:00[America/Sao_Paulo]")
 public class RefreshRequest extends AccessKeys  {
   
 

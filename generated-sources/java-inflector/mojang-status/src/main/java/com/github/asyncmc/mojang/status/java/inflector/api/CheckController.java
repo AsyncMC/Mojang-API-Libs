@@ -12,7 +12,7 @@ import com.github.asyncmc.mojang.status.java.inflector.model.*;
 
 import com.github.asyncmc.mojang.status.java.inflector.model.ApiStatus;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T02:32:25.283087900-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T04:59:16.863335200-03:00[America/Sao_Paulo]")
 public class CheckController  {
   /** 
    * Uncomment and implement as you see fit.  These operations will map

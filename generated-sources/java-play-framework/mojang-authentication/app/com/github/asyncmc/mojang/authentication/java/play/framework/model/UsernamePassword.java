@@ -8,7 +8,7 @@ import javax.validation.constraints.*;
 /**
  * UsernamePassword
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2020-06-06T02:32:38.345670700-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2020-06-06T04:59:29.903633400-03:00[America/Sao_Paulo]")
 
 @SuppressWarnings({"UnusedReturnValue", "WeakerAccess"})
 public class UsernamePassword   {

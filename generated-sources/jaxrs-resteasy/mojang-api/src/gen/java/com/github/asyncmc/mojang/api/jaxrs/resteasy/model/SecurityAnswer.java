@@ -8,7 +8,7 @@ import javax.validation.constraints.*;
 import io.swagger.annotations.*;
 
 @ApiModel(description="A security question answer given by the player using the id given by Mojang")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T02:33:16.982094400-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T05:00:08.418392200-03:00[America/Sao_Paulo]")
 public class SecurityAnswer extends SecurityAnswerId  {
   
 

@@ -13,7 +13,7 @@ import javax.validation.constraints.*;
  * This is obtained by decoding the \&quot;textures\&quot; property
  */
 @ApiModel(description = "This is obtained by decoding the \"textures\" property")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T02:35:21.224447500-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T05:02:22.976376700-03:00[America/Sao_Paulo]")
 
 public class PlayerProfileTexturePropertyValue   {
   @JsonProperty("timestamp")

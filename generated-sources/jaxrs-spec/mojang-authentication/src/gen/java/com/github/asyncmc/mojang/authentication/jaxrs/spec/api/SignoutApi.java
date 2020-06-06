@@ -16,7 +16,7 @@ import javax.validation.Valid;
 
 @Path("/signout")
 @Api(description = "the signout API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2020-06-06T02:33:21.607123300-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2020-06-06T05:00:13.287845900-03:00[America/Sao_Paulo]")
 public class SignoutApi {
 
     @POST

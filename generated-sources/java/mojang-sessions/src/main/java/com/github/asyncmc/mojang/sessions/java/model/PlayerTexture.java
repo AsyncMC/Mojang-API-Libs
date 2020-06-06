@@ -30,7 +30,7 @@ import java.io.IOException;
  * Provide links to the player&#39;s skin and cape
  */
 @ApiModel(description = "Provide links to the player's skin and cape")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:28.129510600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:19.675082-03:00[America/Sao_Paulo]")
 public class PlayerTexture {
   public static final String SERIALIZED_NAME_S_K_I_N = "SKIN";
   @SerializedName(SERIALIZED_NAME_S_K_I_N)

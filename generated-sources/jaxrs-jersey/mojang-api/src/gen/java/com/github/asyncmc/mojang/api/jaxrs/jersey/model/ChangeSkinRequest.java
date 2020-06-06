@@ -26,7 +26,7 @@ import javax.validation.Valid;
  * Request Mojang to download a skin from an URL and apply to the player
  */
 @ApiModel(description = "Request Mojang to download a skin from an URL and apply to the player")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T02:33:09.626845200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T05:00:01.117726-03:00[America/Sao_Paulo]")
 public class ChangeSkinRequest   {
   @JsonProperty("model")
   private SkinModel model = null;

@@ -18,7 +18,7 @@ import com.github.asyncmc.mojang.status.java.server.Pair;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:29.063961800-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:20.591160500-03:00[America/Sao_Paulo]")
 public class ApiKeyAuth implements Authentication {
   private final String location;
   private final String paramName;

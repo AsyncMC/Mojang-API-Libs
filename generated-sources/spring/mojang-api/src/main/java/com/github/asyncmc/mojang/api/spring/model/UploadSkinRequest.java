@@ -13,7 +13,7 @@ import javax.validation.constraints.*;
 /**
  * UploadSkinRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T02:35:19.150868800-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T05:02:20.878351200-03:00[America/Sao_Paulo]")
 
 public class UploadSkinRequest   {
   @JsonProperty("model")

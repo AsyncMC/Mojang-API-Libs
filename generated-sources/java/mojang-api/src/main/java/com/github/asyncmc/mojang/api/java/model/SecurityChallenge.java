@@ -30,7 +30,7 @@ import java.io.IOException;
  * Binds a question to an answer id, the answer must respect the answer id.
  */
 @ApiModel(description = "Binds a question to an answer id, the answer must respect the answer id.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:26.085625400-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:17.682564700-03:00[America/Sao_Paulo]")
 public class SecurityChallenge {
   public static final String SERIALIZED_NAME_QUESTION = "question";
   @SerializedName(SERIALIZED_NAME_QUESTION)

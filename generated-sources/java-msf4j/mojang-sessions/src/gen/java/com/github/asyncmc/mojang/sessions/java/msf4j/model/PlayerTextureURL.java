@@ -10,7 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Wraps the URL to the texture
  */
 @ApiModel(description = "Wraps the URL to the texture")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T02:32:31.865898300-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T04:59:23.397210400-03:00[America/Sao_Paulo]")
 public class PlayerTextureURL   {
   @JsonProperty("url")
   private String url;

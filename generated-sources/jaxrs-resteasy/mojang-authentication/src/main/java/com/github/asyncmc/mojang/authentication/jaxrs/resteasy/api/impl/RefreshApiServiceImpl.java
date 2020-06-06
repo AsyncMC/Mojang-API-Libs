@@ -19,7 +19,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
 @RequestScoped
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T02:33:18.015861900-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T05:00:09.430070900-03:00[America/Sao_Paulo]")
 public class RefreshApiServiceImpl implements RefreshApiService {
       public Response refresh(RefreshRequest refreshRequest,SecurityContext securityContext)
       throws NotFoundException {

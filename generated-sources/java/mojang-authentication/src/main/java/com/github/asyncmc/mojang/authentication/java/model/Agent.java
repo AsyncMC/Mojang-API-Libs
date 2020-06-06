@@ -28,7 +28,7 @@ import java.io.IOException;
  * Identifies the software doing the request
  */
 @ApiModel(description = "Identifies the software doing the request")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:27.172994600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:18.749321-03:00[America/Sao_Paulo]")
 public class Agent {
   /**
    * The name of the game

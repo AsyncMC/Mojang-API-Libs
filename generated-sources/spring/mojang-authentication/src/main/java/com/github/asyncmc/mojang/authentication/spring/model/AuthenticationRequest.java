@@ -10,7 +10,7 @@ import javax.validation.constraints.*;
  * Request body needed to authenticate the player using the username/e-mail and password. Use with care. This is a risky operation.
  */
 @ApiModel(description = "Request body needed to authenticate the player using the username/e-mail and password. Use with care. This is a risky operation.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T02:35:20.256253900-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T05:02:21.986099700-03:00[America/Sao_Paulo]")
 
 public class AuthenticationRequest extends UsernamePassword  {
 

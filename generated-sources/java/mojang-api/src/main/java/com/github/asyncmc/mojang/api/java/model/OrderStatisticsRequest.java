@@ -31,7 +31,7 @@ import java.util.List;
  * The body of the request to get the order statistics
  */
 @ApiModel(description = "The body of the request to get the order statistics")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:26.085625400-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:17.682564700-03:00[America/Sao_Paulo]")
 public class OrderStatisticsRequest {
   public static final String SERIALIZED_NAME_METRIC_KEYS = "metricKeys";
   @SerializedName(SERIALIZED_NAME_METRIC_KEYS)

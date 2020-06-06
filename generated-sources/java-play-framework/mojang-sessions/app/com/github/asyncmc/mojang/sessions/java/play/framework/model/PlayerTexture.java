@@ -10,7 +10,7 @@ import javax.validation.constraints.*;
 /**
  * Provide links to the player&#39;s skin and cape
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2020-06-06T02:32:39.234134100-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2020-06-06T04:59:30.811111-03:00[America/Sao_Paulo]")
 
 @SuppressWarnings({"UnusedReturnValue", "WeakerAccess"})
 public class PlayerTexture   {

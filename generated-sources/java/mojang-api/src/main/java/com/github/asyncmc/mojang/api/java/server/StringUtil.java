@@ -13,7 +13,7 @@
 
 package com.github.asyncmc.mojang.api.java.server;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:26.085625400-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:17.682564700-03:00[America/Sao_Paulo]")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

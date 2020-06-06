@@ -14,7 +14,7 @@ import javax.validation.constraints.*;
  * Provide links to the player&#39;s skin and cape
  */
 @ApiModel(description = "Provide links to the player's skin and cape")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T02:35:21.224447500-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T05:02:22.976376700-03:00[America/Sao_Paulo]")
 
 public class PlayerTexture   {
   @JsonProperty("SKIN")

@@ -10,7 +10,7 @@ import javax.validation.constraints.*;
 import io.swagger.annotations.*;
 
 @ApiModel(description="This is returned when the request fails")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T02:33:18.015861900-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2020-06-06T05:00:09.430070900-03:00[America/Sao_Paulo]")
 public class Error   {
   
   private String error;

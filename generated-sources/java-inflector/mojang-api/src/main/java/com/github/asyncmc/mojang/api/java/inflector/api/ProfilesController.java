@@ -13,7 +13,7 @@ import com.github.asyncmc.mojang.api.java.inflector.model.*;
 import com.github.asyncmc.mojang.api.java.inflector.model.CurrentPlayerIDs;
 import java.util.List;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T02:32:22.425407700-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T04:59:14.045797500-03:00[America/Sao_Paulo]")
 public class ProfilesController  {
   /** 
    * Uncomment and implement as you see fit.  These operations will map

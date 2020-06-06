@@ -11,7 +11,7 @@ import javax.validation.constraints.*;
 import io.swagger.annotations.*;
 
 @ApiModel(description="Request Mojang to download a skin from an URL and apply to the player")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyEapServerCodegen", date = "2020-06-06T02:33:13.397400-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyEapServerCodegen", date = "2020-06-06T05:00:04.857622-03:00[America/Sao_Paulo]")
 public class ChangeSkinRequest   {
   
 

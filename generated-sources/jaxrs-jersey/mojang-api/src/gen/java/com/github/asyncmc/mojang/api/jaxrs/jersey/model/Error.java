@@ -25,7 +25,7 @@ import javax.validation.Valid;
  * This is returned when the request fails
  */
 @ApiModel(description = "This is returned when the request fails")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T02:33:09.626845200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T05:00:01.117726-03:00[America/Sao_Paulo]")
 public class Error   {
   @JsonProperty("error")
   private String error;

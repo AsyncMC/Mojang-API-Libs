@@ -22,7 +22,7 @@ import io.swagger.annotations.ApiModel;
  * Request body needed to authenticate the player using the username/e-mail and password. Use with care. This is a risky operation.
  */
 @ApiModel(description = "Request body needed to authenticate the player using the username/e-mail and password. Use with care. This is a risky operation.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T02:32:27.172994600-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-06-06T04:59:18.749321-03:00[America/Sao_Paulo]")
 public class AuthenticationRequest extends UsernamePassword {
 
   @Override

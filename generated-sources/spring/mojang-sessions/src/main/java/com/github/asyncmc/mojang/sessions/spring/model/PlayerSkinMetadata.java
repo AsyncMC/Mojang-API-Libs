@@ -13,7 +13,7 @@ import javax.validation.constraints.*;
  * Contains details about the skin
  */
 @ApiModel(description = "Contains details about the skin")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T02:35:21.224447500-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T05:02:22.976376700-03:00[America/Sao_Paulo]")
 
 public class PlayerSkinMetadata   {
   /**

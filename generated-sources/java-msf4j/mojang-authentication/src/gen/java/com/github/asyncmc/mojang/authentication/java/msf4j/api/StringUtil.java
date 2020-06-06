@@ -1,6 +1,6 @@
 package com.github.asyncmc.mojang.authentication.java.msf4j.server;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T02:32:30.945226100-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T04:59:22.475532300-03:00[America/Sao_Paulo]")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

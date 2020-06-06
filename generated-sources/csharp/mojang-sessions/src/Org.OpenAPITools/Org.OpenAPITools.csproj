@@ -12,7 +12,7 @@ OpenAPI spec version: 2020-06-05
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{19DEC8C7-12A6-47EF-9719-C7A93B9DC93C}</ProjectGuid>
+    <ProjectGuid>{8F3AE301-2A2D-4911-B368-C86BFED41C60}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Org.OpenAPITools</RootNamespace>

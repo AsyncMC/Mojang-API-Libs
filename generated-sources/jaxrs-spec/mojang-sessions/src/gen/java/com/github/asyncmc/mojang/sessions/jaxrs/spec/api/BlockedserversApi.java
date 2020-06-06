@@ -14,7 +14,7 @@ import javax.validation.Valid;
 
 @Path("/blockedservers")
 @Api(description = "the blockedservers API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2020-06-06T02:33:22.506412500-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2020-06-06T05:00:14.199183300-03:00[America/Sao_Paulo]")
 public class BlockedserversApi {
 
     @GET

@@ -10,7 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
  * This is returned when the request fails
  */
 @ApiModel(description = "This is returned when the request fails")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T02:32:29.917115200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2020-06-06T04:59:21.461323800-03:00[America/Sao_Paulo]")
 public class Error   {
   @JsonProperty("error")
   private String error;

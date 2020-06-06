@@ -16,7 +16,7 @@ import javax.validation.Valid;
 
 @Path("/session")
 @Api(description = "the session API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2020-06-06T02:33:22.506412500-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2020-06-06T05:00:14.199183300-03:00[America/Sao_Paulo]")
 public class SessionApi {
 
     @GET

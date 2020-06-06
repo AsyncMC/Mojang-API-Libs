@@ -13,7 +13,7 @@ import javax.validation.constraints.*;
  * Identifies the software doing the request
  */
 @ApiModel(description = "Identifies the software doing the request")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T02:35:20.256253900-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-06-06T05:02:21.986099700-03:00[America/Sao_Paulo]")
 
 public class Agent   {
   /**

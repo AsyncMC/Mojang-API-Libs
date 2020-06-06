@@ -25,7 +25,7 @@ import javax.validation.Valid;
  * A registered name change.
  */
 @ApiModel(description = "A registered name change.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T02:33:09.626845200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2020-06-06T05:00:01.117726-03:00[America/Sao_Paulo]")
 public class NameChange   {
   @JsonProperty("name")
   private String name;

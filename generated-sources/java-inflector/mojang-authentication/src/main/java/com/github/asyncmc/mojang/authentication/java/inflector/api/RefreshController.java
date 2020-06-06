@@ -15,7 +15,7 @@ import com.github.asyncmc.mojang.authentication.java.inflector.model.Error;
 import com.github.asyncmc.mojang.authentication.java.inflector.model.RefreshRequest;
 import com.github.asyncmc.mojang.authentication.java.inflector.model.RefreshResponse;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T02:32:23.483205200-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T04:59:15.068092200-03:00[America/Sao_Paulo]")
 public class RefreshController  {
   /** 
    * Uncomment and implement as you see fit.  These operations will map

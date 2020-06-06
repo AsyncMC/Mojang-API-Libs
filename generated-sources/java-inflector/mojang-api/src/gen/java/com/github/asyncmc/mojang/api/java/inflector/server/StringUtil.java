@@ -1,6 +1,6 @@
 package com.github.asyncmc.mojang.api.java.inflector.server;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T02:32:22.425407700-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2020-06-06T04:59:14.045797500-03:00[America/Sao_Paulo]")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

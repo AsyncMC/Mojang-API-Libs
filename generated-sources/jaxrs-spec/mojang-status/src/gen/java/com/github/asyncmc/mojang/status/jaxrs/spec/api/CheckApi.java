@@ -15,7 +15,7 @@ import javax.validation.Valid;
 
 @Path("/check")
 @Api(description = "the check API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2020-06-06T02:33:23.378546700-03:00[America/Sao_Paulo]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2020-06-06T05:00:15.057241600-03:00[America/Sao_Paulo]")
 public class CheckApi {
 
     @GET
