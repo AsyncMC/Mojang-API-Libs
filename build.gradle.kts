@@ -11,23 +11,23 @@ dependencies {
     swaggerUI("org.webjars:swagger-ui:3.10.0")
 }
 
+val contractsDir = file("openapi-contracts")
+val contracts = contractsDir.listFiles { _, name -> name.startsWith("mojang-") && name.endsWith(".yaml") }
+if (!contractsDir.isDirectory || contracts?.isNotEmpty() != true) {
+    throw java.io.FileNotFoundException("The openapi-contracts directory is empty or does not exists! Please run \"git submodule update --init --recursive\" to fix this issue")
+}
+val apis = contracts
+    .map { it.name.removeSurrounding("mojang-", ".yaml") }
+    .asSequence()
+
+val languages = file("language-list.txt")
+    .readLines()
+    .asSequence()
+    .filter { it.isNotBlank() }
+
+val docLanguages = setOf("html", "html2")
+
 swaggerSources {
-    val contractsDir = file("openapi-contracts")
-    val contracts = contractsDir.listFiles { _, name -> name.startsWith("mojang-") && name.endsWith(".yaml") }
-    if (!contractsDir.isDirectory || contracts?.isNotEmpty() != true) {
-        throw java.io.FileNotFoundException("The openapi-contracts directory is empty or does not exists! Please run \"git submodule update --init --recursive\" to fix this issue")
-    }
-    val apis = contracts
-        .map { it.name.removeSurrounding("mojang-", ".yaml") }
-        .asSequence()
-    
-    val languages = file("language-list.txt")
-        .readLines()
-        .asSequence()
-        .filter { it.isNotBlank() }
-    
-    val docLanguages = setOf("html", "html2")
-    
     val generateDocumentation by tasks.creating
     generateDocumentation.group = "documentation"
     
@@ -90,6 +90,38 @@ swaggerSources {
                 }
             }
         }
+}
+
+tasks.create("updateDocsIndex") {
+    group = "documentation"
+    val docIndexFile = file("docs/index.md")
+    inputs.file(docIndexFile)
+    inputs.files(*contracts)
+    inputs.file("language-list.txt")
+    outputs.files(docIndexFile)
+    doLast {
+        val docIndex = docIndexFile.readLines().let { lines ->
+            lines.indexOfFirst { it.trim().equals("<!-- GENERATED SOURCE MARKER -->", ignoreCase = true) }.takeIf { it >= 0 }?.let { line ->
+                lines.subList(0, line + 1).toMutableList()
+            } ?: lines.toMutableList()
+        }
+
+        docIndex += "| Language      | " + apis.joinToString(" | ")
+        docIndex += "|---------------" + "|-----".repeat(apis.count())
+
+        languages.forEach { lang ->
+            docIndex += buildString {
+                append("| [$lang](https://github.com/AsyncMC/Mojang-API-Libs/tree/master/generated-sources/$lang) ")
+                apis.forEach { api ->
+                    append("| [minecraft-$api](https://github.com/AsyncMC/Mojang-API-Libs/tree/master/generated-sources/$lang/$api)")
+                }
+            }
+        }
+
+        docIndex += ""
+
+        docIndexFile.writeText(docIndex.joinToString(System.lineSeparator()))
+    }
 }
 
 tasks.create("generateEverything") {
