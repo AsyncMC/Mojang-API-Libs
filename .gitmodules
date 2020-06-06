@@ -1,0 +1,3 @@
+[submodule "openapi-contracts"]
+	path = openapi-contracts
+	url = https://github.com/AsyncMC/Mojang-API

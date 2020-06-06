@@ -11,8 +11,12 @@ dependencies {
 }
 
 swaggerSources {
-    val apis = projectDir
-        .listFiles { _, name -> name.startsWith("mojang-") && name.endsWith(".yaml") }!!
+    val contractsDir = file("openapi-contracts")
+    val contracts = contractsDir.listFiles { _, name -> name.startsWith("mojang-") && name.endsWith(".yaml") }
+    if (!contractsDir.isDirectory || contracts?.isNotEmpty() != true) {
+        throw java.io.FileNotFoundException("The openapi-contracts directory is empty or does not exists! Please run \"git submodule update --init --recursive\" to fix this issue")
+    }
+    val apis = contracts
         .map { it.name.removeSurrounding("mojang-", ".yaml") }
         .asSequence()
     file("language-list.txt")
@@ -20,7 +24,7 @@ swaggerSources {
         .flatMap { lang -> apis.map { api-> lang to api } }
         .forEach { (lang, api) ->
             register(lang.split('-').asSequence().map { it.capitalize() }.joinToString("").decapitalize() + "Mojang" + api.capitalize()) {
-                setInputFile(file("mojang-$api.yaml"))
+                setInputFile(File(contractsDir, "mojang-$api.yaml"))
                 code.apply {
                     language = lang
                     outputDir = file("generated-sources/$language/mojang-$api")
