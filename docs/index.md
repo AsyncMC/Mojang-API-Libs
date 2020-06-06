@@ -4,15 +4,15 @@ Choose your favorite documentation viewer:
 
 | API in YAML             | Swagger-UI | HTML-2 | HTML
 |-------------------------|------------|--------|------
-| [mojang-api]            | [Swagger UI](mojang-api/swagger-ui/index.html)            | [HTML 2](mojang-api/html2/index.html)             | [HTML](mojang-api/html/index.html)
-| [mojang-authentication] | [Swagger UI](mojang-authentication/swagger-ui/index.html) | [HTML 2](mojang-authentication/html2/index.html)  | [HTML](mojang-authentication/html/index.html)
-| [mojang-sessions]       | [Swagger UI](mojang-sessions/swagger-ui/index.html)       | [HTML 2](mojang-sessions/html2/index.html)        | [HTML](mojang-sessions/html/index.html)
-| [mojang-status]         | [Swagger UI](mojang-status/swagger-ui/index.html)         | [HTML 2](mojang-status/html2/index.html)          | [HTML](mojang-status/html/index.html)
-
 | [mojang-api]            | [Swagger UI](https://asyncmc.github.io/Mojang-API-Libs/mojang-api/swagger-ui/index.html)            | [HTML 2](https://asyncmc.github.io/Mojang-API-Libs/mojang-api/html2/index.html)             | [HTML](https://asyncmc.github.io/Mojang-API-Libs/mojang-api/html/index.html)
 | [mojang-authentication] | [Swagger UI](https://asyncmc.github.io/Mojang-API-Libs/mojang-authentication/swagger-ui/index.html) | [HTML 2](https://asyncmc.github.io/Mojang-API-Libs/mojang-authentication/html2/index.html)  | [HTML](https://asyncmc.github.io/Mojang-API-Libs/mojang-authentication/html/index.html)
 | [mojang-sessions]       | [Swagger UI](https://asyncmc.github.io/Mojang-API-Libs/mojang-sessions/swagger-ui/index.html)       | [HTML 2](https://asyncmc.github.io/Mojang-API-Libs/mojang-sessions/html2/index.html)        | [HTML](https://asyncmc.github.io/Mojang-API-Libs/mojang-sessions/html/index.html)
 | [mojang-status]         | [Swagger UI](https://asyncmc.github.io/Mojang-API-Libs/mojang-status/swagger-ui/index.html)         | [HTML 2](https://asyncmc.github.io/Mojang-API-Libs/mojang-status/html2/index.html)          | [HTML](https://asyncmc.github.io/Mojang-API-Libs/mojang-status/html/index.html) 
+
+[mojang-api]: https://github.com/AsyncMC/Mojang-API/blob/master/mojang-api.yaml
+[mojang-authentication]: https://github.com/AsyncMC/Mojang-API/blob/master/mojang-authentication.yaml
+[mojang-sessions]: https://github.com/AsyncMC/Mojang-API/blob/master/mojang-sessions.yaml
+[mojang-status]: https://github.com/AsyncMC/Mojang-API/blob/master/mojang-status.yaml 
 
 ## Generated project sources
 
