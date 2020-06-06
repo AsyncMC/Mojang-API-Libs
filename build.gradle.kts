@@ -114,7 +114,7 @@ tasks.create("updateDocsIndex") {
             docIndex += buildString {
                 append("| [$lang](https://github.com/AsyncMC/Mojang-API-Libs/tree/master/generated-sources/$lang)")
                 apis.forEach { api ->
-                    append(" | [minecraft-$api](https://github.com/AsyncMC/Mojang-API-Libs/tree/master/generated-sources/$lang/minecraft-$api)")
+                    append(" | [mojang-$api](https://github.com/AsyncMC/Mojang-API-Libs/tree/master/generated-sources/$lang/mojang-$api)")
                 }
             }
         }
