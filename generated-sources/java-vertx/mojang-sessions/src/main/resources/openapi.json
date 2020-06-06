@@ -1,0 +1,271 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Mojang Session API",
+    "version" : "2020-06-05"
+  },
+  "servers" : [ {
+    "url" : "https://sessionserver.mojang.com"
+  } ],
+  "tags" : [ {
+    "name" : "Login"
+  }, {
+    "name" : "Bans"
+  } ],
+  "paths" : {
+    "/blockedservers" : {
+      "get" : {
+        "tags" : [ "Bans" ],
+        "summary" : "A list of SHA1 hashes of banned servers",
+        "description" : "Returns a list of SHA1 hashes used to check server addresses against when the client tries to connect.\nClients check the lowercase name, using the ISO-8859-1 charset, against this list. They will also attempt to check subdomains, replacing each level with a *. Specifically, it splits based off of the . in the domain, goes through each section removing one at a time. For instance, for mc.example.com, it would try mc.example.com, *.example.com, and *.com. With IP addresses (verified by having 4 split sections, with each section being a valid integer between 0 and 255, inclusive) substitution starts from the end, so for 192.168.0.1, it would try 192.168.0.1, 192.168.0.*, 192.168.*, and 192.*.\nThis check is done by the bootstrap class in netty. The default netty class is overridden by one in the com.mojang:netty dependency loaded by the launcher. This allows it to affect any version that used netty (1.7+)",
+        "operationId" : "getBlockedServerHashes",
+        "responses" : {
+          "200" : {
+            "description" : "A list of SHA1 hashes, one hash per line",
+            "content" : {
+              "text/plain" : {
+                "schema" : {
+                  "type" : "string",
+                  "example" : "6f2520f8bd70a718c568ab5274c56bdbbfc14ef4 7ea72de5f8e70a2ac45f1aa17d43f0ca3cddeedd c005ad34245a8f2105658da2d6d6e8545ef0f0de c645d6c6430db3069abd291ec13afebdb320714b 8bf58811e6ebca16a01b842ff0c012db1171d7d6 8789800277882d1989d384e7941b6ad3dadab430 e40c3456fb05687b8eeb17213a47b263d566f179 278b24ffff7f9f46cf71212a4c0948d07fb3bc35 c78697e385bfa58d6bd2a013f543cdfbdc297c4f b13009db1e2fbe05465716f67c8d58b9c0503520 3e560742576af9413fca72e70f75d7ddc9416020 986204c70d368d50ffead9031e86f2b9e70bb6d0"
+                }
+              }
+            }
+          }
+        },
+        "x-accepts" : "text/plain",
+        "x-serviceid" : "getBlockedServerHashes",
+        "x-serviceid-varname" : "GETBLOCKEDSERVERHASHES_SERVICE_ID"
+      }
+    },
+    "/session/minecraft/profile/{stripped_uuid}" : {
+      "get" : {
+        "tags" : [ "Login" ],
+        "summary" : "Gets the player's game profile",
+        "description" : "This will return the player's username plus any additional information about them (e.g. skins).\nThis has a much stricter rate limit: You can request the same profile once per minute, however you can send as many unique requests as you like.",
+        "operationId" : "getPlayerProfile",
+        "parameters" : [ {
+          "name" : "stripped_uuid",
+          "in" : "path",
+          "description" : "The player UUID without hyphens",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string",
+            "format" : "stripped-uuid"
+          },
+          "example" : "853c80ef3c3749fdaa49938b674adae6"
+        }, {
+          "name" : "unsigned",
+          "in" : "query",
+          "description" : "When set to false, the signature data are sent",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "boolean"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "The player profile and all properties",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/PlayerProfile"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "UUID is invalid",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/SessionApiError"
+                }
+              }
+            }
+          }
+        },
+        "x-accepts" : "application/json",
+        "x-serviceid" : "getPlayerProfile",
+        "x-serviceid-varname" : "GETPLAYERPROFILE_SERVICE_ID"
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "PlayerProfile" : {
+        "required" : [ "id", "name", "properties" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            "description" : "The player UUID without hyphens",
+            "format" : "stripped-uuid",
+            "example" : "853c80ef3c3749fdaa49938b674adae6"
+          },
+          "name" : {
+            "type" : "string",
+            "format" : "username",
+            "example" : "jeb_"
+          },
+          "legacy" : {
+            "type" : "boolean",
+            "description" : "Will appear in the response if the user has not migrated their minecraft.net account to Mojang.",
+            "default" : false
+          },
+          "properties" : {
+            "type" : "array",
+            "description" : "An array with all player properties, like skin and cape",
+            "items" : {
+              "$ref" : "#/components/schemas/PlayerProfileProperty"
+            }
+          }
+        },
+        "example" : {
+          "legacy" : false,
+          "name" : "jeb_",
+          "id" : "853c80ef3c3749fdaa49938b674adae6",
+          "properties" : [ {
+            "signature" : "signature",
+            "name" : "textures",
+            "value" : "value"
+          }, {
+            "signature" : "signature",
+            "name" : "textures",
+            "value" : "value"
+          } ]
+        }
+      },
+      "PlayerProfileProperty" : {
+        "required" : [ "name", "value" ],
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "description" : "The property name",
+            "example" : "textures"
+          },
+          "value" : {
+            "type" : "string",
+            "description" : "The serialized property value in base64.",
+            "format" : "byte"
+          },
+          "signature" : {
+            "type" : "string",
+            "description" : "signed data using Yggdrasil's private key",
+            "format" : "byte"
+          }
+        },
+        "description" : "A profile property, may be signed. The values are encoded by base64 and usually contains a json. The schema for the textures are described at PlayerProfileTexturePropertyValue",
+        "example" : {
+          "signature" : "signature",
+          "name" : "textures",
+          "value" : "value"
+        }
+      },
+      "PlayerProfileTexturePropertyValue" : {
+        "required" : [ "profileId", "profileName", "timestamp" ],
+        "type" : "object",
+        "properties" : {
+          "timestamp" : {
+            "type" : "integer",
+            "description" : "UNIX timestamp in milliseconds",
+            "format" : "int64",
+            "example" : 1591397469867
+          },
+          "profileId" : {
+            "type" : "string",
+            "description" : "The player UUID without hyphens",
+            "format" : "stripped-uuid",
+            "example" : "853c80ef3c3749fdaa49938b674adae6"
+          },
+          "profileName" : {
+            "type" : "string",
+            "description" : "The player's name",
+            "format" : "username",
+            "example" : "jeb_"
+          },
+          "signatureRequired" : {
+            "type" : "boolean",
+            "description" : "Only present if unsigned was set to false in the request",
+            "default" : false
+          },
+          "textures" : {
+            "$ref" : "#/components/schemas/PlayerTexture"
+          }
+        },
+        "description" : "This is obtained by decoding the \"textures\" property"
+      },
+      "PlayerTexture" : {
+        "type" : "object",
+        "properties" : {
+          "SKIN" : {
+            "$ref" : "#/components/schemas/PlayerSkinURL"
+          },
+          "CAPE" : {
+            "$ref" : "#/components/schemas/PlayerTextureURL"
+          }
+        },
+        "description" : "Provide links to the player's skin and cape"
+      },
+      "PlayerTextureURL" : {
+        "required" : [ "url" ],
+        "type" : "object",
+        "properties" : {
+          "url" : {
+            "type" : "string",
+            "description" : "The URL to the texture, must be in Mojang's domains.",
+            "format" : "url",
+            "example" : "http://textures.minecraft.net/texture/5786fe99be377dfb6858859f926c4dbc995751e91cee373468c5fbf4865e7151"
+          }
+        },
+        "description" : "Wraps the URL to the texture"
+      },
+      "PlayerSkinURL" : {
+        "type" : "object",
+        "properties" : {
+          "metadata" : {
+            "$ref" : "#/components/schemas/PlayerSkinMetadata"
+          },
+          "url" : {
+            "example" : "http://textures.minecraft.net/texture/7fd9ba42a7c81eeea22f1524271ae85a8e045ce0af5a6ae16c6406ae917e68b5"
+          }
+        },
+        "description" : "Wraps the URL to the texture and configures the player's model",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PlayerTextureURL"
+        } ]
+      },
+      "PlayerSkinMetadata" : {
+        "type" : "object",
+        "properties" : {
+          "model" : {
+            "type" : "string",
+            "description" : "The player model, currently only \"slim\" (Alex) is valid, for Steve's model this property must be absent.",
+            "enum" : [ "slim" ]
+          }
+        },
+        "description" : "Contains details about the skin"
+      },
+      "SessionApiError" : {
+        "type" : "object",
+        "properties" : {
+          "error" : {
+            "type" : "string",
+            "description" : "A message describing the error",
+            "example" : "Bad Request"
+          },
+          "path" : {
+            "type" : "string",
+            "description" : "The request path",
+            "example" : "/session/minecraft/profile/asdadsda"
+          }
+        },
+        "description" : "An object describing giving a bit of information about the error"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="getPlayerProfile"></a>getPlayerProfile</h2>
+  <hr>
+  <p></p>
+  <p>This will return the player&#39;s username plus any additional information about them (e.g. skins). This has a much stricter rate limit: You can request the same profile once per minute, however you can send as many unique requests as you like.</p>
+  <h3 class="section">URL</h3>
+  <code>https://sessionserver.mojang.com/session/minecraft/profile/{stripped_uuid}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="PlayerProfile"><a href="">PlayerProfile</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">stripped_uuid</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The player UUID without hyphens</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">unsigned</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">When set to false, the signature data are sent</p>
+	  </li>
+  </ul>
+</div>

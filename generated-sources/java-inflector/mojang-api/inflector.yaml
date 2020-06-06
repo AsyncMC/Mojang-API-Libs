@@ -1,0 +1,24 @@
+controllerPackage: org.openapitools.controllers
+modelPackage:  org.openapitools.model
+swaggerUrl: ./src/main/swagger/swagger.yaml
+modelMappings:
+  # to enable explicit mappings, use this syntax:
+  DefinitionFromSwaggerSpecification: fully.qualified.path.to.Model
+  CurrentPlayerIDs : org.openapitools.model.CurrentPlayerIDs
+Error : org.openapitools.model.Error
+InlineObject : org.openapitools.model.InlineObject
+InlineObject1 : org.openapitools.model.InlineObject1
+NameChange : org.openapitools.model.NameChange
+OrderStatistic : org.openapitools.model.OrderStatistic
+OrderStatisticsRequest : org.openapitools.model.OrderStatisticsRequest
+OrderStatisticsResponse : org.openapitools.model.OrderStatisticsResponse
+SecurityAnswer : org.openapitools.model.SecurityAnswer
+SecurityAnswerId : org.openapitools.model.SecurityAnswerId
+SecurityChallenge : org.openapitools.model.SecurityChallenge
+SecurityQuestion : org.openapitools.model.SecurityQuestion
+SkinModel : org.openapitools.model.SkinModel
+
+entityProcessors:
+  - json
+  - xml
+  - yaml

@@ -1,0 +1,19 @@
+controllerPackage: org.openapitools.controllers
+modelPackage:  org.openapitools.model
+swaggerUrl: ./src/main/swagger/swagger.yaml
+modelMappings:
+  # to enable explicit mappings, use this syntax:
+  DefinitionFromSwaggerSpecification: fully.qualified.path.to.Model
+  PlayerProfile : org.openapitools.model.PlayerProfile
+PlayerProfileProperty : org.openapitools.model.PlayerProfileProperty
+PlayerProfileTexturePropertyValue : org.openapitools.model.PlayerProfileTexturePropertyValue
+PlayerSkinMetadata : org.openapitools.model.PlayerSkinMetadata
+PlayerSkinURL : org.openapitools.model.PlayerSkinURL
+PlayerTexture : org.openapitools.model.PlayerTexture
+PlayerTextureURL : org.openapitools.model.PlayerTextureURL
+SessionApiError : org.openapitools.model.SessionApiError
+
+entityProcessors:
+  - json
+  - xml
+  - yaml

@@ -1,0 +1,28 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /api                        controllers.ApiDocController.api
+
+
+#Functions for Miscellaneous API
+POST     /orders/statistics                     controllers.MiscellaneousApiController.getOrdersStatistics()
+
+#Functions for NameHistory API
+POST     /profiles/minecraft                     controllers.NameHistoryApiController.findUniqueIdsByName()
+GET     /user/profiles/:strippedUuid/names                     controllers.NameHistoryApiController.getNameHistory(strippedUuid: String)
+GET     /users/profiles/minecraft/:username                     controllers.NameHistoryApiController.getUniqueIdByName(username: String)
+
+#Functions for SecurityQuestionAnswer API
+GET     /user/security/location                     controllers.SecurityQuestionAnswerApiController.checkSecurityStatus()
+GET     /user/security/challenges                     controllers.SecurityQuestionAnswerApiController.listPendingSecurityQuestions()
+POST     /user/security/location                     controllers.SecurityQuestionAnswerApiController.sendSecurityQuestionAnswers()
+
+#Functions for SkinOperations API
+POST     /user/profile/:strippedUuid/skin                     controllers.SkinOperationsApiController.changePlayerSkin(strippedUuid: String)
+DELETE     /user/profile/:strippedUuid/skin                     controllers.SkinOperationsApiController.resetPlayerSkin(strippedUuid: String)
+PUT     /user/profile/:strippedUuid/skin                     controllers.SkinOperationsApiController.uploadPlayerSkin(strippedUuid: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET /assets/*file           controllers.Assets.at(file)
+GET /versionedAssets/*file  controllers.Assets.versioned(file)

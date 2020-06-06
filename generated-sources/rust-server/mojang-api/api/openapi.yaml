@@ -1,0 +1,580 @@
+openapi: 3.0.1
+info:
+  title: Mojang API
+  version: 2020-06-05.0.0
+servers:
+- url: https://api.mojang.com
+tags:
+- name: Name History
+- name: Skin Operations
+- name: Security question-answer
+- name: Miscellaneous
+paths:
+  /users/profiles/minecraft/{username}:
+    get:
+      description: Find the current player name, UUID, demo status and migration flag by the current player name or at a given time.
+      operationId: getUniqueIdByName
+      parameters:
+      - description: The username in a given time, or in present if "at" is not sent
+        example: LordofMC_Playerz
+        explode: false
+        in: path
+        name: username
+        required: true
+        schema:
+          format: username
+          type: string
+        style: simple
+      - description: Find the username in a given time, when 0 selects the original name however, it only works if the name was changed at least once, or if the account is legacy. The time is an UNIX timestamp (without milliseconds)
+        example: 1448533942
+        explode: true
+        in: query
+        name: at
+        required: false
+        schema:
+          format: int64
+          type: integer
+        style: form
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CurrentPlayerIDs'
+          description: The user was found
+        204:
+          description: User not found
+        400:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: If the timestamp is invalid
+      summary: Find the UUID by name
+      tags:
+      - Name History
+  /user/profiles/{stripped_uuid}/names:
+    get:
+      operationId: getNameHistory
+      parameters:
+      - description: The player UUID without hyphens
+        example: 38ba542eb5924231a54cca0f2eac2b54
+        explode: false
+        in: path
+        name: stripped_uuid
+        required: true
+        schema:
+          format: stripped-uuid
+          type: string
+        style: simple
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                example: '[ { "name": "firelordwill" }, { "name": "LordofMC_Playerz",
+                  "changedToAt": 1448677333000 }, { "name": "Alonlord", "changedToAt":
+                  1460944203000 }, { "name": "Alonelord", "changedToAt": 1477533727000
+                  }, { "name": "Alonelordz", "changedToAt": 1585545654000 }, { "name":
+                  "Alonelord", "changedToAt": 1588184987000 } ]'
+                items:
+                  $ref: '#/components/schemas/NameChange'
+                type: array
+          description: A list of name changes, the first entry usually don't have a change time
+        204:
+          description: Username not found at the given time
+      summary: Gets the full player's name history
+      tags:
+      - Name History
+  /profiles/minecraft:
+    post:
+      description: Find the current players name, UUID, demo status and migration flag by the current players name. The "at" parameter is not supported. Players not found are not returned. If no players are found, an empty array is returned.
+      operationId: findUniqueIdsByName
+      requestBody:
+        content:
+          application/json:
+            example: '[ "joserobjr", "nonExistingPlayer", "maksimkurb" ]'
+            schema:
+              items:
+                format: username
+                type: string
+              type: array
+        description: Array with the player names
+        required: true
+      responses:
+        200:
+          content:
+            application/json:
+              example: '[ { "id": "185e217600954ff8a2016f2aed9a032a", "name": "joserobjr"
+                }, { "id": "0d252b7218b648bfb86c2ae476954d32", "name": "maksimkurb",
+                "legacy": true, "demo": true } ]'
+              schema:
+                items:
+                  $ref: '#/components/schemas/CurrentPlayerIDs'
+                type: array
+          description: An array containing all players found
+      summary: Find the current UUID of multiple players at once
+      tags:
+      - Name History
+  /user/profile/{stripped_uuid}/skin:
+    delete:
+      operationId: resetPlayerSkin
+      parameters:
+      - description: The player UUID without hyphens
+        example: 38ba542eb5924231a54cca0f2eac2b54
+        explode: false
+        in: path
+        name: stripped_uuid
+        required: true
+        schema:
+          format: stripped-uuid
+          type: string
+        style: simple
+      responses:
+        204:
+          description: The skin has been changed. The response has no body
+        400:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: Upon error the server will send back a JSON with the error. (Success is a blank payload)
+      security:
+      - PlayerAccessToken: []
+      summary: Resets the player skin to default
+      tags:
+      - Skin Operations
+    post:
+      description: This will set the skin for the selected profile, but Mojang's servers will fetch the skin from a URL. This will also work for legacy accounts.
+      operationId: changePlayerSkin
+      parameters:
+      - description: The player UUID without hyphens
+        example: 38ba542eb5924231a54cca0f2eac2b54
+        explode: false
+        in: path
+        name: stripped_uuid
+        required: true
+        schema:
+          format: stripped-uuid
+          type: string
+        style: simple
+      requestBody:
+        $ref: '#/components/requestBodies/inline_object_1'
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              description: Request Mojang to download a skin from an URL and apply to the player
+              properties:
+                model:
+                  $ref: '#/components/schemas/SkinModel'
+                url:
+                  description: The URL which Mojang servers will download and apply the skin
+                  example: http://assets.mojang.com/SkinTemplates/steve.png
+                  format: url
+                  type: string
+              required:
+              - url
+              type: object
+        required: true
+      responses:
+        204:
+          description: The skin has been changed. The response has no body
+        400:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: Upon error the server will send back a JSON with the error. (Success is a blank payload)
+      security:
+      - PlayerAccessToken: []
+      summary: Changes the player skin by URL
+      tags:
+      - Skin Operations
+    put:
+      description: This uploads a skin to Mojang's servers. It also sets the users skin. This works on legacy counts as well.
+      operationId: uploadPlayerSkin
+      parameters:
+      - description: The player UUID without hyphens
+        example: 38ba542eb5924231a54cca0f2eac2b54
+        explode: false
+        in: path
+        name: stripped_uuid
+        required: true
+        schema:
+          format: stripped-uuid
+          type: string
+        style: simple
+      requestBody:
+        $ref: '#/components/requestBodies/inline_object'
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                model:
+                  $ref: '#/components/schemas/SkinModel'
+                file:
+                  description: The skin image in PNG format
+                  format: binary
+                  type: string
+              required:
+              - file
+              type: object
+        required: true
+      responses:
+        204:
+          description: The skin has been changed. The response has no body
+        400:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: Upon error the server will send back a JSON with the error. (Success is a blank payload)
+      security:
+      - PlayerAccessToken: []
+      summary: Changes the player skin by upload
+      tags:
+      - Skin Operations
+  /user/security/location:
+    get:
+      operationId: checkSecurityStatus
+      responses:
+        204:
+          description: No check is needed.
+        400:
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/Error'
+                example: '{ "error": "ForbiddenOperationException", "errorMessage":
+                  "Current IP is not secured" }'
+          description: A security check is needed or there is an other issue
+      security:
+      - PlayerAccessToken: []
+      summary: Check if security questions are needed
+      tags:
+      - Security question-answer
+    post:
+      operationId: sendSecurityQuestionAnswers
+      requestBody:
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/SecurityAnswer'
+              type: array
+        description: An array with all the answers
+        required: true
+      responses:
+        204:
+          description: The answers were accepted
+        400:
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/Error'
+                example: |-
+                  {
+                    "error": "ForbiddenOperationException",
+                    "errorMessage": "At least one answer was incorrect"
+                  }
+          description: At least one answer we not accepted
+      security:
+      - PlayerAccessToken: []
+      summary: Send back the answers
+      tags:
+      - Security question-answer
+  /user/security/challenges:
+    get:
+      operationId: listPendingSecurityQuestions
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/SecurityChallenge'
+                type: array
+          description: A list of security questions to be answered
+      security:
+      - PlayerAccessToken: []
+      summary: Get list of questions
+      tags:
+      - Security question-answer
+  /orders/statistics:
+    post:
+      operationId: getOrdersStatistics
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderStatisticsRequest'
+        description: The payload is a json list of options under the metricKeys key. You will receive a single object corresponding to the sum of sales of the requested type(s). You must request at least one type of sale. Below is the default list used by https://minecraft.net/en/stats/
+        required: true
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderStatisticsResponse'
+          description: A json object is returned with the total amount of copies sold, the amount of copies sold in the last 24h and how many sales there are per second.
+      security:
+      - MojangStatisticsToken: []
+      summary: Get statistics on the sales of Minecraft.
+      tags:
+      - Miscellaneous
+components:
+  requestBodies:
+    inline_object_1:
+      content:
+        application/x-www-form-urlencoded:
+          schema:
+            $ref: '#/components/schemas/inline_object_1'
+    inline_object:
+      content:
+        multipart/form-data:
+          schema:
+            $ref: '#/components/schemas/inline_object'
+  schemas:
+    CurrentPlayerIDs:
+      description: The current player, demo and legacy status of a player identified by the id
+      example:
+        legacy: false
+        name: Alonelord
+        id: 38ba542eb5924231a54cca0f2eac2b54
+        demo: false
+      properties:
+        id:
+          description: The player UUID without hyphens
+          example: 38ba542eb5924231a54cca0f2eac2b54
+          format: stripped-uuid
+          type: string
+        name:
+          description: The current name being used by this player
+          example: Alonelord
+          format: username
+          type: string
+        legacy:
+          default: false
+          description: If account has not been converted
+          type: boolean
+        demo:
+          default: false
+          description: If the player has not puchased the game
+          type: boolean
+      required:
+      - id
+      - name
+      type: object
+    NameChange:
+      description: A registered name change.
+      properties:
+        name:
+          description: The new player name
+          example: LordofMC_Playerz
+          format: username
+          type: string
+        changedToAt:
+          description: Time which the name was changed in UNIX Timestamp without milliseconds. Usually absent for the first entry.
+          example: 1448677333000
+          format: int64
+          type: integer
+      required:
+      - name
+      type: object
+    Error:
+      description: This is returned when the request fails
+      properties:
+        error:
+          example: IllegalArgumentException
+          type: string
+        errorMessage:
+          example: Invalid timestamp.
+          type: string
+      type: object
+    SkinModel:
+      description: Model is an empty string for the default model (like Steve) and "slim" for the slim model (like Alex)
+      enum:
+      - ""
+      - slim
+      type: string
+    SecurityChallenge:
+      description: Binds a question to an answer id, the answer must respect the answer id.
+      example:
+        question:
+          question: What is your dream job?
+          id: 37
+        answer:
+          id: 593
+      properties:
+        question:
+          $ref: '#/components/schemas/SecurityQuestion'
+        answer:
+          $ref: '#/components/schemas/SecurityAnswerId'
+      required:
+      - answer
+      - question
+      type: object
+    SecurityAnswer:
+      allOf:
+      - $ref: '#/components/schemas/SecurityAnswerId'
+      description: A security question answer given by the player using the id given by Mojang
+      properties:
+        answer:
+          description: The answer given by the user
+          example: Be an astronaut
+          type: string
+      required:
+      - answer
+      type: object
+    SecurityAnswerId:
+      description: A security question answer id given by Mojang
+      example:
+        id: 593
+      properties:
+        id:
+          description: A number giver by Mojang to reply a question
+          example: 593
+          format: int32
+          type: integer
+      required:
+      - id
+      type: object
+    OrderStatisticsResponse:
+      description: A json object is returned with the total amount of copies sold, the amount of copies sold in the last 24h and how many sales there are per second.
+      example:
+        last24h: 6
+        total: 0
+        saleVelocityPerSeconds: 1.46581298050294517310021547018550336360931396484375
+      properties:
+        total:
+          description: total amount sold
+          format: int64
+          type: integer
+        last24h:
+          description: total sold in last 24 hours
+          format: int64
+          type: integer
+        saleVelocityPerSeconds:
+          description: decimal average sales per second
+          format: double
+          type: number
+      required:
+      - last24h
+      - saleVelocityPerSeconds
+      - total
+      type: object
+    OrderStatisticsRequest:
+      description: The body of the request to get the order statistics
+      properties:
+        metricKeys:
+          items:
+            $ref: '#/components/schemas/OrderStatistic'
+          type: array
+      required:
+      - metricKeys
+      type: object
+    OrderStatistic:
+      description: Valid options to query the order statistics
+      enum:
+      - item_sold_minecraft
+      - prepaid_card_redeemed_minecraft
+      - item_sold_cobalt
+      - item_sold_scrolls
+      - prepaid_card_redeemed_cobalt
+      - item_sold_dungeons
+      type: string
+    SecurityQuestion:
+      description: A security question requested by Mojang
+      example:
+        question: What is your dream job?
+        id: 37
+      properties:
+        id:
+          description: |-
+            The possible IDs are these:
+              1  What is your favorite pet's name?
+              2  What is your favorite movie?
+              3  What is your favorite author's last name?
+              4  What is your favorite artist's last name?
+              5  What is your favorite actor's last name?
+              6  What is your favorite activity?
+              7  What is your favorite restaurant?
+              8  What is the name of your favorite cartoon?
+              9  What is the name of the first school you attended?
+              10 What is the last name of your favorite teacher?
+              11 What is your best friend's first name?
+              12 What is your favorite cousin's name?
+              13 What was the first name of your first girl/boyfriend?
+              14 What was the name of your first stuffed animal?
+              15 What is your mother's middle name?
+              16 What is your father's middle name?
+              17 What is your oldest sibling's middle name?
+              18 In what city did your parents meet?
+              19 In what hospital were you born?
+              20 What is your favorite team?
+              21 How old were you when you got your first computer?
+              22 How old were you when you got your first gaming console?
+              23 What was your first video game?
+              24 What is your favorite card game?
+              25 What is your favorite board game?
+              26 What was your first gaming console?
+              27 What was the first book you ever read?
+              28 Where did you go on your first holiday?
+              29 In what city does your grandmother live?
+              30 In what city does your grandfather live?
+              31 What is your grandmother's first name?
+              32 What is your grandfather's first name?
+              33 What is your least favorite food?
+              34 What is your favorite ice cream flavor?
+              35 What is your favorite ice cream flavor?
+              36 What is your favorite place to visit?
+              37 What is your dream job?
+              38 What color was your first pet?
+              39 What is your lucky number?
+          example: 37
+          format: int32
+          type: integer
+        question:
+          description: The question itself
+          example: What is your dream job?
+          type: string
+      required:
+      - id
+      - question
+      type: object
+    inline_object:
+      properties:
+        model:
+          $ref: '#/components/schemas/SkinModel'
+        file:
+          description: The skin image in PNG format
+          format: binary
+          type: string
+      required:
+      - file
+      type: object
+    inline_object_1:
+      description: Request Mojang to download a skin from an URL and apply to the player
+      properties:
+        model:
+          $ref: '#/components/schemas/SkinModel'
+        url:
+          description: The URL which Mojang servers will download and apply the skin
+          example: http://assets.mojang.com/SkinTemplates/steve.png
+          format: url
+          type: string
+      required:
+      - url
+      type: object
+  securitySchemes:
+    PlayerAccessToken:
+      description: Token obtained by the Mojang Authentication API
+      scheme: bearer
+      type: http
+    MojangStatisticsToken:
+      description: Token needed to access the sales statistics
+      scheme: bearer
+      type: http
+

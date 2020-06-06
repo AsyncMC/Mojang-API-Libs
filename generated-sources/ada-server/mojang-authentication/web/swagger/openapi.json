@@ -1,0 +1,564 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Mojang Authentication API",
+    "version" : "2020-06-05"
+  },
+  "servers" : [ {
+    "url" : "https://authserver.mojang.com"
+  } ],
+  "paths" : {
+    "/authenticate" : {
+      "post" : {
+        "operationId" : "authenticate",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/AuthenticationRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Successfully authenticated",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Authentication"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Could not authenticate",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/refresh" : {
+      "post" : {
+        "operationId" : "refresh",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/RefreshRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Session refreshed successfully. Note: The old access token gets invalidated.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/RefreshResponse"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Could not refresh the session",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/validate" : {
+      "post" : {
+        "operationId" : "validate",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/AccessKeys"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "204" : {
+            "description" : "The token is valid"
+          },
+          "403" : {
+            "description" : "The token is not valid",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/signout" : {
+      "post" : {
+        "operationId" : "siginout",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/UsernamePassword"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "204" : {
+            "description" : "All tokens have been invalidated"
+          },
+          "400" : {
+            "description" : "Invalid username/password",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/invalidate" : {
+      "post" : {
+        "operationId" : "invalidate",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/AccessKeys"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "204" : {
+            "description" : "The token have been invalidated"
+          },
+          "400" : {
+            "description" : "Could not invalidate the token",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "AccessKeys" : {
+        "required" : [ "accessToken" ],
+        "type" : "object",
+        "properties" : {
+          "accessToken" : {
+            "type" : "string",
+            "format" : "Mojang Token"
+          },
+          "clientToken" : {
+            "type" : "string"
+          }
+        }
+      },
+      "UsernamePassword" : {
+        "required" : [ "password", "username" ],
+        "type" : "object",
+        "properties" : {
+          "username" : {
+            "type" : "string",
+            "description" : "The Mojang account e-mail or username. Never store it.",
+            "format" : "username"
+          },
+          "password" : {
+            "type" : "string",
+            "description" : "The Mojang account password, never store it.",
+            "format" : "password"
+          }
+        }
+      },
+      "RefreshRequest" : {
+        "type" : "object",
+        "properties" : {
+          "requestUser" : {
+            "type" : "boolean",
+            "default" : false
+          }
+        },
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/AccessKeys"
+        } ]
+      },
+      "RefreshResponse" : {
+        "required" : [ "selectedProfile" ],
+        "type" : "object",
+        "properties" : {
+          "selectedProfile" : {
+            "$ref" : "#/components/schemas/ProfileId"
+          },
+          "user" : {
+            "$ref" : "#/components/schemas/ReducedUserData"
+          }
+        },
+        "example" : {
+          "selectedProfile" : {
+            "name" : "name",
+            "id" : "id"
+          },
+          "user" : {
+            "id" : "",
+            "properties" : [ {
+              "name" : "name",
+              "value" : "value"
+            }, {
+              "name" : "name",
+              "value" : "value"
+            } ]
+          }
+        },
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/RefreshRequest"
+        } ]
+      },
+      "ProfileId" : {
+        "required" : [ "id", "name" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string",
+            "description" : "The player name"
+          }
+        },
+        "example" : {
+          "name" : "name",
+          "id" : "id"
+        }
+      },
+      "AuthenticationRequest" : {
+        "required" : [ "agent" ],
+        "type" : "object",
+        "properties" : {
+          "agent" : {
+            "$ref" : "#/components/schemas/Agent"
+          },
+          "clientToken" : {
+            "type" : "string",
+            "description" : "Should be a randomly generated identifier and must be identical for each request. The vanilla launcher generates a random (version 4) UUID on first run and saves it, reusing it for every subsequent request. In case it is omitted the server will generate a random token based on Java's UUID.toString() which should then be stored by the client. This will however also invalidate all previously acquired accessTokens for this user across all clients."
+          },
+          "requestUser" : {
+            "type" : "boolean",
+            "description" : "True adds the user object to the response",
+            "default" : false
+          }
+        },
+        "description" : "Request body needed to authenticate the player using the username/e-mail and password. Use with care. This is a risky operation.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/UsernamePassword"
+        } ]
+      },
+      "Agent" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "description" : "The name of the game",
+            "default" : "Minecraft",
+            "enum" : [ "Minecraft", "Scrolls" ]
+          },
+          "version" : {
+            "type" : "integer",
+            "description" : "The agent version, usually 1.",
+            "format" : "int32",
+            "default" : 1
+          }
+        },
+        "description" : "Identifies the software doing the request"
+      },
+      "Authentication" : {
+        "type" : "object",
+        "properties" : {
+          "availableProfiles" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/GameProfile"
+            }
+          },
+          "selectedProfile" : {
+            "$ref" : "#/components/schemas/GameProfile"
+          },
+          "user" : {
+            "$ref" : "#/components/schemas/PrivateUserData"
+          }
+        },
+        "example" : {
+          "availableProfiles" : [ {
+            "createdAt" : 0,
+            "legacyProfile" : true,
+            "agent" : "agent",
+            "legacy" : true,
+            "name" : "name",
+            "paid" : true,
+            "id" : "id",
+            "migrated" : true,
+            "userId" : "",
+            "suspended" : true
+          }, {
+            "createdAt" : 0,
+            "legacyProfile" : true,
+            "agent" : "agent",
+            "legacy" : true,
+            "name" : "name",
+            "paid" : true,
+            "id" : "id",
+            "migrated" : true,
+            "userId" : "",
+            "suspended" : true
+          } ],
+          "selectedProfile" : {
+            "createdAt" : 0,
+            "legacyProfile" : true,
+            "agent" : "agent",
+            "legacy" : true,
+            "name" : "name",
+            "paid" : true,
+            "id" : "id",
+            "migrated" : true,
+            "userId" : "",
+            "suspended" : true
+          },
+          "user" : {
+            "registerIp" : "registerIp",
+            "verifiedByParent" : true,
+            "migratedAt" : 6,
+            "passwordChangedAt" : 5,
+            "legacyUser" : true,
+            "registeredAt" : 1,
+            "dateOfBirth" : 5,
+            "suspended" : true,
+            "emailVerified" : true,
+            "migratedFrom" : "migratedFrom",
+            "blocked" : true,
+            "migrated" : true,
+            "secured" : true,
+            "email" : "email",
+            "username" : "username"
+          }
+        },
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/AccessKeys"
+        } ]
+      },
+      "ReducedUserData" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            "format" : "binary"
+          },
+          "properties" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/GameProfileProperty"
+            }
+          }
+        },
+        "example" : {
+          "id" : "",
+          "properties" : [ {
+            "name" : "name",
+            "value" : "value"
+          }, {
+            "name" : "name",
+            "value" : "value"
+          } ]
+        }
+      },
+      "PrivateUserData" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string",
+            "format" : "email"
+          },
+          "username" : {
+            "type" : "string"
+          },
+          "registerIp" : {
+            "type" : "string",
+            "format" : "ip"
+          },
+          "migratedFrom" : {
+            "type" : "string"
+          },
+          "migratedAt" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "registeredAt" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "passwordChangedAt" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "dateOfBirth" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "suspended" : {
+            "type" : "boolean"
+          },
+          "blocked" : {
+            "type" : "boolean"
+          },
+          "secured" : {
+            "type" : "boolean"
+          },
+          "migrated" : {
+            "type" : "boolean",
+            "deprecated" : true
+          },
+          "emailVerified" : {
+            "type" : "boolean"
+          },
+          "legacyUser" : {
+            "type" : "boolean"
+          },
+          "verifiedByParent" : {
+            "type" : "boolean"
+          }
+        },
+        "example" : {
+          "registerIp" : "registerIp",
+          "verifiedByParent" : true,
+          "migratedAt" : 6,
+          "passwordChangedAt" : 5,
+          "legacyUser" : true,
+          "registeredAt" : 1,
+          "dateOfBirth" : 5,
+          "suspended" : true,
+          "emailVerified" : true,
+          "migratedFrom" : "migratedFrom",
+          "blocked" : true,
+          "migrated" : true,
+          "secured" : true,
+          "email" : "email",
+          "username" : "username"
+        },
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ReducedUserData"
+        } ]
+      },
+      "GameProfileProperty" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "value" : {
+            "type" : "string"
+          }
+        },
+        "example" : {
+          "name" : "name",
+          "value" : "value"
+        }
+      },
+      "GameProfile" : {
+        "type" : "object",
+        "properties" : {
+          "agent" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "userId" : {
+            "type" : "string",
+            "format" : "binary"
+          },
+          "createdAt" : {
+            "type" : "integer",
+            "description" : "Unix timestamp in milliseconds",
+            "format" : "int64"
+          },
+          "legacyProfile" : {
+            "type" : "boolean"
+          },
+          "suspended" : {
+            "type" : "boolean"
+          },
+          "paid" : {
+            "type" : "boolean"
+          },
+          "migrated" : {
+            "type" : "boolean"
+          },
+          "legacy" : {
+            "type" : "boolean"
+          }
+        },
+        "example" : {
+          "createdAt" : 0,
+          "legacyProfile" : true,
+          "agent" : "agent",
+          "legacy" : true,
+          "name" : "name",
+          "paid" : true,
+          "id" : "id",
+          "migrated" : true,
+          "userId" : "",
+          "suspended" : true
+        }
+      },
+      "Error" : {
+        "type" : "object",
+        "properties" : {
+          "error" : {
+            "type" : "string",
+            "example" : "IllegalArgumentException"
+          },
+          "errorMessage" : {
+            "type" : "string",
+            "example" : "Invalid timestamp."
+          }
+        },
+        "description" : "This is returned when the request fails"
+      }
+    }
+  }
+}

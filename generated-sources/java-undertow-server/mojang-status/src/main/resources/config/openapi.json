@@ -1,0 +1,49 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Mojang API",
+    "version" : "2020-06-05"
+  },
+  "servers" : [ {
+    "url" : "https://status.mojang.com"
+  } ],
+  "paths" : {
+    "/check" : {
+      "get" : {
+        "summary" : "Checks the Mojang service statuses",
+        "operationId" : "checkStatuses",
+        "responses" : {
+          "200" : {
+            "description" : "An array with service status key/pairs",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "example" : "[ {\"minecraft.net\": \"yellow\"}, {\"session.minecraft.net\": \"green\"}, {\"account.mojang.com\": \"green\"}, {\"auth.mojang.com\": \"green\"}, {\"skins.minecraft.net\": \"green\"}, {\"authserver.mojang.com\": \"green\"}, {\"sessionserver.mojang.com\": \"yellow\"}, {\"api.mojang.com\": \"green\"}, {\"textures.minecraft.net\": \"red\"}, {\"mojang.com\": \"green\"} ]",
+                  "items" : {
+                    "type" : "object",
+                    "additionalProperties" : {
+                      "$ref" : "#/components/schemas/ApiStatus"
+                    },
+                    "description" : "An associative array of the Mojang service status",
+                    "example" : "{\"minecraft.net\": \"yellow\"}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-accepts" : "application/json"
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "ApiStatus" : {
+        "type" : "string",
+        "description" : "The status of a Mojang services. Possible values are green (no issues), yellow (some issues), red (service unavailable).",
+        "enum" : [ "green", "yellow", "red" ]
+      }
+    }
+  }
+}
